@@ -11,7 +11,7 @@
 					<div style="margin-top:0px;" class="header-box">
 						<h1>Welcome to Your Safety Place</h1>
 						<p style="font-size: 14px;line-height: 17px;">
-		In the vast realm of the unseen and the uncharted, where energies weave tales of destinies and souls dance on the rhythms of the universe, there emerges a unique force – The Soulmate Healer. <br> With an ethereal touch and an enigmatic presence, this extraordinary psychic doesn't merely glimpse into the future or the past; they venture deeper, into the intricate tapestries of soul connections. They have a rare gift, an uncanny ability to mend the cosmic ties that bind two souls, healing rifts that span lifetimes and bridging gaps that seem insurmountable.
+		In the vast realm of the unseen and the uncharted, where energies weave tales of destinies and souls dance on the rhythms of the universe, there emerges a unique force - The Soulmate Healer. <br> With an ethereal touch and an enigmatic presence, this extraordinary psychic doesn't merely glimpse into the future or the past; they venture deeper, into the intricate tapestries of soul connections. They have a rare gift, an uncanny ability to mend the cosmic ties that bind two souls, healing rifts that span lifetimes and bridging gaps that seem insurmountable.
 		
 		</p> 
 					</div>
