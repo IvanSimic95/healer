@@ -173,7 +173,7 @@
 			
 			
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">score 4.98 out of 55484 reviews</h2>
+                    <h2 class="h2-heading">LATEST REVIEWS</h2>
 	
         <div style="margin-bottom:20px;" class="container">
             <div style="background-color: #fff;" class="row"> 
