@@ -5,28 +5,27 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col first">
-                        <h4>about</h4>
-                        <p class="p-small">bla bla</p>
+                      
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
                     <div class="footer-col middle">
-                        <h4>links</h4>
+                        <h4>LINKS</h4>
                         <ul class="list-unstyled li-space-lg p-small">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">bla bla<a class="white" href="#">bla</a></div>
+                                <div class="media-body"> <a class="white" href="https://soulmatehealer.com/tos.php">Terms & Conditions</a></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">read our <a class="white" href="#">terms</a>, <a class="white" href="#">privacy</a></div>
+                                <div class="media-body"> <a class="white" href="https://soulmatehealer.com/tos.php">REFUND POLICY</a></div>
                             </li>
                         </ul>
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
                     <div class="footer-col last">
-                        <h4>contact</h4>
+                        <h4>CONTACT</h4>
                         <ul class="list-unstyled li-space-lg p-small">
                             <li class="media">
                                 <i class="fas fa-map-marker-alt"></i>
@@ -50,7 +49,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">copyright © 2026
+                    <p class="p-small">copyright © 2014
                     </p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
