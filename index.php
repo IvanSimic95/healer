@@ -5,25 +5,20 @@
     <header class="ex-6-header">
         <div class="header-content">
             <div class="container">
-                <div class="row">
-	
-                   <div class="col-sm-6 col-7">
-					<div style="margin-top:0px;" class="header-box">
-						<h1>Welcome to Your Safety Place</h1>
-						<p style="font-size: 14px;line-height: 17px;">
+                <div class="row header-box">
+                
+                   <div class="col-sm-12 col-12">
+					<div style="margin-top:0px;">
+                    <h1>Welcome to Your Safety Place</h1>
+                                <img class="img-fluid" src="http://via.placeholder.com/200x200" style="float:right;padding:8px;" alt="alternative">
+                      
+						<p style="font-size: 14px;line-height: 17px; margin:15px;max-width:none;">
 		In the vast realm of the unseen and the uncharted, where energies weave tales of destinies and souls dance on the rhythms of the universe, there emerges a unique force - The Soulmate Healer. <br> With an ethereal touch and an enigmatic presence, this extraordinary psychic doesn't merely glimpse into the future or the past; they venture deeper, into the intricate tapestries of soul connections. They have a rare gift, an uncanny ability to mend the cosmic ties that bind two souls, healing rifts that span lifetimes and bridging gaps that seem insurmountable.
 		
 		</p> 
 					</div>
                    </div>				
 
-					<div class="col-sm-6 col-5">
-                        <div class="image-container">
-                            <div class="img-wrapper">
-                                <img class="img-fluid" src="images/soulmate-06.png" style="" alt="alternative">
-                            </div>  
-                        </div>
-                    </div> 
                 </div> 
  
  <br/>
@@ -175,54 +170,7 @@
                 <div class="col-lg-12">
                     <h2 class="h2-heading">LATEST REVIEWS</h2>
 	
-        <div style="margin-bottom:20px;" class="container">
-            <div style="background-color: #fff;" class="row"> 
-                <div class="col">
-                    <div class="image-container">
-<div class="w3-container">
-  <br>
-  <div class="">
-   <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
-  </div><br>
-  <div class="">
-   <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star-half checked"></span>
-  </div><br>
-  <div class="">
-   <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span>
-  </div><br>
-  <div class="">
-   <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
-  </div><br>
-  <div class="">
-   <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
-  </div><br>
-</div>
-                    </div>  
-                </div>  
-                <div class="col">
-                    <div class="image-container">
-<div class="w3-container">
-  <br>
-  <div class="w3-light-grey w3-round">
-    <div class="w3-container w3-blue w3-round" style="height:24px;width:100%"></div>
-  </div><br>
-  <div class="w3-light-grey w3-round">
-    <div class="w3-container w3-blue w3-round" style="height:24px;width:95%"></div>
-  </div><br>
-  <div class="w3-light-grey w3-round">
-    <div class="w3-container w3-blue w3-round" style="height:24px;width:5%"></div>
-  </div><br>
-   <div class="w3-light-grey w3-round">
-    <div class="w3-container w3-round" style="height:24px;width:0%"></div>
-  </div><br>
-   <div class="w3-light-grey w3-round">
-    <div class="w3-container w3-round" style="height:24px;width:0%"></div>
-  </div>  <br>
-</div>
-                    </div>  
-                </div>  
-            </div>  
-        </div> 					
+      			
 					
 					
                 </div>
