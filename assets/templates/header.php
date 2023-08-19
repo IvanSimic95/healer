@@ -32,6 +32,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 	<link href="/css/magnific-popup.css" rel="stylesheet">
 	<link href="/css/styles.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
+    <link href="/css/review.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -62,7 +63,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/index.php">HOME <span class="sr-only">(current)</span></a>
                     </li>
 					
                     <li class="nav-item dropdown">

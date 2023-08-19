@@ -1,5 +1,8 @@
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
+<?php
+$t_product_name = "SOULMATE";
 
+?>
     <!-- Header -->
     <header class="ex-6-header">
         <div class="header-content">
@@ -174,9 +177,9 @@
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
 			
+			<?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/review-total.php'; ?>
 			
-			
-			
+            <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/reviews.php'; ?>
 			
 			
 			

@@ -99,10 +99,10 @@ $bar1 = get_percentage($avgratet,$countone);
 $bar1 = round($bar1, "0");
 
 ?>
-<div class="gradient-border">
+<div class="gradient-border" style="width:100%;padding:30px;">
 <div class="sprw-reviews sprw-list sprw-template-one" style="padding-bottom:20px;">
 <div class="sprw-rating-info-wrap">
-    <div class="sprw-average-rating-wrap">
+    <div class="sprw-average-rating-wrap col-sm-6 col-md-4">
         <div class="sprw-number-outer-wrap">
             <div class="sprw-rating-number-wrap">
                 <?php echo $avg; ?> </div>
@@ -126,7 +126,7 @@ $bar1 = round($bar1, "0");
             </div>
         </div>
     </div>
-    <div class="sprw-rating-bar-wrap">
+    <div class="sprw-rating-bar-wrap col-sm-6 col-md-8">
         <div class="sprw-star-wrap"><span class="sprw-rating-count">
                 <div class="sprw-star-rating"> <span class="sprw-star-icon full">
                         <i class="fa fa-star"></i>
@@ -251,41 +251,3 @@ $bar1 = round($bar1, "0");
 </div>
 </div>
 </div>
-
-
-<?php
-use Melbahja\Seo\Schema;
-use Melbahja\Seo\Schema\Thing;
-
-$product = new Thing('Product');
-$product->type = "Product";
-$product->name  = $t_product_title;
-$product->sku   = $t_product_form_name.$t_product_sales;
-$product->image = "/assets/img/da1.jpg";
-$product->description = $t_about_title;
-$product->offers = new Thing('Offer', [
-    'availability' => 'https://schema.org/InStock',
-    'priceCurrency' => 'USD',
-    "price" => "19.99",
-    'url' => 'https://melissa-psychic.com/soulmate-drawing.php',
-    "itemCondition" => "https://schema.org/NewCondition",
-]);
-$product->review = new Thing('aggregateRating', [
-    'ratingValue' => $avg,
-    'reviewCount' => $count
-]);
-
-$webpage = new Thing("WebPage", [
-    '@id' => "https://melissa-psychic.com/soulmate-drawing.php",
-    'url' => "https://melissa-psychic.com/soulmate-drawing.php",
-    'name' => 'Soulmate Drawing & Reading',
-]);
-
-
-$schema = new Schema(
-    $product,
-    $webpage);
-    ?>
-<script type="application/ld+json">
-<?php echo json_encode($schema, JSON_PRETTY_PRINT); ?>
-</script>
