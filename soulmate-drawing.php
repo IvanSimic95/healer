@@ -22,13 +22,14 @@
 						<span style="font-size:13px;">55484 reviews</span>
 						</h4>
 						<p style="color: #000;text-align: left;padding: 0px 17px;margin-top: 23px;">
-						<i class="fas fa-check-square" style="color: #0bd10b;"></i> 99% Accuracy 100%<br/>
-						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Satisfaction guarantee<br/>
+						<i class="fas fa-check-square" style="color: #0bd10b;"></i> 99% Accuracy <br/>
+						<i class="fas fa-check-square" style="color: #0bd10b;"></i> 100% Satisfaction guarantee<br/>
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order today, receive within 1-3 days
 						</p>
 						
-						<h2 style="font-size: 35px;">$29 <span style="opacity: 0.25;">$299</span></h2> 
-						<p>you save <b>$270</b> (90%)</p>
+						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$29</h2>  
+                        <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$299</h2> 
+						<p>You save <span class="saveda"><b>$270</b> (90%)</span></p>
 						</div>
 						
 						
@@ -38,21 +39,34 @@
 							<form id="signUpForm" data-toggle="validator" data-focus="false">
 								<div class="form-group">
 									<input type="text" class="form-control-input" id="sname" required>
-									<label class="label-control" for="sname">name</label>
+									<label class="label-control" for="sname">Name</label>
 									<div class="help-block with-errors"></div>
 								</div>
 								<div class="form-group">
 									<input type="email" class="form-control-input" id="semail" required>
-									<label class="label-control" for="semail">email</label>
+									<label class="label-control" for="semail">Email</label>
 									<div class="help-block with-errors"></div>
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control-input" id="date" style="display: none;" required>
+                                <div class="form_box">
+    <div style="text-align:start;">Your Birth Date*</div>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/date.php'; ?>
+  </div>
 									<div class="help-block with-errors"></div>
 								</div>
-								<div class="form-group">
-									<button type="submit" class="form-control-submit-button option1"><i style="color:#ffaf00;" class="fa-solid fa-fire"></i> 12h</button> <button type="submit" class="form-control-submit-button option1"><i class="fa-solid fa-fire-flame-curved"></i> 24h</button> <button type="submit" class="form-control-submit-button option1select"><i style="color:#c19bff;" class="fa-solid fa-bolt"></i> 48h</button>
-								</div>
+                                
+                                <div class="form_box input-group form-group" style="    padding-bottom: 52px;">
+  
+        <input id="prio12" type="radio" name="priority" value="12">
+        <label for="prio12"><span><i style="color:#ffaf00;" class="fas fa-bolt" aria-hidden="true"></i>12h</span></label>
+        
+		<input id="prio24" type="radio" name="priority" value="24">
+        <label for="prio24"> <span><i style="color:#c19bff;" class="fas fa-stopwatch" aria-hidden="true"></i>24h</span></label>
+		
+		<input id="prio48" type="radio" name="priority" value="48" checked="true">
+        <label for="prio48"> <span><i  class="fas fa-clock" aria-hidden="true"></i>48h</span></label>
+      </div>
+							
 								<div class="form-group">
 									<button type="submit" class="form-control-submit-button">PLACE AN ORDER <i class="fa-solid fa-arrow-right"></i></button>
 								</div>
@@ -325,5 +339,23 @@
         </div>  
     </header>  
 
-
+    <script>
+jQuery('input[name="priority"]').change(function(){
+    if (this.value == '12') {
+        jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$49').animate({'opacity': 1}, 200);});
+		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$499').animate({'opacity': 0.25}, 300);});
+		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$450</b> (90%)').animate({'opacity': 1}, 400);});	
+    }
+    if (this.value == '24') {
+		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$39').animate({'opacity': 1}, 200);});
+		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$399').animate({'opacity': 0.25}, 300);});
+		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$360</b> (90%)').animate({'opacity': 1}, 400);});
+    }
+    if (this.value == '48') {
+		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$29').animate({'opacity': 1}, 200);});
+		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$299').animate({'opacity': 0.25}, 300);});
+		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$270</b> (90%)').animate({'opacity': 1}, 400);});
+    }
+})
+</script>
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php'; ?>

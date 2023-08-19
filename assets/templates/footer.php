@@ -57,7 +57,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">copyright © 2014
+                    <p class="p-small">
+        © 2023 Psychic Healer. All Rights Reserved.
+      
                     </p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->

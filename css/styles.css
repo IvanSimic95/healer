@@ -1726,7 +1726,7 @@ a:hover.back-to-top {
 }
 
 .ex-6-header .form-container {
-	max-width: 28rem;
+width:100%;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 2.25rem 1.25rem 1.25rem 1.25rem;
@@ -2336,6 +2336,7 @@ a:hover.back-to-top {
 	height: 3.125rem;
 	text-align:center;
 	border-radius: 0.25rem;
+	margin-right:3px;
 }
 
 .checked {

@@ -31,16 +31,12 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
     <link href="/css/swiper.css" rel="stylesheet">
 	<link href="/css/magnific-popup.css" rel="stylesheet">
 	<link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/jquery-dropdown-datepicker"></script>
-    <script>
-        $(function(){
-            $('#date').dropdownDatepicker();
-        });
-    </script>
+  
 	
 	<!-- Favicon  -->
     <link rel="icon" href="/images/favicon.png">
@@ -73,8 +69,14 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/soulmate-drawing"><span class="item-text">Soulmate Drawing & Reading</span></a>
+                            <a class="dropdown-item" href="/twin-flame"><span class="item-text">Twin Flame Drawing & Reading</span></a>
+                            <a class="dropdown-item" href="/future-spouse"><span class="item-text">Future Spouse Drawing & Reading</span></a>
                             <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="/future-baby"><span class="item-text">Future Baby</span></a>
+                            <a class="dropdown-item" href="/purification"><span class="item-text">Psychic Purification</span></a>
+                            <a class="dropdown-item" href="/readings"><span class="item-text">Psychic Reading</span></a>
                             <!--<a class="dropdown-item" href="upsell.html"><span class="item-text">UPSELL 01</span></a>-->
+
                         </div>
                     </li>					
 					
