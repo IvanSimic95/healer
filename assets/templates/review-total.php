@@ -102,7 +102,7 @@ $bar1 = round($bar1, "0");
 <div class="gradient-border" style="width:100%;padding:30px;">
 <div class="sprw-reviews sprw-list sprw-template-one" style="padding-bottom:20px;">
 <div class="sprw-rating-info-wrap">
-    <div class="sprw-average-rating-wrap col-sm-6 col-md-4">
+    <div class="sprw-average-rating-wrap col-sm-6 col-md-4" style="border: 2px solid orange; border-radius: 8px;">
         <div class="sprw-number-outer-wrap">
             <div class="sprw-rating-number-wrap">
                 <?php echo $avg; ?> </div>
@@ -121,7 +121,7 @@ $bar1 = round($bar1, "0");
             <div class="sprw-middle-content-wrap">
                 <div class="sprw-review-count">
                     <span class="sprw-count-number">
-                        <?php echo $count; ?> reviews </span>
+                        <b><?php echo $count; ?></b> reviews </span>
                 </div>
             </div>
         </div>
