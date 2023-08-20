@@ -1,5 +1,5 @@
 <?php 
-$t_product_name = "twinflame";
+$t_product_name = "TWIN FLAME";
 $t_product_form_name = "twinflame";
 $title = "Twin Flame | Soulmate Healer";
 $description = "I will draw your Twin Flame with 100% accuracy";

@@ -1,5 +1,5 @@
 <?php 
-$t_product_name = "futurebaby";
+$t_product_name = "FUTURE BABY";
 $t_product_form_name = "futurebaby";
 $title = "Future Baby Drawing | Soulmate Healer";
 $description = "I will provide you with your future baby drawing";
