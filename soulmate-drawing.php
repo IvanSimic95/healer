@@ -75,7 +75,7 @@ $count = $result->num_rows;
       </div>
 							
 								<div class="form-group">
-									<button type="submit" class="form-control-submit-button">PLACE AN ORDER <i class="fa-solid fa-arrow-right"></i></button>
+									<button id="#submitbtn" type="submit" class="form-control-submit-button">PLACE AN ORDER <i class="fa-solid fa-arrow-right"></i></button>
 								</div>
 								
 								<img style="width: 100%;" src="/images/payment-icons.webp">
