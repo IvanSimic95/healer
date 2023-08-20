@@ -51,7 +51,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 echo '
 
 
-<div class="item col-lg-4 col-md-6 col-6 m-auto single_review">
+<div class="item col-lg-4 col-md-6 col-sm-6 col-12 m-auto single_review">
 <div style="margin-bottom:20px;border:0px;background-color:#fff;" class="card">
 <div class="card-image">
         <img style="width:50%;" class="img-fluid" src="https://avatars.dicebear.com/api/adventurer/' . $row["review_name"]. '.svg?skinColor=variant0'.rand(1,3).'" alt="alternative">
