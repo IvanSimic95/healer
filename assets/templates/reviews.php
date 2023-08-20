@@ -1,18 +1,13 @@
-<div id="post_review"></div>
 
-<div class="table_headers">
-  <h3 class="tab1 active">Reviews ()</h3>
-  <!--<h3 class="tab2">Add Review</h3>-->
-</div>
-<div class="tab_bodies">
-  <div class="review_tab">
-<div class="contents">
+
+
+<div class="contents row m-0">
 
 <?php
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/time.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 
-    $sql = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '".$t_product_name."' ORDER BY review_date DESC LIMIT 10";
+    $sql = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '".$t_product_name."' ORDER BY review_date DESC LIMIT 9";
 	$sql2 = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '".$t_product_name."' ORDER BY review_date DESC";
 	
     $result = $conn->query($sql);
@@ -27,7 +22,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
          // echo '<div class="single_review sides"><div class="review_content"><h3><span class="review-name">' . $row["review_name"]. '</span> <span class="verified-badge"><i class="fas fa-user-check"></i> Verfied Purchase</span><time>' . $row["review_date"]. '</time> ago</h3><div class="rating">' . $row["review_rating"]. '</div><div class="testimonial">' . $row["review_text"]. '</div></div></div>';
         $newdate = date('F jS, Y, H:i:s', strtotime($row["review_date"]));
         $time = time_ago($row["review_date"]);
-		echo '
+	/*	echo '
 		<div class="item">
 <div class="single_review">
 <div class="review-header">
@@ -52,6 +47,25 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 </div>
 
 </div></div>';
+*/
+echo '
+
+
+<div class="item col-lg-4 col-md-6 col-xs-12 m-auto single_review">
+<div style="margin-bottom:20px;border:0px;background-color:#fff;" class="card">
+<div class="card-image">
+        <img class="img-fluid" src="https://avatars.dicebear.com/api/adventurer/' . $row["review_name"]. '.svg?skinColor=variant0'.rand(1,3).'" alt="alternative">
+    </div>
+    <div class="card-body">
+        <h4 class="card-title-prod">' . $row["review_name"]. '</h4>
+   </div>
+<div style="color:#1a9e42;font-weight:500;font-size: 11px;margin-top: -10px;"><div class="review-stars">' . $row["review_rating"]. '</div><i style="margin-left: 15px;" class="fas fa-check-square"></i> Verified</div>
+<p style="font-size: 14px;text-align: left;padding: 10px;line-height: 17px;">' . $row["review_text"]. '</p>
+</div>
+</div>
+
+
+';
 		
 		}
 
@@ -68,12 +82,12 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 
 
 <div class="pagination">
-    <a href="https://<?php echo $domain; ?>/assets/templates/load-review.php?product=<?php echo $t_product_name; ?>&page=1" class="next">Next</a>
+    <a href="https://<?php echo $domain; ?>/assets/templates/load-review.php?product=<?php echo $t_product_name; ?>&page=1" class="next ">Next</a>
 </div>
-<button class="load-more btn">Load More</button>
+<button class="load-more btn btn-solid-reg form-control-submit-button">Load More</button>
 </div>
 
-  </div>
+
   <script src="https://unpkg.com/@webcreate/infinite-ajax-scroll/dist/infinite-ajax-scroll.min.js"></script>
   <script>
   let ias = new InfiniteAjaxScroll('.contents', {
@@ -227,7 +241,7 @@ ias.on('appended', handler);
     </form>
     <h3 class="review_success">Your review has been sent! Will appear after will be approved.</h3>
   </div>
-</div>
+
 
 
 <script>

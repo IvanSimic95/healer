@@ -2,6 +2,10 @@
 <?php
 $t_product_name = "SOULMATE";
 
+$sql = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '".$t_product_name."' ORDER BY review_date DESC";
+$result = $conn->query($sql);
+$count = $result->num_rows;
+
 ?>
     <!-- Header -->
     <header class="ex-6-header">
@@ -21,8 +25,8 @@ $t_product_name = "SOULMATE";
 						<div class="header-box">
                         <h5 style="margin-top: 10px;">Soulmate Drawing & Reading</h5>
 						<h4 style="text-align: center;font-size: 15px;font-weight: 500;margin-top:-10px;">
-						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
-						<span style="font-size:13px;">55484 reviews</span>
+						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
+						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
 						</h4>
 						<p style="color: #000;text-align: left;padding: 0px 17px;margin-top: 23px;">
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> 99% Accuracy <br/>
@@ -37,7 +41,7 @@ $t_product_name = "SOULMATE";
 						
 						
 
-						<div class="form-container">
+						<div id="order" class="form-container">
 						<p style="text-align:center;margin-top: -20px;font-size: 15px;">Fill in the form below to book your reading!</p>
 							<form id="signUpForm" data-toggle="validator" data-focus="false">
 								<div class="form-group">
@@ -100,7 +104,7 @@ $t_product_name = "SOULMATE";
 	                     <p> <center> <b> A COMMITMENT TO PRIVACY: Digital Delivery Only </b> </center>   </p>
 	                     <p> Your order will be securely delivered to the email address you provide, and will also be readily accessible from the user dashboard. Rest assured, your physical address remains confidential.  </p>
 	
-                        <a style="width:100%;text-align:center;" class="btn-solid-reg" href="#">ORDER</a>
+                        <a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER</a>
                     </div> <br clear="all">
                 </div>  
                 <div class="col-lg-6">
@@ -112,64 +116,6 @@ $t_product_name = "SOULMATE";
          </div>
 	</div>
 
-<br/>	
-	
-	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
-         <div class="col-lg-12 col-xl-12">
-            <div style="margin-top: 15px;margin-bottom:15px;" class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">best selling products</h2>
-                </div>
-                <div class="col-sm-3 col-6 m-auto">
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
-                        <div class="card-body">
-                            <h4 class="card-title-prod">Soulmate Healer</h4>
-                       </div>
-					   <div class="card-image">
-                            <img class="img-fluid" src="/images/soulmate-02.png" alt="alternative">
-                        </div>
-                    </div>
-					<button onclick="location.href='cat01.html'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
-                </div>
-				<div class="col-sm-3 col-6 m-auto">
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
-                        <div class="card-body">
-                            <h4 class="card-title-prod">Psychic Soulmate</h4>
-                       </div>
-					   <div class="card-image">
-                            <img class="img-fluid" src="/images/soulmate-03.png" alt="alternative">
-                        </div>
-                    </div>
-					<button onclick="location.href='cat01.html'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
-                </div>
-				<div class="col-sm-3 col-6 m-auto">
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
-                        <div class="card-body">
-                            <h4 class="card-title-prod">Reading Soulmate</h4>
-                       </div>
-					   <div class="card-image">
-                            <img class="img-fluid" src="/images/soulmate-04.png" alt="alternative">
-                        </div>
-                    </div>
-					<button onclick="location.href='cat01.html'" style="border-radius: 0px 0px 5px 5px;;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
-                </div>
-				<div class="col-sm-3 col-6 m-auto">				
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
-                        <div class="card-body">
-                            <h4 class="card-title-prod">Drunk Soulmate</h4>
-                       </div>
-					   <div class="card-image">
-                            <img class="img-fluid" src="/images/soulmate-05.png" alt="alternative">
-                        </div>
-                    </div>
-					<button onclick="location.href='cat01.html'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
-                </div>
-				
-				<p style="max-width: 90%;line-height: 20px;font-size: 15px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu nown printer took a galley of type and scrambled it to make a type</p>				
-				
-            </div>
-         </div>
-	</div>
 
 <br/>	
 	
@@ -237,7 +183,7 @@ $t_product_name = "SOULMATE";
 					
 					
                 </div>
-                <div class="col-sm-3 col-6 m-auto">
+                <div class="col-lg-4 col-md-6 col-xs-12 m-auto">
                     <div style="margin-bottom:20px;border:0px;background-color:#fff;" class="card">
 					   <div class="card-image">
                             <img class="img-fluid" src="/images/soulmate-02.png" alt="alternative">
@@ -249,7 +195,7 @@ $t_product_name = "SOULMATE";
 						<p style="font-size: 14px;text-align: left;padding: 10px;line-height: 17px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st e and scrambled it to make a type specimen book.</p>
 					</div>
                 </div>
-                <div class="col-sm-3 col-6 m-auto">
+                <div class="col-lg-4 col-md-6 col-xs-12 m-auto">
                     <div style="margin-bottom:20px;border:0px;background-color:#fff;" class="card">
 					   <div class="card-image">
                             <img class="img-fluid" src="/images/soulmate-02.png" alt="alternative">
@@ -261,7 +207,7 @@ $t_product_name = "SOULMATE";
 						<p style="font-size: 14px;text-align: left;padding: 10px;line-height: 17px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st e and scrambled it to make a type specimen book.</p>
 					</div>
                 </div>
-                <div class="col-sm-3 col-6 m-auto">
+                <div class="col-lg-4 col-md-6 col-xs-12 m-auto">
                     <div style="margin-bottom:20px;border:0px;background-color:#fff;" class="card">
 					   <div class="card-image">
                             <img class="img-fluid" src="/images/soulmate-02.png" alt="alternative">
@@ -273,7 +219,7 @@ $t_product_name = "SOULMATE";
 						<p style="font-size: 14px;text-align: left;padding: 10px;line-height: 17px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st e and scrambled it to make a type specimen book.</p>
 					</div>
                 </div>
-                <div class="col-sm-3 col-6 m-auto">
+                <div class="col-lg-4 col-md-6 col-xs-12 m-auto">
                     <div style="margin-bottom:20px;border:0px;background-color:#fff;" class="card">
 					   <div class="card-image">
                             <img class="img-fluid" src="/images/soulmate-02.png" alt="alternative">
@@ -288,7 +234,7 @@ $t_product_name = "SOULMATE";
 				
 <br/>
 
-                <div class="col-sm-3 col-6 m-auto">
+                <div class="col-lg-4 col-md-6 col-xs-12 m-auto">
                     <div style="margin-bottom:20px;border:0px;background-color:#fff;" class="card">
 					   <div class="card-image">
                             <img class="img-fluid" src="/images/soulmate-02.png" alt="alternative">
@@ -300,7 +246,7 @@ $t_product_name = "SOULMATE";
 						<p style="font-size: 14px;text-align: left;padding: 10px;line-height: 17px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st e and scrambled it to make a type specimen book.</p>
 					</div>
                 </div>				
-                <div class="col-sm-3 col-6 m-auto">
+                <div class="col-lg-4 col-md-6 col-xs-12 m-auto">
                     <div style="margin-bottom:20px;border:0px;background-color:#fff;" class="card">
 					   <div class="card-image">
                             <img class="img-fluid" src="/images/soulmate-02.png" alt="alternative">
@@ -312,7 +258,7 @@ $t_product_name = "SOULMATE";
 						<p style="font-size: 14px;text-align: left;padding: 10px;line-height: 17px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st e and scrambled it to make a type specimen book.</p>
 					</div>
                 </div>
-                <div class="col-sm-3 col-6 m-auto">
+                <div class="col-lg-4 col-md-6 col-xs-12 m-auto">
                     <div style="margin-bottom:20px;border:0px;background-color:#fff;" class="card">
 					   <div class="card-image">
                             <img class="img-fluid" src="/images/soulmate-02.png" alt="alternative">
@@ -324,7 +270,7 @@ $t_product_name = "SOULMATE";
 						<p style="font-size: 14px;text-align: left;padding: 10px;line-height: 17px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's st e and scrambled it to make a type specimen book.</p>
 					</div>
                 </div>
-                <div class="col-sm-3 col-6 m-auto">
+                <div class="col-lg-4 col-md-6 col-xs-12 m-auto">
                     <div style="margin-bottom:20px;border:0px;background-color:#fff;" class="card">
 					   <div class="card-image">
                             <img class="img-fluid" src="/images/soulmate-02.png" alt="alternative">
@@ -340,7 +286,8 @@ $t_product_name = "SOULMATE";
             </div>
          </div>
 	</div>
-	
+    <br>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/bestseller.php'; ?>
 
 <br clear="all">			
 				

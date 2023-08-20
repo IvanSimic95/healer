@@ -11,15 +11,15 @@ $product = "SOULMATE";
 }
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/time.php';
-$perpage = 5;
+$perpage = 3;
 $offset = ($page-1) * $perpage; 
 	
-$offset = $offset + 10;
+$offset = $offset + 9;
 
 $total_pages_sql = "SELECT COUNT(*) FROM reviews WHERE product = '".$product."'";
 $result = mysqli_query($conn,$total_pages_sql);
 $total_rows = mysqli_fetch_array($result)[0];
-$total_rows = $total_rows - 10;
+$total_rows = $total_rows - 9;
 $total_pages = ceil($total_rows / $perpage);
 
 $nextpage = $page + 1;
@@ -34,31 +34,24 @@ $nextpage = $page + 1;
          // echo '<div class="single_review sides"><div class="review_content"><h3><span class="review-name">' . $row["review_name"]. '</span> <span class="verified-badge"><i class="fas fa-user-check"></i> Verfied Purchase</span><time>' . $row["review_date"]. '</time> ago</h3><div class="rating">' . $row["review_rating"]. '</div><div class="testimonial">' . $row["review_text"]. '</div></div></div>';
         $newdate = date('F jS, Y, H:i:s', strtotime($row["review_date"]));
         $time = time_ago($row["review_date"]);
-		echo '
-		<div class="item">
-<div class="single_review">
-<div class="review-header">
-
-<div class="review-author-img">
-<img src="https://avatars.dicebear.com/api/adventurer/' . $row["review_name"]. '.svg?skinColor=variant0'.rand(1,3).'" alt="' . $row["review_name"]. ' Avatar">
-</div> 
-
-<div class="review-rating">
-<div class="review-author-name">' . $row["review_name"]. '</div> 
-<div class="review-verified"><i aria-hidden="true" class="fas fa-user-check"></i> Verfied Purchase</div>
-<div class="review-date"><i aria-hidden="true" class="fa fa-clock-o"></i> <time class="format-me" title="' .$newdate. '">' . $time. '</time></div>
-<div class="review-stars">' . $row["review_rating"]. '</div>
-
-</div> 
+        echo '
 
 
-</div>
-
-<div class="review-content">
-' . $row["review_text"]. '
-</div>
-
-</div></div>';
+        <div class="single_review item col-lg-4 col-md-6 col-xs-12 m-auto">
+        <div style="margin-bottom:20px;border:0px;background-color:#fff;" class="card">
+        <div class="card-image">
+                <img class="img-fluid" src="https://avatars.dicebear.com/api/adventurer/' . $row["review_name"]. '.svg?skinColor=variant0'.rand(1,3).'" alt="alternative">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title-prod">' . $row["review_name"]. '</h4>
+           </div>
+        <div style="color:#1a9e42;font-weight:500;font-size: 11px;margin-top: -10px;"><span class="review-stars">' . $row["review_rating"]. '</span><i style="margin-left: 15px;" class="fas fa-check-square"></i> Verified</div>
+        <p style="font-size: 14px;text-align: left;padding: 10px;line-height: 17px;">' . $row["review_text"]. '</p>
+        </div>
+        </div>
+        
+        
+        ';
 		
 		}
 
@@ -76,7 +69,7 @@ $nextpage = $page + 1;
      ?>
 	 
 	 <div class="pagination">
-    <a href="https://<?php echo $domain; ?>/assets/templates/load-review.php?product=<?php echo $product; ?>&page=<?php echo $nextpage; ?>" class="next">Next</a>
+    <a href="https://<?php echo $domain; ?>/assets/templates/load-review.php?product=<?php echo $product; ?>&page=<?php echo $nextpage; ?>" class="next btn-solid-reg form-control-submit-button">Next</a>
 </div>
 <?php
 } ?>

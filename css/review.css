@@ -259,7 +259,7 @@ li.product .sprw-rating-container:hover .sprw-rating-info-wrap,
 }
 
 .sprw-rating-bar-wrap {
-    width: calc(100% - 170px)
+    width: 100%;
 }
 
 .sprw-average-rating-wrap .sprw-number-outer-wrap {
@@ -5308,7 +5308,7 @@ body.rtl .sprw-template-four.sprw-grid .sprw-outer-meta-wrapper {
 }
 
 .sprw-rating-bar-wrap {
-    width: calc(100% - 140px);
+    width: 100%;
 }
 
 .sprw-rating-number {

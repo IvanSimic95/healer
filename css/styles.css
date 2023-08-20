@@ -1699,6 +1699,7 @@ a:hover.back-to-top {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
+	background-size: cover;
 }
 
 .ex-6-header h1,
