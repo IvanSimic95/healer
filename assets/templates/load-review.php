@@ -37,7 +37,7 @@ $nextpage = $page + 1;
         echo '
 
 
-        <div class="single_review item col-lg-4 col-md-6 col-xs-6 m-auto">
+        <div class="single_review item col-lg-4 col-md-6 col-6 m-auto">
         <div style="margin-bottom:20px;border:0px;background-color:#fff;" class="card">
         <div class="card-image">
                 <img class="img-fluid" src="https://avatars.dicebear.com/api/adventurer/' . $row["review_name"]. '.svg?skinColor=variant0'.rand(1,3).'" alt="alternative">
