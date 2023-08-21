@@ -1,4 +1,6 @@
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
+<?php 
+$title = "Home | Soulmate Healer";
+include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 
 
     <!-- Header -->
