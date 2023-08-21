@@ -1,5 +1,6 @@
 <?php 
 $title = "Home | Soulmate Healer";
+$description = "Born with an innate gift, the Soulmate Healer doesn't merely perceive the future; he pierces through the veils of time";
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 
 
