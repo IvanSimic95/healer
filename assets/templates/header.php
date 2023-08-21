@@ -89,7 +89,11 @@ $metatags
                             <!--<a class="dropdown-item" href="upsell.html"><span class="item-text">UPSELL 01</span></a>-->
 
                         </div>
-                    </li>					
+                    </li>	
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">CONTACT</a>
+                    </li>
 					
                     <li class="nav-item">
                         <a class="nav-link" href="#">BLOG</a>
