@@ -5,7 +5,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
  <link rel="stylesheet" href="/css/faq.css">
 
     <!-- Header -->
-    <header class="ex-6-header">
+    <header class="ex-6-header" style="min-height:80vh">
         <div class="header-content">
             <div class="container">
                 <div class="row header-box">

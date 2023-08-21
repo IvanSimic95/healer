@@ -5,7 +5,7 @@
               <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col first">
-                      
+                   <img style="max-width:250px;" src="/images/logo.png" alt="alternative">
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
