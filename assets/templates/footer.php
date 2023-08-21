@@ -14,11 +14,11 @@
                         <ul class="list-unstyled li-space-lg p-small">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body"> <a class="white" href="https://soulmatehealer.com/tos.php">Terms & Conditions</a></div>
+                                <div class="media-body"> <a class="white" href="/tos">Terms & Conditions</a></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body"> <a class="white" href="https://soulmatehealer.com/tos.php">REFUND POLICY</a></div>
+                                <div class="media-body"> <a class="white" href="/tos/#refunds">REFUND POLICY</a></div>
                             </li>
                         </ul>
                     </div>
@@ -29,11 +29,11 @@
                         <ul class="list-unstyled li-space-lg p-small">
                             <li class="media">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <div class="media-body">america</div>
+                                <div class="media-body"><a class="white" href="/contact">Contact Us!</a></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-envelope"></i>
-                                <div class="media-body"><a class="white" href="mailto:contact@nato.com">contact@nato.com</a> <i class="fas fa-globe"></i><a class="white" href="#">mail@nato.com</a></div>
+                                <div class="media-body"><a class="white" href="mailto:info@soulmatehealer.com">info@soulmatehealer.com</a> </div>
                             </li>
                         </ul>
                     </div> 

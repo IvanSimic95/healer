@@ -5,13 +5,8 @@
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 
-<div class="breadcrumbs">
-  <div class="container">
-    <a href="/index.php">Soulmate Healer</a> > Terms & Conditions
-  </div>
-</div>
-
-<div class="general_section">
+<header class="ex-6-header">
+<div class="general_section header-content">
   <div class="container">
     <div class="title_area"><h1>Terms and Conditions</h1></div>
     <div class="paragraph_area">
@@ -138,7 +133,8 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
     </div>
   </div>
 </div>
-
+<br>
+        </header>
 <style>
 .title_area, .paragraph_area, .sub_area{
     background-color: #fff;
@@ -149,14 +145,14 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 
 h2 {
     font-weight: bold;
-    background: -webkit-linear-gradient(#d130eb,#4a30eb 80%,#2b216c);
+    background: -webkit-linear-gradient(#FF5F6D, #f39512 80%, #FFC371);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .title_area > h1 {
 margin-bottom:0;
     font-weight: bold;
-    background: -webkit-linear-gradient(#d130eb,#4a30eb 80%,#2b216c);
+    background: -webkit-linear-gradient(#FF5F6D, #f39512 80%, #FFC371);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -164,7 +160,9 @@ margin-bottom:0;
 .title_area{
 text-align:center;
 }
-
+.ex-6-header p{
+  max-width:none!important;
+}
 </style>
 
 

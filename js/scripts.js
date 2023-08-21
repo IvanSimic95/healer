@@ -140,6 +140,62 @@
     });
 
 
+     /* Contact Form */
+     $("#contactForm").validator().on("submit", function(event) {
+    	if (event.isDefaultPrevented()) {
+            // handle the invalid form...
+            sformError();
+            ssubmitMSG(false, "Please fill all fields!");
+        } else {
+            // everything looks good!
+            event.preventDefault();
+            csubmitForm();
+        }
+    });
+
+
+    function csubmitForm() {
+        // initiate variables with form content
+		var email = $("#semail").val();
+		var name = $("#sname").val();
+		var password = $("#spassword").val();
+        var terms = $("#sterms").val();
+
+        $("#error").hide();
+        $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Loading...');
+        $("#submitbtn").prop('disabled', true);
+        
+        $.ajax({
+            type:"POST",
+            url: "/ajax/order.php",
+            dataType: 'json',
+            data: $(this).serialize(),
+            success: function(data){
+              var SubmitStatus = data[0];
+              var DataMSG = data[1];
+ 
+              if (SubmitStatus == "Success"){
+              var Redirect = data[2];
+              $("#show_message").html(DataMSG);
+              $("#show_message").fadeIn();
+              $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Redirecting...');
+              
+              setTimeout(function(){
+                window.location.href = Redirect;
+              }, 2000);
+
+              }else{
+              $("#error").html(DataMSG);
+              $("#error").fadeIn();
+              $("#submitbtn").html("Error Occured!");
+              }
+
+            }
+        });
+	}
+
+
+
     /* Sign Up Form */
     $("#signUpForm").validator().on("submit", function(event) {
     	if (event.isDefaultPrevented()) {
