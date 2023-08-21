@@ -210,6 +210,7 @@ if(getUrlParameter('review')) {
 </script>
 <style>
 .contents{
+  width:100%;
 	padding-bottom: 15px;
     border-bottom: solid 1px #f3f4f7;
     background-color: #fff;
