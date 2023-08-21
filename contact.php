@@ -1,6 +1,6 @@
 <?php 
-$title = "Home | Soulmate Healer";
-$description = "Born with an innate gift, the Soulmate Healer doesn't merely perceive the future; he pierces through the veils of time";
+$title = "Contact Us | Soulmate Healer";
+$description = "Need help with your order? send us a message!";
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
  <link rel="stylesheet" href="/css/faq.css">
 
