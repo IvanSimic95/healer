@@ -76,7 +76,7 @@ echo '
 
     } else {
       echo '
-      <div class="alert alert-primary" role="alert">
+      <div class="alert alert-primary" role="alert" style="width:100%;font-size:110%;font-weight:bold;">
       No Reviews Yet!
 </div>
       ';
