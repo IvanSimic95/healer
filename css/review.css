@@ -5320,7 +5320,7 @@ body.rtl .sprw-template-four.sprw-grid .sprw-outer-meta-wrapper {
 }
 
 .fa-star {
-    background: -webkit-linear-gradient(#FF5F6D, #f39512 80%, #FFC371);); 
+    background: -webkit-linear-gradient(#FF5F6D, #f39512 80%, #FFC371); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 16px;
