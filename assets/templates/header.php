@@ -99,6 +99,10 @@ $metatags
                         <a class="nav-link" href="#">BLOG</a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">DASHBOARD</a>
+                    </li>
+
                 </ul>
             </div>
         </div> <!-- end of container -->
