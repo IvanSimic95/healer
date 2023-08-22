@@ -46,7 +46,18 @@
     margin-bottom: 25px
 ;">
                 Disclaimer: The information contained herein should not be used as a substitute for the advice of appropriately qualified and licensed person. According to the laws in force, I must state that my services are for entertainments purposes only. I have no liability and/or responsibility for any actions and/or decisions any buyer/client chooses to take or make based on his/her consultation. You acknowledge that I am not a licensed psychologist, lawyer, or health care professional and my services do not replace the care of lawyers, psychologists, or other healthcare professionals. Tarot and numerology are in no way to be construed or substituted as psychological counseling or any other type of therapy or medical advice. I will at all times exercise my best professional efforts, skills, and care.</p></div>
-         
+         <div class="row"  style="
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 25px
+;">
+<div class="col-md-3 col-sm-12"><img src="/images/60.png" style="max-width:200px;"></div>
+<div class="col-md-9 col-sm-12">
+    <h3 style="margin-bottom:40px;">100% Satisfaction Guarantee!</h3>
+    <p>You are fully protected by our <b>100% Satisaction-Guaranteee</b>. So for that reason, I'll give you 60 days money back guarantee. I for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send me an email and I'll refund every penny of your order cost.</p>
+</div>
+</div>
         </div> <!-- end of container -->
     </div> <!-- end of footer -->  
     <!-- end of footer -->
