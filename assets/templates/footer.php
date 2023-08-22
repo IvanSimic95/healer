@@ -55,7 +55,7 @@
 <div class="col-md-3 col-sm-12"><img src="/images/60.png" style="max-width:200px;"></div>
 <div class="col-md-9 col-sm-12">
     <h3 style="margin-bottom:40px;">100% Satisfaction Guarantee!</h3>
-    <p>You are fully protected by our <b>100% Satisaction-Guaranteee</b>. So for that reason, I'll give you 60 days money back guarantee. I for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send me an email and I'll refund every penny of your order cost.</p>
+    <p>You are fully protected by our <b>100% Satisfaction-Guaranteee</b>. So for that reason, I'll give you 60 days money back guarantee. If for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send me an email and I'll refund every penny of your order cost.</p>
 </div>
 </div>
         </div> <!-- end of container -->
