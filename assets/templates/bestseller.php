@@ -9,7 +9,7 @@
                             <h4 class="card-title-prod">SOULMATE PSYCHIC DRAWING</h4>
                        </div>
 					    <div style="background-color: #fff;margin-bottom: 20px;" class="card-image">
-                            <img class="img-fluid" src="/images/soulmate-0.png" alt="alternative">
+                            <img class="img-fluid" src="/images/soulmate-01.png" alt="alternative">
 							<div style="padding:5px;margin-bottom:0px;">
 							<p style="font-size: 14px;line-height: 18px;margin-top:5px;margin-bottom: 10px;">Soulmate Healer's psychic drawings capture the essence of your destined Soulmate. Using intuitive abilities, each portrait reveals the face and energy of your other half, awaiting your discovery.</p>
 							<button onclick="location.href='/soulmate-drawing.php'" style="border-radius: 0.25rem;height: 2rem;" class="form-control-submit-button">READ MORE</button>
