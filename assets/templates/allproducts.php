@@ -10,7 +10,7 @@
                             <h4 class="card-title-prod">SOULMATE Psychic Drawing</h4>
                        </div>
 					   <div class="card-image">
-                            <img class="img-fluid" src="/images/soulmate-02.png" alt="alternative">
+                            <img class="img-fluid" src="/images/soulmate-01.png" alt="alternative">
                         </div>
                     </div>
 					<button onclick="location.href='/soulmate-drawing.php'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
@@ -21,7 +21,7 @@
                             <h4 class="card-title-prod">TWIN FLAME Psychic Drawing</h4>
                        </div>
 					   <div class="card-image">
-                            <img class="img-fluid" src="/images/soulmate-03.png" alt="alternative">
+                            <img class="img-fluid" src="/images/twin-flame-01.png" alt="alternative">
                         </div>
                     </div>
 					<button onclick="location.href='/twin-flame.php'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
@@ -32,7 +32,7 @@
                             <h4 class="card-title-prod">FUTURE SPOUSE Psychic Drawing</h4>
                        </div>
 					   <div class="card-image">
-                            <img class="img-fluid" src="/images/soulmate-04.png" alt="alternative">
+                            <img class="img-fluid" src="/images/future-spouse-01.png" alt="alternative">
                         </div>
                     </div>
 					<button onclick="location.href='/future-spouse.php'" style="border-radius: 0px 0px 5px 5px;;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
