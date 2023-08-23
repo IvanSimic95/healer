@@ -43,7 +43,7 @@
                             <h4 class="card-title-prod">FUTURE BABY Psychic Drawing</h4>
                        </div>
 					   <div class="card-image">
-                            <img class="img-fluid" src="/images/soulmate-05.png" alt="alternative">
+                            <img class="img-fluid" src="/images/future-baby.png" alt="alternative">
                         </div>
                     </div>
 					<button onclick="location.href='/future-baby.php'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
@@ -55,7 +55,7 @@
                             <h4 class="card-title-prod">CLEANISING & PURIFICATION</h4>
                        </div>
 					   <div class="card-image">
-                            <img class="img-fluid" src="/images/soulmate-04.png" alt="alternative">
+                            <img class="img-fluid" src="/images/purification-01.png" alt="alternative">
                         </div>
                     </div>
 					<button onclick="location.href='/purification.php'" style="border-radius: 0px 0px 5px 5px;;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>

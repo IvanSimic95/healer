@@ -23,7 +23,7 @@ $count = $result->num_rows;
                    <div class="col-lg-6 col-xl-7">
                         <div class="image-container">
                             <div class="img-wrapper">
-                                <img class="img-fluid" src="/images/soulmate-01.png" style="border-radius: 0.5rem;" alt="alternative">
+                                <img class="img-fluid" src="/images/purification-01.png" style="border-radius: 0.5rem;" alt="alternative">
                             </div>  
                         </div>  
                    </div>				
