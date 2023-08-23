@@ -130,6 +130,16 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
         <p><strong>Changes to this anti-spam policy</strong></p>
         <p>https://soulmatehealer.com may amend this anti-spam policy at any time by publishing a new version on this website.</p>
       </div>
+      <div class="sub_area" id="company">
+        <h2>Company Details</h2>
+      <p>P L A T I N U M &nbsp; M E D I A </p>
+      <p>R O M A N I A </p>
+      <p>+1 3522 194 990 </p>
+      <p>info@soulmatehealer.com </p>
+
+
+
+      </div>
     </div>
   </div>
 </div>
