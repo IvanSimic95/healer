@@ -53,11 +53,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
     </div>
     <div class="sub_area" id="refunds">
       <h2>Digital Goods Refund Policy</h2>
-      <p>We offer refunds on purchase of our digital goods. However, since we deal with digital goods, we honor requests for refunds for the following reasons:</p>
-      <p>Non-delivery of the product: Due to an issue with the mail, you do not receive a delivery e-mail from us. Depending on the price of the product, https://soulmatehealer.com may require you to first submit proof that you have submitted a report to the mail service describing the missing item;</p>
-      <p>Download issues: You have problems that prevent you from downloading the product. https://soulmatehealer.com recommends that you contact the support team for your browser provider, as https://soulmatehealer.com ensures that our software can be downloaded with all major browsers, and this problem usually arises from a customer’s issue with either their browser, firewall, or network;</p>
-      <p>Irreparable defects with the software: Although all the products are thoroughly tested before release, unexpected errors may occur. This reason should be submitted to our Support Team for its approval of your refund request;</p>
-      <p>Product not-as-described: A request based on this reason is addressed on a case-by-case basis and subject to our approval. To prevent this kind of claim from arising, every customer is encouraged to check free samples ( in the form of video overviews, demo links, product samples, screen shots) of each type of the product offered before making a purchase.</p>
+          <p>You are fully protected by our 100% Satisfaction-Guaranteee. So for that reason, We will give you 60 days money back guarantee. If for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send us an email and we will refund you your order.</p>
     </div>
     <div class="sub_area" id="testimonials_disclosure">
       <h2>Testimonials Disclosure</h2>
