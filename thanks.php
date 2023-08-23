@@ -1,6 +1,6 @@
 <?php 
-$title = "User Dashboard | Soulmate Healer";
-$description = "Login to your account and access your orders!";
+$title = "Thank you for your Order! | Soulmate Healer";
+$description = "You have finished your order process!";
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <style>
     .col-md-offset-3{
