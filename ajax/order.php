@@ -20,8 +20,6 @@ $interval = $birthday->diff(new DateTime);
 
 $user_age = $interval->y;
 
-$pixel_number = $_POST['pixel_number'];
-
 
 $user_name = $_POST['form_name'];
 $user_name = htmlspecialchars($user_name, ENT_QUOTES);
@@ -30,17 +28,6 @@ $user_email = $_POST['form_email'];
 $order_product = $_POST['product'];
 $order_priority = $_POST['priority'];
 $order_date = date('Y-m-d H:i:s');
-
-$affid = $_POST['aff_id'];
-$subid = $_POST['subid'];
-$subid2 = $_POST['subid2'];
-
-$newaffid = $_POST['affid'];
-$s1 = $_POST['s1'];
-$s2 = $_POST['s2'];
-
-isset($_POST['fbp']) ? $uFBP = $_POST['fbp'] : $uFBP = "";
-isset($_POST['fbc']) ? $uFBC = $_POST['fbc'] : $uFBC = "";
 
 $parser = new TheIconic\NameParser\Parser();
 $name = $parser->parse($user_name);
@@ -58,8 +45,6 @@ $fbCampaign = $_SESSION['fbCampaign'];
 $fbAdset = $_SESSION['fbAdset'];
 $fbAd = $_SESSION['fbAd'];
 
-$user_agent = $_POST['user_agent'];
-$user_ip = $_POST['user_ip'];
 
 if($userGender=="male"){
 $partnerGender = "female";
@@ -67,35 +52,23 @@ $partnerGender = "female";
 $partnerGender = "male";
 }
 
-$returnURL = "https://".$domain."/success.php";
-$returnEncoded = base64_encode($returnURL);
 
-
-
-$_SESSION['orderFName'] = $fName;
-$_SESSION['orderLName'] = $lName;
-$_SESSION['orderAge'] = $user_age;
-$_SESSION['orderBirthday'] = $user_birthday;
-$_SESSION['orderGender'] = $userGender;
-$_SESSION['orderPartnerGender'] = $partnerGender;
-
-
-if($order_product == "futurespouse"){
+if($order_product == "soulmate"){
 
   switch ($order_priority){
     case "48":
-      $cbproduct = "16";
-      $cbprice = "29.99";
+      $cbproduct = "513356";
+      $cbprice = "29";
     break;
   
     case "24":
-      $cbproduct = "17";
-      $cbprice = "39.99";
+      $cbproduct = "513365";
+      $cbprice = "39";
     break;
   
     case "12":
-      $cbproduct = "18";
-      $cbprice = "49.99";
+      $cbproduct = "513366";
+      $cbprice = "49";
     break;
   }
 
@@ -158,32 +131,21 @@ case "Twinflame":
                     break;
 }
 
-$sql = "INSERT INTO orders (cookie_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, user_sex, genderAcc, pick_sex, user_agent, user_ip, pixel, fbc, fbp, fbCampaign, fbAdset, fbAd, affid, s1, s2) 
-VALUES ('$cookie_id', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender', '$user_agent', '$user_ip', '$pixel_number', '$uFBC', '$uFBP', '$fbCampaign', '$fbAdset', '$fbAd', '$newaffid', '$s1', '$s2')";
+$sql = "INSERT INTO orders (user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, user_sex, genderAcc, pick_sex) 
+VALUES ('$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender')";
 
 if(mysqli_query($conn,$sql)){
 $lastRowInsert = mysqli_insert_id($conn);
-$subidfull5 = $lastRowInsert."|".$domain."|".$cookie_id."|".$cookie_id2."|".$cookie_id3;
-$subid5 = base64_encode($subidfull5);
 $submitStatus = "Success";
 $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
-$redirectPayment = "https://gabeaff_melissapsy.pay.clickbank.net/?cbskin=39040&cbtimer=1593&cbfid=52316&cbitems=".$cbproduct."&name=".$user_name."&email=".$user_email."&cookie_ID=".$cookie_id."&order_ID=".$lastRowInsert."&main_ID=".$lastRowInsert."&encdata=".$subid5;
+$redirectPayment = "https://www.digistore24.com/product/513356?custom=".$lastRowInsert;
 
-$recoverPayment = "https://gabeaff_melissapsy.pay.clickbank.net/?cbskin=39040&cbtimer=1661&cbfid=52316&cbitems=".$cbproduct."&name=".$user_name."&email=".$user_email."&cookie_ID=".$cookie_id."&order_ID=".$lastRowInsert."&encdata=".$subid5."&main_ID=".$lastRowInsert."&femail=recovery&coupon=KM6CMMI";
-
-$sqlupdate = "UPDATE `orders` SET `cart_recover`='$recoverPayment' WHERE order_id='$lastRowInsert'";
-if ($conn->query($sqlupdate) === TRUE) {
- 
-} 
 
 
 
 $returnData = [$submitStatus,$SuccessMessage,$redirectPayment];
 
 $_SESSION['UserEmail'] = $user_email;
-
-$_SESSION['fbc'] = $UserFBC;
-$_SESSION['fbp'] = $UserFBP;
 
 $_SESSION['fbfirepixel'] = 1;
 $_SESSION['fborderID'] = $lastRowInsert;
