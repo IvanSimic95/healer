@@ -290,6 +290,45 @@ if(isset($_GET['utm_campaign'])){
     }
   
   }
-  
 
-?>
+
+
+function autologin($userID)
+{
+  //START Database Configuration
+$domain = $_SERVER['HTTP_HOST'];
+if($domain == "healer.test"){
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "healer";
+	$base_url = "https://healer.test";
+}else{
+    $servername = "localhost";
+    $username = "soulmat1_user";
+    $password = ";w[#i&[zcrm?";
+    $dbname = "soulmat1_db";
+	$base_url = "https://soulmatehealer.com";
+}
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  $sql2 = "SELECT * FROM users WHERE id = '".$userID."'";
+  $result2 = $conn->query($sql2);
+  $row2 = $result2->fetch_assoc();
+
+  $genderAcc = $row2['genderAcc'];
+  $UserGender = $row2['gender'];
+  $PartnerGender = $row2['partner_gender'];
+
+  $row5 = mysqli_num_rows($result2);
+  if ($row5 > 0){
+
+        // set username in the session
+        $_SESSION['login_email'] = $row2['email'];;
+        $_SESSION['login_id']  = $row2['id'];;
+
+
+        return true;
+    }
+
+    return false;
+}
