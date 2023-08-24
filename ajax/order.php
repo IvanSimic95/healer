@@ -66,7 +66,7 @@ if($order_product == "soulmate"){
       $cbprice = "39";
     break;
   
-    case "12":
+    case "6":
       $cbproduct = "513366";
       $cbprice = "49";
     break;
@@ -86,7 +86,7 @@ switch ($order_priority){
     $cbprice = "39";
   break;
 
-  case "12":
+  case "6":
     $cbproduct = "513428";
     $cbprice = "49";
   break;
@@ -106,7 +106,7 @@ switch ($order_priority){
     $cbprice = "39";
   break;
 
-  case "12":
+  case "6":
     $cbproduct = "513432";
     $cbprice = "49";
   break;
@@ -125,7 +125,7 @@ switch ($order_priority){
     $cbprice = "39";
   break;
 
-  case "12":
+  case "6":
     $cbproduct = "513428";
     $cbprice = "49";
   break;

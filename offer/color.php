@@ -113,11 +113,18 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
 
 
                 <div class="p-4" style="border:2px solid orange; border-radius:0.5rem;background-color: white;">
-                    <div class="row m-0 p-0" style="border:1px solid;border-color: rgba(47, 47, 47, 0.168627);border-radius:0.33rem;">
+                    <div class="row m-0 p-0 progress-pc" style="border:1px solid;border-color: rgba(47, 47, 47, 0.168627);border-radius:0.33rem;">
                         <div class="col-12 col-sm-12 col-md-4" style="padding:10px; font-weight:bold;">STEP 1: ORDER COMPLETE</div>
                         <div class="col-12 col-sm-12 col-md-4" style="padding:10px; background: orange; color:white; font-weight:bold;">STEP 2.1: CUSTOMIZE ORDER</div>
                         <div class="col-12 col-sm-12 col-md-4" style="padding:10px; font-weight:bold;">STEP 3: SELECTIONS COMPLETED</div>
                     </div>
+
+                    <div class="row m-0 p-0 progress-phone" style="border:1px solid;border-color: rgba(47, 47, 47, 0.168627);border-radius:0.33rem;">
+                        <div class="col-4 " style="padding:10px; font-weight:bold;">STEP 1</div>
+                        <div class="col-4 " style="padding:10px; background: orange; color:white; font-weight:bold;">STEP 2</div>
+                        <div class="col-4 " style="padding:10px; font-weight:bold;">STEP 3</div>
+                    </div>
+
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped_active progressbar_w_75" role="progressbar" style="background-color: orange;">Almost Complete...</div>
                     </div>
@@ -132,8 +139,10 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
                     <div style="padding:25px;"><p style="font-size: 23px;">Simply upgrade below for just $10</p>  </div> 
                     
                     
-                    <a href="#yes" class="elButton elButtonSubtle elButtonColor1 elButtonFluid elFont_opensans elButtonSize3 elButtonShadow3 mfs_18" style="" id="undefined-394">
-                    <span class="elButtonMain"><i class="fa fa-shopping-cart fa_prepended"></i> YES! Please Upgrade to Color <i class="fa fa_appended"></i></span></a>
+
+                    <a href="#yes" id="submitbtn" type="submit" class="form-control-submit-button submit-pc"><i class="fa fa-shopping-cart fa_prepended"></i> YES! Please Upgrade to Color</a>
+
+                    <a href="#yes" id="submitbtn" type="submit" class="form-control-submit-button submit-phone"><i class="fa fa-shopping-cart fa_prepended"></i> Upgrade!</a>
 
                     <div style="padding:25px;"><a href="#no" id="link-8186-428-431" class="" target="_parent">No Thanks, I don't want to see my soulmates eye color</a></div>
 
@@ -148,6 +157,43 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
         </div>
 
         <style>
+            .submit-pc, .progress-pc{
+                display:flex;
+            }
+            .submit-phone, .progress-phone{
+                display:none;
+            }
+            @media only screen and (max-width: 400px) {
+                .submit-pc{
+                    display:none;
+                }
+                .submit-phone{
+                display:inline-block;
+            }
+                
+            }
+
+            @media only screen and (max-width: 768px) {
+                .progress-pc{
+                    display:none;
+                }
+                .progress-phone{
+                display:flex;
+            }
+                
+            }
+            .form-control-submit-button{
+                font-size: 28px;
+    font-weight: bold;
+    /* vertical-align: middle; */
+    line-height: 50px;
+    padding: 15px 35px 15px 35px;
+    height: 80px;
+    border-radius: 0.33rem;
+    width: auto;
+    background-color: orange;
+    text-decoration: none;
+            }
             #finalnotice {
                 color: #3c763d;
                 background-color: #dff0d8;
