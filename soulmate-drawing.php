@@ -42,8 +42,8 @@ $count = $result->num_rows;
 						</p>
 						
 						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$29</h2>  
-                        <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$299</h2> 
-						<p>You save <span class="saveda"><b>$270</b> (90%)</span></p>
+                        <h2 class="old_price" style="display:none!important; font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$299</h2> 
+						<p style="display:none;">You save <span class="saveda"><b>$270</b> (90%)</span></p>
 						</div>
 						
 						
@@ -80,7 +80,7 @@ $count = $result->num_rows;
                                     <input id="prio48" type="radio" name="priority" value="48" checked="true">
                                     <label for="prio48"> <span><i  class="fas fa-clock" aria-hidden="true"></i>48h</span></label>
                                 </div>
-                                
+
                             <input class="product" type="hidden" name="product" value="soulmate">
                             
 
