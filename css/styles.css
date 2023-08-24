@@ -1697,10 +1697,21 @@ a:hover.back-to-top {
 	min-height: 100vh;
 	background-image: url("soulmate-bg.png");
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-position: center;
 	background-size: cover;
 }
+@supports ( -webkit-touch-callout : none) {
+	.ex-6-header{
+	background-attachment:scroll
+	}
+	}
+	
+	@supports not ( -webkit-touch-callout : none) {
+		.ex-6-header {
+	background-attachment: fixed;
+	}
+	}
 
 .ex-6-header h1,
 .ex-6-header p {
