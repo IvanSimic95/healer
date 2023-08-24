@@ -315,10 +315,6 @@ if($domain == "healer.test"){
   $result2 = $conn->query($sql2);
   $row2 = $result2->fetch_assoc();
 
-  $genderAcc = $row2['genderAcc'];
-  $UserGender = $row2['gender'];
-  $PartnerGender = $row2['partner_gender'];
-
   $row5 = mysqli_num_rows($result2);
   if ($row5 > 0){
 

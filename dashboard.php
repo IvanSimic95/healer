@@ -4,11 +4,29 @@ $description = "Login to your account and access your orders!";
 include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php';
 
 if (isset($_POST['form_submit'])) {
-    $autologin = $_POST['autologin'];
-    $userID = $_POST['userID'];
-    if($autologin == "yes"){
-        autologin($userID);
-    }
+    if(isset($_POST['autologin'])){
+        $autologin = $_POST['autologin'];
+        $userID = $_POST['userID'];
+        if($autologin == "yes"){
+            autologin($userID);
+        }
+    }else{
+        $email = $_POST['email'];
+        
+
+        $sql2 = "SELECT * FROM users WHERE email = '".$email."'";
+        $result2 = $conn->query($sql2);
+        $row2 = $result2->fetch_assoc();
+
+        $row5 = mysqli_num_rows($result2);
+        if ($row5 > 0){
+        // set username in the session
+        $_SESSION['login_email'] = $row2['email'];;
+        $_SESSION['login_id']  = $row2['id'];;
+        }else{
+            $TextError = "Can't find an account with that email";
+        }
+    } 
 }
 
 

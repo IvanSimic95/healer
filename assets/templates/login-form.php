@@ -19,7 +19,7 @@
                     <form id="contactForm" data-toggle="validator" data-focus="false">
 
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="semail" required>
+                            <input type="email" class="form-control-input" id="semail" name="email" required>
                             <label class="label-control" for="semail">Email*</label>
                             <div class="help-block with-errors"></div>
                         </div>

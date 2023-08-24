@@ -1,4 +1,4 @@
-<div class="container" style="max-width:600px;">
+<div class="container" style="max-width:900px;">
 
 
     <div style="margin-top:0px;">
@@ -16,6 +16,11 @@
             <div class="wrap-white">
                 You are logged in!
             </div>
+
+            <div class="wrap-white">
+                <a href="/logout/">Logout</a>
+            </div>
+
         </div>
 
 
