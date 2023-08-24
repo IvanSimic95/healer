@@ -333,9 +333,8 @@ if($domain == "healer.test"){
 function logout()
 {
 
-        
-        $_SESSION['login_email'] = NULL;
-        $_SESSION['login_id']  = NULL;
+        unset($_SESSION['login_email']);
+        unset($_SESSION['login_id']);
         session_destroy();
 
 
