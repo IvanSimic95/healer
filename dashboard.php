@@ -10,7 +10,9 @@ if (isset($_POST['form_submit'])) {
         if($autologin == "yes"){
             autologin($userID);
         }
+        echo "autologin";
     }else{
+        echo "checking email...";
         $email = $_POST['email'];
         
 
