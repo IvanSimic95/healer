@@ -131,8 +131,37 @@ case "Twinflame":
                     break;
 }
 
-$sql = "INSERT INTO orders (user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, user_sex, genderAcc, pick_sex) 
-VALUES ('$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender')";
+
+$sql5 = "SELECT * FROM users WHERE email = '".$user_email."'";
+    $result5 = $conn->query($sql5);
+    if ($result5){
+        $row5 = mysqli_num_rows($result5);
+            if ($row5 > 0){
+                $createUser = 0;
+                $row2 = $result5->fetch_assoc();
+                $userID = $row2['id'];
+            }else{
+                $createUser = 1;
+            }
+    }
+
+    if($createUser == 1){
+        $sql65 = "INSERT INTO users (first_name, last_name, full_name, email, age, dob, genderAcc, gender, partner_gender)
+        VALUES ('$fName', '$lName', '$user_name', '$user_email', '$user_age', '$user_birthday', '$userGenderAcc', '$userGender','$partnerGender')";
+
+        
+        if ($conn->query($sql65) === TRUE) {
+            $userID = mysqli_insert_id($conn);
+        } else {
+            //Error
+        }
+        
+
+    }
+    
+
+$sql = "INSERT INTO orders (user_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, gender, genderAcc, partner_gender) 
+VALUES ('$userID', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender')";
 
 if(mysqli_query($conn,$sql)){
 $lastRowInsert = mysqli_insert_id($conn);
@@ -146,6 +175,7 @@ $redirectPayment = "https://www.digistore24.com/product/513356?custom=".$lastRow
 $returnData = [$submitStatus,$SuccessMessage,$redirectPayment];
 
 $_SESSION['UserEmail'] = $user_email;
+$_SESSION['UserID'] = $userID;
 
 $_SESSION['fbfirepixel'] = 1;
 $_SESSION['fborderID'] = $lastRowInsert;
