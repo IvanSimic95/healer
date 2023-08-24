@@ -190,9 +190,11 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
     padding: 15px 35px 15px 35px;
     height: 80px;
     border-radius: 0.33rem;
-    width: auto;
+
     background-color: orange;
     text-decoration: none;
+    width: fit-content;
+    margin: 0 auto;
             }
             #finalnotice {
                 color: #3c763d;
