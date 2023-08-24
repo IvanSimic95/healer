@@ -70,7 +70,7 @@ if($t == "yes"){
             $UserGender = $row2['gender'];
             $PartnerGender = $row2['partner_gender'];
 
-            if($genderAcc >= 95){ // AT END CHANGE THIS TO >= !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            if($genderAcc >= 95){
                 $thankyou = 1;
             }else{
 
@@ -110,7 +110,8 @@ if($t == "yes"){
  </div>
  <div class="wrap-white" style="padding-top:30px;padding-bottom:40px;">
  
-        <h3 id="finalnotice">Your order is now paid for &amp; you will receive an email with your order details<br></h3>
+        <h3 id="finalnotice">You will receive your order in 12-48 hours depending on priority you picked and it will be delivered via email!<br></h3>
+        <h3 id="finalnoticeinfo">If you need help or support with your order please reach out to us by clicking <a href="/contact">Here</a><br></h3>
         <?php if($c != "none"){ ?>
         <form id="autologin" data-toggle="validator" data-focus="false" action="/dashboard" method="post">
         <input class="orderID" type="hidden" name="autologin" value="yes">
@@ -119,9 +120,11 @@ if($t == "yes"){
         <?php }else{ ?>
         <a href="/dashboard" style="margin-top:15px; padding:15px; width:100%; font-size:100%; text-decoration: none;border-radius:0.25rem;" class="btn form-control-submit-button"><i class="fa fa-user"></i> Login to User Dashboard!</a>
         <?php } ?>
+        
 </div>
 <h4>The debit will be performed by Digistore24.com </h4>
 </div>
+
 <?php }else{ ?>
     <div class="p-4" style="border:2px solid orange; border-radius:0.5rem;background-color: rgba(242, 236, 231, 0.9);">
     <div class="wrap-white">
@@ -166,6 +169,18 @@ if($t == "yes"){
     color: #3c763d;
     background-color: #dff0d8;
     border-color: #d6e9c6;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #0000;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 105%;
+}
+#finalnoticeinfo {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
     padding: 15px;
     margin-bottom: 20px;
     border: 1px solid #0000;

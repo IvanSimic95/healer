@@ -198,7 +198,7 @@
                   var Redirect = data[2];
                   $("#show_message").html(DataMSG);
                   $("#show_message").fadeIn();
-                  $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Redirecting...');
+                  $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Redirecting to Payment Page...');
                   
                   setTimeout(function(){
                     window.location.href = Redirect;

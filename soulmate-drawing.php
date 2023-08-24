@@ -92,12 +92,7 @@ $count = $result->num_rows;
 								<p style="font-size:12px;margin-top:7px;margin-bottom: -10px;"><img style="width: 100%;max-width: 28px;padding: 3px;" src="/images/tarot-cards.png">Only accepting 4 more readings for today! <i class="fa-solid fa-fire-flame-curved"></i> 27 Sold</p>
 								
 							</form>
-                            <script>
-
-
-  
-
-  </script>
+                 
 						</div>
 								<br clear="all">
                     </div>  
