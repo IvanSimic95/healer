@@ -14,6 +14,9 @@ $count = $result->num_rows;
 
 
 ?>
+<!-- Begin of Digistore24 Trusted Badge Code -->
+<script type="text/javascript" src="https://www.digistore24.com/trusted-badge/27639/Bh8JmZnddr4T0ZM/salespage"></script>
+<!-- End of Digistore24 Trusted Badge Code -->
     <!-- Header -->
     <header class="ex-6-header">
         <div class="header-content">

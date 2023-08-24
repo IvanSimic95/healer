@@ -99,7 +99,9 @@ if($t == "yes"){
     <header class="ex-6-header" style="min-height:80vh">
         <div class="header-content">
             <div class="container" style="max-width:600px;">
-              
+              <!-- Begin of Digistore24 Trusted Badge Code -->
+<script type="text/javascript" src="https://www.digistore24.com/trusted-badge/27640/WE0tDCkF5Vsgf4I/thankyoupage"></script>
+<!-- End of Digistore24 Trusted Badge Code -->
 					<div style="margin-top:0px;">
                    
 <?php if($thankyou == 1){ ?>
