@@ -19,6 +19,7 @@ if (isset($_POST['form_submit'])) {
         $row2 = $result2->fetch_assoc();
 
         $row5 = mysqli_num_rows($result2);
+        echo $row5;
         if ($row5 > 0){
         // set username in the session
         $_SESSION['login_email'] = $row2['email'];
