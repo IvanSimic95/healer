@@ -92,7 +92,9 @@ if($t == "yes"){
         margin-left: 0%;
     }
 }
-
+.navbar{
+    display:none;
+}
     </style>
 
     <!-- Header -->

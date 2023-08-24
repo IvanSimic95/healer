@@ -4,22 +4,18 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 $errorDisplay = "";
 
 
-isset($_GET['order']) ? $orderID        = $_GET['order']    : $errorDisplay .= " Missing Order ID <br>";
-isset($_GET['price']) ? $order_price    = $_GET['price']    : $errorDisplay .= " Missing Price <br>";
-isset($_GET['email']) ? $order_email    = $_GET['email']    : $errorDisplay .= " Missing Email <br>";
-isset($_GET['name'])  ? $name          = $_GET['name']     : $errorDisplay .= " Missing Name <br>";
-isset($_GET['BGid'])  ? $bgOrderID      = $_GET['BGid']     : $errorDisplay .= " Missing Buygoods Order ID <br>";
-
-
-$signature = hash_hmac('sha256', strval($orderID), 'sk_live_Ncow50B9RdRQFeXBsW45c5LFRVYLCm98');
+isset($_POST['custom'])? $orderID               = $_POST['custom']          : $errorDisplay .= " Missing Order ID <br>";
+isset($_POST['amount_netto']) ? $order_price    = $_POST['amount_netto']    : $errorDisplay .= " Missing Price <br>";
+isset($_POST['email']) ? $order_email           = $_POST['email']           : $errorDisplay .= " Missing Email <br>";
+isset($_POST['first_name'])  ? $fname           = $_POST['first_name']      : $errorDisplay .= " Missing First Name <br>";
+isset($_POST['last_name'])  ? $lname            = $_POST['last_name']       : $errorDisplay .= " Missing Last Name <br>";
+isset($_POST['order_id'])  ? $DigiOrderID       = $_POST['order_id']        : $errorDisplay .= " Missing Digi24 Order ID <br>";
 
 empty($errorDisplay) ?  $testError = FALSE : $testError = TRUE;
 if($testError == TRUE){
 echo $errorDisplay;
-$errorDisplay = str_replace('<br>', '', $errorDisplay);
-$logArray[] = $errorDisplay;
-formLogNewAgain($logArray);
 }else{
+$name = $fname." ".$lname;
 
   //Find Correct Order
   $sql = "SELECT * FROM `orders` WHERE `order_id` = '$orderID' ORDER BY  `order_id` DESC LIMIT 1";
@@ -31,16 +27,17 @@ formLogNewAgain($logArray);
     
     $row = $result->fetch_assoc();
     $orderStatus = $row['order_status'];
+    $userID = $row['user_id'];
 
         if($orderStatus=="pending" OR $orderStatus=="paid" OR $orderStatus=="processing"){
-            $sql = "UPDATE `orders` SET `order_email`='$order_email', `order_price`='$order_price', `buygoods_order_id`='$bgOrderID', `order_status`='paid' WHERE order_id='$orderID'";
+            $sql = "UPDATE `orders` SET `order_email`='$order_email', `order_price`='$order_price', `buygoods_order_id`='$DigiOrderID', `order_status`='paid' WHERE order_id='$orderID'";
             $result = $conn->query($sql);
 
 
 //First create TalkJS User with same ID as conversation
 $ch = curl_init();
 $data = [
-"id" => $orderID,
+"id" => $userID,
 "name" => $name,
 "email" => [$order_email],
 "role" => "customer",
@@ -48,7 +45,7 @@ $data = [
 "custom" => ["email" => $order_email, "lastOrder" => $orderID]
 ];
 $data1 = json_encode($data);
-curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/ArJWsup2/users/'.$orderID);
+curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/ArJWsup2/users/'.$userID);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
     
@@ -71,7 +68,7 @@ echo $result;
 $ch2 = curl_init();
 $data2 = [
 "subject" => "Order #".$orderID,
-"participants" => ["administrator", $orderID],
+"participants" => ["administrator", $userID],
 "custom" => ["status" => "Paid"]
 ];
 $data22 = json_encode($data2);
