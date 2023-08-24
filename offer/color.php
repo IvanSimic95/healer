@@ -1,6 +1,6 @@
 <?php
-$title = "Thank you for your Order! | Soulmate Healer";
-$description = "You have finished your order process!";
+$title = "Special One-Time-Offer!";
+$description = "Almost Complete...";
 include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
 
 <style>
