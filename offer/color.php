@@ -123,10 +123,10 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
                     <div style="padding:25px;"><p style="font-size: 23px;">Simply upgrade below for just $10</p>  </div> 
                     
                     
-                    <a href="https://www.digistore24.com/answer/bdacwublgem7xz0098tkccc-1/yes" class="elButton elButtonSubtle elButtonColor1 elButtonFluid elFont_opensans elButtonSize3 elButtonShadow3 mfs_18" style="font-weight:bold;text-decoration:none;color: rgb(255, 255, 255); background-color: rgb(95, 172, 47); font-size: 28px;" id="undefined-394">
+                    <a href="#yes" class="elButton elButtonSubtle elButtonColor1 elButtonFluid elFont_opensans elButtonSize3 elButtonShadow3 mfs_18" style="font-weight:bold;text-decoration:none;color: rgb(255, 255, 255); background-color: orange; font-size: 28px;" id="undefined-394">
                     <span class="elButtonMain"><i class="fa fa-shopping-cart fa_prepended"></i> YES! Please Upgrade to Color <i class="fa fa_appended"></i></span></a>
 
-                    <div style="padding:25px;"><a href="https://www.digistore24.com/answer/bdacwublgem7xz0098tkccc-1/no" id="link-8186-428-431" class="" target="_parent">No Thanks, I don't want to see my soulmates eye color</a></div>
+                    <div style="padding:25px;"><a href="#no" id="link-8186-428-431" class="" target="_parent">No Thanks, I don't want to see my soulmates eye color</a></div>
 
                     <div style="padding:25px;"><p style="font-size:22px;max-width:none;">This one-time offer is only available right here, right now. When you leave this page, it's gone forever and you won't have the option for color, so click the button now...</p></div>
 
