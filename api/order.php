@@ -5,7 +5,6 @@ $errorDisplay = "";
 
 
 isset($_POST['custom'])? $orderID               = $_POST['custom']          : $errorDisplay .= " Missing Order ID <br>";
-isset($_POST['amount_netto']) ? $order_price    = $_POST['amount_netto']    : $errorDisplay .= " Missing Price <br>";
 isset($_POST['email']) ? $order_email           = $_POST['email']           : $errorDisplay .= " Missing Email <br>";
 isset($_POST['first_name'])  ? $fname           = $_POST['first_name']      : $errorDisplay .= " Missing First Name <br>";
 isset($_POST['last_name'])  ? $lname            = $_POST['last_name']       : $errorDisplay .= " Missing Last Name <br>";
@@ -30,7 +29,7 @@ $name = $fname." ".$lname;
     $userID = $row['user_id'];
 
         if($orderStatus=="pending" OR $orderStatus=="paid" OR $orderStatus=="processing"){
-            $sql = "UPDATE `orders` SET `order_email`='$order_email', `order_price`='$order_price', `buygoods_order_id`='$DigiOrderID', `order_status`='paid' WHERE order_id='$orderID'";
+            $sql = "UPDATE `orders` SET `order_email`='$order_email', `buygoods_order_id`='$DigiOrderID', `order_status`='paid' WHERE order_id='$orderID'";
             $result = $conn->query($sql);
 
 
