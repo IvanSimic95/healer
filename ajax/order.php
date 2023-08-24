@@ -72,26 +72,64 @@ if($order_product == "soulmate"){
     break;
   }
 
-}else{
+}elseif($order_product == "twinflame"){
 
 
 switch ($order_priority){
   case "48":
-    $cbproduct = "1";
-    $cbprice = "29.99";
+    $cbproduct = "513421";
+    $cbprice = "29";
   break;
 
   case "24":
-    $cbproduct = "2";
-    $cbprice = "39.99";
+    $cbproduct = "513422";
+    $cbprice = "39";
   break;
 
   case "12":
-    $cbproduct = "3";
-    $cbprice = "49.99";
+    $cbproduct = "513428";
+    $cbprice = "49";
   break;
 }
 
+}elseif($order_product == "futurespouse"){
+
+  
+switch ($order_priority){
+  case "48":
+    $cbproduct = "513430";
+    $cbprice = "29";
+  break;
+
+  case "24":
+    $cbproduct = "513431";
+    $cbprice = "39";
+  break;
+
+  case "12":
+    $cbproduct = "513432";
+    $cbprice = "49";
+  break;
+}
+
+}else{
+  
+switch ($order_priority){
+  case "48":
+    $cbproduct = "513421";
+    $cbprice = "29";
+  break;
+
+  case "24":
+    $cbproduct = "513422";
+    $cbprice = "39";
+  break;
+
+  case "12":
+    $cbproduct = "513428";
+    $cbprice = "49";
+  break;
+}
 }
 $order_product_nice = "Soulmate Drawing";
 
@@ -167,7 +205,7 @@ if(mysqli_query($conn,$sql)){
 $lastRowInsert = mysqli_insert_id($conn);
 $submitStatus = "Success";
 $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
-$redirectPayment = "https://www.digistore24.com/product/513356?custom=".$lastRowInsert;
+$redirectPayment = "https://www.digistore24.com/product/".$cbproduct."?custom=".$lastRowInsert;
 
 
 
