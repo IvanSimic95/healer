@@ -27,7 +27,7 @@
 
 
                         <div class="form-group">
-                            <button id="submitbtn" type="submit" class="form-control-submit-button">Login <i class="fa-solid fa-arrow-right"></i></button>
+                            <button id="submitbtn" name="form_submit" type="submit" class="form-control-submit-button">Login <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
 
 

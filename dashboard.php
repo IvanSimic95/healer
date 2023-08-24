@@ -4,6 +4,7 @@ $description = "Login to your account and access your orders!";
 include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php';
 
 if (isset($_POST['form_submit'])) {
+    echo "form submitted";
     if(isset($_POST['autologin'])){
         $autologin = $_POST['autologin'];
         $userID = $_POST['userID'];
