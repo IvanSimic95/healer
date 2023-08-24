@@ -51,7 +51,7 @@ if (isset($_SESSION['login_id'])) {
 <!-- Header -->
 <header class="ex-6-header" style="min-height:80vh">
     <div class="header-content">
-        <?php if ($LoggedIN = 0) { ?>
+        <?php if ($LoggedIN == 0) { ?>
             <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/login-form.php'; ?>
         <?php } else { ?>
             <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/login-dashboard.php'; ?>
