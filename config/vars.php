@@ -319,12 +319,24 @@ if($domain == "healer.test"){
   if ($row5 > 0){
 
         // set username in the session
-        $_SESSION['login_email'] = $row2['email'];;
-        $_SESSION['login_id']  = $row2['id'];;
+        $_SESSION['login_email'] = $row2['email'];
+        $_SESSION['login_id']  = $row2['id'];
 
 
         return true;
     }
 
     return false;
+}
+
+
+function logout()
+{
+
+        
+        $_SESSION['login_email'] = NULL;
+        $_SESSION['login_id']  = NULL;
+        session_destroy();
+
+
 }
