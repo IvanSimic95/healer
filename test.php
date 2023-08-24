@@ -5,7 +5,7 @@ $title = "Soulmate Drawing | Soulmate Healer";
 $description = "I will draw your SOULMATE with 100% accuracy";
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; 
-autologin(10000);
+
 print_r($_SESSION);
 
 ?>
