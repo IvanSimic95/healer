@@ -16,7 +16,7 @@
             <div class="wrap-white">
                 <div class="contact_form">
                     <img id="profile-img" class="profile-img-card img-thumbnail m-4" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png">
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                    <form id="loginForm" data-toggle="validator" data-focus="false" action="/dashboard" method="post">
 
                         <div class="form-group">
                             <input type="email" class="form-control-input" id="semail" name="email" required>
