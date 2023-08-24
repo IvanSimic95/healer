@@ -77,7 +77,9 @@
         </div> <!-- end of container -->
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
-    
+    <!-- Begin of Digistore24 Trusted Badge Code -->
+<script type="text/javascript" src="https://www.digistore24.com/trusted-badge/27657/XndiegqX8o7IBba/salespage"></script>
+<!-- End of Digistore24 Trusted Badge Code -->
     	
 <style>
 .img-fluid-test {
