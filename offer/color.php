@@ -140,9 +140,9 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
                     
                     
 
-                    <a href="#yes" id="submitbtn" type="submit" class="form-control-submit-button submit-pc"><i class="fa fa-shopping-cart fa_prepended"></i> YES! Please Upgrade to Color</a>
+                    <a href="#yes" id="submitbtn" type="submit" class="form-control-submit-button submit-pc"> YES! Please Upgrade to Color</a>
 
-                    <a href="#yes" id="submitbtn" type="submit" class="form-control-submit-button submit-phone"><i class="fa fa-shopping-cart fa_prepended"></i> Upgrade!</a>
+                    <a href="#yes" id="submitbtn" type="submit" class="form-control-submit-button submit-phone"><i class="fa fa-shopping-cart"></i> Upgrade!</a>
 
                     <div style="padding:25px;"><a href="#no" id="link-8186-428-431" class="" target="_parent">No Thanks, I don't want to see my soulmates eye color</a></div>
 
