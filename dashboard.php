@@ -21,8 +21,8 @@ if (isset($_POST['form_submit'])) {
         $row5 = mysqli_num_rows($result2);
         if ($row5 > 0){
         // set username in the session
-        $_SESSION['login_email'] = $row2['email'];;
-        $_SESSION['login_id']  = $row2['id'];;
+        $_SESSION['login_email'] = $row2['email'];
+        $_SESSION['login_id']  = $row2['id'];
         }else{
             $TextError = "Can't find an account with that email";
         }
