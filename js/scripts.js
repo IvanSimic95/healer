@@ -202,7 +202,7 @@
                   
                   setTimeout(function(){
                     window.location.href = Redirect;
-                  }, 2000);
+                  }, 2500);
 
                   }else{
                   $("#error").html(DataMSG);
