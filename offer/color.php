@@ -93,6 +93,15 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
     border-radius: 4px;
 }
+
+
+.elButton{
+    font-weight:bold;
+    text-decoration:none;
+    color: rgb(255, 255, 255); 
+    background-color: orange; 
+    font-size: 28px;
+}
 </style>
 
 <!-- Header -->
@@ -123,7 +132,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
                     <div style="padding:25px;"><p style="font-size: 23px;">Simply upgrade below for just $10</p>  </div> 
                     
                     
-                    <a href="#yes" class="elButton elButtonSubtle elButtonColor1 elButtonFluid elFont_opensans elButtonSize3 elButtonShadow3 mfs_18" style="font-weight:bold;text-decoration:none;color: rgb(255, 255, 255); background-color: orange; font-size: 28px;" id="undefined-394">
+                    <a href="#yes" class="elButton elButtonSubtle elButtonColor1 elButtonFluid elFont_opensans elButtonSize3 elButtonShadow3 mfs_18" style="" id="undefined-394">
                     <span class="elButtonMain"><i class="fa fa-shopping-cart fa_prepended"></i> YES! Please Upgrade to Color <i class="fa fa_appended"></i></span></a>
 
                     <div style="padding:25px;"><a href="#no" id="link-8186-428-431" class="" target="_parent">No Thanks, I don't want to see my soulmates eye color</a></div>
