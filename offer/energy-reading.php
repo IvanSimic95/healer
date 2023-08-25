@@ -11,10 +11,19 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
     .ex-6-header {
         padding-top: 5rem;
     }
+    #submitbtn{
+        font-size:28px;
+        width: 80%;
+    text-align: center;
+  
+    }
 
     @media (max-width: 767px) {
         .col-md-offset-3 {
             margin-left: 0%;
+        }
+        #submitbtn{
+            font-size:18px;
         }
     }
 
@@ -147,6 +156,9 @@ p{
 
                     <h1 style="margin:0;padding-top:25px;padding-bottom:10px;">Now I'm Going To Make You A Very Special, One-Time Offer…</h1>
                     <h6>..that's only available right here - <u>right now</u>.</h6>
+
+                    <img class="img-fluid" src="/images/products/energy-reading.png" style="width:450px;"><br>
+
                     <div class="text"><p style="font-size: 23px;font-weight:bold;">I want to send you a monthly energy reading for special guidance.</p>  </div> 
                     
                     <div class="text"><p style="font-size:22px;max-width:none;">If you give me your permission, I will use your unique natal chart and my lifetime of experience in astrology and reading the stars in order to help you find your soulmate and navigate the challenges that your relationship will undoubtedly face.</p></div>
@@ -157,12 +169,17 @@ p{
                     
                     <div class="text textcenter"><p class="textbold" style="font-size:22px;max-width:none;">"Allow me to be your personal cupid and guardian angel that will deliver a guide to help you through love and life on a monthly basis” </p></div>
                     
+                    <div class="text textcenter"><p class="textbold" style="font-size:22px;max-width:none;">Get my monthly energy reading for only $15/month </p><p>(a 50% discount from the normal price of $30/month)</p><p style="font-size:22px;max-width:none;">You will lock this discounted price in for LIFE -- your price will never increase!</p></div>
+                    
+                    <img class="img-fluid" src="/images/red-arrow.png"><br>
 
-                    <a href="https://www.digistore24.com/answer/yes?template=light" id="submitbtn" type="submit" class="form-control-submit-button submit-pc"> YES! Please Upgrade to Color</a>
+                    <a href="https://www.digistore24.com/answer/yes?template=light" id="submitbtn" type="submit" class="form-control-submit-button submit-pc"> YES! Add to order!</a>
 
-                    <a href="https://www.digistore24.com/answer/yes?template=light" id="submitbtn" type="submit" class="form-control-submit-button submit-phone"><i class="fa fa-shopping-cart"></i> Upgrade!</a>
+                    <a href="https://www.digistore24.com/answer/yes?template=light" id="submitbtn" type="submit" class="form-control-submit-button submit-phone"><i class="fa fa-shopping-cart"></i> Add to order!</a>
 
-                    <div style="padding:25px;"><a href="https://www.digistore24.com/answer/no" id="link-8186-428-431" class="" target="_parent">No Thanks, I don't want to see my soulmates eye color</a></div>
+                    <div class="text textcenter"><p style="font-size:100%;">You can cancel your energy reading membership anytime by contacting us directly.  It's that simple.</p></div>
+
+                    <div style="padding:25px;"><a href="https://www.digistore24.com/answer/no" id="link-8186-428-431" class="" target="_parent">No Thanks, I don't need this now</a></div>
 
                     <div style="padding:25px;"><p style="font-size:22px;max-width:none;">This one-time offer is only available right here, right now. When you leave this page, it's gone forever and you won't have the option for color, so click the button now...</p></div>
 
@@ -175,7 +192,10 @@ p{
         </div>
 
         <style>
-            .submit-pc, .progress-pc{
+            .submit-pc{
+                display:block
+            }
+            .progress-pc{
                 display:flex;
             }
             .submit-phone, .progress-phone{
@@ -186,7 +206,7 @@ p{
                     display:none;
                 }
                 .submit-phone{
-                display:inline-block;
+                display:block;
             }
                 
             }

@@ -11,7 +11,12 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
     .ex-6-header {
         padding-top: 5rem;
     }
-
+    #submitbtn{
+        font-size:28px;
+        width: 80%;
+    text-align: center;
+  
+    }
     @media (max-width: 767px) {
         .col-md-offset-3 {
             margin-left: 0%;
@@ -157,7 +162,10 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
         </div>
 
         <style>
-            .submit-pc, .progress-pc{
+            .submit-pc{
+                display:block;
+            }
+            .progress-pc{
                 display:flex;
             }
             .submit-phone, .progress-phone{
