@@ -119,9 +119,9 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
 
                 <div class="p-4" style="border:2px solid orange; border-radius:0.5rem;background-color: white;">
                     <div class="row m-0 p-0 progress-pc" style="border:1px solid;border-color: rgba(47, 47, 47, 0.168627);border-radius:0.33rem;">
-                        <div class="col-12 col-sm-12 col-md-4" style="padding:10px; font-weight:bold;">STEP 1: ORDER COMPLETE</div>
+                        <div class="col-12 col-sm-12 col-md-4" style="padding:10px; font-weight:bold;">STEP 1: PAYMENT COMPLETE</div>
                         <div class="col-12 col-sm-12 col-md-4" style="padding:10px; background: orange; color:white; font-weight:bold;">STEP 2: CUSTOMIZE ORDER</div>
-                        <div class="col-12 col-sm-12 col-md-4" style="padding:10px; font-weight:bold;">STEP 3: SELECTIONS COMPLETED</div>
+                        <div class="col-12 col-sm-12 col-md-4" style="padding:10px; font-weight:bold;">STEP 3: ORDER COMPLETED</div>
                     </div>
 
                     <div class="row m-0 p-0 progress-phone" style="border:1px solid;border-color: rgba(47, 47, 47, 0.168627);border-radius:0.33rem;">
@@ -135,13 +135,13 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
                     </div>
 
 
-                    <h1 style="margin:0;padding-top:25px;padding-bottom:10px;">Would you like to Upgrade Your Drawing to Color?</h1>
-                    <h6>Our color sketches show more detail and can sometimes be easier to match your Soulmate</h6>
+                    <h1 style="margin:0;padding-top:25px;padding-bottom:10px;">Upgrade to Color Drawing?</h1>
+                    <h6> Our color sketches have more detail and can sometimes be easier to match with your Soulmate.</h6>
                     <img class="img-fluid" src="/images/nocolor.jpg"><br>
                     <img class="img-fluid" src="/images/red-arrow.png"><br>
                     <img class="img-fluid" src="/images/addcolor.jpg">
 
-                    <div style="padding:25px;"><p style="font-size: 23px;">Simply upgrade below for just $10</p>  </div> 
+                    <div style="padding:25px;"><p style="font-size: 23px;">Upgrade for just $10 by clicking button below</p>  </div> 
                     
                     
 
@@ -151,9 +151,9 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
 
                     <div style="padding:25px;"><a href="https://www.digistore24.com/answer/no" id="link-8186-428-431" class="" target="_parent">No Thanks, I don't want to see my soulmates eye color</a></div>
 
-                    <div style="padding:25px;"><p style="font-size:22px;max-width:none;">This one-time offer is only available right here, right now. When you leave this page, it's gone forever and you won't have the option for color, so click the button now...</p></div>
+                    <div style="padding:25px;"><p style="font-size:22px;max-width:none;">This special offer is only here and now. If you leave this page, you'll lose out on the chance to get colored drawing. So, click the upgrade button now!</p></div>
 
-                    <div style="padding:25px;"><p style="font-size:20px;max-width:none;">Plus get a 60 day money back guarantee if you aren't satisfied.</p></div>
+                    <div style="padding:25px;"><p style="font-size:20px;max-width:none;">Get a 60 day money back guarantee if you aren't satisfied.</p></div>
 
                 </div>
 
