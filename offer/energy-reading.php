@@ -137,7 +137,7 @@ p{
                 <div class="p-4" style="border:2px solid orange; border-radius:0.5rem;background-color: white;">
                     <div class="row m-0 p-0 progress-pc" style="border:1px solid;border-color: rgba(47, 47, 47, 0.168627);border-radius:0.33rem;">
                         <div class="col-12 col-sm-12 col-md-4" style="padding:10px; font-weight:bold;">STEP 1: ORDER COMPLETE</div>
-                        <div class="col-12 col-sm-12 col-md-4" style="padding:10px; background: orange; color:white; font-weight:bold;">STEP 2.1: CUSTOMIZE ORDER</div>
+                        <div class="col-12 col-sm-12 col-md-4" style="padding:10px; background: orange; color:white; font-weight:bold;">STEP 2: CUSTOMIZE ORDER</div>
                         <div class="col-12 col-sm-12 col-md-4" style="padding:10px; font-weight:bold;">STEP 3: SELECTIONS COMPLETED</div>
                     </div>
 
