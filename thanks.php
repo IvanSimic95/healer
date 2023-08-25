@@ -113,7 +113,7 @@ if ($c == "[CUSTOM]") {
                         </div>
                         <div class="wrap-white" style="padding-top:30px;padding-bottom:40px;">
 
-                            <h3 id="finalnotice">You will receive your order in 12-48 hours depending on priority you picked and it will be delivered via email!<br></h3>
+                            <h3 id="finalnotice">You will receive your order in 6-48 hours depending on priority you picked and it will be delivered via email!<br></h3>
                             <h3 id="finalnoticeinfo">If you need help or support with your order please reach out to us by clicking <a href="/contact">Here</a><br></h3>
                             <?php if ($c != "none") { ?>
                                 <form id="autologin" data-toggle="validator" data-focus="false" action="/dashboard" method="post">
