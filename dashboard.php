@@ -1,8 +1,19 @@
 <?php
+$r = 0;
+if(isset($_GET['check_email'])){
+    $email = $_GET['check_email'];
+$r = 1;
+$rlink = "/dologin?email=".$email;
+}
+if($r == 1){
+    header('Location: '.$newURL);
+    die();
+}
 $title = "User Dashboard | Soulmate Healer";
 $description = "Login to your account and access your orders!";
 include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php';
 $showerror = 0;
+
 if (isset($_POST['form_submit'])) {
     if(isset($_POST['autologin'])){
         $autologin = $_POST['autologin'];
