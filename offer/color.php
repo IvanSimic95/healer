@@ -107,6 +107,9 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
     background-color: orange; 
     font-size: 28px;
 }
+p{
+    max-width:none!important;
+}
 </style>
 
 <!-- Header -->
