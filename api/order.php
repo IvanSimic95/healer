@@ -68,7 +68,7 @@ $ch2 = curl_init();
 $data2 = [
 "subject" => "Order #".$orderID,
 "participants" => ["administrator", $userID],
-"custom" => ["status" => "Processing"]
+"custom" => ["status" => "Paid"]
 ];
 $data22 = json_encode($data2);
 curl_setopt($ch2, CURLOPT_URL, 'https://api.talkjs.com/v1/tO6umIcS/conversations/'.$orderID);
