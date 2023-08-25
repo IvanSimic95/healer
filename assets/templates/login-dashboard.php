@@ -70,7 +70,7 @@
             $orderID = $row["order_id"];
             $priority = $row["order_priority"];
             if($row["order_status"]=="shipped"){$status="completed";}else{$status = $row["order_status"];}
-            
+            $status = ucfirst($status);
               echo '
               <div class="col-sm-6 col-md-4 col-12" style="margin-bottom:20px;">
                     <div class="card-body">
