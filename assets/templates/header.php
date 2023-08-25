@@ -9,7 +9,7 @@ $metatags
         ->description($description)
         ->meta('author', 'Soulmate Healer')
         ->image('https://soulmatehealer.com/assets/img/products/'.$t_product_form_name.'.jpg')
-        ->mobile('https://melissa-psychic.com/assets/img/products/'.$t_product_form_name.'.jpg');
+        ->mobile('https://soulmatehealer.com/assets/img/products/'.$t_product_form_name.'.jpg');
 
 
 }else{
@@ -18,8 +18,8 @@ $metatags
           ->title($title)
           ->description($description)
           ->meta('author', 'Soulmate Healer')
-          ->image('https://melissa-psychic.com/assets/img/good-logo.jpg')
-          ->mobile('https://melissa-psychic.com/assets/img/good-logo.jpg');
+          ->image('https://soulmatehealer.com/images/soulmate-05.png')
+          ->mobile('https://soulmatehealer.com/images/soulmate-05.png');
 }
 
 ?><!DOCTYPE html>
