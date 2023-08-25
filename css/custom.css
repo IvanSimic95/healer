@@ -57,8 +57,7 @@ select:invalid { color: gray; }
     border: 1px solid transparent;
     border-radius: 3px;
     color: #721c24;
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
+    text-decoration:none;
     padding:5px;
 }
 
