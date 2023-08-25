@@ -69,7 +69,7 @@ switch ($product) {
           break; 
       }
 
-$signature = hash_hmac('sha256', strval($orderID), 'sk_live_Ncow50B9RdRQFeXBsW45c5LFRVYLCm98');
+$signature = hash_hmac('sha256', strval($orderID), 'sk_test_omv9jN0lymrWKOJ2kvyL4yOOHwRDVL8W');
 ?>
  <div id="talkjs-container-<?php echo $orderID; ?>" style="width: 90%; margin: 30px; height: 500px; position:fixed;bottom:0;right:0;z-index:999;display:none !important">
      <i>Loading chat...</i>
@@ -98,7 +98,7 @@ $signature = hash_hmac('sha256', strval($orderID), 'sk_live_Ncow50B9RdRQFeXBsW45
       });
       var me = new Talk.User("administrator");
       window.talkSession = new Talk.Session({
-          appId: "ArJWsup2",
+          appId: "tO6umIcS",
           me: other,
           signature: "<?php echo $signature; ?>"
       });
