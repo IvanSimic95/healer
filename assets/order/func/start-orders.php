@@ -21,11 +21,10 @@ echo "Starting start-orders.php...<br><br>";
 			$orderName = $orderID = $orderId = $orderProduct = $orderPriority = $emailLink = $message = $orderPriority = $ch = "";
 			$logArray = "";
 			$logArray = array();
-			$partnerGender = $row["pick_sex"];
+			$partnerGender = $row["partner_gender"];
 			$userID = $row['user_id'];
 			$orderName = $row["user_name"];
-		    $ex = explode(" ",$orderName);
-			$customerName =  $ex["0"];
+			$customerName =  $row['first_name'];
 			$orderId = $row["order_id"];
 			$orderProduct = $row["order_product"];
 			$orderPrice = $row["order_price"];
@@ -33,23 +32,13 @@ echo "Starting start-orders.php...<br><br>";
 			$orderEmail = $row["order_email"];
 			$fbc = $row["fbc"];
 			$fbp = $row["fbp"];
-			$agent = $row["user_agent"];
-			$checkpixel = $row["pixel"];
-			$ip = $row["user_ip"];
+	
+		
 			$emailLink = $base_url ."/dashboard.php?check_email=" .$orderEmail;
 			$message = $processingWelcome;
 			$order_product_nice = $row["order_product_nice"];
 
-			$zip = $row["zip"];
-			$country = strtolower($row["country"]);
-
-			if($checkpixel == 1){
-				$fbAccessToken = $fbAccessToken;
-				$FBPixel = $FBPixel;
-			}else{
-				$fbAccessToken = $sfbAccessToken;
-				$FBPixel = $FBPixel2;
-			}
+	
 
 
 
@@ -61,7 +50,6 @@ echo "Starting start-orders.php...<br><br>";
 			echo $orderEmail." | ";
 			echo $orderProduct." | ";
 			echo $orderPriority." | ";
-			echo "Pixel: ".$checkpixel." | ";
 			
 
 			switch ($orderProduct) {
@@ -106,7 +94,7 @@ break;
 			  $logArray[] = $orderId." | ". $orderEmail." | ".$product." | ".$orderPriority." | ";
 
 		 //	Update Order Status Processing
-			$sqlupdate = "UPDATE `orders` SET `order_status`='processing', `abandoned_cart`='paid' WHERE order_id='$orderId'";
+			$sqlupdate = "UPDATE `orders` SET `order_status`='processing' WHERE order_id='$orderId'";
 			if ($conn->query($sqlupdate) === TRUE) {
       		echo "Updated";
 
@@ -225,10 +213,9 @@ curl_close($ch);
 
 
 
-$partnerGender = $row["pick_sex"];
+$partnerGender = $row["partner_gender"];
 $orderName = $row["user_name"];
-$ex = explode(" ",$orderName);
-$customerName =  $ex["0"];
+$customerName =  $row['first_name'];
 $orderId = $row["order_id"];
 $orderProduct = $row["order_product"];
 $orderPriority = $row["order_priority"];
@@ -237,7 +224,7 @@ $emailLink = $base_url ."/dashboard.php?check_email=" .$orderEmail;
 $message = $processingWelcome;
 $order_product_nice = $row["order_product_nice"];
 
-$userSex = $row["user_sex"];
+$userSex = $row["gender"];
 $Ffirst_name = $row["first_name"];
 $Flast_name = $row["last_name"];
 $customer_emailaddress = $row["order_email"];
@@ -273,7 +260,7 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 						"external_id" => hash('sha256', $orderId),
 						"fbc" => $fbc,
 						"client_ip_address" => $ip,
-						"client_user_agent" => $agent,
+						
 						"zp" => hash('sha256', $zip),
 						"country" => hash('sha256', $country),
 					),
@@ -311,7 +298,7 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 						"external_id" => hash('sha256', $orderId),
 						"fbp" => $fbp,
 						"client_ip_address" => $ip,
-						"client_user_agent" => $agent,
+			
 						"zp" => hash('sha256', $zip),
 						"country" => hash('sha256', $country),
 					),
@@ -351,7 +338,7 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 						"fbc" => $fbc,
 						"fbp" => $fbp,
 						"client_ip_address" => $ip,
-						"client_user_agent" => $agent,
+				
 						"zp" => hash('sha256', $zip),
 						"country" => hash('sha256', $country),
 					),
@@ -388,7 +375,7 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
                     "ge" => hash('sha256', $usersex1),
                     "external_id" => hash('sha256', $orderId),
 					"client_ip_address" => $ip,
-					"client_user_agent" => $agent,
+				
 					"zp" => hash('sha256', $zip),
 					"country" => hash('sha256', $country),
                 ),
