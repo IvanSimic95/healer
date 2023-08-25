@@ -119,7 +119,7 @@ $logArray[] = "
 						$premiumProdT = "future wife's";
 					}
 				}elseif($orderProduct == "twinflame"){
-
+					$premiumProdT = "twin flame's";
 				}else{
 					$premiumProdT = "twin flame's";
 				}
