@@ -88,9 +88,9 @@
                 </div>
               ';
               ?>
-              <div class="chat_box" style="width: 420px; margin: 0px; height: 80vw; position:fixed;bottom:0;right:0;z-index:999;max-width:100%">
+              <div class="chat_box" style="width: 420px; margin: 0px; height: 80vh; position:fixed;bottom:0;right:0;z-index:999;max-width:100%">
                 <i class="fas fa-times"></i>
-                <div class="chat_loader" id="talkjs-container-<?php echo $orderID; ?>" style="width: 420px; margin: 0px; height: 80vw;max-width:100%">
+                <div class="chat_loader" id="talkjs-container-<?php echo $orderID; ?>" style="width: 420px; margin: 0px; height: 80vh;max-width:100%">
                     <i>Loading chat...</i>
                 </div>
               </div>
