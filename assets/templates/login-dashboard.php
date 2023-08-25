@@ -68,7 +68,7 @@
             $product = $row["order_product_nice"];
             $prodimg = $row["order_product"];
             $orderID = $row["order_id"];
-            $priority = $row["priority"];
+            $priority = $row["order_priority"];
             if($row["order_status"]=="shipped"){$status="completed";}else{$status = $row["order_status"];}
             
               echo '
