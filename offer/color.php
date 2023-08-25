@@ -131,15 +131,15 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
                     </div>
 
                     <div class="progress">
-                        <div class="progress-bar progress-bar-striped_active progressbar_w_75" role="progressbar" style="background-color: orange;">Almost Complete...</div>
+                        <div class="progress-bar progress-bar-striped_active progressbar_w_75" role="progressbar" style="background-color: orange;display:none;">Almost Complete...</div>
                     </div>
 
 
                     <h1 style="margin:0;padding-top:25px;padding-bottom:10px;">Would you like to Upgrade Your Drawing to Color?</h1>
                     <h6>Our color sketches show more detail and can sometimes be easier to match your Soulmate</h6>
-                    <img class="img-fluid" src="/images/color-1.jpg"><br>
+                    <img class="img-fluid" src="/images/nocolor.jpg"><br>
                     <img class="img-fluid" src="/images/red-arrow.png"><br>
-                    <img class="img-fluid" src="/images/color-2.jpg">
+                    <img class="img-fluid" src="/images/addcolor.jpg">
 
                     <div style="padding:25px;"><p style="font-size: 23px;">Simply upgrade below for just $10</p>  </div> 
                     
