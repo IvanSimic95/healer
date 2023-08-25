@@ -138,7 +138,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
                     <h1 style="margin:0;padding-top:25px;padding-bottom:10px;">Upgrade to Color Drawing?</h1>
                     <h6> Our color sketches have more detail and can sometimes be easier to match with your Soulmate.</h6>
                     <img class="img-fluid" src="/images/nocolor.jpg"><br>
-                    <img class="img-fluid" src="/images/red-arrow.png"><br>
+                    <img class="img-fluid" src="/images/down-arrow-color.png"><br>
                     <img class="img-fluid" src="/images/addcolor.jpg">
 
                     <div style="padding:25px;"><p style="font-size: 23px;">Upgrade for just $10 by clicking button below</p>  </div> 
