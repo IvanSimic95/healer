@@ -30,7 +30,7 @@ $name = $fname." ".$lname;
 
        
             $sql = "UPDATE `orders` SET `premium`='$rnumber' WHERE order_id='$orderID'";
-            $result = $conn->query($sql);
+            $result5 = $conn->query($sql);
             if ($result5){
 
 

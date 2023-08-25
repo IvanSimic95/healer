@@ -55,6 +55,7 @@ $name = $fname." ".$lname;
     $user_email = $row22['email'];
     $order_product = "energy";
     $order_product_nice = "Monthly Energy Reading";
+    $order_priority = "6";
     $cbprice = "15";
     $userGender = $row22['gender'];
     $userGenderAcc =$row22['GenderAcc'];
