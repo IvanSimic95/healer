@@ -32,6 +32,7 @@ echo "Starting complete-orders.php...<br><br>";
 			$orderName = $row["user_name"];
 			$ex = explode(" ",$orderName);
 			$fName = $ex["0"];
+			$fName = ucfirst($fName);
 			$orderID = $row["order_id"];
 			$orderEmail = $row["order_email"];
 			$orderAge = $row["user_age"];
