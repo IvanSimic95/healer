@@ -41,9 +41,9 @@ $count = $result->num_rows;
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order today, receive within 1-3 days
 						</p>
 						
-						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$29</h2>  
-                        <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$299</h2> 
-						<p>You save <span class="saveda"><b>$270</b> (90%)</span></p>
+						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$199</h2>  
+                        <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$499</h2> 
+						<p>You save <span class="saveda"><b>$300</b> (40%)</span></p>
 						</div>
 						
 						
@@ -63,23 +63,12 @@ $count = $result->num_rows;
 								</div>
 								<div class="form-group">
                                 <div class="form_box">
-    <div style="text-align:start;">Your Birth Date*</div>
-    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/date.php'; ?>
-  </div>
+                                <div style="text-align:start;">Your Birth Date*</div>
+                                <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/date.php'; ?>
+                            </div>
 									<div class="help-block with-errors"></div>
 								</div>
                                 
-                                <div class="form_box input-group form-group" style="    padding-bottom: 52px;">
-  
-        <input id="prio12" type="radio" name="priority" value="12">
-        <label for="prio12"><span><i style="color:#ffaf00;" class="fas fa-bolt" aria-hidden="true"></i>12h</span></label>
-        
-		<input id="prio24" type="radio" name="priority" value="24">
-        <label for="prio24"> <span><i style="color:#c19bff;" class="fas fa-stopwatch" aria-hidden="true"></i>24h</span></label>
-		
-		<input id="prio48" type="radio" name="priority" value="48" checked="true">
-        <label for="prio48"> <span><i  class="fas fa-clock" aria-hidden="true"></i>48h</span></label>
-      </div>
 							
 								<div class="form-group">
 									<button id="submitbtn" type="submit" class="form-control-submit-button">PLACE AN ORDER <i class="fa-solid fa-arrow-right"></i></button>
