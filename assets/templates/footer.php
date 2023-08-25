@@ -97,6 +97,6 @@ text-align: left;margin-top: 15px;
     <script src="/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="/js/scripts.js?v=2"></script> <!-- Custom scripts -->
 </body>
 </html>						
