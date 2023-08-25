@@ -130,7 +130,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
                         <div class="col-4 " style="padding:10px; font-weight:bold;">STEP 3</div>
                     </div>
 
-                    <div class="progress">
+                    <div class="progress" style="display:none;">
                         <div class="progress-bar progress-bar-striped_active progressbar_w_75" role="progressbar" style="background-color: orange;display:none;">Almost Complete...</div>
                     </div>
 
