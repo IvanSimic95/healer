@@ -2,18 +2,15 @@
 $title = "User Dashboard | Soulmate Healer";
 $description = "Login to your account and access your orders!";
 include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php';
-
+$showerror = 0;
 if (isset($_POST['form_submit'])) {
-    echo "form submitted";
     if(isset($_POST['autologin'])){
         $autologin = $_POST['autologin'];
         $userID = $_POST['userID'];
         if($autologin == "yes"){
             autologin($userID);
         }
-        echo "autologin";
     }else{
-        echo "checking email...";
         $email = $_POST['email'];
         
 
@@ -38,6 +35,11 @@ if (isset($_SESSION['login_id'])) {
     $LoggedIN = 1;
 } else {
     $LoggedIN = 0;
+}
+
+if (isset($_GET['error'])) {
+    $showerror = 1;
+    $error = "Can't find an account with that email";
 }
 ?>
 <style>

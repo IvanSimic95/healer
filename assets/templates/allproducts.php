@@ -66,7 +66,7 @@
                             <h4 class="card-title-prod">PSYCHIC READING</h4>
                        </div>
 					   <div class="card-image">
-                            <img class="img-fluid" src="/images/soulmate-05.png" alt="alternative">
+                            <img class="img-fluid" src="/images/reading.png" alt="alternative">
                         </div>
                     </div>
 					<button onclick="location.href='/readings.php'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>

@@ -13,10 +13,15 @@
 
 
             </div>
-            <div class="wrap-white">
+            <div class="wrap-white p-4">
                 <div class="contact_form">
                     <img id="profile-img" class="profile-img-card img-thumbnail m-4" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png">
-                    <form id="loginForm" data-toggle="validator" data-focus="false" action="/dashboard" method="post">
+                    <?php if($showerror == 1){ ?>
+                        <div class="alert alert-danger" role="alert">
+                        <?php echo $error; ?>
+                        </div>
+                    <?php } ?>
+                    <form id="loginForm" data-toggle="validator" data-focus="false" action="/dologin" method="GET">
 
                         <div class="form-group">
                             <input type="email" class="form-control-input" id="semail" name="email" required>

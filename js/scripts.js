@@ -507,4 +507,31 @@
 		$(this).blur();
 	});
 
+    $(document).ready(function(){
+$('.chat').click(function(){
+    var id = $(this).attr('id').replace(/talkjs-/, '');
+    $('#talkjs-container-' + id).parent().show();
+    var pannels = 20
+    jQuery('.chat_box').each(function(){
+        if (jQuery(this).is(':visible') ) {
+            jQuery(this).css('right', pannels + 'px')
+            pannels = pannels + 440;
+        }
+
+    })
+})
+
+$('.chat_box .fas').click(function(){
+    $(this).parent().hide();
+    var pannels = 20
+    jQuery('.chat_box').each(function(){
+        if (jQuery(this).is(':visible') ) {
+            jQuery(this).css('right', pannels + 'px')
+            pannels = pannels + 440;
+        }
+
+    })
+})
+})
+
 })(jQuery);

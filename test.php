@@ -1,162 +1,68 @@
 <?php
 $title = "Special One-Time-Offer!";
 $description = "Almost Complete...";
-include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
-
-<style>
-    .col-md-offset-3 {
-        margin-left: 25%;
-    }
-
-    .ex-6-header {
-        padding-top: 5rem;
-    }
-
-    @media (max-width: 767px) {
-        .col-md-offset-3 {
-            margin-left: 0%;
-        }
-    }
-
-    .navbar {
-        display: none;
-    }
-
-    .progress-bar {
-
-        border-radius: 0.33rem;
-        height: 40px;
-    }
-
-    .small-progress-bar .progress-bar {
-        line-height: 36px;
-        height: 35px;
-        font-size: 14px;
-    }
-
-    .progress-bar-striped_active {
-        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-        background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-        background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-        -webkit-background-size: 40px 40px;
-        background-size: 40px 40px;
-        -webkit-animation: progress-bar-stripes 2s linear infinite reverse;
-        -o-animation: progress-bar-stripes 2s linear infinite reverse;
-        animation: progress-bar-stripes 2s linear infinite reverse;
-    }
-
-    .progress-bar {
-        -webkit-transition: width .25s ease, height .25s ease, font-size .25s ease;
-        -moz-transition: width .25s ease, height .25s ease, font-size .25s ease;
-        -ms-transition: width .25s ease, height .25s ease, font-size .25s ease;
-        -o-transition: width .25s ease, height .25s ease, font-size .25s ease;
-        transition: width .25s ease, height .25s ease, font-size .25s ease;
-    }
-
-    .progressbar_w_75 {
-        width: 75%;
-    }
-
-    .progress {
-        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-        margin-top: 15px;
-        border-radius: 0.33rem;
-        height: 40px;
-    }
-    .img-fluid{
-        width:350px;
-    }
-    .elButton{
-        padding-top:15px;
-        padding-bottom:15px;
-        padding-left:35px;
-        padding-right:35px;
-        margin-top:30px;
-    }
-
-    .elButtonShadow3 {
-    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.7);
-    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.7);
-    box-shadow: 0 1px 5px rgba(0,0,0,0.7);
-}
-
-.elButtonShadow3 {
-    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.7);
-    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.7);
-    box-shadow: 0 1px 5px rgba(0,0,0,0.7);
-}
-
-.elButtonSubtle {
-    border: 1px solid rgba(0,0,0,0.1);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
-    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
-    border-radius: 4px;
-}
+include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; 
 
 
-.elButton{
-    font-weight:bold;
-    text-decoration:none;
-    color: rgb(255, 255, 255); 
-    background-color: orange; 
-    font-size: 28px;
-}
-</style>
+$orderID = "10002";
+$userID = "10001";
+$first_name = "Ivan";
+$order_email = "ivan.simic2903@gmail.com";
+$order_product_nice = "Soulmate Drawing";
+$order_product_codename = "soulmate";
 
-<!-- Header -->
-<header class="ex-6-header" style="min-height:80vh">
-    <div class="header-content">
-        <div class="container" style="max-width:1100px;height:1000px;">
+$signature = hash_hmac('sha256', strval($orderID), 'sk_test_omv9jN0lymrWKOJ2kvyL4yOOHwRDVL8W');
+?>
+ <div id="talkjs-container-<?php echo $orderID; ?>" style="width: 90%; margin: 30px; height: 500px; position:fixed;bottom:0;right:0;z-index:999;display:none !important">
+     <i>Loading chat...</i>
+ </div>
 
-            <div style="margin-top:0px;">
-
-
-              
-
-            </div>
-        </div>
-
-        <style>
-            #finalnotice {
-                color: #3c763d;
-                background-color: #dff0d8;
-                border-color: #d6e9c6;
-                padding: 15px;
-                margin-bottom: 20px;
-                border: 1px solid #0000;
-                border-radius: 6px;
-                text-align: center;
-                font-weight: bold;
-                font-size: 105%;
-            }
-
-            #finalnoticeinfo {
-                color: #004085;
-                background-color: #cce5ff;
-                border-color: #b8daff;
-                padding: 15px;
-                margin-bottom: 20px;
-                border: 1px solid #0000;
-                border-radius: 6px;
-                text-align: center;
-                font-weight: bold;
-                font-size: 105%;
-            }
-
-            .label-control {
-                top: 0.125rem !important;
-                opacity: 1 !important;
-                font-size: 0.75rem !important;
-                font-weight: 700 !important;
-            }
-        </style>
+<script>
+    (function(t,a,l,k,j,s){
+    s=a.createElement('script');s.async=1;s.src="https://cdn.talkjs.com/talk.js";a.head.appendChild(s)
+    ;k=t.Promise;t.Talk={v:3,ready:{then:function(f){if(k)return new k(function(r,e){l.push([f,r,e])});l
+    .push([f])},catch:function(){return k&&new k()},c:l}};})(window,document,[]);
+</script>
 
 
-        <br clear="all">
+<script>  
+    Talk.ready.then(function() {
+      var other = new Talk.User({
+          id: "<?php echo $userID; ?>",
+          name: "<?php echo $first_name; ?>",
+          email: "<?php echo $order_email; ?>",
+          photoUrl: "https://avatars.dicebear.com/api/adventurer/<?php echo $order_email; ?>.svg?skinColor=variant02",
+          role: "customer",
+          custom: {
+          email: "<?php echo $order_email; ?>",
+          lastOrder: "<?php echo $orderID; ?>"
+          }
+      });
+      var me = new Talk.User({
+          id: "administrator",
+          name: "Soulmate Healer",
+          email: "info@soulmatehealer.com",
+          photoUrl: "https://avatars.dicebear.com/api/adventurer/<?php echo $order_email; ?>.svg?skinColor=variant02",
+          role: "admin"
+      });
+      window.talkSession = new Talk.Session({
+          appId: "tO6umIcS",
+          me: other
+      });
+      var conversation = talkSession.getOrCreateConversation("<?php echo $orderID; ?>");
+          conversation.setAttributes({
+          subject: "<?php echo "Order #" . $orderID . " | " .$order_product_nice; ?>",
+          custom: { 
+          category: "<?php echo $order_product_codename; ?>", 
+          status: "Paid"
+          }
+      });
 
-    </div>
-    </div>
-</header>
+      conversation.setParticipant(other);
+      conversation.setParticipant(me);
 
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/footer.php'; ?>
+        var chatbox = window.talkSession.createChatbox(conversation);
+        chatbox.mount(document.getElementById("talkjs-container-<?php echo $orderID; ?>"));
+    })
+
+</script>
