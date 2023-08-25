@@ -2,7 +2,7 @@
 $title = "Special One-Time-Offer!";
 $description = "Almost Complete...";
 include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
-
+<script src="https://www.digistore24.com/service/digistore.js"></script><script>digistoreUpsell()</script>
 <style>
     .col-md-offset-3 {
         margin-left: 25%;
@@ -140,11 +140,11 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
                     
                     
 
-                    <a href="#yes" id="submitbtn" type="submit" class="form-control-submit-button submit-pc"> YES! Please Upgrade to Color</a>
+                    <a href="https://www.digistore24.com/answer/yes?template=light" id="submitbtn" type="submit" class="form-control-submit-button submit-pc"> YES! Please Upgrade to Color</a>
 
-                    <a href="#yes" id="submitbtn" type="submit" class="form-control-submit-button submit-phone"><i class="fa fa-shopping-cart"></i> Upgrade!</a>
+                    <a href="https://www.digistore24.com/answer/yes?template=light" id="submitbtn" type="submit" class="form-control-submit-button submit-phone"><i class="fa fa-shopping-cart"></i> Upgrade!</a>
 
-                    <div style="padding:25px;"><a href="#no" id="link-8186-428-431" class="" target="_parent">No Thanks, I don't want to see my soulmates eye color</a></div>
+                    <div style="padding:25px;"><a href="https://www.digistore24.com/answer/no" id="link-8186-428-431" class="" target="_parent">No Thanks, I don't want to see my soulmates eye color</a></div>
 
                     <div style="padding:25px;"><p style="font-size:22px;max-width:none;">This one-time offer is only available right here, right now. When you leave this page, it's gone forever and you won't have the option for color, so click the button now...</p></div>
 
