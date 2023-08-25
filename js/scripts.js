@@ -514,7 +514,7 @@ $('.chat').click(function(){
     var pannels = 20
     jQuery('.chat_box').each(function(){
         if (jQuery(this).is(':visible') ) {
-            jQuery(this).css('right', pannels + 'px')
+          
             pannels = pannels + 440;
         }
 
@@ -526,7 +526,7 @@ $('.chat_box .fas').click(function(){
     var pannels = 20
     jQuery('.chat_box').each(function(){
         if (jQuery(this).is(':visible') ) {
-            jQuery(this).css('right', pannels + 'px')
+            
             pannels = pannels + 440;
         }
 
