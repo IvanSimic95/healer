@@ -511,10 +511,10 @@
 $('.chat').click(function(){
     var id = $(this).attr('id').replace(/talkjs-/, '');
     $('#talkjs-container-' + id).parent().show();
-    var pannels = 20
+    var pannels = 0
     jQuery('.chat_box').each(function(){
         if (jQuery(this).is(':visible') ) {
-          
+            jQuery(this).css('right', pannels + 'px')
             pannels = pannels + 440;
         }
 
@@ -523,10 +523,10 @@ $('.chat').click(function(){
 
 $('.chat_box .fas').click(function(){
     $(this).parent().hide();
-    var pannels = 20
+    var pannels = 0
     jQuery('.chat_box').each(function(){
         if (jQuery(this).is(':visible') ) {
-            
+            jQuery(this).css('right', pannels + 'px')
             pannels = pannels + 440;
         }
 
