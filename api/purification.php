@@ -25,21 +25,7 @@ $name = $fname." ".$lname;
   if($result->num_rows != 0) {
     $row = $result->fetch_assoc();
     $userID = $row['user_id'];
-    $p = "energy";
 
-    $sql44 = "SELECT * FROM `orders` WHERE `user_id` = '$userID' AND `order_product` = '$p' ORDER BY  `order_id` DESC LIMIT 1";
-    $result44 = $conn->query($sql44);
-
-    if($result44->num_rows != 0) { //Order Already Exists
-        $pstatus = "paid";
-        $sql55 = "UPDATE `orders` SET `status`='$pstatus' WHERE order_id='$orderID'";
-        $result = $conn->query($sql);
-        if ($result5){
-            echo "Existing Energy Reading order updated";
-        }else{
-            echo "error updating existing order";
-        }
-    }else{
     //Fetch User Data
     $sql22 = "SELECT * FROM `users` WHERE `id` = '$userID'";
     $result22 = $conn->query($sql22);
@@ -53,22 +39,20 @@ $name = $fname." ".$lname;
     $oStatus = "paid";
     $order_date = date('Y-m-d H:i:s');
     $user_email = $row22['email'];
-    $order_product = "energy";
-    $order_product_nice = "Monthly Energy Reading";
+    $order_product = "purification";
+    $order_product_nice = "Psychic Purification";
     $cbprice = "15";
     $userGender = $row22['gender'];
     $userGenderAcc =$row22['GenderAcc'];
     $partnerGender = $row22['partner_gender'];
 
-    //Create new order
     $sql33 = "INSERT INTO orders (user_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, gender, genderAcc, partner_gender) 
                         VALUES ('$userID', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender')";
 
     if(mysqli_query($conn,$sql33)){
         echo "Monthly Reading Order Created";
     }else{
-        echo "error creating new order";
-    }
+
     }
 
   }
