@@ -74,7 +74,7 @@
               echo '
               <div class="col-sm-6 col-md-4 col-12" style="margin-bottom:20px;">
                     <div class="card-body">
-                        <h4 class="card-title-prod" style="margin:0;">'.$product.' - '.$priority.'h<br><span style="font-size:90%;">#'.$orderID.'</span></h4>
+                        <h4 class="card-title-prod" style="margin:0;">'.$product.' <br><span style="font-size:90%;">#'.$orderID.'</span></h4>
 
 
                         <div style="background-color: #fff;" class="card-image">
