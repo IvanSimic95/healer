@@ -6,7 +6,7 @@ $r = 1;
 $rlink = "/dologin?email=".$email;
 }
 if($r == 1){
-    header('Location: '.$newURL);
+    header('Location: '.$rlink);
     die();
 }
 $title = "User Dashboard | Soulmate Healer";
