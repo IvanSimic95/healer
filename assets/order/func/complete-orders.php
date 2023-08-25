@@ -52,9 +52,7 @@ echo "Starting complete-orders.php...<br><br>";
 			$reading = $row["reading"];
 			$color = $row["color"];
 
-			if($orderID != "10002"){
-				die();
-			}
+			
 
 			$trigger = 0;
 			#$trigger = 1;
