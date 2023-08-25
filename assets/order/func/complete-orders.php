@@ -147,10 +147,10 @@ $logArray[] = "
 
 
 				$minMonth = rand(13,15);
-				$maxMonth = rand(20,36);
+				$maxMonth = rand(16,36);
 				$meetTime = $minMonth." - ".$maxMonth;
 
-				$premiumText = "\n\nYour ".$premiumProdT." initials: *".$initials."*\nYou will meet in *".$meetTime."* weeks\n";
+				$premiumText = "\n\nYour ".$premiumProdT." initials: *".$initials."*\nYou will meet in about *".$maxMonth."* weeks\n";
 
 			}else{
 				$premiumText = "";
