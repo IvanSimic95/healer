@@ -178,7 +178,7 @@ case "Twinflame":
     if ($row123 > 0){
       $lastRowInsert = "";
       $submitStatus = "Error";
-      $ErrorMessage = "You are blacklisted";
+      $ErrorMessage = "Unexpected Error";
       $returnData = [$submitStatus,$ErrorMessage];
       echo json_encode($returnData);
 }else{
