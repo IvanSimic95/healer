@@ -97,6 +97,9 @@ $(document).ready(function() {
 									<label class="label-control" for="message">Message*</label>
 									<div class="help-block with-errors"></div>
 								</div>
+
+								
+								<div id="#showmessage" class="alert alert-success" role="alert" style="display:none;"></div>
                     
 							
 								<div class="form-group">

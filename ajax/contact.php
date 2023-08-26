@@ -53,8 +53,10 @@ $headers = 'From: info@soulmatehealer.com' . "\r\n" .
 
 mail($to, $subject, $message, $headers);
 
-// Die with a success message
-die("<span class='success'><h3>Successfully Sent!</h3> Your message is on its way, we will respond to you shortly.</span>");
-
+$submitStatus = "Success";
+$SuccessMessage = "Your Support Request has been sent!";
+$redirectPayment = "";
+$returnData = [$submitStatus,$SuccessMessage,$redirectPayment];
+echo json_encode($returnData);
 }
 ?>
