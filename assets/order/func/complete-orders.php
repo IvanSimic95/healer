@@ -36,6 +36,7 @@ echo "Starting complete-orders.php...<br><br>";
 			$orderID = $row["order_id"];
 			$orderEmail = $row["order_email"];
 			$orderAge = $row["user_age"];
+			$energyCurrentWeek = $row["weekly_count"];
 			$orderPrio = $row["order_priority"];
 			$orderProduct = $row["order_product"];
 			$orderSex = $row["partner_gender"];
@@ -603,7 +604,39 @@ $logArray[] = "
 					   $logError[] = $orderEmail;
 					   missingLog($logError);
 					 }
+
+				}elseif ($orderProduct == "energyw") {
+					$image_send = 0;
+					$email_text = "";
+					$text_send = "1";
+					$theader = $weeklyEnergyHeader;
+					$tfooter = $weeklyEnergyFooter;
+					$finishOrder = 1;
+
+					
 	
+					 //Find new message text to send
+					 $sql_pick = "SELECT * FROM weekly_energy WHERE week = '$energyCurrentWeek' order by RAND() limit 1";
+					 $sql_pick_res = $conn->query($sql_pick);
+					 if($sql_pick_res->num_rows > 0) {
+					   while($rowImages = $sql_pick_res->fetch_assoc()) {
+						   $email_text = $rowImages["text"];
+						   $message = $theader.$email_text.$tfooter;
+
+						   //Update weekly counter
+						   $NewWCount = $energyCurrentWeek + 1;
+						   $sqlwupdate = "UPDATE `orders` SET `weekly_count`='$NewWCount' WHERE order_id='$orderID'";
+							if ($conn->query($sqlwupdate) === TRUE) {
+								//Updated
+						} 
+					}
+					 }else{ //If not found stop the process and record to error log
+					   $message = "";
+					   $logError[] = "Missing Text";
+					   $logError[] = $orderID;
+					   $logError[] = $orderEmail;
+					   missingLog($logError);
+					 }
 	
 				}
 			

@@ -161,6 +161,12 @@ switch ($order_product_test) {
 case "Pastlife":
     $order_product_nice = "Past Life Drawing";
     break;
+    case "Purification":
+    $order_product_nice = "Psychic Purification";
+    break;
+    case "Energyw":
+      $order_product_nice = "Weekly Energy Reading";
+      break;
 case "Baby":
     $order_product_nice = "Future Baby Drawing";
     break;
@@ -273,6 +279,3 @@ $conn->close();
 }else{
 echo "Direct access is not allowed!";  
 }
-
-
-?>

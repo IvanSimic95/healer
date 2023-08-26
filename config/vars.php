@@ -71,6 +71,9 @@ $ContinueConvoMsg = "If you want to chat with Soulmate Healer, simply reply to t
 $monthlyEnergyHeader = "Dear %FIRSTNAME%,\n\nYour monthly Energy Reading for %MONTH% is ready!\n\n";
 $monthlyEnergyFooter = "With warmth and insight,\nSoulmate Healer";
 
+$weeklyEnergyHeader = "Dear %FIRSTNAME%,\n\nYour Energy Reading for next week is ready!\n\n";
+$weeklyEnergyFooter = "With warmth and insight,\nSoulmate Healer";
+
 
 //EMAIL TEXTS
 $AbandonSubject = "The Timer’s Going Off on Your Order!";
