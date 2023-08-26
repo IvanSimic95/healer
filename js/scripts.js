@@ -312,6 +312,41 @@
         });
 	}
 
+
+    function ssubmitForm() {
+        $("#error").hide();
+        $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Loading...');
+        $("#submitbtn").prop('disabled', true);
+        
+        $.ajax({
+            type:"POST",
+            url: "/ajax/contact.php",
+            dataType: 'json',
+            data: $(this).serialize(),
+            success: function(data){
+              var SubmitStatus = data[0];
+              var DataMSG = data[1];
+ 
+              if (SubmitStatus == "Success"){
+              var Redirect = data[2];
+              $("#show_message").html(DataMSG);
+              $("#show_message").fadeIn();
+              $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Redirecting...');
+              
+              setTimeout(function(){
+                window.location.href = Redirect;
+              }, 2000);
+
+              }else{
+              $("#error").html(DataMSG);
+              $("#error").fadeIn();
+              $("#submitbtn").html("Error Occured!");
+              }
+
+            }
+        });
+	}
+
     function sformSuccess() {
         $("#signUpForm")[0].reset();
         ssubmitMSG(true, "Sign Up Submitted!");

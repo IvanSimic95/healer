@@ -178,7 +178,7 @@ case "Twinflame":
     if ($row123 > 0){
       $lastRowInsert = "";
       $submitStatus = "Error";
-      $ErrorMessage = "Unexpected Error";
+      $ErrorMessage = $BlacklistError;
       $returnData = [$submitStatus,$ErrorMessage];
       echo json_encode($returnData);
 }else{
