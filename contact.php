@@ -99,7 +99,7 @@ $(document).ready(function() {
 								</div>
 
 								
-								<div id="#showmessage" class="alert alert-success" role="alert" style="display:none;"></div>
+								<div id="showmessage" class="alert alert-success" role="alert" style="display:none;"></div>
                     
 							
 								<div class="form-group">
