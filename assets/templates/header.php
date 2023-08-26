@@ -83,7 +83,7 @@ $metatags
                             <a class="dropdown-item" href="/twin-flame"><span class="item-text">Twin Flame Drawing & Reading</span></a>
                             <a class="dropdown-item" href="/future-spouse"><span class="item-text">Future Spouse Drawing & Reading</span></a>
                             <div class="dropdown-items-divide-hr"></div>
-                            <a class="dropdown-item" href="/readings"><span class="item-text">Weekly Energy Reading</span></a>
+                            <a class="dropdown-item" href="/weekly-energy-reading"><span class="item-text">Weekly Energy Reading</span></a>
                             <a class="dropdown-item" href="/future-baby"><span class="item-text">Future Baby</span></a>
                             <a class="dropdown-item" href="/purification"><span class="item-text">Psychic Purification</span></a>
                             <a class="dropdown-item" href="/readings"><span class="item-text">Psychic Reading</span></a>
