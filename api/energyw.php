@@ -22,7 +22,7 @@ $name = $fname." ".$lname;
   $count = $result->num_rows;
 
   //If order is found input data from BG and update status to paid
-  if($result->num_rows != 0) {
+  if($count != 0) {
     $row = $result->fetch_assoc();
     $userID = $row['user_id'];
     $p = "energyw";
@@ -33,6 +33,7 @@ $name = $fname." ".$lname;
     if($result44->num_rows != 0) { //Order Already Exists
         $pstatus = "paid";
         $sql55 = "UPDATE `orders` SET `status`='$pstatus' WHERE order_id='$orderID'";
+        echo $sql55."<br>";
         $result55 = $conn->query($sql55);
         if ($result55){
             echo "Existing Weekly Energy order updated";
