@@ -554,6 +554,7 @@ $logArray[] = "
 				   while($rowImages = $sql_pick_res->fetch_assoc()) {
 					   $email_text = $rowImages["text"];
 					   $message = $theader.$email_text.$tfooter;
+					   $logArray[] = $message;
 				   }
 				 }else{ //If not found stop the process and record to error log
 				   $message = "";
