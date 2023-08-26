@@ -62,8 +62,8 @@ $name = $fname." ".$lname;
     $partnerGender = $row22['partner_gender'];
 
     //Create new order
-    $sql33 = "INSERT INTO orders (user_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, gender, genderAcc, partner_gender) 
-                        VALUES ('$userID', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender')";
+    $sql33 = "INSERT INTO orders (user_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, gender, genderAcc, partner_gender, weekly_count) 
+                        VALUES ('$userID', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender', '1')";
 
     if(mysqli_query($conn,$sql33)){
         echo "Weekly Energy Order Created";
