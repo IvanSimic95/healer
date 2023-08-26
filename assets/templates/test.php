@@ -20,7 +20,7 @@
             id: "administrator",
             name: "Soulmate Healer Psychic",
             email: "info@soulmatehealer.com",
-            photoUrl: "/assets/img/avatars/admin.png",
+            photoUrl: "/images/reading.png",
             role: "admin"
         });
 

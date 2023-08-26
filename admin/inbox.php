@@ -33,7 +33,7 @@ $signature = hash_hmac('sha256', 'administrator', 'sk_test_omv9jN0lymrWKOJ2kvyL4
          id: "administrator",
          name: "Soulmate Healer",
          email: "info@soulmatehealer.com",
-         photoUrl: "/assets/img/avatars/admin.png",
+         photoUrl: "/images/reading.png",
          role: "administrator"
      });
      window.talkSession = new Talk.Session({

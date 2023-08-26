@@ -62,7 +62,7 @@ $order_product = "Soulmate Drawing & Reading";
          id: "administrator",
          name: "Soulmate Healer",
          email: "info@soulmatehealer.com",
-         photoUrl: "/assets/img/avatars/admin.png",
+         photoUrl: "/images/reading.png",
          role: "admin"
      });
      console.log(admin);
