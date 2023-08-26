@@ -625,7 +625,7 @@ $logArray[] = "
 						   $message = $theader.$email_text.$tfooter;
 
 						   //Update weekly counter
-						   $NewWCount = $energyCurrentWeek + 1;
+						   $NewWCount = $energyCurrentWeek;
 						   $sqlwupdate = "UPDATE `orders` SET `weekly_count`='$NewWCount' WHERE order_id='$orderID'";
 							if ($conn->query($sqlwupdate) === TRUE) {
 								//Updated
