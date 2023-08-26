@@ -170,6 +170,22 @@ case "Twinflame":
 }
 
 
+    //blacklist check
+    $sql123 = "SELECT * FROM blacklist WHERE email = '".$user_email."'";
+    $result123 = $conn->query($sql123);
+    if ($result123){
+    $row123 = mysqli_num_rows($result123);
+    if ($row123 > 0){
+      $lastRowInsert = "";
+      $submitStatus = "Error";
+      $ErrorMessage = "You are blacklisted";
+      $returnData = [$submitStatus,$ErrorMessage];
+      echo json_encode($returnData);
+}else{
+               
+   
+
+
 $sql5 = "SELECT * FROM users WHERE email = '".$user_email."'";
     $result5 = $conn->query($sql5);
     if ($result5){
@@ -242,7 +258,8 @@ $_SESSION['lastorder'] = $lastRowInsert;
 
 $conn->close();
 
-
+}
+}
 
 }else{
 echo "Direct access is not allowed!";  

@@ -33,10 +33,16 @@ $name = $fname." ".$lname;
             $result5 = $conn->query($sql);
             if ($result5){
 
-
+                $reason = "Refund/Chargeback";
 
 
             echo "Order #".$orderID." Canceled";
+            $sql33 = "INSERT INTO blacklist (email, reason) 
+            VALUES ('$order_email', '$reason')";
+
+                if(mysqli_query($conn,$sql33)){
+                echo "Added to blacklist";
+                }
         }else{
             echo "There was an error";
         }
