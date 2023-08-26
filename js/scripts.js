@@ -170,13 +170,7 @@
             $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Loading...');
             $("#submitbtn").prop('disabled', true);
      
-           //First name required
-           var name = $("input#fullname").val();
-           if(name == ""){
-                $("#error").fadeIn().text("First & Last Name Field required.");
-                $("input#fname").focus();
-                return false;
-            }		 
+           
             // ajax
             $.ajax({
                 type:"POST",

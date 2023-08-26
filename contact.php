@@ -74,7 +74,7 @@ $(document).ready(function() {
  </div>
  <div class="wrap-white">
 	<div class="contact_form">
-    <form id="contactForm" data-toggle="validator" data-focus="false">
+    <form id="ajax-contact" data-toggle="validator" data-focus="false">
 								<div class="form-group">
 									<input type="text" class="form-control-input" name="name" id="sname" required>
 									<label class="label-control" for="sname">Name*</label>
@@ -103,7 +103,7 @@ $(document).ready(function() {
                     
 							
 								<div class="form-group">
-									<button id="submitbtn" type="submit" class="form-control-submit-button">Submit Message <i class="fa-solid fa-arrow-right"></i></button>
+									<button id="submitbtn" type="submit" class="form-control-submit-button">Send a Message <i class="fa-solid fa-arrow-right"></i></button>
 								</div>
 								
 							
