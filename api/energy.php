@@ -32,7 +32,7 @@ $name = $fname." ".$lname;
 
     if($result44->num_rows != 0) { //Order Already Exists
         $pstatus = "paid";
-        $sql55 = "UPDATE `orders` SET `status`='$pstatus' WHERE order_id='$orderID'";
+        $sql55 = "UPDATE `orders` SET `order_status`='$pstatus' WHERE order_id='$orderID'";
         $result55 = $conn->query($sql55);
         if ($result5){
             echo "Existing Energy Reading order updated";
