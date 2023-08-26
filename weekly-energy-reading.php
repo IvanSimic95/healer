@@ -1,8 +1,8 @@
 <?php 
-$t_product_name = "purification";
-$t_product_form_name = "purification";
-$title = "Psychic Purification | Soulmate Healer";
-$description = "I will provide you with your psychic purification";
+$t_product_name = "energyw";
+$t_product_form_name = "energyw";
+$title = "Weekly Energy Reading | Soulmate Healer";
+$description = "I will provide you with your weekly energy reading";
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <?php
@@ -23,14 +23,14 @@ $count = $result->num_rows;
                    <div class="col-lg-6 col-xl-7">
                         <div class="image-container">
                             <div class="img-wrapper">
-                                <img class="img-fluid" src="/images/purification-01.png" style="border-radius: 0.5rem;" alt="alternative">
+                                <img class="img-fluid" src="/images/products/energy.png" style="border-radius: 0.5rem;" alt="alternative">
                             </div>  
                         </div>  
                    </div>				
 
                    <div class="col-lg-6 col-xl-5">
 						<div class="header-box">
-                        <h5 style="margin-top: 10px;">Psychic Purification</h5>
+                        <h5 style="margin-top: 10px;">Weekly Energy Reading</h5>
 						<h4 style="text-align: center;font-size: 15px;font-weight: 500;margin-top:-10px;">
 						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
 						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
@@ -41,9 +41,8 @@ $count = $result->num_rows;
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order today, receive within 1-3 days
 						</p>
 						
-						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$199</h2>  
-                        <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$499</h2> 
-						<p>You save <span class="saveda"><b>$300</b> (40%)</span></p>
+						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$5 per Week</h2>  
+
 						</div>
 						
 						
@@ -61,25 +60,18 @@ $count = $result->num_rows;
 									<label class="label-control" for="semail">Email</label>
 									<div class="help-block with-errors"></div>
 								</div>
-								<div class="form-group">
-                               
+                                <div class="form-group">
+                                <div class="form_box">
+                                    <div style="text-align:start;">Your Birth Date*</div>
+                                    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/date.php'; ?>
+                                </div>
 									<div class="help-block with-errors"></div>
 								</div>
                                 
-                                <div class="form_box input-group form-group" style="    padding-bottom: 52px;">
-  
-                                    <input id="prio6" type="radio" name="priority" value="6">
-                                    <label for="prio6"><span><i style="color:#ffaf00;" class="fas fa-bolt" aria-hidden="true"></i>6h</span></label>
-                                    
-                                    <input id="prio24" type="radio" name="priority" value="24">
-                                    <label for="prio24"> <span><i style="color:#c19bff;" class="fas fa-stopwatch" aria-hidden="true"></i>24h</span></label>
-                                    
-                                    <input id="prio48" type="radio" name="priority" value="48" checked="true">
-                                    <label for="prio48"> <span><i  class="fas fa-clock" aria-hidden="true"></i>48h</span></label>
-                                </div>
+                
 
-                            <input class="product" type="hidden" name="product" value="purification">
-                            <input class="product" type="hidden" name="priority" value="72">
+                            <input class="product" type="hidden" name="product" value="energyw">
+                            <input class="product" type="hidden" name="priority" value="6">
                             <div id="error" class="alert alert-danger" style="display: none"></div>
 
 								<div class="form-group">
@@ -148,23 +140,4 @@ $count = $result->num_rows;
         </div>  
     </header>  
 
-    <script>
-jQuery('input[name="priority"]').change(function(){
-    if (this.value == '12') {
-        jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$49').animate({'opacity': 1}, 200);});
-		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$499').animate({'opacity': 0.25}, 300);});
-		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$450</b> (90%)').animate({'opacity': 1}, 400);});	
-    }
-    if (this.value == '24') {
-		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$39').animate({'opacity': 1}, 200);});
-		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$399').animate({'opacity': 0.25}, 300);});
-		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$360</b> (90%)').animate({'opacity': 1}, 400);});
-    }
-    if (this.value == '48') {
-		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$29').animate({'opacity': 1}, 200);});
-		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$299').animate({'opacity': 0.25}, 300);});
-		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$270</b> (90%)').animate({'opacity': 1}, 400);});
-    }
-})
-</script>
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php'; ?>

@@ -25,7 +25,7 @@ $email = $_POST['email'];
 if($_POST['order'] != ""){
     $order = $_POST['order'];
 }else{
-    $order = "None";
+    $order = "none";
 }
 $smessage = $_POST['message'];
 

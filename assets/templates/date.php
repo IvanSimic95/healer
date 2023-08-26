@@ -49,9 +49,9 @@
           <option value="06">June</option>
           <option value="07">July</option>
           <option value="08">August</option>
-          <option value="09">Septemer</option>
+          <option value="09">September</option>
           <option value="10">October</option>
-          <option value="11">Novemer</option>
+          <option value="11">November</option>
           <option value="12">December</option>
         </select>
 
