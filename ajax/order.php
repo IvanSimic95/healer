@@ -112,6 +112,13 @@ switch ($order_priority){
   break;
 }
 
+}elseif($order_product == "purification"){
+
+
+      $cbproduct = "513773";
+      $cbprice = "199";
+  
+
 }else{
   
 switch ($order_priority){

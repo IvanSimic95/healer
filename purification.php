@@ -69,7 +69,8 @@ $count = $result->num_rows;
 									<div class="help-block with-errors"></div>
 								</div>
                                 
-							
+                                <input class="product" type="hidden" name="product" value="purification">
+                                <input class="product" type="hidden" name="priority" value="72">
 								<div class="form-group">
 									<button id="submitbtn" type="submit" class="form-control-submit-button">PLACE AN ORDER <i class="fa-solid fa-arrow-right"></i></button>
 								</div>
