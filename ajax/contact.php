@@ -27,7 +27,7 @@ if(isset($_POST['order'])){
 }else{
     $order = "None";
 }
-$message = $_POST['message'];
+$smessage = $_POST['message'];
 
 
 // --------------------------------------//
@@ -41,9 +41,13 @@ if($order == "none"){
     $subject = "Support Request: $order";
 }
 
-$message = "$message";
+$message = "Name: $name 
+Email: $email 
+Order: $order 
+Message: 
+$smessage";
 $headers = 'From: info@soulmatehealer.com' . "\r\n" .
-    'Reply-To: $email' . "\r\n" .
+    'Reply-To: '.$email . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 

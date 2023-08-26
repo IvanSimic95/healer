@@ -23,13 +23,13 @@ if($order == "none"){
     $subject = "Support Request: $order";
 }
 
-$message = "Name: $name \n
-Email: $email \n
-Order: $order \n
-Message: \n
+$message = "Name: $name 
+Email: $email 
+Order: $order 
+Message: 
 $smessage";
 $headers = 'From: info@soulmatehealer.com' . "\r\n" .
-    'Reply-To: $email' . "\r\n" .
+'Reply-To: '.$email . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 
