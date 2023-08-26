@@ -80,9 +80,9 @@ $count = $result->num_rows;
                                     <input id="prio48" type="radio" name="priority" value="48" checked="true">
                                     <label for="prio48"> <span><i  class="fas fa-clock" aria-hidden="true"></i>48h</span></label>
                                 </div>
-                                
+
                             <input class="product" type="hidden" name="product" value="twinflame">
-                            
+                            <div id="error" class="alert alert-danger" style="display: none"></div>
 
 								<div class="form-group">
 									<button id="submitbtn" type="submit" class="form-control-submit-button">PLACE AN ORDER <i class="fa-solid fa-arrow-right"></i></button>
