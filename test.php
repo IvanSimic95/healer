@@ -1,7 +1,38 @@
 <?php
-include_once  $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
-$order_date = date('n');
-$order_date = $order_date +1;
-echo $order_date;
-echo monthName($order_date);
+//Setup all variables
+$name = "ivan";
+$email = "email@isimic.com";
+
+if(isset($_POST['order'])){
+    $order = $_POST['order'];
+}else{
+    $order = "None";
+}
+$order = "123";
+$smessage = "testmessage";
+
+
+// --------------------------------------//
+// Send the email // INSERT YOUR EMAIL HERE
+$to = "info@soulmatehealer.com";
+// --------------------------------------//
+
+if($order == "none"){
+    $subject = "Support Request: $name";
+}else{
+    $subject = "Support Request: $order";
+}
+
+$message = "Name: $name \n
+Email: $email \n
+Order: $order \n
+Message: \n
+$smessage";
+$headers = 'From: info@soulmatehealer.com' . "\r\n" .
+    'Reply-To: $email' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+
+mail($to, $subject, $message, $headers);
+
 ?>

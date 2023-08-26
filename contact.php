@@ -76,24 +76,24 @@ $(document).ready(function() {
 	<div class="contact_form">
     <form id="contactForm" data-toggle="validator" data-focus="false">
 								<div class="form-group">
-									<input type="text" class="form-control-input" id="sname" required>
+									<input type="text" class="form-control-input" name="name" id="sname" required>
 									<label class="label-control" for="sname">Name*</label>
 									<div class="help-block with-errors"></div>
 								</div>
 								<div class="form-group">
-									<input type="email" class="form-control-input" id="semail" required>
+									<input type="email" class="form-control-input" name="email" id="semail" required>
 									<label class="label-control" for="semail">Email*</label>
 									<div class="help-block with-errors"></div>
 								</div>
 
                                 <div class="form-group">
-									<input type="text" class="form-control-input" id="order">
+									<input type="text" class="form-control-input" name="order" id="order">
 									<label class="label-control" for="order">Order ID</label>
 									<div class="help-block with-errors"></div>
 								</div>
 							
                                 <div class="form-group">
-									<textarea class="form-control-input" id="message"></textarea>
+									<textarea class="form-control-input" id="message" name="message" ></textarea>
 									<label class="label-control" for="message">Message*</label>
 									<div class="help-block with-errors"></div>
 								</div>
