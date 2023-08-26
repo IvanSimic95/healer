@@ -50,7 +50,7 @@ $count = $result->num_rows;
 
 						<div id="order" class="form-container">
 						<p style="text-align:center;margin-top: -20px;font-size: 15px;">Fill in the form below to book your reading!</p>
-							<form id="signUpForm" data-toggle="validator" data-focus="false">
+							<form id="ajax-form" data-toggle="validator" data-focus="false">
 								<div class="form-group">
 									<input type="text" class="form-control-input" id="sname" required>
 									<label class="label-control" for="sname">Name</label>
