@@ -29,8 +29,8 @@ $name = $fname." ".$lname;
     $userID = $row['user_id'];
 
        
-            $sql = "UPDATE `orders` SET `reading`='$rnumber' WHERE order_id='$orderID'";
-            $result = $conn->query($sql);
+            $sql5 = "UPDATE `orders` SET `reading`='$rnumber' WHERE order_id='$orderID'";
+            $result5 = $conn->query($sql5);
             if ($result5){
 
 
