@@ -581,6 +581,8 @@ $logArray[] = "
 					}else{
 						$pickMonth = $currentMonth;
 					}
+
+					$monName = monthName($pickMonth);
 	
 					 //Find new message text to send
 					 $sql_pick = "SELECT * FROM orders_text WHERE product = 'energy' AND gender = '$pickMonth' order by RAND() limit 1";
@@ -589,6 +591,9 @@ $logArray[] = "
 					   while($rowImages = $sql_pick_res->fetch_assoc()) {
 						   $email_text = $rowImages["text"];
 						   $message = $theader.$email_text.$tfooter;
+
+						   //Replace month name with variable
+						   $message = str_replace("%MONTH%", $monName, $message);
 						 
 					   }
 					 }else{ //If not found stop the process and record to error log
