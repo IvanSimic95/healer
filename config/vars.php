@@ -80,6 +80,9 @@ $OrderCompleteMessage = "Your Order status is now set to *Complete*!";
 $ContinueConvoMsg = "If you want to chat with Soulmate Healer, simply reply to this conversation!";
 //END Order Messages
 
+$monthlyEnergyHeader = "Dear %FIRSTNAME%\n\n, your monthly energy reading for %MONTH% is ready!\n\n";
+$monthlyEnergyFooter = "With warmth and insight,\nSoulmate Healer";
+
 
 //EMAIL TEXTS
 $AbandonSubject = "The Timer’s Going Off on Your Order!";

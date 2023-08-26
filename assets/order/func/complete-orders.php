@@ -554,7 +554,7 @@ $logArray[] = "
 				   while($rowImages = $sql_pick_res->fetch_assoc()) {
 					   $email_text = $rowImages["text"];
 					   $message = $theader.$email_text.$tfooter;
-					   $logArray[] = $message;
+					  
 				   }
 				 }else{ //If not found stop the process and record to error log
 				   $message = "";
@@ -565,7 +565,42 @@ $logArray[] = "
 				 }
 
 
-			}
+				}elseif ($orderProduct == "energy") {
+					$image_send = 0;
+					$email_text = "";
+					$text_send = "1";
+					$theader = $monthlyEnergyHeader;
+					$tfooter = $monthlyEnergyFooter;
+					$finishOrder = 1;
+
+					$currentDay = date('j');
+					$currentMonth = date('n');
+
+					if($currentDay > 4){
+						$pickMonth = $currentMonth + 1;
+					}else{
+						$pickMonth = $currentMonth;
+					}
+	
+					 //Find new message text to send
+					 $sql_pick = "SELECT * FROM orders_text WHERE product = 'energy' AND gender = '$pickMonth' order by RAND() limit 1";
+					 $sql_pick_res = $conn->query($sql_pick);
+					 if($sql_pick_res->num_rows > 0) {
+					   while($rowImages = $sql_pick_res->fetch_assoc()) {
+						   $email_text = $rowImages["text"];
+						   $message = $theader.$email_text.$tfooter;
+						 
+					   }
+					 }else{ //If not found stop the process and record to error log
+					   $message = "";
+					   $logError[] = "Missing Text";
+					   $logError[] = $orderID;
+					   $logError[] = $orderEmail;
+					   missingLog($logError);
+					 }
+	
+	
+				}
 			
 
 			$message = str_replace("%FIRSTNAME%", $fName, $message);
