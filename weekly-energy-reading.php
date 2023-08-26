@@ -41,7 +41,7 @@ $count = $result->num_rows;
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order today, receive within 1-3 days
 						</p>
 						
-						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$5 per Week</h2>  
+						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$5 <span style="font-size:50%;">/ Week</span></h2>  
 
 						</div>
 						
