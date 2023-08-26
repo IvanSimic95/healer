@@ -36,7 +36,7 @@ $name = $fname." ".$lname;
 
 
 
-            echo "Order Color Added";
+            echo "Order #".$orderID." Canceled";
         }else{
             echo "There was an error";
         }
