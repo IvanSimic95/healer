@@ -613,6 +613,7 @@ $logArray[] = "
 					$tfooter = $weeklyEnergyFooter;
 					$finishOrder = 1;
 
+					$energyCurrentWeek = $energyCurrentWeek +1;
 					
 	
 					 //Find new message text to send
