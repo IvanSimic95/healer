@@ -169,7 +169,7 @@ p{
                     
                     <div class="text textcenter"><p class="textbold" style="font-size:22px;max-width:none;">"Allow me to be your personal cupid and guardian angel that will deliver a guide to help you through love and life on a weekly basis” </p></div>
                     
-                    <div class="text textcenter"><p class="textbold" style="font-size:22px;max-width:none;">Get my weekly energy reading for only $15/month </p><p>(a 50% discount from the normal price of $30/month)</p><p style="font-size:22px;max-width:none;">You will lock this discounted price in for LIFE -- your price will never increase!</p></div>
+                    <div class="text textcenter"><p class="textbold" style="font-size:22px;max-width:none;">Get my weekly energy reading for only $5/week </p><p>(a 50% discount from the normal price of $10/week)</p><p style="font-size:22px;max-width:none;">You will lock this discounted price in for LIFE -- your price will never increase!</p></div>
                     
                     <img class="img-fluid" src="/images/red-arrow.png"><br>
 
