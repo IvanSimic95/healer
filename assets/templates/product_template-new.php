@@ -1,6 +1,6 @@
 <div class="breadcrumbs">
   <div class="container">
-    <a href="/index.php">Melissa</a> > <?php echo $t_product_name; ?> Drawing
+    <a href="/index.php">Soulmate Healer</a> > <?php echo $t_product_name; ?> Drawing
   </div>
 </div>
 <div class="product_page">

@@ -45,7 +45,7 @@ if ($aid % 2 == 0) {
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <div class="breadcrumbs">
   <div class="container">
-    <a href="/index.php">Melissa</a> > <a href="/blog/">Blog</a> > <a href="<?php echo "/blog/".$ashortlink?>"><?php echo $atitle; ?></a>
+    <a href="/index.php">Soulmate Healer</a> > <a href="/blog/">Blog</a> > <a href="<?php echo "/blog/".$ashortlink?>"><?php echo $atitle; ?></a>
   </div>
 </div>
 

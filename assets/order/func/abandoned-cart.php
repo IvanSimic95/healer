@@ -107,7 +107,7 @@ switch ($order_product_test) {
 					$sendgrid = NULL;
 					$response = NULL;
 					$email = new Mail();
-					$email->setFrom("contact@melissa-psychic.com", "Melissa Psychic");
+					$email->setFrom("info@soulmatehealer.com", "Soulmate Healer Psychic");
 					$email->setSubject($AbandonSubject);
 					$email->addTo(
 						$orderEmail,

@@ -18,8 +18,8 @@
     Talk.ready.then(function() {
         var me = new Talk.User({
             id: "administrator",
-            name: "Melissa Psychic",
-            email: "contact@melissa-psychic.com",
+            name: "Soulmate Healer Psychic",
+            email: "info@soulmatehealer.com",
             photoUrl: "/assets/img/avatars/admin.png",
             role: "admin"
         });

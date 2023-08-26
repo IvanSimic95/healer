@@ -77,7 +77,7 @@ src="https://www.facebook.com/tr?id=<?php echo $FBPixel2; ?>&ev=PageView&noscrip
         <div class="quarter">
           <h3>Help & Support</h3>
           <div class="paragraph">
-          For Product Support, please contact the seller <a target="_blank" href="https://melissa-psychic.com/contact.php">HERE</a><hr>
+          For Product Support, please contact the seller <a target="_blank" href="https://soulmatehealer.com/contact.php">HERE</a><hr>
           For Order Support, please contact ClickBank <a target="_blank" href="https://clkbank.com">HERE</a>
           </div>
         </div>
@@ -104,7 +104,7 @@ src="https://www.facebook.com/tr?id=<?php echo $FBPixel2; ?>&ev=PageView&noscrip
 
         <div class="quarter">
           <a href="/index.php">
-            <img src="/assets/img/logo_footer.png" alt="Melissa">
+            <img src="/assets/img/logo_footer.png" alt="Soulmate Healer">
           </a>
           <div class="cards">
             <img src="/assets/img/cards.png" alt="credit_cards">
@@ -114,7 +114,7 @@ src="https://www.facebook.com/tr?id=<?php echo $FBPixel2; ?>&ev=PageView&noscrip
     </div>
     <div class="cr">
       <div class="container">
-        &copy; <?php echo date("Y"); ?> Melissa. All Rights Reserved.
+        &copy; <?php echo date("Y"); ?> Soulmate Healer. All Rights Reserved.
       </div>
     </div>
     <!-- Footer JS Files -->

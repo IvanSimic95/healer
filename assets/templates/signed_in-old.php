@@ -1,14 +1,14 @@
 
 
 
-<?php $title = "Dashboard | Melissa Psychic"; ?>
+<?php $title = "Dashboard | Soulmate Healer Psychic"; ?>
 <?php $description = "Dashboard"; ?>
 <?php $menu_order="0_0"; ?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 
 <div class="breadcrumbs">
   <div class="container">
-    <a href="/index">Melissa</a> > Dashboard
+    <a href="/index">Soulmate Healer</a> > Dashboard
   </div>
 </div>
 <script>
