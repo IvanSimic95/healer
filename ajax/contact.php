@@ -22,7 +22,7 @@ if ($request === 'POST') {
 //Setup all variables
 $name = $_POST['name'];
 $email = $_POST['email'];
-if(isset($_POST['order'])){
+if($_POST['order'] != ""){
     $order = $_POST['order'];
 }else{
     $order = "None";
@@ -38,7 +38,7 @@ $to = "info@soulmatehealer.com";
 if($order == "none"){
     $subject = "Support Request: $name";
 }else{
-    $subject = "Support Request: $order";
+    $subject = "Support Request: Order #$order";
 }
 
 $message = "Name: $name 
