@@ -82,7 +82,7 @@ $count = $result->num_rows;
                                 </div>
 
                             <input class="product" type="hidden" name="product" value="soulmate">
-                            
+                            <div id="error" class="alert alert-danger" style="display: none"></div>
 
 								<div class="form-group">
 									<button id="submitbtn" type="submit" class="form-control-submit-button">PLACE AN ORDER <i class="fa-solid fa-arrow-right"></i></button>
