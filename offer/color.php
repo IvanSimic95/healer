@@ -16,6 +16,9 @@ $count = $row['reviews'];
     .col-md-offset-3 {
         margin-left: 25%;
     }
+    .fa-star{
+        font-size:23px;
+    }
 
     .ex-6-header {
         padding-top: 5rem;
