@@ -355,7 +355,7 @@ $logArray[] = "
 					}
 					
 				//START IF PRODUCT = FUTURE BABY
-			    }elseif ($orderProduct == "baby")  { 
+			    }elseif ($orderProduct == "futurebaby")  { 
 				$image_send = 1;
 				$prod_type = "baby";
 				$img_folder_name = "baby";
@@ -372,7 +372,7 @@ $logArray[] = "
 				}
 					
 
-				$sql_pick = "SELECT * FROM  orders_image WHERE product = 'baby' AND sex = '$babyGender' order by RAND() limit 1";
+				$sql_pick = "SELECT * FROM  orders_image WHERE product = 'futurebaby' AND sex = '$babyGender' order by RAND() limit 1";
 				$sql_pick_res = $conn->query($sql_pick);
 				
 				if($sql_pick_res->num_rows == 0) {
@@ -387,7 +387,7 @@ $logArray[] = "
 					$image_name = $rowImages['name'];
 					}
 				}
-				$sql_text = "SELECT * FROM orders_text WHERE product = 'baby' AND gender = '$babyGender' order by RAND() limit 1";
+				$sql_text = "SELECT * FROM orders_text WHERE product = 'futurebaby' AND gender = '$babyGender' order by RAND() limit 1";
 				$sql_text_res = $conn->query($sql_text);
 				if($sql_text_res->num_rows == 0) {
 						$email_text = "";
@@ -407,7 +407,7 @@ $logArray[] = "
 
 
 
-
+				//OLD PERSONAL READING FUNCTION
 				}elseif (strpos($orderProduct, 'general') !== false || strpos($orderProduct, 'love') !== false || strpos($orderProduct, 'career') !== false || strpos($orderProduct, 'health') !== false) {
 				$image_send = 0;
 				$email_text = "";
@@ -565,6 +565,66 @@ $logArray[] = "
 				   missingLog($logError);
 				 }
 
+				}elseif ($orderProduct == "personal") {
+					$image_send = 0;
+					$email_text = "";
+					$text_send = "1";
+					$theader = "";
+					$tfooter = "";
+					$finishOrder = 1;
+	
+					$sql_text = "SELECT * FROM orders_text WHERE product = 'general' order by RAND() limit 1";
+					$sql_text_res = $conn->query($sql_text);
+					if($sql_text_res->num_rows == 0) {
+					} else {
+						while($rowText = $sql_text_res->fetch_assoc()) {
+							$email_text .= $rowText["text"] . "\n\n";
+						}
+					}
+
+					$sql_text = "SELECT * FROM orders_text WHERE product = 'love' order by RAND() limit 1";
+					$sql_text_res = $conn->query($sql_text);
+					if($sql_text_res->num_rows == 0) {
+					} else {
+						while($rowText = $sql_text_res->fetch_assoc()) {
+							$email_text .= $rowText["text"] . "\n\n";
+						}
+					}
+
+					$sql_text = "SELECT * FROM orders_text WHERE product = 'career' order by RAND() limit 1";
+					$sql_text_res = $conn->query($sql_text);
+					if($sql_text_res->num_rows == 0) {
+					} else {
+						while($rowText = $sql_text_res->fetch_assoc()) {
+							$email_text .= $rowText["text"] . "\n\n";
+						}
+					}
+
+					$sql_text = "SELECT * FROM orders_text WHERE product = 'health' order by RAND() limit 1";
+					$sql_text_res = $conn->query($sql_text);
+					if($sql_text_res->num_rows == 0) {
+					} else {
+						while($rowText = $sql_text_res->fetch_assoc()) {
+							$email_text .= $rowText["text"] . "\n\n";
+						}
+					}
+
+					$message = $theader.$email_text.$tfooter;
+				$countText = strlen($message);
+				if($email_text == ""){
+					$missingTest = 1;
+					$logError[] = "Missing Text";
+					$logError[] = $orderID;
+					$logError[] = $orderEmail;
+					missingLog($logError);
+				}elseif($countText > 9999) {
+					$missingTest = 1;
+					echo "Text Too Long: ".$countText;
+					$logError[] = "Text Too Long: ".$countText;
+					$logError[] = $orderID;
+					$logError[] = $orderEmail;
+					missingLog($logError);
+				}
 
 				}elseif ($orderProduct == "energy") {
 					$image_send = 0;
