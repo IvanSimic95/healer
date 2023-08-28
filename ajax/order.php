@@ -141,6 +141,9 @@ switch ($order_priority){
 }elseif($order_product == "personal"){
   $cbproduct = "513960";
   $cbprice = "49";
+}elseif($order_product == "pastlife"){
+  $cbproduct = "514037";
+  $cbprice = "19";
 }elseif($order_product == "energyw"){
   $cbproduct = "513783";
   $cbprice = "5";
