@@ -23,24 +23,54 @@ $name = $fname." ".$lname;
 
   //If order is found input data from BG and update status to paid
   if($result->num_rows != 0) {
-    
     $row = $result->fetch_assoc();
-    $orderStatus = $row['order_status'];
     $userID = $row['user_id'];
+    $p = "personal";
 
-       
-            $sql5 = "UPDATE `orders` SET `reading`='$rnumber' WHERE order_id='$orderID'";
-            $result5 = $conn->query($sql5);
-            if ($result5){
+    $sql44 = "SELECT * FROM `orders` WHERE `user_id` = '$userID' AND `order_product` = '$p' ORDER BY  `order_id` DESC LIMIT 1";
+    $result44 = $conn->query($sql44);
 
-
-
-
-            echo "Order Reading Added";
+    if($result44->num_rows != 0) { //Order Already Exists
+        $pstatus = "paid";
+        $sql55 = "UPDATE `orders` SET `order_status`='$pstatus' WHERE order_id='$orderID'";
+        $result55 = $conn->query($sql55);
+        if ($result55){
+            echo "Existing Personal Psychic order updated";
         }else{
-            echo "There was an error";
+            echo "error updating existing Personal Psychic order";
         }
+    }else{
+    //Fetch User Data
+    $sql22 = "SELECT * FROM `users` WHERE `id` = '$userID'";
+    $result22 = $conn->query($sql22);
+    $row22 = $result22->fetch_assoc();
 
+    $user_age = $row22['age'];
+    $fName = $row22['first_name'];
+    $lName = $row22['last_name'];
+    $user_name = $row22['full_name'];
+    $user_birthday = $row22['dob'];
+    $oStatus = "paid";
+    $order_date = date('Y-m-d H:i:s');
+    $user_email = $row22['email'];
+    $order_product = "personal";
+    $order_product_nice = "Personal Psychic Reading";
+    $order_priority = "72";
+    $cbprice = "149";
+    $userGender = $row22['gender'];
+    $userGenderAcc =$row22['GenderAcc'];
+    $partnerGender = $row22['partner_gender'];
+
+    //Create new order
+    $sql33 = "INSERT INTO orders (user_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, gender, genderAcc, partner_gender) 
+                        VALUES ('$userID', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender')";
+
+    if(mysqli_query($conn,$sql33)){
+        echo "Personal Psychic Order Created";
+    }else{
+        echo "error creating new Personal Psychic order";
+    }
+    }
 
   }
 
