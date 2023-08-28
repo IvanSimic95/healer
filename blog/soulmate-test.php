@@ -2,7 +2,18 @@
 $title = "Soulmate Test | Soulmate Healer";
 $description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
+<style>
+    #ds24b-27657,#ds24b-2765750,.footer-guarantee{display:none;}
+    .ex-6-header p{max-width:none;}
 
+    @media only screen and (min-width: 768px) {
+  .featured-img {
+    max-width: 40%;
+    height: auto;
+    border-radius:0.33rem;
+  }
+}
+</style>
 
     <!-- Header -->
     <header class="ex-6-header">
@@ -18,7 +29,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
                 </div>
                 <div class="col-sm-12 col-12">
 						<div class="image-container">
-							<img class="img-fluid" src="/images/blog//smtf.png" alt="alternative">
+							<img class="img-fluid featured-img" src="/images/blog//smtf.png" alt="alternative">
 						</div> 
                     </div>
                 </div>

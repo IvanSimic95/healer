@@ -2,7 +2,9 @@
 $title = "Home | Soulmate Healer";
 $description = "Born with an innate gift, the Soulmate Healer doesn't merely perceive the future; he pierces through the veils of time";
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
-
+<style>
+    #ds24b-27657,#ds24b-2765750,.footer-guarantee{display:none;}
+</style>
 
     <!-- Header -->
     <header class="ex-6-header">

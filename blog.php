@@ -3,14 +3,16 @@ $title = "Blog | Soulmate Healer";
 $description = "Born with an innate gift, the Soulmate Healer doesn't merely perceive the future; he pierces through the veils of time";
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 
-
+<style>
+    #ds24b-27657,#ds24b-2765750,.footer-guarantee{display:none;}
+</style>
     <!-- Header -->
     <header class="ex-6-header">
         <div class="header-content">
             <div class="container">
 
 				
-	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
+	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row" onclick="location.href='/blog/soulmate-test'">
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-12">
@@ -38,7 +40,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <br/>	
 	
  
-	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
+	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row" onclick="location.href='/blog/soulmate-test'">
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-12">
@@ -67,7 +69,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <br/>	
 	
  
-	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
+	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row" onclick="location.href='/blog/soulmate-test'">
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-12">
