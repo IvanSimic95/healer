@@ -118,16 +118,14 @@ switch ($order_priority){
       $cbproduct = "513773";
       $cbprice = "199";
 
-  }elseif($order_product == "purification"){
-
-    $cbproduct = "513960";
-    $cbprice = "29";
-
 }elseif($order_product == "futurebaby"){
 
   $cbproduct = "513837";
     $cbprice = "15";
-  
+
+}elseif($order_product == "personal"){
+  $cbproduct = "513960";
+  $cbprice = "49";
 }elseif($order_product == "energyw"){
   $cbproduct = "513783";
   $cbprice = "5";
