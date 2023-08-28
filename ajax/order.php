@@ -118,6 +118,11 @@ switch ($order_priority){
       $cbproduct = "513773";
       $cbprice = "199";
 
+  }elseif($order_product == "purification"){
+
+    $cbproduct = "513960";
+    $cbprice = "29";
+
 }elseif($order_product == "futurebaby"){
 
   $cbproduct = "513837";
@@ -166,6 +171,9 @@ switch ($order_product_test) {
 case "Pastlife":
     $order_product_nice = "Past Life Drawing";
     break;
+    case "Personal":
+      $order_product_nice = "Personal Psychic Reading";
+      break;
     case "futurebaby":
       $order_product_nice = "Future Baby Drawing";
       break;

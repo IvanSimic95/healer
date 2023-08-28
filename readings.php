@@ -68,20 +68,10 @@ $count = $result->num_rows;
                                 </div>
 									<div class="help-block with-errors"></div>
 								</div>
-                                
-                                <div class="form_box input-group form-group" style="    padding-bottom: 52px;">
-  
-                                    <input id="prio6" type="radio" name="priority" value="6">
-                                    <label for="prio6"><span><i style="color:#ffaf00;" class="fas fa-bolt" aria-hidden="true"></i>6h</span></label>
-                                    
-                                    <input id="prio24" type="radio" name="priority" value="24">
-                                    <label for="prio24"> <span><i style="color:#c19bff;" class="fas fa-stopwatch" aria-hidden="true"></i>24h</span></label>
-                                    
-                                    <input id="prio48" type="radio" name="priority" value="48" checked="true">
-                                    <label for="prio48"> <span><i  class="fas fa-clock" aria-hidden="true"></i>48h</span></label>
-                                </div>
+                         
 
-                            <input class="product" type="hidden" name="product" value="readings">
+                            <input class="product" type="hidden" name="product" value="personal">
+                            <input class="product" type="hidden" name="priority" value="24">
                             <div id="error" class="alert alert-danger" style="display: none"></div>
 
 								<div class="form-group">
@@ -156,23 +146,4 @@ $count = $result->num_rows;
         </div>  
     </header>  
 
-    <script>
-jQuery('input[name="priority"]').change(function(){
-    if (this.value == '12') {
-        jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$49').animate({'opacity': 1}, 200);});
-		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$499').animate({'opacity': 0.25}, 300);});
-		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$450</b> (90%)').animate({'opacity': 1}, 400);});	
-    }
-    if (this.value == '24') {
-		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$39').animate({'opacity': 1}, 200);});
-		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$399').animate({'opacity': 0.25}, 300);});
-		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$360</b> (90%)').animate({'opacity': 1}, 400);});
-    }
-    if (this.value == '48') {
-		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$29').animate({'opacity': 1}, 200);});
-		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$299').animate({'opacity': 0.25}, 300);});
-		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$270</b> (90%)').animate({'opacity': 1}, 400);});
-    }
-})
-</script>
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php'; ?>
