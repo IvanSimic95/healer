@@ -155,8 +155,8 @@ p{
 
                     <div style="padding:25px;"><p style="font-size: 23px;">Upgrade for just $10 by clicking button below</p>  </div> 
 
-                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
-						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
+                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                    <span style="font-size:23px;"><?php echo $count; ?> reviews</span>
                     
                     
 
