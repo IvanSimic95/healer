@@ -17,7 +17,7 @@ $count = $row['reviews'];
         margin-left: 25%;
     }
     .fa-star{
-        font-size:23px;
+        font-size:21px;
     }
 
     .ex-6-header {
@@ -156,10 +156,10 @@ p{
                     <img class="img-fluid" style="height:250px;" src="/images/down-arrow-color.png"><br>
                     <img class="img-fluid" src="/images/addcolor.jpg">
 
-                    <div style="padding:25px;"><p style="font-size: 23px;">Upgrade for just $10 by clicking button below</p>  </div> 
+                    <div style="padding:20px;padding-bottom:10px;"><p style="font-size: 23px;">Upgrade for just $10 by clicking button below</p>  </div> 
 
                     <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
-                    <br><span style="font-size:23px;"><?php echo $count; ?> reviews</span>
+                    <br><span style="font-size:21px;"><?php echo $count; ?> reviews</span>
                     
                     
 
