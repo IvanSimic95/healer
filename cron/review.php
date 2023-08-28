@@ -9,7 +9,7 @@ while($row = mysqli_fetch_array ($result)) {
     $reviews = $row['reviews'];
 
     $multi = rand(1, 6);
-    $multi = $multi / 1000;
+    $multi = $multi / 10000;
 
     $newreviews = round($reviews * $multi);
     $totalnew = $reviews + $newreviews;
