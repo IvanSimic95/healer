@@ -1,41 +1,34 @@
 <?php
 include_once $_SERVER['DOCUMENT_ROOT'] . '/config/vars.php';
 
-$lower = strtolower($t_product_form_name);
-$sql = "SELECT * FROM review_total WHERE product = '".$lower."'";
+$sql = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '" . $t_product_name . "' ORDER BY review_date DESC";
 $result = $conn->query($sql);
-$row = $result->fetch_assoc();
-$total = $row['reviews'];
-
-$countchars = strlen($t_product_form_name);
-$countchars = round($countchars / 1.5);
-if($countchars > 9){
-    $base = "0.";  
-}else{
-$base = "0.0";
-}
-$cb = $base.$countchars;
-
-$count = $total;
-
-$fmulti = 0.88 - $cb;
+$count = $result->num_rows;
 
 
-$fourmulti = 0.10;
-if($cb > $fourmulti){
-    $newcb = $fourmulti;
-    $fourmulti = $cb;
-}else{
-    $newcb = $cb;
-    $fourmulti = $fourmulti;
-}
+$sql5 = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '" . $t_product_name . "' AND review_rating = '5.0' ORDER BY review_date DESC";
+$fiveresult = $conn->query($sql5);
+$countfive = $fiveresult->num_rows;
 
-$countfive = round($count * $fmulti);
-$countfour = round($count * $fourmulti);
-$countthree = round($count * $newcb);
-$counttwo = round($count * 0.02);
-$countone = round($count * 0.001);
 
+$sql4 = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '" . $t_product_name . "' AND review_rating = '4.0' ORDER BY review_date DESC";
+$fourresult = $conn->query($sql4);
+$countfour = $fourresult->num_rows;
+
+
+$sql3 = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '" . $t_product_name . "' AND review_rating = '3.0' ORDER BY review_date DESC";
+$threeresult = $conn->query($sql3);
+$countthree = $threeresult->num_rows;
+
+
+$sql2 = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '" . $t_product_name . "' AND review_rating = '2.0' ORDER BY review_date DESC";
+$tworesult = $conn->query($sql2);
+$counttwo = $tworesult->num_rows;
+
+
+$sql1 = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '" . $t_product_name . "' AND review_rating = '1.0' ORDER BY review_date DESC";
+$oneresult = $conn->query($sql1);
+$countone = $oneresult->num_rows;
 
 
 $avgrate = $countfive * "5" + $countfour * "4" + $countthree * "3" + $counttwo * "2" + $countone * "1";

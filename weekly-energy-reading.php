@@ -8,9 +8,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <?php
 
 
-$sql = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '".$t_product_name."' ORDER BY review_date DESC";
+$lower = strtolower($t_product_name);
+$sql = "SELECT * FROM review_total WHERE product = '".$t_product_name."'";
 $result = $conn->query($sql);
-$count = $result->num_rows;
+$row = $result->fetch_assoc();
+$count = $row['reviews'];
 
 
 ?>

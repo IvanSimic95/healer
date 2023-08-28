@@ -1,16 +1,18 @@
 <?php 
-$t_product_name = "readings";
-$t_product_form_name = "readings";
-$title = "Personal Reading | Soulmate Healer";
+$t_product_name = "personal";
+$t_product_form_name = "personal";
+$title = "Personal Psychic Reading | Soulmate Healer";
 $description = "I will provide you with your personal reading";
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <?php
 
 
-$sql = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '".$t_product_name."' ORDER BY review_date DESC";
+$lower = strtolower($t_product_name);
+$sql = "SELECT * FROM review_total WHERE product = '".$t_product_name."'";
 $result = $conn->query($sql);
-$count = $result->num_rows;
+$row = $result->fetch_assoc();
+$count = $row['reviews'];
 
 
 ?>

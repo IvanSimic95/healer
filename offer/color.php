@@ -1,7 +1,16 @@
 <?php
 $title = "Special One-Time-Offer!";
 $description = "Almost Complete...";
-include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
+include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; 
+
+$t_product_name = "color";
+$lower = strtolower($t_product_name);
+$sql = "SELECT * FROM review_total WHERE product = '".$t_product_name."'";
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
+$count = $row['reviews'];
+
+?>
 <script src="https://www.digistore24.com/service/digistore.js"></script><script>digistoreUpsell()</script>
 <style>
     .col-md-offset-3 {
@@ -145,6 +154,9 @@ p{
                     <img class="img-fluid" src="/images/addcolor.jpg">
 
                     <div style="padding:25px;"><p style="font-size: 23px;">Upgrade for just $10 by clicking button below</p>  </div> 
+
+                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
+						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
                     
                     
 
