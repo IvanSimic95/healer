@@ -43,7 +43,7 @@ $count = $result->num_rows;
 						
 						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$199</h2>  
                         <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$499</h2> 
-						<p>You save <span class="saveda"><b>$300</b> (40%)</span></p>
+						<p>You save <span class="saveda"><b>$300</b> (60%)</span></p>
 						</div>
 						
 						
