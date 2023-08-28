@@ -38,7 +38,7 @@ $count = $result->num_rows;
 						<p style="color: #000;text-align: left;padding: 0px 17px;margin-top: 23px;">
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> 99% Accuracy <br/>
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> 100% Satisfaction guarantee<br/>
-						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order today, receive within 1-3 days
+						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order now, receive within 6hours
 						</p>
 						
 						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$29</h2>  
@@ -53,17 +53,17 @@ $count = $result->num_rows;
                         <form id="ajax-form" data-toggle="validator" data-focus="false">
 								<div class="form-group">
 									<input type="text" class="form-control-input" id="sname" name="form_name" required>
-									<label class="label-control" for="sname">Name</label>
+									<label class="label-control" for="sname">Full Name</label>
 									<div class="help-block with-errors"></div>
 								</div>
 								<div class="form-group">
 									<input type="email" class="form-control-input" id="semail" name="form_email" required>
-									<label class="label-control" for="semail">Email</label>
+									<label class="label-control" for="semail">Email Address</label>
 									<div class="help-block with-errors"></div>
 								</div>
 								<div class="form-group">
                                 <div class="form_box">
-                                    <div style="text-align:start;">Your Birth Date*</div>
+                                    <div style="text-align:start;">Your Birth Date:</div>
                                     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/date.php'; ?>
                                 </div>
 									<div class="help-block with-errors"></div>
@@ -89,7 +89,7 @@ $count = $result->num_rows;
 								</div>
 								
 								<img style="width: 100%;" src="/images/payment-icons.webp">
-								<p style="font-size:12px;margin-top:7px;margin-bottom: -10px;"><img style="width: 100%;max-width: 28px;padding: 3px;" src="/images/tarot-cards.png">Only accepting 4 more readings for today! <i class="fa-solid fa-fire-flame-curved"></i> 27 Sold</p>
+								<p style="font-size:12px;margin-top:7px;margin-bottom: -10px;"><img style="width: 100%;max-width: 28px;padding: 3px;" src="/images/tarot-cards.png">Only accepting 1 more order for today! <i class="fa-solid fa-fire-flame-curved"></i> 4 Sold</p>
 								
 							</form>
 						</div>
@@ -103,17 +103,19 @@ $count = $result->num_rows;
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>INTRODUCING THE SOULMATE HEALER: YOUR KEY TO ETERNAL LOVE</h2>
-                        <p>I am the Soulmate Healer, a master in the realm of psychic artistry, uniquely qualified to bring you face to face with your soul's true counterpart. I don't just offer predictions; I unlock the door to a love that will light up your life with joy, passion, and boundless fulfillment.</p>
-                        <p>My soulmate portraits are no mere drawings; they're a magical blend of deep psychic connection and artistic talent. I channel a synergy of empathic projection, clairsentience, and clairvoyance, enhanced by my rich knowledge in spiritual healing and psychic artistry. I hold the power to see the unseen - to discern that perfect moment when you're ready to embrace true love and the ways to dismantle any walls that stand in your way.</p>
-                        <p>All I need is your name and date of birth to embark on this mystical journey. My process is a sacred ritual: I plunge into a deep meditative trance, connecting to the cosmic consciousness where your soulmate awaits. The features, the life details, the love story that is destined for you, all come into vivid focus. My hand moves as if by magic, bringing to life an exquisitely detailed portrait, paired with a heartfelt description of your soulmate's personality. Finally, I tap into the vibrations of your aura, pinpointing that fateful moment when your worlds will collide.</p>
-                        <p>  Finding your soulmate is a transformative experience, like the unfolding of a magnificent rose. Your love will be delicate yet enduring, replacing past sorrows with radiant joy. You will find yourself propelled forward, inspired to chase your dreams with a heart shielded by love and protection. </p>
-	                     <p> <b> EXCLUSIVE BONUS: The Cosmic Alignment of Your Love Paths </b>  </p>
-	                     <p>  Your soulmate is not just a romantic partner; they are the mirror of your soul, guiding you towards profound self-discovery and deeper understanding. Their presence will mark a seismic shift in your life, unlocking unparalleled emotional and spiritual growth. </p>
-	                     <p>  My unparalleled insights have captivated the hearts of stars and celebrities, drawing thousands to my door in search of their soulmate. I have unfailingly answered each call, for every soul deserves to bask in the glow of true love. Should you choose to join this sacred journey, I will be your steadfast companion, ensuring that your heart's desires are manifested in their fullest form. </p>
-	                     <p> <center> <b> A COMMITMENT TO PRIVACY: Digital Delivery Only </b> </center>   </p>
-	                     <p> Your order will be securely delivered to the email address you provide, and will also be readily accessible from the user dashboard. Rest assured, your physical address remains confidential.  </p>
-	
+                        <h2>FUTURE SPOUSE PSYCHIC DRAWING</h2>
+						<p><b> <center> <FONT COLOR="#d9480d"> A GLIMPSE INTO YOUR DESTINED PARTNERSHIP </FONT> </b> </center> </p>						
+<br> <p>Step into the realm of the unknown and unveil the face of your future life partner with the <strong>Future Spouse Psychic Drawing.</strong> While fate writes a captivating story, I offer you the chance to peek into its pages, introducing you to the one destined to stand by your side.</p>
+<br> <p>Every sketch I craft is a harmonious blend of intuitive insights, psychic vibrations, and artistry. Using a mix of clairvoyance and deep spiritual connection, I embark on a journey through time, capturing the essence of the person with whom you&apos;ll share life&apos;s most intimate moments.</p>
+<br> <p>To initiate this sacred process, I&apos;ll need your name and birthdate. Guided by the stars and the universe&apos;s whispers, I&apos;ll channel your future spouse&apos;s energy. The resulting portrait transcends mere lines and shades; it echoes with the laughter, dreams, and shared moments awaiting you.</p>
+<br> <p>Unveiling your future spouse isn&apos;t just about knowing their face. It&apos;s about preparing your heart for the love, lessons, and shared experiences that will define your journey together.</p>
+<br> <p><strong>EXCLUSIVE PERSPECTIVE: Deciphering the Astral Blueprint of Your Romantic Destiny</strong></p>
+<p>With each intricately crafted portrait, I journey deeper into the celestial tapestry, unveiling the intricate weave of fates that connect you to your future spouse. Discover the preordained encounters that will seamlessly merge your paths, the trials destined to solidify your union, and the pivotal moments that will shape the core of your shared experiences. By interpreting this astral blueprint, I illuminate the profound nuances, commitments, and ethereal pledges sculpted by the universe for your shared journey.</p>
+<br> <p>From individuals seeking clarity to celebrated personalities wanting a glance into their love future, my drawings have illuminated the path for many. Choosing the &quot;Future Spouse Psychic Drawing&quot; is more than a purchase; it&apos;s an invitation to a transformative experience of love and self-discovery.</p>
+<br> <p><strong>OUR VOW OF TRUST: A Bond That Respects Your Faith</strong></p>
+<p>If my vision doesn&apos;t unfold as perceived within the provided timeframe, a full refund will be honored, a testament to our shared trust and spiritual commitment.</p>
+<br> <p><strong>UTMOST CONFIDENTIALITY: Digital Delivery Ensuring Privacy</strong></p>
+<p>Your uniquely crafted drawing and accompanying insights will be discreetly delivered to your provided email, safeguarding your privacy. While the universe may know your story, our journey together remains confidential.</p>
                         <a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER</a>
                     </div> <br clear="all">
                 </div>  
