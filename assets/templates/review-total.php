@@ -5,7 +5,14 @@ $lower = strtolower($t_product_form_name);
 $sql = "SELECT * FROM review_total WHERE product = '".$lower."'";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
-$total = $row['reviews'];
+
+if(isset($row['reviews'])){
+    $total = $row['reviews'];
+
+}else{
+    $total = 1128;
+}
+
 
 $countchars = strlen($t_product_form_name);
 $countchars = round($countchars / 1.5);

@@ -43,7 +43,7 @@ $count = $row['reviews'];
 						</p>
 						
 						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$29</h2>  
-                        <h2 class="old_price" style="display:none!important; font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$299</h2> 
+                        <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$299</h2> 
 						<p style="display:none;">You save <span class="saveda"><b>$270</b> (90%)</span></p>
 						</div>
 						
@@ -69,9 +69,9 @@ $count = $row['reviews'];
                                 </div>
 									<div class="help-block with-errors"></div>
 								</div>
-                                
+                                <div style="text-align:start;">Delivery Priority:</div>
                                 <div class="form_box input-group form-group" style="    padding-bottom: 52px;">
-  
+                                
                                     <input id="prio6" type="radio" name="priority" value="6">
                                     <label for="prio6"><span><i style="color:#ffaf00;" class="fas fa-bolt" aria-hidden="true"></i>6h</span></label>
                                     
@@ -150,7 +150,7 @@ $count = $row['reviews'];
          </div>
 	</div>
     <br>
-    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/bestseller.php'; ?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/allproducts.php'; ?>
 
 <br clear="all">			
 				

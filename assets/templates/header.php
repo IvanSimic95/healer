@@ -48,7 +48,14 @@ $metatags
 
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   
-	
+  <script type="text/javascript">
+DeBounce_APIKEY = 'public_WnlvZnE2TkZCSjNjeG9yUWNPODV1dz09'; // Your DeBounce Public API Key.
+DeBounce_DisablePlaceholder = 'true'; // Disable converting the invalid email to placeholder or not.
+DeBounce_DisableLink = 'true'; // Disable link to DeBounce website or not.
+DeBounce_DisableTooltip = 'true';
+</script>
+
+<script async type="text/javascript" src="https://cdn.debounce.io/widget/DeBounce.v2.js"></script>
 	<!-- Favicon  -->
     <link rel="icon" href="/images/favicon.png">
 </head>
@@ -87,6 +94,7 @@ $metatags
                             <a class="dropdown-item" href="/future-baby"><span class="item-text">Future Baby</span></a>
                             <a class="dropdown-item" href="/purification"><span class="item-text">Psychic Purification</span></a>
                             <a class="dropdown-item" href="/readings"><span class="item-text">Psychic Reading</span></a>
+                            <a class="dropdown-item" href="/past-life"><span class="item-text">Past Life Drawing</span></a>
                             <!--<a class="dropdown-item" href="upsell.html"><span class="item-text">UPSELL 01</span></a>-->
 
                         </div>

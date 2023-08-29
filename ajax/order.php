@@ -120,12 +120,30 @@ switch ($order_priority){
 
 }elseif($order_product == "futurebaby"){
 
+  switch ($order_priority){
+    case "48":
+      
   $cbproduct = "513837";
-    $cbprice = "15";
+  $cbprice = "15";
+    break;
+  
+    case "24":
+      $cbproduct = "514031";
+      $cbprice = "39";
+    break;
+  
+    case "6":
+      $cbproduct = "514032";
+      $cbprice = "49";
+    break;
+    }
 
 }elseif($order_product == "personal"){
   $cbproduct = "513960";
   $cbprice = "49";
+}elseif($order_product == "pastlife"){
+  $cbproduct = "514037";
+  $cbprice = "19";
 }elseif($order_product == "energyw"){
   $cbproduct = "513783";
   $cbprice = "5";

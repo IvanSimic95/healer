@@ -1,7 +1,7 @@
 <?php 
-$t_product_name = "purification";
-$t_product_form_name = "purification";
-$title = "Psychic Purification | Soulmate Healer";
+$t_product_name = "pastlife";
+$t_product_form_name = "pastlife";
+$title = "Past Life Drawing | Soulmate Healer";
 $description = "I will provide you with your psychic purification";
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
@@ -12,7 +12,12 @@ $lower = strtolower($t_product_name);
 $sql = "SELECT * FROM review_total WHERE product = '".$t_product_name."'";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
-$count = $row['reviews'];
+if(isset($row['reviews'])){
+    $count = $row['reviews'];
+
+}else{
+    $count = 1128;
+}
 
 ?>
     <!-- Header -->
@@ -24,14 +29,14 @@ $count = $row['reviews'];
                    <div class="col-lg-6 col-xl-7">
                         <div class="image-container">
                             <div class="img-wrapper">
-                                <img class="img-fluid" src="/images/purification-01.png" style="border-radius: 0.5rem;" alt="alternative">
+                                <img class="img-fluid" src="/images/products/pastlife.png" style="border-radius: 0.5rem;" alt="alternative">
                             </div>  
                         </div>  
                    </div>				
 
                    <div class="col-lg-6 col-xl-5">
 						<div class="header-box">
-                        <h5 style="margin-top: 10px;">Psychic Purification</h5>
+                        <h5 style="margin-top: 10px;">Past Life Drawing</h5>
 						<h4 style="text-align: center;font-size: 15px;font-weight: 500;margin-top:-10px;">
 						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
 						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
@@ -42,9 +47,9 @@ $count = $row['reviews'];
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order today, receive within 1-3 days
 						</p>
 						
-						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$199</h2>  
+						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$19</h2>  
                         <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$499</h2> 
-						<p>You save <span class="saveda"><b>$300</b> (60%)</span></p>
+						<p>You save <span class="saveda"><b>$480</b> (95%)</span></p>
 						</div>
 						
 						
@@ -72,8 +77,8 @@ $count = $row['reviews'];
                                 
                                
 
-                            <input class="product" type="hidden" name="product" value="purification">
-                            <input class="product" type="hidden" name="priority" value="72">
+                            <input class="product" type="hidden" name="product" value="pastlife">
+                            <input class="product" type="hidden" name="priority" value="24">
                             <div id="error" class="alert alert-danger" style="display: none"></div>
 
 								<div class="form-group">
@@ -142,5 +147,5 @@ $count = $row['reviews'];
         </div>  
     </header>  
 
-
+  
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php'; ?>
