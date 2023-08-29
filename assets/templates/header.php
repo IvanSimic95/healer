@@ -54,6 +54,14 @@ DeBounce_DisablePlaceholder = 'true'; // Disable converting the invalid email to
 DeBounce_DisableLink = 'true'; // Disable link to DeBounce website or not.
 DeBounce_DisableTooltip = 'true';
 </script>
+<style>
+    .has-error > .form-control-input:focus + .label-control{
+    top: 0.125rem;
+    opacity: 1;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+</style>
 <script async type="text/javascript" src="https://cdn.debounce.io/widget/DeBounce.v2.js"></script>
 	<!-- Favicon  -->
     <link rel="icon" href="/images/favicon.png">
