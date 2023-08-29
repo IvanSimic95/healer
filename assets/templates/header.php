@@ -50,6 +50,7 @@ $metatags
   
   <script type="text/javascript">
 DeBounce_APIKEY = 'public_WnlvZnE2TkZCSjNjeG9yUWNPODV1dz09'; // Your DeBounce Public API Key.
+DeBounce_DisablePlaceholder = 'true'; // Disable converting the invalid email to placeholder or not.
 DeBounce_DisableLink = 'true'; // Disable link to DeBounce website or not.
 </script>
 <script async type="text/javascript" src="https://cdn.debounce.io/widget/DeBounce.v2.js"></script>
