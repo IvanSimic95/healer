@@ -55,7 +55,7 @@ DeBounce_DisableLink = 'true'; // Disable link to DeBounce website or not.
 DeBounce_DisableTooltip = 'true';
 </script>
 <style>
-#semail:focus + .label-control{
+#semail + .label-control{
     top: 0.125rem;
     opacity: 1;
     font-size: 0.75rem;
