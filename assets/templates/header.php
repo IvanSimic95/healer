@@ -48,7 +48,11 @@ $metatags
 
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   
-	
+  <script type="text/javascript">
+DeBounce_APIKEY = 'public_WnlvZnE2TkZCSjNjeG9yUWNPODV1dz09'; // Your DeBounce Public API Key.
+DeBounce_DisableLink = 'true'; // Disable link to DeBounce website or not.
+</script>
+<script async type="text/javascript" src="https://cdn.debounce.io/widget/DeBounce.v2.js"></script>
 	<!-- Favicon  -->
     <link rel="icon" href="/images/favicon.png">
 </head>
