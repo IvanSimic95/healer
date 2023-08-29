@@ -13,7 +13,7 @@ if($i >= 3000){
 
 while($i < $maxi) {
     $content = file_get_contents('https://thispersondoesnotexist.com/');
-    file_put_contents('/download/dl/'.$i.'.jpg', $content);
+    file_put_contents('dl/'.$i.'.jpg', $content);
     $i++;
   }
  
