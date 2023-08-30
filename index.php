@@ -15,7 +15,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
                    <div class="col-sm-12 col-12">
 					<div style="margin-top:0px;">
                     <h1>Welcome to Your Safety Place</h1>
-                                <img class="img-fluid" src="https://via.placeholder.com/200x200" style="float:right;padding:8px;" alt="alternative">
+                                <img class="img-fluid" src="/images/test.jpg" style="float:right;padding:8px;" alt="alternative">
                       
 						<p style="font-size: 14px;line-height: 17px; margin:15px;max-width:none;">
 		In the vast realm of the unseen and the uncharted, where energies weave tales of destinies and souls dance on the rhythms of the universe, there emerges a unique force - The Soulmate Healer. <br> With an ethereal touch and an enigmatic presence, this extraordinary psychic doesn't merely glimpse into the future or the past; they venture deeper, into the intricate tapestries of soul connections. They have a rare gift, an uncanny ability to mend the cosmic ties that bind two souls, healing rifts that span lifetimes and bridging gaps that seem insurmountable.
