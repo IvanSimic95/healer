@@ -60,8 +60,6 @@ if ($v > 3) {
     </script>
 </head>
 
-<body class="body">
-
     <body class="body">
         <div class="header-bar wf-section">
             <div class="logo-wrapper"><img src="https://www.soulmatehealer.com/images/logo.png" loading="lazy" alt=""></div>
@@ -496,27 +494,29 @@ if ($v > 3) {
 
         <?php } ?>
 
+        <div class="button-wrapper">
+        <a data-w-id="9ca0b638-11a4-0aa1-331f-7ef8023444e2" href="#" class="order-now-button w-button">ORDER NOW<br><span class="btn-sub-text">And Watch Your Life Magically Change</span>&zwj;</a>
+        <div class="secure-badge"><img src="images/lock.png" loading="lazy" alt="" class="lock-icon">
+            <div class="secure-checkout-text inverted" style="color:white;">Safe &amp; Secure • 365 Money Back Guarantee</div>
         </div>
+      </div>
+        </div>
+        <br><br><br><br>
 
 
 
 
-
-        <div class="container disclaimer w-container">
-            <div class="disclaimer-text">
-                <div class="paragraph" style="margin-top:15px;">
-                    <p style="
+        <div class="container disclaimer w-container" style="background-color:transparent;box-shadow:none;">
+        <p style="
     padding: 15px;
-    border: 2px solid white;
-    border-radius: 5px;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    color:white;
 ;">
                         Disclaimer: The information contained herein should not be used as a substitute for the advice of appropriately qualified and licensed person. According to the laws in force, I must state that my services are for entertainments purposes only. I have no liability and/or responsibility for any actions and/or decisions any buyer/client chooses to take or make based on his/her consultation. You acknowledge that I am not a licensed psychologist, lawyer, or health care professional and my services do not replace the care of lawyers, psychologists, or other healthcare professionals. Tarot and numerology are in no way to be construed or substituted as psychological counseling or any other type of therapy or medical advice. I will at all times exercise my best professional efforts, skills, and care.</p>
-                </div>
-                <hr style="background-color: black;">
+               
+            <p class="footer__copyright" style="text-align:center;"><a href="/tos">Terms & Conditions</a> |  <a href="/tos/#refunds">Refund Policy</a>  |  <a href="/contact">Contact Us</a> </p>
 
-            </div>
-            <p class="footer__copyright" style="text-align:center;"><a href="/tos">Terms & Conditions</a> |  <a href="/tos/#refunds">Refund Policy</a> </p>
+            
         </div>
         </div>
 
