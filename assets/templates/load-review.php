@@ -24,7 +24,7 @@ $total_pages = ceil($total_rows / $perpage);
 
 $nextpage = $page + 1;
 
-    $sql = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '".$product."' ORDER BY review_date DESC LIMIT ".$offset.", ".$perpage;
+    $sql = "SELECT * FROM reviews WHERE review_moderated = 'approved' AND product = '".$product."' ORDER BY review_id ASC LIMIT ".$offset.", ".$perpage;
 
     $result = $conn->query($sql) or trigger_error("Query Failed! SQL: $sql - Error: ".mysqli_error($conn), E_USER_ERROR);
 	$count = $result->num_rows;
@@ -34,13 +34,21 @@ $nextpage = $page + 1;
          // echo '<div class="single_review sides"><div class="review_content"><h3><span class="review-name">' . $row["review_name"]. '</span> <span class="verified-badge"><i class="fas fa-user-check"></i> Verfied Purchase</span><time>' . $row["review_date"]. '</time> ago</h3><div class="rating">' . $row["review_rating"]. '</div><div class="testimonial">' . $row["review_text"]. '</div></div></div>';
         $newdate = date('F jS, Y, H:i:s', strtotime($row["review_date"]));
         $time = time_ago($row["review_date"]);
+        $filename = $_SERVER['DOCUMENT_ROOT']."/images/reviews/".$row["review_id"].".jpg";
+       
+        if (file_exists($filename)) {
+          $avatar = $row["review_id"].".jpg";
+       
+        }else{
+          $avatar = "default.png";
+        }
         echo '
 
 
         <div class="item col-lg-4 col-md-6 col-sm-6 col-12 m-auto single_review">
         <div style="margin-bottom:20px;border:0px;background-color:#fff;" class="card">
         <div class="card-image">
-                <img style="width:50%;" class="img-fluid" src="https://avatars.dicebear.com/api/adventurer/' . $row["review_name"]. '.svg?skinColor=variant0'.rand(1,3).'" alt="alternative">
+                <img style="width:50%;" class="img-fluid img-avatar" src="/images/reviews/' . $avatar. '" alt="alternative">
             </div>
             <div class="card-body">
                 <h4 class="card-title-prod">' . $row["review_name"]. '</h4>
