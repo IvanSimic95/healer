@@ -494,19 +494,126 @@ if ($v > 3) {
 
         <?php } ?>
 
-        <div class="button-wrapper">
-        <a data-w-id="9ca0b638-11a4-0aa1-331f-7ef8023444e2" href="#" class="order-now-button w-button">ORDER NOW<br><span class="btn-sub-text">And Watch Your Life Magically Change</span>&zwj;</a>
-        <div class="secure-badge"><img src="images/lock.png" loading="lazy" alt="" class="lock-icon">
-            <div class="secure-checkout-text inverted" style="color:white;">Safe &amp; Secure • 365 Money Back Guarantee</div>
+      
+        </div>
+
+        <div class="container w-container">
+      <h1 class="headline dark-subheader">Testimonials from Verified Clients:</h1>
+  
+           <p class="sub-paragraph">2,244+ Verified 5* Reviews</p>
+      <div class="columns w-row">
+        <div class="w-col w-col-6">
+          <div class="testimonial-wrapper">
+            <div class="testimonial-bubble">
+              <div class="testimonial-headline">AMAZING</div>
+              <div class="testimonial-paragraph">This drawing blew me away, the features aligned with the man I’m seeing now, lips, nose, eyebrows, eyes, ears were identical to his. His ethnicity showed through the drawing, he is Blackfoot Native American and the drawing reflects that. The personality traits were spot on with his as well.</div>
+              <div class="avatar-wrapper"><img src="images/testimonial.jpg" loading="lazy" alt="" class="image">
+                <div class="div-block">
+                  <div class="name-wrapper">
+                    <div class="testimonial-name">Jennifer D.</div>
+                    <div class="testimonial-location">California, USA</div>
+                  </div>
+                  <div class="stars-wrapper"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"></div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-bubble">
+              <div class="testimonial-headline">Lovely experience</div>
+              <div class="testimonial-paragraph">I just about cried when I opened the reading and portrait. The message was just so beautiful and the man staring back at me just looks so kind and warm. Thank you so much for providing such a special reading and sharing your gifts! I am beyond words at how special this reading is!</div>
+              <div class="avatar-wrapper"><img src="images/testimonial2.jpg" loading="lazy" alt="" class="image">
+                <div class="div-block">
+                  <div class="name-wrapper">
+                    <div class="testimonial-name">Claire C.</div>
+                    <div class="testimonial-location">Victoria, Australia</div>
+                  </div>
+                  <div class="stars-wrapper"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"></div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-bubble">
+              <div class="testimonial-headline">Feeling blessed since purchasing! Thank you!</div>
+              <div class="testimonial-paragraph">This was a fantastic purchase. My eyes are peeled everywhere I go looking for this man. I will not rest until I find him, I wait patiently everyday to see his baby blue pearls. His brown luxurious hair lives in my dreams, and his chiseled jaw makes my mouth water. Thank you for doing this reading.</div>
+              <div class="avatar-wrapper"><img src="images/testimonial5.jpg" loading="lazy" alt="" class="image">
+                <div class="div-block">
+                  <div class="name-wrapper">
+                    <div class="testimonial-name">Trisha L.</div>
+                    <div class="testimonial-location">Texas, USA</div>
+                  </div>
+                  <div class="stars-wrapper"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-6">
+          <div class="testimonial-bubble">
+            <div class="testimonial-headline">I'm shoked</div>
+            <div class="testimonial-paragraph">My drawing looks like the person I work with, am attracted to, and I’ve had a dream telling me he’s on a spiritual journey too. We’ll see fingers crossed!</div>
+            <div class="avatar-wrapper"><img src="images/testimonial6.jpg" loading="lazy" alt="" class="image">
+              <div class="div-block">
+                <div class="name-wrapper">
+                  <div class="testimonial-name">Lindsay P.</div>
+                  <div class="testimonial-location">Ontario, Canada</div>
+                </div>
+                <div class="stars-wrapper"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"></div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-bubble">
+            <div class="testimonial-headline">I recommend everyone Soulmate Healer's services</div>
+            <div class="testimonial-paragraph">Very happy and impressed with my purchase! The drawing and description were both very accurate and detailed. The person drawn looked very similar to someone I recently met! Soulmate Healer was really nice and responded quickly. You can tell a lot of time and effort was put into this drawing.</div>
+            <div class="avatar-wrapper"><img src="images/testimonial4.jpg" loading="lazy" alt="" class="image">
+              <div class="div-block">
+                <div class="name-wrapper">
+                  <div class="testimonial-name">Felicia S.</div>
+                  <div class="testimonial-location">California, USA</div>
+                </div>
+                <div class="stars-wrapper"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"></div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-bubble">
+            <div class="testimonial-headline">AMAZING!</div>
+            <div class="testimonial-paragraph">I went to over 20 psychics so far but Soulmate Healer is the best by far!</div>
+            <div class="avatar-wrapper"><img src="images/testimonial3.jpg" loading="lazy" alt="" class="image">
+              <div class="div-block">
+                <div class="name-wrapper">
+                  <div class="testimonial-name">Andrew S.</div>
+                  <div class="testimonial-location">London, UK</div>
+                </div>
+                <div class="stars-wrapper"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="button-wrapper">
+        <a data-w-id="9ca0b638-11a4-0aa1-331f-7ef8023444e2" href="#" class="order-now-button w-button">ORDER NOW<br><span class="btn-sub-text">And Watch Your Life Magically Change</span>&zwj;</a>
+        <div class="secure-badge"><img src="images/lock.png" loading="lazy" alt="" class="lock-icon">
+            <div class="secure-checkout-text inverted">Safe &amp; Secure • 365 Money Back Guarantee</div>
         </div>
+      </div>
+      
+    </div>
         <br><br><br><br>
 
 
 
 
         <div class="container disclaimer w-container" style="background-color:transparent;box-shadow:none;">
+        <div class="row footer-guarantee" style="
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    background-color:white;
+;">
+<div class="col-md-3 col-sm-12"><img src="/images/60.png" style="max-width:200px;"></div>
+<div class="col-md-9 col-sm-12">
+    <h3 style="margin-bottom:40px;">100% Satisfaction Guarantee!</h3>
+    <p>You are fully protected by our <b>100% Satisfaction-Guaranteee</b>. So for that reason, I'll give you 60 days money back guarantee. If for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send me an email and I'll refund every penny of your order cost.</p>
+</div>
+</div>
         <p style="
     padding: 15px;
     margin-bottom: 25px;
