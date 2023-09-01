@@ -236,7 +236,7 @@ if ($v > 3) {
                                     <div class="p-0 delivery-icon"><i class="fas fa-bolt"></i></div>
                                     <div class="flex-grow-1">
                                         <div class="fw-bold text-dark">Express <span class="delivery">Delivery</span></div>
-                                        <div class="fs-sm text-muted">4 - 6 <span class="hours">Hours</span><span class="h">H</span></div>
+                                        <div class="fs-sm text-muted">3 - 6 <span class="hours">Hours</span><span class="h">H</span></div>
 
                                     </div>
                                     <div class="fw-bold badge bg-dark">+ $19.99</div>
