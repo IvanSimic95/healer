@@ -20,15 +20,15 @@ if ($v > 3) {
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Soulmate Healer</title>
     <meta name="title" content="Soulmate Healer" />
-    <meta name="description" content="Dashboard" />
+    <meta name="description" content="Get your soulmate Drawing" />
     <meta name="author" content="Soulmate Healer" />
     <link href="https://soulmate-psychic.com/assets/img/good-logo.jpg" rel="alternate" media="only screen and (max-width: 640px)" />
     <meta property="twitter:title" content="Soulmate Healer" />
-    <meta property="twitter:description" content="Dashboard" />
+    <meta property="twitter:description" content="Get your soulmate Drawing" />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:image" content="https://soulmate-psychic.com/assets/img/good-logo.jpg" />
     <meta property="og:title" content="Soulmate Healer" />
-    <meta property="og:description" content="Dashboard" />
+    <meta property="og:description" content="Get your soulmate Drawing" />
     <meta property="og:image" content="https://soulmate-psychic.com/assets/img/good-logo.jpg" />
     <!-- CSS only -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
