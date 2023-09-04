@@ -275,6 +275,10 @@ $redirectPayment = "https://www.digistore24.com/product/".$cbproduct."?custom=".
 
 $returnData = [$submitStatus,$SuccessMessage,$redirectPayment];
 
+$_SESSION['product'] = $order_product_nice;
+$_SESSION['name'] = $fName;
+$_SESSION['shortproduct'] = str_replace("Drawing","",$order_product_nice);
+
 $_SESSION['UserEmail'] = $user_email;
 $_SESSION['UserID'] = $userID;
 

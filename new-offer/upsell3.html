@@ -1,22 +1,50 @@
-<?php
-$title = "Special One-Time-Offer!";
-$description = "Almost Complete...";
-include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="dd">
+    <meta name="author" content="aa">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>the Soulmate Healer</title>
+    
+    <!-- Styles -->
 
 
-$t_product_name = "personal";
-$lower = strtolower($t_product_name);
-$sql = "SELECT * FROM review_total WHERE product = '".$t_product_name."'";
-$result = $conn->query($sql);
-$row = $result->fetch_assoc();
-$count = $row['reviews'];
-?>
-<script src="https://www.digistore24.com/service/digistore.js"></script><script>digistoreUpsell()</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+	<link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ 
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+ 
 
 <style>
-     .footer-guarantee{
-        display:none;
-    }
 .btn-outline-reg {
 	background-color:#fff;
 	color: #ec5540;
@@ -76,12 +104,12 @@ $count = $row['reviews'];
 	background: rgba(142, 68, 173, 1);
 	box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
 	animation: pulse-purple 2s infinite;
-	text-decoration:none;
+	
 	border-radius: 0.25rem;
 	height: 2rem;
 	font-weight: 600;
-	font-size: 22px;
-    padding: 12px 12px;	
+	font-size: 17px;
+    padding: 8px 8px;	
 	
 	max-width: 350px;
     margin: auto;
@@ -114,9 +142,9 @@ $count = $row['reviews'];
 	border-radius: 0.25rem;
 	height: 4rem;
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 17px;
     padding: 16px 8px;	
-	text-decoration:none;
+	
 	max-width: 350px;
     margin: auto;
 }
@@ -225,29 +253,8 @@ progress[value]::after {
 		--progress-value: var(--value);
 	}
 }
-.navbar{
-    display:none;
-}
-.ex-6-header{
-padding-top:1rem;
-}
-
-.ex-6-header p {
-    max-width: none;
-}
-.img-fluid{
-    border-radius:1rem;
-}
 </style>
-<?php
-if(isset($_SESSION['shortproduct'])){
-    $drawingtext = $_SESSION['shortproduct'];
-    $text = 'Capturing the portrait of your <span style="font-weight:600;color:#8e44ad;">'.$drawingtext.'</span> in art is only the beginning';
-}else{
-    $text = 'Capturing the portrait in art is only the beginning';
-}
-
-?>
+ 
     <!-- Header -->
     <header class="ex-6-header">
         <div class="header-content">
@@ -276,7 +283,7 @@ if(isset($_SESSION['shortproduct'])){
 				<p style="margin-top: 5px;margin-bottom: 25px;text-align:left;color: #000;font-size: 18px;line-height: 1.4em;" class="card-title-prod">
 <span style="font-weight:600;color:#f04040;font-size: 22px;">Let's delve deeper into the core chapters of your life.</span>
 <br/><br/>
-<?php echo $text; ?>. Your essence, your story, your journey - they're rich, multidimensional, and deserve intricate exploration.
+Capturing the portrait of your <span style="font-weight:600;color:#8e44ad;">[PRODUCT NAME]</span> in art is only the beginning. Your essence, your story, your journey - they're rich, multidimensional, and deserve intricate exploration.
 <br/><br/>
 I invite you to go a level deeper with a multi-layered, profoundly intimate <span style="font-weight:600">Psychic Reading - delivered</span>, of course, in my unique, tested, and trusted style that countless clients (and celebrities!) have raved about.
 <br/><br/>
@@ -301,7 +308,6 @@ This isn’t just a service; it’s a partnership. It's my hand extended to you 
 				</p>
 				   
 					    <div style="margin-bottom: 20px;background-color:#f8f1fd;" class="card-image">
-                        <img class="img-fluid" src="/images/products/personal.png" style="width:450px;display:none;">
 							<div style="padding:5px;margin-bottom:0px;">
 
 						<h2 style="font-size: 40px;background:none;color:#000;font-weight:800;margin-top:15px;line-height:30px;">$37.5<br/><span style="opacity: 0.25;font-weight:500;font-size:20px;">$49.99</span></h2> 
@@ -309,12 +315,12 @@ This isn’t just a service; it’s a partnership. It's my hand extended to you 
 
 				<div style="margin-bottom: -8px;margin-top: -17px;font-size: 12px;;">
 					<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
-					<span style="font-size:11px;font-weight:600;"><?php echo $count; ?> reviews</span>
+					<span style="font-size:11px;font-weight:600;">4722 reviews</span>
 				</div>
 				<br clear="all">
-								<a href="https://www.digistore24.com/answer/yes?template=light" style="color: #fff;" class="blob purple">🔮 Yes, Let's Dive Deeper Together</a>
+								<a style="color: #fff;" class="blob purple">🔮 Yes, Let's Dive Deeper Together</a>
 								<p></p>
-								<a href="https://www.digistore24.com/answer/no" style="font-size: 12px;color:blue;" href="">I'll remain in the shadows of uncertainty</a>
+								<a style="font-size: 12px;color:blue;" href="">I'll remain in the shadows of uncertainty</a>
 								<p style="letter-spacing: -0.25px;font-size: 13px;line-height: 1.2;margin-top: 20px;">This special offer is only here and now. <span style="font-weight:600;">If you leave this page, you'll lose out on the chance to get the discount</span>. So, <span style="color:#8e44ad;font-weight:600;text-decoration:underline;">click the magic button now</span>!</p>
 								
 								<p style="letter-spacing: -0.25px;font-size: 12px;line-height: 1.2;margin-top: 20px;">
@@ -333,4 +339,82 @@ This isn’t just a service; it’s a partnership. It's my hand extended to you 
         </div>  
     </header> 
 
-<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/footer.php'; ?>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col first">
+                        <h4>about</h4>
+                        <p class="p-small">bla bla</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>links</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">bla bla<a class="white" href="#">bla</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">read our <a class="white" href="#">terms</a>, <a class="white" href="#">privacy</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>contact</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="media-body">america</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a class="white" href="mailto:contact@nato.com">contact@nato.com</a> <i class="fas fa-globe"></i><a class="white" href="#">mail@nato.com</a></div>
+                            </li>
+                        </ul>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">copyright © 2026
+                    </p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+<style>
+.img-fluid-test {
+	width: 75px;
+    border-radius: 50%;
+}
+.testimonial-bg {
+padding: 15px;background-color: #f5f5f5;border-radius: 15px;
+}
+</style>
+
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
