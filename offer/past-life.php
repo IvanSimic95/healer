@@ -114,7 +114,7 @@ $count = $row['reviews'];
 	border-radius: 0.25rem;
 	height: 4rem;
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 18px;
     padding: 16px 8px;	
 	text-decoration:none;
 	max-width: 350px;
@@ -246,6 +246,13 @@ padding-top:1rem;
 	margin-left: 0px;
 	border-radius:0.5rem;
 	}
+    @media only screen and (max-width: 600px) {
+		.ex-6-header p {
+			max-width: 24rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+}
 </style>
 <?php
 if(isset($_SESSION['shortproduct'])){
