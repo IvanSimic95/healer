@@ -80,8 +80,8 @@ $count = $row['reviews'];
 	border-radius: 0.25rem;
 	height: 2rem;
 	font-weight: 600;
-	font-size: 22px;
-    padding: 12px 12px;	
+	font-size: 18px;
+    padding: 10px 10px;	
 	
 	max-width: 350px;
     margin: auto;
