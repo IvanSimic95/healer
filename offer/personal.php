@@ -80,8 +80,8 @@ $count = $row['reviews'];
 	border-radius: 0.25rem;
 	height: 2rem;
 	font-weight: 600;
-	font-size: 22px;
-    padding: 12px 12px;	
+	font-size: 18px;
+    padding: 10px 10px;	
 	
 	max-width: 350px;
     margin: auto;
@@ -238,6 +238,21 @@ padding-top:1rem;
 .img-fluid{
     border-radius:1rem;
 }
+.contentinside{
+		border: 2px solid orange;
+    border-radius: 0.5rem;
+    background-color: white;
+	margin-right: 0px;
+	margin-left: 0px;
+	border-radius:0.5rem;
+	}
+    @media only screen and (max-width: 600px) {
+		.ex-6-header p {
+			max-width: 24rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+}
 </style>
 <?php
 if(isset($_SESSION['shortproduct'])){
@@ -248,12 +263,14 @@ if(isset($_SESSION['shortproduct'])){
 }
 
 ?>
+
+ 
     <!-- Header -->
     <header class="ex-6-header">
         <div class="header-content">
             <div class="container">
 	
-	<div style="background-color:#fff;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
+	<div class="row contentinside">
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
  
