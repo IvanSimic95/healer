@@ -177,4 +177,10 @@ jQuery('input[name="priority"]').change(function(){
     }
 })
 </script>
+<script src="https://www.digistore24-scripts.com/service/digistore.js"></script>
+<script type="text/javascript">
+digistorePromocode( { "product_id": 513365, "adjust_domain": true } );
+digistorePromocode( { "product_id": 513356, "adjust_domain": true } );
+digistorePromocode( { "product_id": 513366, "adjust_domain": true } );
+</script>
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php'; ?>
