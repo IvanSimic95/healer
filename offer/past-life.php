@@ -3,283 +3,333 @@ $title = "Special One-Time-Offer!";
 $description = "Almost Complete...";
 include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; 
 
-$t_product_name = "pastlife";
+
+$t_product_name = "personal";
 $lower = strtolower($t_product_name);
 $sql = "SELECT * FROM review_total WHERE product = '".$t_product_name."'";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 $count = $row['reviews'];
-
 ?>
 <script src="https://www.digistore24.com/service/digistore.js"></script><script>digistoreUpsell()</script>
+
 <style>
-    .col-md-offset-3 {
-        margin-left: 25%;
+     .footer-guarantee{
+        display:none;
     }
-    .fa-star{
-        font-size:21px;
-    }
-
-    .ex-6-header {
-        padding-top: 5rem;
-    }
-    #submitbtn{
-        font-size:28px;
-        width: 80%;
-    text-align: center;
-  
-    }
-    @media (max-width: 767px) {
-        .col-md-offset-3 {
-            margin-left: 0%;
-        }
-    }
-
-    .navbar {
-        display: none;
-    }
-
-    .progress-bar {
-
-        border-radius: 0.33rem;
-        height: 40px;
-    }
-
-    .small-progress-bar .progress-bar {
-        line-height: 36px;
-        height: 35px;
-        font-size: 14px;
-    }
-
-    .progress-bar-striped_active {
-        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-        background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-        background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-        -webkit-background-size: 40px 40px;
-        background-size: 40px 40px;
-        -webkit-animation: progress-bar-stripes 2s linear infinite reverse;
-        -o-animation: progress-bar-stripes 2s linear infinite reverse;
-        animation: progress-bar-stripes 2s linear infinite reverse;
-    }
-
-    .progress-bar {
-        -webkit-transition: width .25s ease, height .25s ease, font-size .25s ease;
-        -moz-transition: width .25s ease, height .25s ease, font-size .25s ease;
-        -ms-transition: width .25s ease, height .25s ease, font-size .25s ease;
-        -o-transition: width .25s ease, height .25s ease, font-size .25s ease;
-        transition: width .25s ease, height .25s ease, font-size .25s ease;
-    }
-
-    .progressbar_w_75 {
-        width: 75%;
-    }
-
-    .progress {
-        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-        margin-top: 15px;
-        border-radius: 0.33rem;
-        height: 40px;
-    }
-    .img-fluid{
-        width:350px;
-    }
-    .elButton{
-        padding-top:15px;
-        padding-bottom:15px;
-        padding-left:35px;
-        padding-right:35px;
-        margin-top:30px;
-    }
-
-    .elButtonShadow3 {
-    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.7);
-    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.7);
-    box-shadow: 0 1px 5px rgba(0,0,0,0.7);
+.btn-outline-reg {
+	background-color:#fff;
+	color: #ec5540;
 }
 
-.elButtonShadow3 {
-    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.7);
-    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.7);
-    box-shadow: 0 1px 5px rgba(0,0,0,0.7);
-}
-
-.elButtonSubtle {
-    border: 1px solid rgba(0,0,0,0.1);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
-    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
-    border-radius: 4px;
-}
-
-
-.elButton{
-    font-weight:bold;
-    text-decoration:none;
-    color: rgb(255, 255, 255); 
-    background-color: orange; 
-    font-size: 28px;
-}
-p{
-    max-width:none!important;
-}
-
-.text{
-    padding:10px;
-    text-align:start;
-}
-.textbold{
-    font-weight:bold;
-}
-.textcenter{
-    text-align:center;
-}
-</style>
-
-<!-- Header -->
-<header class="ex-6-header" style="min-height:80vh">
-    <div class="header-content">
-        <div class="container" style="max-width:1100px;">
-
-            <div style="margin-top:0px;">
-
-
-                <div class="p-4" style="border:2px solid orange; border-radius:0.5rem;background-color: white;">
-                    <div class="row m-0 p-0 progress-pc" style="border:1px solid;border-color: rgba(47, 47, 47, 0.168627);border-radius:0.33rem;">
-                        <div class="col-12 col-sm-12 col-md-4" style="padding:10px; font-weight:bold;">STEP 1: PAYMENT COMPLETE</div>
-                        <div class="col-12 col-sm-12 col-md-4" style="padding:10px; background: orange; color:white; font-weight:bold;">STEP 2: CUSTOMIZE ORDER</div>
-                        <div class="col-12 col-sm-12 col-md-4" style="padding:10px; font-weight:bold;">STEP 3: ORDER COMPLETED</div>
-                    </div>
-
-                    <div class="row m-0 p-0 progress-phone" style="border:1px solid;border-color: rgba(47, 47, 47, 0.168627);border-radius:0.33rem;">
-                        <div class="col-4 " style="padding:10px; font-weight:bold;">STEP 1</div>
-                        <div class="col-4 " style="padding:10px; background: orange; color:white; font-weight:bold;">STEP 2</div>
-                        <div class="col-4 " style="padding:10px; font-weight:bold;">STEP 3</div>
-                    </div>
-
-                    <div class="progress" style="display:none;">
-                        <div class="progress-bar progress-bar-striped_active progressbar_w_75" role="progressbar" style="background-color: orange;display:none;">Almost Complete...</div>
-                    </div>
-
-<div style="padding:20px;"></div>
-
-                    <div class="text"><p style="font-size:22px;max-width:none;">Have you ever felt the uncanny sensation that your soul carries memories older than your current life? An unusual attraction to a culture, a place, or perhaps a particular era? These are not mere whims or fantasies; they might be echoes from a life your soul once lived.</p></div>
-
-                    <div class="text"><p style="font-size:22px;max-width:none;">Understanding your past life can pave the way for profound spiritual growth. The choices we make, the people we're drawn to, and even the challenges we face can find their roots in our previous existences. The Soulmate Healer offers you an extraordinary opportunity to unlock these secrets. The <b>Past Life Psychic Portrait</b> not only provides a captivating visual of your former self but also an insightful reading that can reveal the purpose of that life and the lessons it carries for your present journey.</p></div>
-
-                    <div class="text"><p style="font-size:22px;max-width:none;">When you peer into the depths of your previous existence, you gain clarity. It's like having a map of where you've been, guiding where you're meant to go. This newfound wisdom can help heal old wounds, forge stronger bonds in present relationships, and even navigate life's challenges with a sense of purpose. It offers a profound understanding, a bridge that connects your past self to your current self, enabling growth and healing on levels you might not have even imagined.</p></div>
-
-                    <div class="text"><p style="font-size:22px;max-width:none;">So, why leave this treasure untapped? Imagine the power of understanding the forces that have shaped you, knowing the stories of your ancient self, and connecting with a lineage of wisdom that’s uniquely yours.</p></div>
-
-                    <div class="text textcenter"><p style="font-size: 23px;font-weight:bold;">Would you not wish to embrace this legacy?</p>  </div> 
-
-                    <img class="img-fluid" src="/images/products/pastlife.png"><br>
-             
-
-                    <div style="padding:20px;padding-bottom:10px;"><p style="font-size: 23px;">Add to your order for just $20 by clicking button below</p>  </div> 
-
-                    <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
-                    <br><span style="font-size:21px;"><?php echo $count; ?> reviews</span>
-                    
-                    
-
-                    <a href="https://www.digistore24.com/answer/yes?template=light" id="submitbtn" type="submit" class="form-control-submit-button submit-pc"> YES! Please Upgrade to Color</a>
-
-                    <a href="https://www.digistore24.com/answer/yes?template=light" id="submitbtn" type="submit" class="form-control-submit-button submit-phone"><i class="fa fa-shopping-cart"></i> Upgrade!</a>
-
-                    <div style="padding:25px;"><a href="https://www.digistore24.com/answer/no" id="link-8186-428-431" class="" target="_parent">No Thanks, I'm not interested right now.</a></div>
-
-                    <div style="padding:25px;"><p style="font-size:22px;max-width:none;">This special offer is only here and now. If you leave this page, you'll lose out on the chance to get colored drawing. So, click the upgrade button now!</p></div>
-
-                    <div style="padding:25px;"><p style="font-size:20px;max-width:none;">Get a 60 day money back guarantee if you aren't satisfied.</p></div>
-
-                </div>
-
-
-            </div>
-        </div>
-
-        <style>
-            .submit-pc{
-                display:block;
-            }
-            .progress-pc{
-                display:flex;
-            }
-            .submit-phone, .progress-phone{
-                display:none;
-            }
-            @media only screen and (max-width: 400px) {
-                .submit-pc{
-                    display:none;
-                }
-                .submit-phone{
-                display:inline-block;
-            }
-                
-            }
-
-            @media only screen and (max-width: 768px) {
-                .progress-pc{
-                    display:none;
-                }
-                .progress-phone{
-                display:flex;
-            }
-                
-            }
-            .form-control-submit-button{
-                font-size: 28px;
-    font-weight: bold;
-    /* vertical-align: middle; */
-    line-height: 50px;
-    padding: 15px 35px 15px 35px;
-    height: 80px;
-    border-radius: 0.33rem;
-
-    background-color: orange;
+.btn-outline-reg:hover {
+    background-color: #ec5540;
+    color: #fff;
     text-decoration: none;
-    width: fit-content;
-    margin: 0 auto;
-            }
-            #finalnotice {
-                color: #3c763d;
-                background-color: #dff0d8;
-                border-color: #d6e9c6;
-                padding: 15px;
-                margin-bottom: 20px;
-                border: 1px solid #0000;
-                border-radius: 6px;
-                text-align: center;
-                font-weight: bold;
-                font-size: 105%;
-            }
-
-            #finalnoticeinfo {
-                color: #004085;
-                background-color: #cce5ff;
-                border-color: #b8daff;
-                padding: 15px;
-                margin-bottom: 20px;
-                border: 1px solid #0000;
-                border-radius: 6px;
-                text-align: center;
-                font-weight: bold;
-                font-size: 105%;
-            }
-
-            .label-control {
-                top: 0.125rem !important;
-                opacity: 1 !important;
-                font-size: 0.75rem !important;
-                font-weight: 700 !important;
-            }
-        </style>
+}
+.ex-6-header {padding-bottom: 10px;}
 
 
-        <br clear="all">
+.ex-6-header h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #333;
+    font-weight: 700;
+}
 
-    </div>
-    </div>
-</header>
+
+.blob.orange {
+	background: rgba(255, 121, 63, 1);
+	box-shadow: 0 0 0 0 rgba(255, 121, 63, 1);
+	animation: pulse-orange 2s infinite;
+	
+	border-radius: 0.25rem;
+	height: 2rem;
+	font-weight: 600;
+	font-size: 17px;
+    padding: 8px 8px;
+	
+	max-width: 350px;
+    margin: auto;
+	
+}
+
+@keyframes pulse-orange {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 121, 63, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
+	}
+}
+
+
+.blob.purple {
+	background: rgba(142, 68, 173, 1);
+	box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
+	animation: pulse-purple 2s infinite;
+	text-decoration:none;
+	border-radius: 0.25rem;
+	height: 2rem;
+	font-weight: 600;
+	font-size: 22px;
+    padding: 12px 12px;	
+	
+	max-width: 350px;
+    margin: auto;
+	
+}
+
+@keyframes pulse-purple {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(142, 68, 173, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(142, 68, 173, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(142, 68, 173, 0);
+	}
+}
+
+
+.blob.blue {
+	background: rgba(12, 109, 229, 1);
+	box-shadow: 0 0 0 0 rgba(12, 109, 229, 1);
+	animation: pulse-purple 2s infinite;
+	line-height: 16px;
+	border-radius: 0.25rem;
+	height: 4rem;
+	font-weight: 600;
+	font-size: 24px;
+    padding: 16px 8px;	
+	text-decoration:none;
+	max-width: 350px;
+    margin: auto;
+}
+
+@keyframes pulse-blue {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(12, 109, 229, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(12, 109, 229, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(12, 109, 229, 0);
+	}
+}
+
+@property --progress-value {
+  syntax: '<integer>';
+  inherits: true;
+  initial-value: 0;
+}
+
+:root {
+  --progress-bar-color: #cfd8dc;
+  --progress-value-color: #2196f3;
+  --progress-empty-color-h: 4.1;
+  --progress-empty-color-s: 89.6;
+  --progress-empty-color-l: 58.4;
+  --progress-filled-color-h: 122.4;
+  --progress-filled-color-s: 39.4;
+  --progress-filled-color-l: 49.2;
+}
+
+progress[value] {
+  display: block;
+  position: relative;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border: 0;
+  --border-radius: 10px;
+  border-radius: var(--border-radius);
+  counter-reset: progress var(--progress-value);
+  --progress-value-string: counter(progress) '%';
+  --progress-max-decimal: calc(var(--value, 0) / var(--max, 0));
+  --progress-value-decimal: calc(var(--progress-value, 0) / var(--max, 0));
+  @supports selector(::-moz-progress-bar) {
+    --progress-value-decimal: calc(var(--value, 0) / var(--max, 0));
+  }
+  --progress-value-percent: calc(var(--progress-value-decimal) * 100%);
+  --progress-value-color: hsl(
+    calc((var(--progress-empty-color-h) + (var(--progress-filled-color-h) - var(--progress-empty-color-h)) * var(--progress-value-decimal)) * 1deg)
+    calc((var(--progress-empty-color-s) + (var(--progress-filled-color-s) - var(--progress-empty-color-s)) * var(--progress-value-decimal)) * 1%)
+    calc((var(--progress-empty-color-l) + (var(--progress-filled-color-l) - var(--progress-empty-color-l)) * var(--progress-value-decimal)) * 1%)
+  );
+  animation: calc(3s * var(--progress-max-decimal)) linear 0.5s 1 normal both progress;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: var(--progress-bar-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+progress[value]::-webkit-progress-value {
+  width: var(--progress-value-percent) !important;
+  background-color: var(--progress-value-color);
+  border-radius: var(--border-radius);
+}
+
+progress[value]::-moz-progress-bar {
+  width: var(--progress-value-percent) !important;
+  background-color: var(--progress-value-color);
+  border-radius: var(--border-radius);
+}
+
+progress[value]::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --size: 35px;
+  width: var(--size);
+  height: 20px;
+  position: absolute;
+  left: var(--progress-value-percent);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--progress-value-color);
+  border-radius: 10%;
+  content: attr(value);
+  content: var(--progress-value-string, var(--value));
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+@keyframes progress {
+	from {
+		--progress-value: 0;
+	} to {
+		--progress-value: var(--value);
+	}
+}
+.navbar{
+    display:none;
+}
+.ex-6-header{
+padding-top:1rem;
+}
+
+.ex-6-header p {
+    max-width: none;
+}
+.img-fluid{
+    border-radius:1rem;
+}
+.contentinside{
+		border: 2px solid orange;
+    border-radius: 0.5rem;
+    background-color: white;
+	margin-right: 0px;
+	margin-left: 0px;
+	border-radius:0.5rem;
+	}
+</style>
+<?php
+if(isset($_SESSION['shortproduct'])){
+    $drawingtext = $_SESSION['shortproduct'];
+    $text = 'Capturing the portrait of your <span style="font-weight:600;color:#8e44ad;">'.$drawingtext.'</span> in art is only the beginning';
+}else{
+    $text = 'Capturing the portrait in art is only the beginning';
+}
+
+?>
+
+ 
+    <!-- Header -->
+    <header class="ex-6-header">
+        <div class="header-content">
+            <div class="container">
+	
+	<div class="row contentinside">
+         <div class="col-lg-12 col-xl-12">
+            <div style="margin-top: 15px;margin-bottom:15px;" class="row">
+ 
+                    
+					
+                <div class="col-lg-12">
+					<div class="row m-0 p-0 progress-phone" style="border:1px solid;border-color:#7dc443;border-radius:0.5rem;">
+                        <div class="col-sm-4 col-4 m-auto" style="padding: 10px;font-weight:500;font-size: 12px;line-height: 15px;"><span style="font-weight:700;">STEP #1</span><br/>PAYMENT COMPLETE</div>
+                        <div class="col-sm-4 col-4 m-auto" style="padding: 10px;background-color: #7dc443; color:white; font-weight:700;font-size: 12px;line-height: 15px;"><span style="font-weight:700;">STEP #2</span><br/>CUSTOMIZE ORDER</div>
+                        <div class="col-sm-4 col-4 m-auto" style="padding: 10px;font-weight:500;font-size: 12px;line-height: 15px;"><span style="font-weight:700;">STEP #3</span><br/>ORDER COMPLETED</div>
+                    </div>
+					
+                    <progress value="50" max="100" style="--value: 50; --max: 100;margin-top:25px;margin-bottom:25px;"></progress>	
+                </div>
+				
+				<div class="col-lg-12 col-xl-12">
+				
+				<h2 style="margin-bottom: 24px;text-align:left;color:#8e44ad;" class="h2-heading">Discover the Chronicles of YOUR Life... Through My Eyes</h2>
+		
+				<p style="margin-top: 5px;margin-bottom: 25px;text-align:left;color: #000;font-size: 18px;line-height: 1.4em;" class="card-title-prod">
+                <div class="text"><p style="font-size:22px;max-width:none;">Have you ever felt the uncanny sensation that your soul carries memories older than your current life? An unusual attraction to a culture, a place, or perhaps a particular era? These are not mere whims or fantasies; they might be echoes from a life your soul once lived.</p></div>
+
+<div class="text"><p style="font-size:22px;max-width:none;">Understanding your past life can pave the way for profound spiritual growth. The choices we make, the people we're drawn to, and even the challenges we face can find their roots in our previous existences. The Soulmate Healer offers you an extraordinary opportunity to unlock these secrets. The <b>Past Life Psychic Portrait</b> not only provides a captivating visual of your former self but also an insightful reading that can reveal the purpose of that life and the lessons it carries for your present journey.</p></div>
+
+<div class="text"><p style="font-size:22px;max-width:none;">When you peer into the depths of your previous existence, you gain clarity. It's like having a map of where you've been, guiding where you're meant to go. This newfound wisdom can help heal old wounds, forge stronger bonds in present relationships, and even navigate life's challenges with a sense of purpose. It offers a profound understanding, a bridge that connects your past self to your current self, enabling growth and healing on levels you might not have even imagined.</p></div>
+
+<div class="text"><p style="font-size:22px;max-width:none;">So, why leave this treasure untapped? Imagine the power of understanding the forces that have shaped you, knowing the stories of your ancient self, and connecting with a lineage of wisdom that’s uniquely yours.</p></div>
+
+<div class="text textcenter"><p style="font-size: 23px;font-weight:bold;">Would you not wish to embrace this legacy?</p>  </div> 
+
+<img class="img-fluid" src="/images/products/pastlife.png"><br>
+
+
+				</p>
+				   
+					    <div style="margin-bottom: 20px;background-color:#f8f1fd;" class="card-image">
+                        <img class="img-fluid" src="/images/products/personal.png" style="width:450px;display:none;">
+							<div style="padding:5px;margin-bottom:0px;">
+
+						<h2 style="font-size: 40px;background:none;color:#000;font-weight:800;margin-top:15px;line-height:30px;">$37.5<br/><span style="opacity: 0.25;font-weight:500;font-size:20px;">$49.99</span></h2> 
+						<p style="margin-top: -10px;">25% discount applied</p>
+
+				<div style="margin-bottom: -8px;margin-top: -17px;font-size: 12px;;">
+					<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+					<span style="font-size:11px;font-weight:600;"><?php echo $count; ?> reviews</span>
+				</div>
+				<br clear="all">
+								<a href="https://www.digistore24.com/answer/yes?template=light" style="color: #fff;" class="blob purple">🔮 Yes, Let's Dive Deeper Together</a>
+								<p></p>
+								<a href="https://www.digistore24.com/answer/no" style="font-size: 12px;color:blue;" href="">I'll remain in the shadows of uncertainty</a>
+								<p style="letter-spacing: -0.25px;font-size: 13px;line-height: 1.2;margin-top: 20px;">This special offer is only here and now. <span style="font-weight:600;">If you leave this page, you'll lose out on the chance to get the discount</span>. So, <span style="color:#8e44ad;font-weight:600;text-decoration:underline;">click the magic button now</span>!</p>
+								
+								<p style="letter-spacing: -0.25px;font-size: 12px;line-height: 1.2;margin-top: 20px;">
+									<span style="color: #09c100;font-weight:700;">$</span> Get a 60 day money back guarantee if you aren't satisfied.
+								</p>
+							</div>
+						</div>
+                </div>
+            </div>
+         </div>
+	</div>
+
+<br clear="all">			
+				
+            </div>  
+        </div>  
+    </header> 
 
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/footer.php'; ?>

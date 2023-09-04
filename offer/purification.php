@@ -1,7 +1,18 @@
 <?php
 $title = "Special One-Time-Offer!";
 $description = "Almost Complete...";
-include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
+include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; 
+
+$t_product_name = "purification";
+$lower = strtolower($t_product_name);
+$sql = "SELECT * FROM review_total WHERE product = '".$t_product_name."'";
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
+$count = $row['reviews'];
+
+$newDate = date('F');
+  
+?>
 <script src="https://www.digistore24.com/service/digistore.js"></script><script>digistoreUpsell()</script>
 
 <style>
@@ -231,6 +242,14 @@ padding-top:1rem;
 .footer-guarantee{
         display:none;
     }
+	.contentinside{
+		border: 2px solid orange;
+    border-radius: 0.5rem;
+    background-color: white;
+	margin-right: 0px;
+	margin-left: 0px;
+	border-radius:0.5rem;
+	}
 </style>
  
     <!-- Header -->
@@ -238,7 +257,7 @@ padding-top:1rem;
         <div class="header-content">
             <div class="container">
 	
-	<div style="background-color:#fff;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
+	<div class="row contentinside">
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
  
@@ -309,7 +328,7 @@ Yet, today, you stand on the cusp of a unique revelation. An opportunity so rare
 				<p style="margin-top: 5px;margin-bottom: 25px;text-align:left;color: #000;font-size: 18px;line-height: 1.4em;" class="card-title-prod">
 <span style="font-weight:700;color:#0c6de5;font-size: 22px;">Your Unique Chance to Unlock Purification</span>
 <br/><br>
-<b>For September only</b>, I'm opening the doors to our exclusive Purification service. <em>It's a rare chance, one that won't come around again until September 2024</em>.
+<b>For <?php echo $newDate; ?> only</b>, I'm opening the doors to our exclusive Purification service. <em>It's a rare chance, one that won't come around again until <?php echo $newDate; ?> 2024</em>.
 <br/><br/>
 Seize this unique opportunity or be prepared to wait another long year. <span style="color:#f04040;">Don't live with regret — <b>ACT NOW</b></span>!
 				</p>
@@ -323,7 +342,7 @@ The depth of our <b>Psychic Purification</b> is vast, demanding my utmost dedica
 								
 				<div style="margin-bottom: -8px;margin-top: -17px;font-size: 12px;;">
 					<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
-					<span style="font-size:11px;font-weight:600;">4722 reviews</span>
+					<span style="font-size:11px;font-weight:600;"><?php echo $count; ?> reviews</span>
 				</div>
 				<br clear="all">
 								<div class="blob blue"><a href="https://www.digistore24.com/answer/yes?template=light" style="text-decoration:none;color: #fff;text-transform:uppercase;" class="">✨ YES!<br/><span style="font-size:13px;font-weight:400;">I embrace transformation and healing!</span></a></div>
