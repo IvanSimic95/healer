@@ -50,7 +50,7 @@ $count = $row['reviews'];
 	height: 2rem;
 	font-weight: 600;
 	font-size: 24px;
-    padding: 8px 8px;
+    padding: 16px 16px;
 	
 	max-width: 350px;
     margin: auto;
