@@ -1,5 +1,5 @@
 <?php 
-$t_product_name = "futurespouse";
+$t_product_name = "FUTURE HUSBAND/WIFE";
 $t_product_form_name = "futurespouse";
 $title = "Future Spouse Drawing | Soulmate Healer";
 $description = "I will provide you with your future spouse drawing";
@@ -9,7 +9,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 
 
 $lower = strtolower($t_product_name);
-$sql = "SELECT * FROM review_total WHERE product = '".$t_product_name."'";
+$sql = "SELECT * FROM review_total WHERE product = '".$t_product_form_name."'";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 $count = $row['reviews'];

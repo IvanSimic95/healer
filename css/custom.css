@@ -71,3 +71,6 @@ select:invalid { color: gray; }
 .third:first-child {
     margin-left: 0;
 }
+.img-avatar{
+  border-radius:0.25rem;
+}
