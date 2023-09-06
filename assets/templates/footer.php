@@ -10,7 +10,14 @@
                 </div> <!-- end of col -->
                 <div class="col-md-4">
                     <div class="footer-col middle">
-                        <h4>LINKS</h4>
+                        <h4>Business Company Details: </h4>
+						<h4>  <br> <br> 
+PLATINUM MEDIA SRL <br> 
+Sat Olarii Vechi, Comuna Olari, Nr.257, Judet Prahova<br> 
+Reg. Nr.: J29/1108/2020<br> 
+VAT: RO42749658<br> 
+Phone: +40735494574<br> 
+						</h2> 
                         <ul class="list-unstyled li-space-lg p-small">
                             <li class="media">
                                 <i class="fas fa-square"></i>
