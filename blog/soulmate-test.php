@@ -13,6 +13,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
     border-radius:0.33rem;
   }
 }
+p{
+    text-align:start;
+}
 </style>
 
     <!-- Header -->
@@ -22,7 +25,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 
 				
 	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row p-4">
-         <div class="col-lg-12 col-xl-12">
+         <div class="col-lg-12 col-xl-12" style="padding:0;">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-12">
                     <h2 class="h2-heading">Soulmates vs. Twin Flames: The Eternal Dance of Love and Connection</h2>
@@ -33,7 +36,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 						</div> 
                     </div>
                 </div>
-				<div class="col-sm-12 col-12">
+				<div class="col-sm-12 col-12" style="padding:0;">
                     <div style="" class="card-1">
 <p style='margin-right:0cm;margin-left:0cm;font-size:16px;font-family:"Times New Roman",sans-serif;margin-top:0cm;margin-bottom:8.0pt;font-size:18.0pt;text-align:center;'><span style='font-size: 19px; font-family: "Times New Roman", Times, serif;'>&nbsp;</span></p>
 <p><b> <center> <FONT COLOR="#d9480d">   Introduction  </FONT> </b> </center> </p>
