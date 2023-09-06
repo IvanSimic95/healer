@@ -7,6 +7,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 </style>
 
     <!-- Header -->
+	<meta name="facebook-domain-verification" content="8i8vugcebep7snsfibirqzieftyfdl" />
     <header class="ex-6-header">
         <div class="header-content">
             <div class="container">
