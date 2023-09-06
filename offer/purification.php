@@ -306,7 +306,7 @@ Yet, today, you stand on the cusp of a unique revelation. An opportunity so rare
 ✅ <b>Personal Evolution</b>: Embrace a transformative journey where each day becomes a step towards personal growth, understanding, and enlightenment.<br/><br/>
 ✅ <b>Deep Emotional Healing</b>: Release past traumas, mend broken bonds, and heal deep-seated emotional wounds. Revel in the newfound freedom and joy that emerges.<br/><br/>
 ✅ <b>Cultivating Inner Strength</b>: Activate the warrior spirit within you. Conquer challenges, face adversities with courage, and weave a tapestry of life filled with achievements and love.
-				</p>
+				</p> 
 <hr>
 <span style="font-weight:700;color:#f04040;font-size: 22px;">✨ Delving Deep: <span style="color:#6b3b7f;">The Essence of Psychic Purification</span></span>
 <hr>

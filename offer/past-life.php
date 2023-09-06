@@ -287,24 +287,30 @@ if(isset($_SESSION['shortproduct'])){
                 </div>
 				
 				<div class="col-lg-12 col-xl-12">
-				
-				<h2 style="margin-bottom: 24px;text-align:left;color:#8e44ad;" class="h2-heading">Discover the Chronicles of YOUR Life... Through My Eyes</h2>
-		
-				<p style="margin-top: 5px;margin-bottom: 25px;text-align:left;color: #000;font-size: 18px;line-height: 1.4em;" class="card-title-prod">
-                <div class="text"><p style="font-size:22px;max-width:none;">Have you ever felt the uncanny sensation that your soul carries memories older than your current life? An unusual attraction to a culture, a place, or perhaps a particular era? These are not mere whims or fantasies; they might be echoes from a life your soul once lived.</p></div>
 
-<div class="text"><p style="font-size:22px;max-width:none;">Understanding your past life can pave the way for profound spiritual growth. The choices we make, the people we're drawn to, and even the challenges we face can find their roots in our previous existences. The Soulmate Healer offers you an extraordinary opportunity to unlock these secrets. The <b>Past Life Psychic Portrait</b> not only provides a captivating visual of your former self but also an insightful reading that can reveal the purpose of that life and the lessons it carries for your present journey.</p></div>
+<p style="margin-top: 5px;margin-bottom: 15px;text-align:center;color: #000;font-size: 18px;line-height: 1.4em;" class="card-title-prod">
+<span style="font-weight:700;color:#000;font-size: 22px;">Discover the Chronicles of YOUR Life...<span style="color:#f04040;font-size: 26px"> Through My Eyes</u></span></span>
+</p>
 
-<div class="text"><p style="font-size:22px;max-width:none;">When you peer into the depths of your previous existence, you gain clarity. It's like having a map of where you've been, guiding where you're meant to go. This newfound wisdom can help heal old wounds, forge stronger bonds in present relationships, and even navigate life's challenges with a sense of purpose. It offers a profound understanding, a bridge that connects your past self to your current self, enabling growth and healing on levels you might not have even imagined.</p></div>
+<p style="margin-top: 5px;margin-bottom: 25px;text-align:left;color: #000;font-size: 18px;line-height: 1.4em;" class="card-title-prod">
 
-<div class="text"><p style="font-size:22px;max-width:none;">So, why leave this treasure untapped? Imagine the power of understanding the forces that have shaped you, knowing the stories of your ancient self, and connecting with a lineage of wisdom that’s uniquely yours.</p></div>
+Have you ever felt the uncanny sensation that your soul carries memories older than your current life? An unusual attraction to a culture, a place, or perhaps a particular era? These are not mere whims or fantasies; they might be echoes from a life your soul once lived.
+<br><br>
+Understanding your past life can pave the way for profound spiritual growth. The choices we make, the people we're drawn to, and even the challenges we face can find their roots in our previous existences. The Soulmate Healer offers you an extraordinary opportunity to unlock these secrets. The Past Life Psychic Portrait not only provides a captivating visual of your former self but also an insightful reading that can reveal the purpose of that life and the lessons it carries for your present journey.
+<br><br>
+When you peer into the depths of your previous existence, you gain clarity. It's like having a map of where you've been, guiding where you're meant to go. This newfound wisdom can help heal old wounds, forge stronger bonds in present relationships, and even navigate life's challenges with a sense of purpose. It offers a profound understanding, a bridge that connects your past self to your current self, enabling growth and healing on levels you might not have even imagined.
+<br><br>
+So, why leave this treasure untapped? Imagine the power of understanding the forces that have shaped you, knowing the stories of your ancient self, and connecting with a lineage of wisdom that’s uniquely yours.
+<br><br>
+<b>Would you not wish to embrace this legacy?</b>
 
-<div class="text textcenter"><p style="font-size: 23px;font-weight:bold;">Would you not wish to embrace this legacy?</p>  </div> 
+</p>
+                
 
 <img class="img-fluid" src="/images/products/pastlife.png"><br>
 
 
-				</p>
+			
 				   
 					    <div style="margin-bottom: 20px;background-color:#f8f1fd;" class="card-image">
                         <img class="img-fluid" src="/images/products/personal.png" style="width:450px;display:none;">
