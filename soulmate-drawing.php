@@ -127,7 +127,7 @@ $count = $row['reviews'];
                 </div>  
                 <div class="col-lg-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="/images/soulmate-04.png" alt="alternative">
+                        <img class="img-fluid" src="/images/nobg.png" alt="alternative">
                     </div> 
                 </div> 
             </div>
