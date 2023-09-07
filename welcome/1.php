@@ -423,7 +423,7 @@ if ($v > 3) {
                                 <button type="submit" name="form_submit" id="submitbtn" style="font-weight:400" value="Place an order">Order a <b>Soulmate Drawing</b> Now<br><span style="font-weight:400" class="btn-sub-text">👉 And Watch Your Life Magically Change</span></button>
                             </div>
 
-                            <div style="font-size: 17px;" class="secure-badge">
+                            <div style="font-size: 17px;width:100%;" class="secure-badge">
                                 🔒 <div class="secure-checkout-text">Safe & Secure</div>
                             </div>
 			

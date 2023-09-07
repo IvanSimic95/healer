@@ -49,8 +49,8 @@ if ($v > 3) {
         });
     </script>
     <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
-    <link href="images/webclip.png" rel="apple-touch-icon">
+    <link href="/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="/images/webclip.png" rel="apple-touch-icon">
 
     <script type="text/javascript">
         DeBounce_APIKEY = 'public_WnlvZnE2TkZCSjNjeG9yUWNPODV1dz09'; // Your DeBounce Public API Key.
@@ -426,7 +426,7 @@ if ($v > 3) {
                                 <button type="submit" name="form_submit" id="submitbtn" value="Place an order">Order a Soulmate Drawing Now<br><span class="btn-sub-text">And Watch Your Life Magically Change</span></button>
                             </div>
 
-                            <div class="secure-badge"><img src="images/lock.png" loading="lazy" alt="" class="lock-icon">
+                            <div class="secure-badge"><img src="/welcome/images/lock.png" loading="lazy" alt="" class="lock-icon">
                                 <div class="secure-checkout-text">Safe &amp; Secure •</div>
                             </div>
 
@@ -444,7 +444,7 @@ if ($v > 3) {
 
         <?php if ($v == 1) { ?>
 
-            <div class="main-body-section wf-section">
+            <div class="main-body-section wf-section" style="background-color:transparent;">
                 <div class="container w-container">
                     <p class="sub-paragraph pcenter">🔮✨ <strong>THE ART OF LOVE: DISCOVER YOUR SOULMATE</strong> ✨🔮</p>
                     <p class="sub-paragraph pcenter"><strong>YOUR DESTINY ILLUSTRATED</strong></p>
@@ -462,7 +462,7 @@ if ($v > 3) {
 
         <?php } elseif ($v == 2) { ?>
 
-            <div class="main-body-section wf-section">
+            <div class="main-body-section wf-section" style="background-color:transparent;">
                 <div class="container w-container">
                 <p class="sub-paragraph pcenter">🔮✨ <strong>THE LEGEND OF THE SOULMATE HEALER: YOUR GUIDE IN LOVE'S MAZE</strong> ✨🔮</p>
                     <p class="sub-paragraph notcenter">In a world teeming with voices claiming to have the answers, one name stands out as a beacon of authenticity, clarity, and unparalleled intuition—The Soulmate Healer. For those navigating the turbulent waters of love, his name isn't just recognized—it's revered.</p>
@@ -479,7 +479,7 @@ if ($v > 3) {
 
         <?php } elseif ($v == 3) { ?>
 
-            <div class="main-body-section wf-section">
+            <div class="main-body-section wf-section" style="background-color:transparent;">
                 <div class="container w-container">
                 <p class="sub-paragraph pcenter">🔮✨ <strong>THE LEGEND OF THE SOULMATE HEALER: SECRETS OF THE STARS UNVEILED</strong> ✨🔮</p>
                     <p class="sub-paragraph notcenter">In the grand tapestry of love, few threads shine as luminously as those woven by the Soulmate Healer. Draped in tales of love found and destinies fulfilled, this modern-day sage has created an aura of mystique around him, made all the more enchanting by the stories of the stars who've sought his guidance.</p>
@@ -507,39 +507,39 @@ if ($v > 3) {
             <div class="testimonial-bubble">
               <div class="testimonial-headline">AMAZING</div>
               <div class="testimonial-paragraph">This drawing blew me away, the features aligned with the man I’m seeing now, lips, nose, eyebrows, eyes, ears were identical to his. His ethnicity showed through the drawing, he is Blackfoot Native American and the drawing reflects that. The personality traits were spot on with his as well.</div>
-              <div class="avatar-wrapper"><img src="images/testimonial.jpg" loading="lazy" alt="" class="image">
+              <div class="avatar-wrapper"><img src="/welcome/images/testimonial.jpg" loading="lazy" alt="" class="image">
                 <div class="div-block">
                   <div class="name-wrapper">
                     <div class="testimonial-name">Jennifer D.</div>
                     <div class="testimonial-location">California, USA</div>
                   </div>
-                  <div class="stars-wrapper"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"></div>
+                  <div class="stars-wrapper"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"></div>
                 </div>
               </div>
             </div>
             <div class="testimonial-bubble">
               <div class="testimonial-headline">Lovely experience</div>
               <div class="testimonial-paragraph">I just about cried when I opened the reading and portrait. The message was just so beautiful and the man staring back at me just looks so kind and warm. Thank you so much for providing such a special reading and sharing your gifts! I am beyond words at how special this reading is!</div>
-              <div class="avatar-wrapper"><img src="images/testimonial2.jpg" loading="lazy" alt="" class="image">
+              <div class="avatar-wrapper"><img src="/welcome/images/testimonial2.jpg" loading="lazy" alt="" class="image">
                 <div class="div-block">
                   <div class="name-wrapper">
                     <div class="testimonial-name">Claire C.</div>
                     <div class="testimonial-location">Victoria, Australia</div>
                   </div>
-                  <div class="stars-wrapper"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"></div>
+                  <div class="stars-wrapper"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"></div>
                 </div>
               </div>
             </div>
             <div class="testimonial-bubble">
               <div class="testimonial-headline">Feeling blessed since purchasing! Thank you!</div>
               <div class="testimonial-paragraph">This was a fantastic purchase. My eyes are peeled everywhere I go looking for this man. I will not rest until I find him, I wait patiently everyday to see his baby blue pearls. His brown luxurious hair lives in my dreams, and his chiseled jaw makes my mouth water. Thank you for doing this reading.</div>
-              <div class="avatar-wrapper"><img src="images/testimonial5.jpg" loading="lazy" alt="" class="image">
+              <div class="avatar-wrapper"><img src="/welcome/images/testimonial5.jpg" loading="lazy" alt="" class="image">
                 <div class="div-block">
                   <div class="name-wrapper">
                     <div class="testimonial-name">Trisha L.</div>
                     <div class="testimonial-location">Texas, USA</div>
                   </div>
-                  <div class="stars-wrapper"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"></div>
+                  <div class="stars-wrapper"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"></div>
                 </div>
               </div>
             </div>
@@ -549,39 +549,39 @@ if ($v > 3) {
           <div class="testimonial-bubble">
             <div class="testimonial-headline">I'm shoked</div>
             <div class="testimonial-paragraph">My drawing looks like the person I work with, am attracted to, and I’ve had a dream telling me he’s on a spiritual journey too. We’ll see fingers crossed!</div>
-            <div class="avatar-wrapper"><img src="images/testimonial6.jpg" loading="lazy" alt="" class="image">
+            <div class="avatar-wrapper"><img src="/welcome/images/testimonial6.jpg" loading="lazy" alt="" class="image">
               <div class="div-block">
                 <div class="name-wrapper">
                   <div class="testimonial-name">Lindsay P.</div>
                   <div class="testimonial-location">Ontario, Canada</div>
                 </div>
-                <div class="stars-wrapper"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"></div>
+                <div class="stars-wrapper"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"></div>
               </div>
             </div>
           </div>
           <div class="testimonial-bubble">
             <div class="testimonial-headline">I recommend everyone Soulmate Healer's services</div>
             <div class="testimonial-paragraph">Very happy and impressed with my purchase! The drawing and description were both very accurate and detailed. The person drawn looked very similar to someone I recently met! Soulmate Healer was really nice and responded quickly. You can tell a lot of time and effort was put into this drawing.</div>
-            <div class="avatar-wrapper"><img src="images/testimonial4.jpg" loading="lazy" alt="" class="image">
+            <div class="avatar-wrapper"><img src="/welcome/images/testimonial4.jpg" loading="lazy" alt="" class="image">
               <div class="div-block">
                 <div class="name-wrapper">
                   <div class="testimonial-name">Felicia S.</div>
                   <div class="testimonial-location">California, USA</div>
                 </div>
-                <div class="stars-wrapper"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"></div>
+                <div class="stars-wrapper"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"></div>
               </div>
             </div>
           </div>
           <div class="testimonial-bubble">
             <div class="testimonial-headline">AMAZING!</div>
             <div class="testimonial-paragraph">I went to over 20 psychics so far but Soulmate Healer is the best by far!</div>
-            <div class="avatar-wrapper"><img src="images/testimonial3.jpg" loading="lazy" alt="" class="image">
+            <div class="avatar-wrapper"><img src="/welcome/images/testimonial3.jpg" loading="lazy" alt="" class="image">
               <div class="div-block">
                 <div class="name-wrapper">
                   <div class="testimonial-name">Andrew S.</div>
                   <div class="testimonial-location">London, UK</div>
                 </div>
-                <div class="stars-wrapper"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"><img src="images/star.png" loading="lazy" alt="" class="star"></div>
+                <div class="stars-wrapper"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"><img src="/welcome/images/star.png" loading="lazy" alt="" class="star"></div>
               </div>
             </div>
           </div>
@@ -589,7 +589,7 @@ if ($v > 3) {
       </div>
       <div class="button-wrapper">
         <a data-w-id="9ca0b638-11a4-0aa1-331f-7ef8023444e2" href="#" class="order-now-button w-button">ORDER NOW<br><span class="btn-sub-text">And Watch Your Life Magically Change</span>&zwj;</a>
-        <div class="secure-badge"><img src="images/lock.png" loading="lazy" alt="" class="lock-icon">
+        <div class="secure-badge"><img src="/welcome/images/lock.png" loading="lazy" alt="" class="lock-icon">
             <div class="secure-checkout-text inverted">Safe &amp; Secure • 365 Money Back Guarantee</div>
         </div>
       </div>
