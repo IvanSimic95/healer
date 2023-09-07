@@ -11,21 +11,26 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
     <header class="ex-6-header">
         <div class="header-content">
             <div class="container">
-                <div class="header-box" style="background-color:#f5f5f5;">
-                
-                   <div class="col-sm-12 col-12">
-					<div style="margin-top:0px;">
-                    <h2 style="padding-top:10px;">Welcome to Your Safety Place</h2>
-                                <img class="img-fluid" src="/images/12.png" style="padding:8px;width:60%;border-radius:0.75rem;" alt="alternative">
-                      
-						<p style="font-size: 16px;line-height: 17px; margin:15px;max-width:none;">
-		In the vast realm of the unseen and the uncharted, where energies weave tales of destinies and souls dance on the rhythms of the universe, there emerges a unique force - The Soulmate Healer. <br> With an ethereal touch and an enigmatic presence, this extraordinary psychic doesn't merely glimpse into the future or the past; they venture deeper, into the intricate tapestries of soul connections. They have a rare gift, an uncanny ability to mend the cosmic ties that bind two souls, healing rifts that span lifetimes and bridging gaps that seem insurmountable.
-		
-		</p> 
-					</div>
-                   </div>				
+             
 
-                </div> 
+
+                <div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
+         <div class="col-lg-12 col-xl-12">
+            <div style="margin-top: 15px;margin-bottom:15px;" class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h2>Welcome to Your Safety Place</h2>
+                        <div class="image-container">
+                        <img class="img-fluid" src="images/12.png" style="padding:8px;width:60%;border-radius:0.75rem;" alt="alternative">
+                    </div> 
+                        <p>In the vast realm of the unseen and the uncharted, where energies weave tales of destinies and souls dance on the rhythms of the universe, there emerges a unique force - The Soulmate Healer. <br> With an ethereal touch and an enigmatic presence, this extraordinary psychic doesn't merely glimpse into the future or the past; they venture deeper, into the intricate tapestries of soul connections. They have a rare gift, an uncanny ability to mend the cosmic ties that bind two souls, healing rifts that span lifetimes and bridging gaps that seem insurmountable.</p>
+
+                    </div> <br clear="all">
+                </div>  
+   
+            </div>
+         </div>
+	</div>
  
  <br/>
 				
