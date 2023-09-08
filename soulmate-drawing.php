@@ -125,14 +125,15 @@ $count = $row['reviews'];
                     <div class="image-container">
                         <img class="img-fluid" src="/images/nobg.png" alt="alternative">
                     </div> 
-                </div> 
+                
 				<br>
                         <a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER YOUR</a>
                     </div> <br clear="all">
                 </div>  
-                <p> <b> You are fully protected by my 100% satisfaction guarantee. </b> </p>
-				<p> If for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send me an email and I'll refund every penny of your order cost. </p> 
+                <p> <b> You are fully protected by the 100% satisfaction guarantee! </b> 
+				If for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send me an email and I'll refund every penny of your order cost. </p> 
 				<br> <br>
+				</div>
 				 <p> <center> <strong>  <FONT COLOR="#d9480d">  Pictures from customers:  </FONT> </strong><center>  </p> 
             <div class="col-lg-6">
                     <div class="image-container">
