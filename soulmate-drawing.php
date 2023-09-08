@@ -121,16 +121,25 @@ $count = $row['reviews'];
 	                   <br>   <p>  My unparalleled insights have captivated the hearts of stars and celebrities, drawing thousands to my door in search of their soulmate. I have unfailingly answered each call, for every soul deserves to bask in the glow of true love. Should you choose to join this sacred journey, I will be your steadfast companion, ensuring that your heart's desires are manifested in their fullest form. </p>
 	                   <br>   <p> <center> <b> A COMMITMENT TO PRIVACY: Digital Delivery Only </b> </center>   </p>
 	                     <p> Your order will be securely delivered to the email address you provide, and will also be readily accessible from the user dashboard. Rest assured, your physical address remains confidential.  </p>
-	
-                        <a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER</a>
-                    </div> <br clear="all">
-                </div>  
-                <div class="col-lg-6">
+	<div class="col-lg-6">
                     <div class="image-container">
                         <img class="img-fluid" src="/images/nobg.png" alt="alternative">
                     </div> 
                 </div> 
-            </div>
+				<br>
+                        <a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER YOUR</a>
+                    </div> <br clear="all">
+                </div>  
+                <p> <b> You are fully protected by my 100% satisfaction guarantee. </b> </p>
+				<p> If for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send me an email and I'll refund every penny of your order cost. </p> 
+				<br> <br>
+				 <p> <center> <strong>  <FONT COLOR="#d9480d">  Pictures from customers:  </FONT> </strong><center>  </p> 
+            <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="/images/scs.jpg" alt="alternative">
+                    </div> 
+                </div> 
+			</div>
          </div>
 	</div>
 
