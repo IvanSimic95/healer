@@ -1,7 +1,7 @@
 <?php 
 $t_product_name = "smtf";
 $t_product_form_name = "smtf";
-$title = "Soulmate  | Twin flame  | Soulmate Healer";
+$title = "Soulmate vs. Twin flame";
 $description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <style>
