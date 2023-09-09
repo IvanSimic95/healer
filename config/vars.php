@@ -76,7 +76,7 @@ $weeklyEnergyFooter = "\n\nWith warmth and insight,\nSoulmate Healer";
 
 
 //EMAIL TEXTS
-$AbandonSubject = "The Timer’s Going Off on Your Order!";
+$AbandonSubject = "The Timer's Going Off on Your Order!";
 $AbandonMessage = "Look's like you forgot to finish your order... But don't worry, we kept it safe for you! Click the button below to finish your purchase & get closer to your soulmate.";
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/functions.php';
 ?>

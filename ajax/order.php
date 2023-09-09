@@ -13,6 +13,11 @@ die();
 $request = $_SERVER['REQUEST_METHOD'];
 
 if ($request === 'POST') {
+  if(isset($_POST['text'])){
+    $text = $_POST['text'];
+  }else{
+    $text = "";
+  }
 
 $user_birthday = $_POST['form_day']."-".$_POST['form_month']."-".$_POST['form_year'];
 $birthday = new DateTime($user_birthday);
