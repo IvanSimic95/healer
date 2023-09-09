@@ -1,5 +1,6 @@
 <?php 
-$title = "Soulmate Test | Soulmate Healer";
+$t_product_name = "smtf";
+$title = "Soulmate  | Twin flame  | Soulmate Healer";
 $description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <style>
@@ -32,7 +33,7 @@ p{
                 </div>
                 <div class="col-sm-12 col-12">
 						<div class="image-container">
-							<img class="img-fluid featured-img" src="/images/blog//smtf.png" alt="alternative">
+							<img class="img-fluid featured-img" src="/images/blog/smtf.png" alt="alternative">
 						</div> 
                     </div>
                 </div>
