@@ -1,6 +1,8 @@
 <?php 
-$title = "Soulmate Test | Soulmate Healer";
-$description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
+$t_product_name = "smtf";
+$t_product_form_name = "smtf";
+$title = "Soulmate vs. Twin flame";
+$description = "Throughout the annals of time, poets, philosophers, and scholars have rhapsodized about the mysterious and profound connections humans share with one another. Two terms frequently arise in these discussions: soulmates and twin flames. Though often used interchangeably, these terms represent different, albeit intertwined, spiritual concepts. This deep dive into soulmates and twin flames aims to elucidate their distinctions, commonalities, and significance in our lives....";
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <style>
     #ds24b-27657,#ds24b-2765750,.footer-guarantee{display:none;}
@@ -32,7 +34,7 @@ p{
                 </div>
                 <div class="col-sm-12 col-12">
 						<div class="image-container">
-							<img class="img-fluid featured-img" src="/images/blog//smtf.png" alt="alternative">
+							<img class="img-fluid featured-img" src="/images/blog/smtf.png" alt="alternative">
 						</div> 
                     </div>
                 </div>
