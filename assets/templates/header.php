@@ -8,8 +8,8 @@ $metatags
         ->title($title)
         ->description($description)
         ->meta('author', 'Soulmate Healer')
-        ->image('https://soulmatehealer.com/assets/img/products/'.$t_product_form_name.'.jpg')
-        ->mobile('https://soulmatehealer.com/assets/img/products/'.$t_product_form_name.'.jpg');
+        ->image('https://soulmatehealer.com/images/products/'.$t_product_form_name.'.jpg')
+        ->mobile('https://soulmatehealer.com/images/products/'.$t_product_form_name.'.jpg');
 
 
 }else{
