@@ -123,6 +123,12 @@ switch ($order_priority){
       $cbproduct = "513773";
       $cbprice = "199";
 
+
+    }elseif($order_product == "ask"){
+
+      $cbproduct = "516008";
+      $cbprice = "19";
+
 }elseif($order_product == "futurebaby"){
 
   switch ($order_priority){
@@ -192,6 +198,9 @@ switch ($order_product_test) {
 case "Pastlife":
     $order_product_nice = "Past Life Drawing";
     break;
+    case "Ask":
+      $order_product_nice = "Ask Me Anything";
+      break;
     case "Personal":
       $order_product_nice = "Personal Psychic Reading";
       break;
@@ -269,13 +278,22 @@ $sql5 = "SELECT * FROM users WHERE email = '".$user_email."'";
 $sql = "INSERT INTO orders (user_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, gender, genderAcc, partner_gender) 
 VALUES ('$userID', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender')";
 
+
+
 if(mysqli_query($conn,$sql)){
 $lastRowInsert = mysqli_insert_id($conn);
 $submitStatus = "Success";
 $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
 $redirectPayment = "https://www.digistore24.com/product/".$cbproduct."?custom=".$lastRowInsert;
 
+if($order_product == "ask"){
+  $sql2 = "INSERT INTO ask (order, text) 
+  VALUES ('$lastRowInsert', '$text')";
+  if(mysqli_query($conn,$sql2)){
 
+  }
+
+}
 
 
 $returnData = [$submitStatus,$SuccessMessage,$redirectPayment];

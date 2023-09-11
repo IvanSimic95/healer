@@ -1,6 +1,6 @@
 <?php 
-$t_product_name = "ama";
-$t_product_form_name = "ama";
+$t_product_name = "ask";
+$t_product_form_name = "ask";
 $title = "Ask Me Anything | Soulmate Healer";
 $description = "I will draw your SOULMATE with 100% accuracy";
 
