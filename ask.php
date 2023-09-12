@@ -24,7 +24,7 @@ $count = $row['reviews'];
                    <div class="col-lg-6 col-xl-7">
                         <div class="image-container">
                             <div class="img-wrapper">
-                                <img class="img-fluid" src="/images/soulmate-01.png" style="border-radius: 0.5rem;" alt="alternative">
+                                <img class="img-fluid" src="/images/products/ask.png" style="border-radius: 0.5rem;" alt="alternative">
                             </div>  
                         </div>  
                    </div>				
@@ -44,7 +44,7 @@ $count = $row['reviews'];
 						
 						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$21</h2>  
                         <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$210</h2> 
-						<p style="display:none;">You save <span class="saveda"><b>$190</b> (90%)</span></p>
+						<p>You save <span class="saveda"><b>$190</b> (90%)</span></p>
 						</div>
 						
 						

@@ -117,6 +117,26 @@ switch ($order_priority){
   break;
 }
 
+}elseif($order_product == "thoughts"){
+
+  
+  switch ($order_priority){
+    case "48":
+      $cbproduct = "516185";
+      $cbprice = "24";
+    break;
+  
+    case "24":
+      $cbproduct = "516186";
+      $cbprice = "35";
+    break;
+  
+    case "4":
+      $cbproduct = "516187";
+      $cbprice = "49";
+    break;
+  }
+
 }elseif($order_product == "purification"){
 
 

@@ -1,8 +1,8 @@
 <?php 
-$t_product_name = "SOULMATE";
-$t_product_form_name = "soulmate";
-$title = "Soulmate Drawing | Soulmate Healer";
-$description = "I will draw your SOULMATE with 100% accuracy";
+$t_product_name = "thoughts";
+$t_product_form_name = "thoughts";
+$title = "Their Inner Thoughts Channeled | Soulmate Healer";
+$description = "Their Inner Thoughts Channeled";
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <?php
@@ -24,14 +24,14 @@ $count = $row['reviews'];
                    <div class="col-lg-6 col-xl-7">
                         <div class="image-container">
                             <div class="img-wrapper">
-                                <img class="img-fluid" src="/images/soulmate-01.png" style="border-radius: 0.5rem;" alt="alternative">
+                                <img class="img-fluid" src="/images/products/thoughts.png" style="border-radius: 0.5rem;" alt="alternative">
                             </div>  
                         </div>  
                    </div>				
 
                    <div class="col-lg-6 col-xl-5">
 						<div class="header-box" id="order" >
-                        <h5 style="margin-top: 10px;">Your Soulmate Psychic Drawing</h5>
+                        <h5 style="margin-top: 10px;">Their Inner Thoughts Channeled</h5>
 						<h4 style="text-align: center;font-size: 15px;font-weight: 500;margin-top:-10px;">
 						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
 						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
@@ -43,7 +43,7 @@ $count = $row['reviews'];
 						</p>
 						
 						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$29</h2>  
-                        <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$299</h2> 
+                        <h2 class="old_price" style="display:none;font-size: 25px;opacity: 0.25;text-decoration: line-through;">$299</h2> 
 						<p style="display:none;">You save <span class="saveda"><b>$270</b> (90%)</span></p>
 						</div>
 						
@@ -72,8 +72,8 @@ $count = $row['reviews'];
                                 <div style="text-align:start;">Delivery Priority:</div>
                                 <div class="form_box input-group form-group" style="    padding-bottom: 52px;">
                                 
-                                    <input id="prio1" type="radio" name="priority" value="1">
-                                    <label for="prio1"><span><i style="color:#ffaf00;" class="fas fa-bolt" aria-hidden="true"></i>1h</span></label>
+                                    <input id="prio4" type="radio" name="priority" value="4">
+                                    <label for="prio4"><span><i style="color:#ffaf00;" class="fas fa-bolt" aria-hidden="true"></i>4h</span></label>
                                     
                                     <input id="prio24" type="radio" name="priority" value="24">
                                     <label for="prio24"> <span><i style="color:#c19bff;" class="fas fa-stopwatch" aria-hidden="true"></i>24h</span></label>
@@ -170,18 +170,18 @@ $count = $row['reviews'];
 
     <script>
 jQuery('input[name="priority"]').change(function(){
-    if (this.value == '1') {
-        jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$59').animate({'opacity': 1}, 200);});
+    if (this.value == '4') {
+        jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$49').animate({'opacity': 1}, 200);});
 		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$599').animate({'opacity': 0.25}, 300);});
 		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$540</b> (90%)').animate({'opacity': 1}, 400);});	
     }
     if (this.value == '24') {
-		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$39').animate({'opacity': 1}, 200);});
+		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$35').animate({'opacity': 1}, 200);});
 		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$399').animate({'opacity': 0.25}, 300);});
 		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$360</b> (90%)').animate({'opacity': 1}, 400);});
     }
     if (this.value == '48') {
-		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$29').animate({'opacity': 1}, 200);});
+		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$24').animate({'opacity': 1}, 200);});
 		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$299').animate({'opacity': 0.25}, 300);});
 		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$270</b> (90%)').animate({'opacity': 1}, 400);});
     }

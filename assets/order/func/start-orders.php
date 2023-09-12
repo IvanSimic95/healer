@@ -94,7 +94,11 @@ break;
 			  $logArray[] = $orderId." | ". $orderEmail." | ".$product." | ".$orderPriority." | ";
 
 		 //	Update Order Status Processing
+		 if($orderProduct == "ask"){
+			$sqlupdate = "UPDATE `orders` SET `order_status`='waiting' WHERE order_id='$orderId'";
+		 }else{
 			$sqlupdate = "UPDATE `orders` SET `order_status`='processing' WHERE order_id='$orderId'";
+		 }
 			if ($conn->query($sqlupdate) === TRUE) {
       		echo "Updated";
 
