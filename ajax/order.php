@@ -164,17 +164,17 @@ switch ($order_priority){
 }elseif($order_product == "husband"){
   switch ($order_priority){
     case "48":
-      $cbproduct = "00000";
+      $cbproduct = "516045";
       $cbprice = "29";
     break;
   
     case "24":
-      $cbproduct = "00000000";
+      $cbproduct = "516047";
       $cbprice = "39";
     break;
   
     case "1":
-      $cbproduct = "000000000";
+      $cbproduct = "516048";
       $cbprice = "59";
     break;
   }
@@ -304,7 +304,7 @@ if(mysqli_query($conn,$sql)){
 $lastRowInsert = mysqli_insert_id($conn);
 $submitStatus = "Success";
 $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
-$redirectPayment = "https://www.digistore24.com/product/".$cbproduct."?custom=".$lastRowInsert;
+$redirectPayment = "https://www.digistore24.com/product/".$cbproduct."?custom=".$lastRowInsert."&email=".$user_email."&first_name=".$fName."&last_name=".$lName;
 
 if($order_product == "ask"){
   $sql2 = "INSERT INTO ask (order_id, text) VALUES ('$lastRowInsert', '$text')";
