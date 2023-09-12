@@ -14,7 +14,7 @@ $request = $_SERVER['REQUEST_METHOD'];
 
 if ($request === 'POST') {
   if(isset($_POST['text'])){
-    $text = $_POST['text'];
+    $text = htmlspecialchars(strip_tags($_POST['text']));
   }else{
     $text = "";
   }
@@ -71,9 +71,9 @@ if($order_product == "soulmate"){
       $cbprice = "39";
     break;
   
-    case "6":
+    case "1":
       $cbproduct = "513366";
-      $cbprice = "49";
+      $cbprice = "59";
     break;
   }
 
@@ -91,9 +91,9 @@ switch ($order_priority){
     $cbprice = "39";
   break;
 
-  case "6":
+  case "1":
     $cbproduct = "513428";
-    $cbprice = "49";
+    $cbprice = "59";
   break;
 }
 
@@ -111,9 +111,9 @@ switch ($order_priority){
     $cbprice = "39";
   break;
 
-  case "6":
+  case "1":
     $cbproduct = "513432";
-    $cbprice = "49";
+    $cbprice = "59";
   break;
 }
 
@@ -127,7 +127,7 @@ switch ($order_priority){
     }elseif($order_product == "ask"){
 
       $cbproduct = "516008";
-      $cbprice = "19";
+      $cbprice = "21";
 
 }elseif($order_product == "futurebaby"){
 
@@ -135,17 +135,17 @@ switch ($order_priority){
     case "48":
       
   $cbproduct = "513837";
-  $cbprice = "15";
+  $cbprice = "23";
     break;
   
     case "24":
       $cbproduct = "514031";
-      $cbprice = "39";
+      $cbprice = "33";
     break;
   
-    case "6":
+    case "1":
       $cbproduct = "514032";
-      $cbprice = "49";
+      $cbprice = "53";
     break;
     }
 
@@ -154,10 +154,30 @@ switch ($order_priority){
   $cbprice = "49";
 }elseif($order_product == "pastlife"){
   $cbproduct = "514037";
-  $cbprice = "19";
+  $cbprice = "21";
 }elseif($order_product == "energyw"){
   $cbproduct = "513783";
-  $cbprice = "5";
+  $cbprice = "9";
+}elseif($order_product == "thoughts"){
+  $cbproduct = "000000";
+  $cbprice = "23";
+}elseif($order_product == "husband"){
+  switch ($order_priority){
+    case "48":
+      $cbproduct = "00000";
+      $cbprice = "29";
+    break;
+  
+    case "24":
+      $cbproduct = "00000000";
+      $cbprice = "39";
+    break;
+  
+    case "1":
+      $cbproduct = "000000000";
+      $cbprice = "59";
+    break;
+  }
 }else{
   
 switch ($order_priority){
@@ -173,7 +193,7 @@ switch ($order_priority){
 
   case "6":
     $cbproduct = "513428";
-    $cbprice = "49";
+    $cbprice = "59";
   break;
 }
 }
@@ -287,11 +307,12 @@ $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
 $redirectPayment = "https://www.digistore24.com/product/".$cbproduct."?custom=".$lastRowInsert;
 
 if($order_product == "ask"){
-  $sql2 = "INSERT INTO ask (order, text) 
-  VALUES ('$lastRowInsert', '$text')";
-  if(mysqli_query($conn,$sql2)){
+  $sql2 = "INSERT INTO ask (order_id, text) VALUES ('$lastRowInsert', '$text')";
+ if ($conn->query($sql2) === TRUE) {
 
-  }
+} else {
+  //Error
+}
 
 }
 

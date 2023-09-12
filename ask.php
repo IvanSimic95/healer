@@ -42,9 +42,9 @@ $count = $row['reviews'];
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order now, receive within 6 hours
 						</p>
 						
-						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$29</h2>  
-                        <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$299</h2> 
-						<p style="display:none;">You save <span class="saveda"><b>$270</b> (90%)</span></p>
+						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$21</h2>  
+                        <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$210</h2> 
+						<p style="display:none;">You save <span class="saveda"><b>$190</b> (90%)</span></p>
 						</div>
 						
 						
@@ -71,13 +71,13 @@ $count = $row['reviews'];
 								</div>
 
                                 <div class="form-group">
-                                    <textarea class="form-control-input" id="text" name="form_text" rows="3" required></textarea>
+                                    <textarea class="form-control-input" id="text" name="text" rows="3" required></textarea>
 									<label class="label-control" for="text">Your Question</label>
 									<div class="help-block with-errors"></div>
 								</div>
                            
-
-                            <input class="product" type="hidden" name="product" value="ama">
+                                <input class="product" type="hidden" name="priority" value="24">
+                            <input class="product" type="hidden" name="product" value="ask">
                             <div id="error" class="alert alert-danger" style="display: none"></div>
 
 								<div class="form-group">

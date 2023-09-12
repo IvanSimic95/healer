@@ -43,7 +43,7 @@ $count = $row['reviews'];
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order now, receive within 24 hours
 						</p>
 						
-						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$14.87 <span style="font-size:50%;"></span></h2>  
+						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$8.99 <span style="font-size:50%;"></span></h2>  
 
 						</div>
 						

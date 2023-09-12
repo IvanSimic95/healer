@@ -131,11 +131,13 @@ echo $result;
 
 //Now create new conversation
 $ch2 = curl_init();
+
 $data2 = [
 "subject" => "Order #".$orderId." | ".$order_product_nice,
 "participants" => ["administrator", $userID],
 "custom" => ["status" => "Paid"]
 ];
+
 $data22 = json_encode($data2);
 curl_setopt($ch2, CURLOPT_URL, 'https://api.talkjs.com/v1/tO6umIcS/conversations/'.$orderId);
 curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
@@ -155,6 +157,66 @@ if (curl_errno($ch2)) {
 curl_close($ch2);
 echo $result2;
 
+
+if($orderProduct == "ask"){
+	$logArray[] = "ask product";
+
+	$sql_text = "SELECT * FROM ask WHERE order_id = '$orderId'";
+					$sql_text_res = $conn->query($sql_text);
+					if($sql_text_res->num_rows == 0) {
+					} else {
+						while($rowText = $sql_text_res->fetch_assoc()) {
+							$UserMSG = $rowText["text"] . "\n\n";
+							$logArray[] = $UserMSG ;
+						}
+					}
+
+
+					//Now create new conversation
+$ch2 = curl_init();
+
+$data2 = [
+"subject" => "Order #".$orderId." | ".$order_product_nice,
+"participants" => ["administrator", $userID],
+"custom" => ["product" => "ask"]
+];
+
+$data22 = json_encode($data2);
+curl_setopt($ch2, CURLOPT_URL, 'https://api.talkjs.com/v1/tO6umIcS/conversations/'.$orderId);
+curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch2, CURLOPT_CUSTOMREQUEST, 'PUT');
+
+curl_setopt($ch2, CURLOPT_POSTFIELDS, $data22);
+
+$headers = array();
+$headers[] = 'Content-Type: application/json';
+$headers[] = 'Authorization: Bearer sk_test_omv9jN0lymrWKOJ2kvyL4yOOHwRDVL8W';
+curl_setopt($ch2, CURLOPT_HTTPHEADER, $headers);
+
+$result2 = curl_exec($ch2);
+if (curl_errno($ch2)) {
+    echo 'Error:' . curl_error($ch2);
+}
+curl_close($ch2);
+
+ //Send CURL for message -> TalkJS
+ $ch = curl_init();
+ $data = [[
+	 "text" => $OrderProcessingMessage,
+	 "type" => "SystemMessage"
+ ],
+ [
+	 "sender"  => "administrator",
+	 "text" => $message,
+	 "type" => "UserMessage"
+ ], 
+ [
+	"sender"  => $userID,
+	"text" => $UserMSG,
+	"type" => "UserMessage"
+]];
+}else{
+
   //Send CURL for message -> TalkJS
   $ch = curl_init();
   $data = [[
@@ -166,7 +228,7 @@ echo $result2;
 	  "text" => $message,
 	  "type" => "UserMessage"
   ]];
-  
+}
   $data1 = json_encode($data);
 
   curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/tO6umIcS/conversations/' . $orderId . '/messages');
@@ -421,5 +483,6 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 			startLog($logArray);
 		}
 	}
+
 	echo "<br><hr>";
  ?>

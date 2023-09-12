@@ -70,10 +70,21 @@ $count = $row['reviews'];
                                 </div>
 									<div class="help-block with-errors"></div>
 								</div>
+                                <div style="text-align:start;">Delivery Priority:</div>
+                                <div class="form_box input-group form-group" style="    padding-bottom: 52px;">
+                                
+                                    <input id="prio6" type="radio" name="priority" value="1">
+                                    <label for="prio6"><span><i style="color:#ffaf00;" class="fas fa-bolt" aria-hidden="true"></i>6h</span></label>
+                                    
+                                    <input id="prio24" type="radio" name="priority" value="24">
+                                    <label for="prio24"> <span><i style="color:#c19bff;" class="fas fa-stopwatch" aria-hidden="true"></i>24h</span></label>
+                                    
+                                    <input id="prio48" type="radio" name="priority" value="48" checked="true">
+                                    <label for="prio48"> <span><i  class="fas fa-clock" aria-hidden="true"></i>48h</span></label>
+                                </div>
                          
 
                             <input class="product" type="hidden" name="product" value="personal">
-                            <input class="product" type="hidden" name="priority" value="24">
                             <div id="error" class="alert alert-danger" style="display: none"></div>
 
 								<div class="form-group">

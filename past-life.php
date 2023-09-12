@@ -47,7 +47,7 @@ if(isset($row['reviews'])){
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order today, receive within 1-3 days
 						</p>
 						
-						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$19</h2>  
+						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$21</h2>  
                         <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$499</h2> 
 						<p>You save <span class="saveda"><b>$480</b> (95%)</span></p>
 						</div>

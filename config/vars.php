@@ -5,6 +5,7 @@ date_default_timezone_set('Europe/Bucharest');
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
+$debounce = 0;
 $startpixel  = 0;
 
 $FBPixel  = "3290293207717814";
