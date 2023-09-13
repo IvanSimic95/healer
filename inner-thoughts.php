@@ -69,6 +69,18 @@ $count = $row['reviews'];
                                 </div>
 									<div class="help-block with-errors"></div>
 								</div>
+                                <div class="form-group">
+									<input type="text" class="form-control-input" id="othersname" name="otherform_name" required>
+									<label class="label-control" for="othersname">Other Person's Name</label>
+									<div class="help-block with-errors"></div>
+								</div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control-input" id="text" name="othertext" rows="3"></textarea>
+									<label class="label-control" for="text">Any aditional detail you may want to provide (you may leave empty)</label>
+									<div class="help-block with-errors"></div>
+								</div>
+
                                 <div style="text-align:start;">Delivery Priority:</div>
                                 <div class="form_box input-group form-group" style="    padding-bottom: 52px;">
                                 
