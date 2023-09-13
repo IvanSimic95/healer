@@ -1,8 +1,8 @@
 <?php 
 $t_product_name = "husband";
 $t_product_form_name = "husband";
-$title = "How u'll meet your husband | Soulmate Healer";
-$description = "How u'll meet your husband";
+$title = "When and Where You'll Meet Your Future Husband";
+$description = "The divine timeline of destined love | Soulmate Healer";
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <?php
@@ -31,7 +31,7 @@ $count = $row['reviews'];
 
                    <div class="col-lg-6 col-xl-5">
 						<div class="header-box" id="order" >
-                        <h5 style="margin-top: 10px;">How u'll Meet Your Husband</h5>
+                        <h5 style="margin-top: 10px;">When and Where <br> You'll Meet Your Future Husband</h5>
 						<h4 style="text-align: center;font-size: 15px;font-weight: 500;margin-top:-10px;">
 						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
 						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
@@ -39,7 +39,7 @@ $count = $row['reviews'];
 						<p style="color: #000;text-align: left;padding: 0px 17px;margin-top: 23px;">
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> 99% Accuracy <br/>
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> 100% Satisfaction guarantee<br/>
-						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order now, receive within 6 hours
+						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order now, receive within 1 hour
 						</p>
 						
 						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$24</h2>  
@@ -110,35 +110,28 @@ $count = $row['reviews'];
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-12">
                     <div class="text-container">
-                        <h2>PSYCHIC DRAWING OF YOUR SOULMATE</h2>
-						<p><b> <center> <FONT COLOR="#d9480d"> YOUR KEY TO ETERNAL LOVE </FONT> </b> </center> </p>
-                        <p> <b> I am The Soulmate Healer</b>, a master in the realm of psychic artistry, uniquely qualified to bring you face to face with your soul's true counterpart. I don't just offer predictions; I unlock the door to a love that will light up your life with joy, passion, and boundless fulfillment.</p>
-                        <br> <p>My soulmate portraits are no mere drawings; they're a magical blend of deep psychic connection and artistic talent. I channel a synergy of empathic projection, clairsentience, and clairvoyance, enhanced by my rich knowledge in spiritual healing and psychic artistry. I hold the power to see the unseen - to discern that perfect moment when you're ready to embrace true love and the ways to dismantle any walls that stand in your way.</p>
-                        <br> <p>All I need is your name and date of birth to embark on this mystical journey. My process is a sacred ritual: I plunge into a deep meditative trance, connecting to the cosmic consciousness where your soulmate awaits. The features, the life details, the love story that is destined for you, all come into vivid focus. My hand moves as if by magic, bringing to life an exquisitely detailed portrait, paired with a heartfelt description of your soulmate's personality. Finally, I tap into the vibrations of your aura, pinpointing that fateful moment when your worlds will collide.</p>
-                       <br>  <p>  Finding your soulmate is a transformative experience, like the unfolding of a magnificent rose. Your love will be delicate yet enduring, replacing past sorrows with radiant joy. You will find yourself propelled forward, inspired to chase your dreams with a heart shielded by love and protection. </p>
-	                   <br>   <br> <p> <b> BONUS: I Will Tell You Exactly When Your Paths Cross</b>  </p>
-	                    <br>  <p>  Your soulmate is not just a romantic partner; they are the mirror of your soul, guiding you towards profound self-discovery and deeper understanding. Their presence will mark a seismic shift in your life, unlocking unparalleled emotional and spiritual growth. </p>
-	                   <br>   <p>  My unparalleled insights have captivated the hearts of stars and celebrities, drawing thousands to my door in search of their soulmate. I have unfailingly answered each call, for every soul deserves to bask in the glow of true love. Should you choose to join this sacred journey, I will be your steadfast companion, ensuring that your heart's desires are manifested in their fullest form. </p>
-	                   <br>   <p> <center> <b> A COMMITMENT TO PRIVACY: Digital Delivery Only </b> </center>   </p>
+                        <h2>When and Where You'll Meet Your Future Husband</h2>
+						<p><b> <center> <FONT COLOR="#d9480d"> THE DIVINE TIMELINE OF DESTINED LOVE </FONT> </b> </center> </p>
+                        <p> <b> I am The Soulmate Healer</b>, an adept guide on love's ethereal pathways, uniquely positioned to unveil the divine moments that lead you to your life's true romantic partner. This isn't about mere predictions; it's about illuminating the cosmic orchestration of encounters that'll change your destiny.</p>
+                        <br> <p>Our lives are intricately woven with threads of fate and choice. While the universe conspires in mysterious ways to bring soulmates together, our own energies and decisions play a pivotal role. I offer not just insights, but a roadmap to those destined intersections where your heart will recognize its counterpart.</p>
+                        <br> <p>By tapping into a blend of profound psychic insight, astrological alignment, and spiritual intuition, I seek the vibrational patterns that signal the emergence of your future husband into your life. My skills, honed over years of spiritual practice and psychic artistry, allow me to discern the intricate details - the where, the how, and the when of this monumental encounter.</p>
+                       <br>  <p> Provide me with your name and date of birth, and allow me to journey into the sacred dimensions where time and love entwine. I will trace the celestial patterns, the earthly cues, and the energetic wavelengths that will converge, culminating in the moment your paths cross with your future husband's. </p>
+	                  <br> <p><b> <center> <FONT COLOR="#d9480d">Discover the Precise Moment Your Destinies Intertwine </FONT> </b> </center> </p>
+	                      <p> Meeting your future husband isn't just a moment; it's an epochal shift, a new chapter where dreams merge with destiny. Through this product, you will be prepared, not just in heart but in spirit, to welcome this beautiful juncture of love, companionship, and shared aspirations. </p>
+	                   <br>   <p><b> <center> <FONT COLOR="#d9480d"> A COMMITMENT TO PRIVACY: Digital Delivery Only</FONT> </b> </center> </p>
 	                     <p> Your order will be securely delivered to the email address you provide, and will also be readily accessible from the user dashboard. Rest assured, your physical address remains confidential.  </p>
-	<div class="col-lg-12">
-                    <div class="image-container">
-                        <img class="img-fluid" src="/images/nobg.png" alt="alternative">
-                    </div> 
+
                 
 				<br>
                         <a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER YOUR</a>
                     </div> <br clear="all">
-                </div>  
+               
                 <p> <b> You are fully protected by the 100% satisfaction guarantee! </b> 
 				If for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send me an email and I'll refund every penny of your order cost. </p> 
 				<br> <br>
 				</div>
-				 <p> <center> <strong>  <FONT COLOR="#d9480d">  Pictures from customers:  </FONT> </strong><center>  </p> 
-            <div class="col-lg-12">
-                    <div class="image-container">
-                        <img class="img-fluid" src="/images/scs.jpg" alt="alternative">
-                    </div> 
+				
+            
                 </div> 
 			</div>
          </div>
