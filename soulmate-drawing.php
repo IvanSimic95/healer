@@ -108,7 +108,7 @@ $count = $row['reviews'];
 	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-6">
                     <div class="text-container">
                         <h2>PSYCHIC DRAWING OF YOUR SOULMATE</h2>
 						<p><b> <center> <FONT COLOR="#d9480d"> YOUR KEY TO ETERNAL LOVE </FONT> </b> </center> </p>
@@ -121,25 +121,57 @@ $count = $row['reviews'];
 	                   <br>   <p>  My unparalleled insights have captivated the hearts of stars and celebrities, drawing thousands to my door in search of their soulmate. I have unfailingly answered each call, for every soul deserves to bask in the glow of true love. Should you choose to join this sacred journey, I will be your steadfast companion, ensuring that your heart's desires are manifested in their fullest form. </p>
 	                   <br>   <p> <center> <b> A COMMITMENT TO PRIVACY: Digital Delivery Only </b> </center>   </p>
 	                     <p> Your order will be securely delivered to the email address you provide, and will also be readily accessible from the user dashboard. Rest assured, your physical address remains confidential.  </p>
-	<div class="col-lg-12">
-                    <div class="image-container">
-                        <img class="img-fluid" src="/images/nobg.png" alt="alternative">
+                    </div>  
+                </div>
+
+                <!--IMAGE ON THE RIGHT FOR PC DISPLAY -->
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
                     </div> 
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                </div>
+
+                <!--IMAGE BELLOW THE TEXT IN PHONE DISPLAY -->
+                <div class="d-block d-lg-none row" style="padding-right: 15px;padding-left: 15px;">
+
+                    <div class="col-12">
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    </div> 
+                    <div class="col-12" style="margin-top:15px;">
+                    <div class="image-container">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    </div> 
+                </div>
                 
-				<br>
-                        <a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER YOUR</a>
-                    </div> <br clear="all">
-                </div>  
+                <!--IMAGE ON THE BOTTOM -->
+                <div class="col-lg-12">
+                
+				<br><a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER YOUR</a>
+                <br clear="all"> <br clear="all">
                 <p> <b> You are fully protected by the 100% satisfaction guarantee! </b> 
 				If for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send me an email and I'll refund every penny of your order cost. </p> 
-				<br> <br>
-				</div>
 				 <p> <center> <strong>  <FONT COLOR="#d9480d">  Pictures from customers:  </FONT> </strong><center>  </p> 
-            <div class="col-lg-12">
+                 </div> 
+
+                 <!-- CUSTOMER REVIEWS IMAGE -->
+                 <div class="col-lg-12">
                     <div class="image-container">
                         <img class="img-fluid" src="/images/scs.jpg" alt="alternative">
                     </div> 
                 </div> 
+
 			</div>
          </div>
 	</div>
