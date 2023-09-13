@@ -1,8 +1,8 @@
 <?php 
 $t_product_name = "thoughts";
 $t_product_form_name = "thoughts";
-$title = "Their Inner Thoughts Channeled | Soulmate Healer";
-$description = "Their Inner Thoughts Channeled";
+$title = "Revealing Their Hidden Thoughts & Deepest Feelings | Soulmate Healeer";
+$description = "Have you ever found yourself gazing into the distance, wondering what a special someone truly thinks or feels about you? With my exclusive service, I aim to unveil the most concealed thoughts and intense emotions of that significant individual in your life";
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <?php
@@ -31,7 +31,7 @@ $count = $row['reviews'];
 
                    <div class="col-lg-6 col-xl-5">
 						<div class="header-box" id="order" >
-                        <h5 style="margin-top: 10px;">Their Inner Thoughts Channeled</h5>
+                        <h5 style="margin-top: 10px;">Revealing Their Hidden Thoughts & Deepest Feelings</h5>
 						<h4 style="text-align: center;font-size: 15px;font-weight: 500;margin-top:-10px;">
 						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
 						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
@@ -110,35 +110,37 @@ $count = $row['reviews'];
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-12">
                     <div class="text-container">
-                        <h2>PSYCHIC DRAWING OF YOUR SOULMATE</h2>
-						<p><b> <center> <FONT COLOR="#d9480d"> YOUR KEY TO ETERNAL LOVE </FONT> </b> </center> </p>
-                        <p> <b> I am The Soulmate Healer</b>, a master in the realm of psychic artistry, uniquely qualified to bring you face to face with your soul's true counterpart. I don't just offer predictions; I unlock the door to a love that will light up your life with joy, passion, and boundless fulfillment.</p>
-                        <br> <p>My soulmate portraits are no mere drawings; they're a magical blend of deep psychic connection and artistic talent. I channel a synergy of empathic projection, clairsentience, and clairvoyance, enhanced by my rich knowledge in spiritual healing and psychic artistry. I hold the power to see the unseen - to discern that perfect moment when you're ready to embrace true love and the ways to dismantle any walls that stand in your way.</p>
-                        <br> <p>All I need is your name and date of birth to embark on this mystical journey. My process is a sacred ritual: I plunge into a deep meditative trance, connecting to the cosmic consciousness where your soulmate awaits. The features, the life details, the love story that is destined for you, all come into vivid focus. My hand moves as if by magic, bringing to life an exquisitely detailed portrait, paired with a heartfelt description of your soulmate's personality. Finally, I tap into the vibrations of your aura, pinpointing that fateful moment when your worlds will collide.</p>
-                       <br>  <p>  Finding your soulmate is a transformative experience, like the unfolding of a magnificent rose. Your love will be delicate yet enduring, replacing past sorrows with radiant joy. You will find yourself propelled forward, inspired to chase your dreams with a heart shielded by love and protection. </p>
-	                   <br>   <br> <p> <b> BONUS: I Will Tell You Exactly When Your Paths Cross</b>  </p>
-	                    <br>  <p>  Your soulmate is not just a romantic partner; they are the mirror of your soul, guiding you towards profound self-discovery and deeper understanding. Their presence will mark a seismic shift in your life, unlocking unparalleled emotional and spiritual growth. </p>
-	                   <br>   <p>  My unparalleled insights have captivated the hearts of stars and celebrities, drawing thousands to my door in search of their soulmate. I have unfailingly answered each call, for every soul deserves to bask in the glow of true love. Should you choose to join this sacred journey, I will be your steadfast companion, ensuring that your heart's desires are manifested in their fullest form. </p>
-	                   <br>   <p> <center> <b> A COMMITMENT TO PRIVACY: Digital Delivery Only </b> </center>   </p>
-	                     <p> Your order will be securely delivered to the email address you provide, and will also be readily accessible from the user dashboard. Rest assured, your physical address remains confidential.  </p>
-	<div class="col-lg-12">
-                    <div class="image-container">
-                        <img class="img-fluid" src="/images/nobg.png" alt="alternative">
-                    </div> 
+                        <h2>Revealing Their Hidden Thoughts & Deepest Feelings</h2>
+						<p><b> <center> <FONT COLOR="#d9480d"> 🌟Revealing Their Hidden Thoughts & Deepest Feelings – Exclusively by the Soulmate Healer🌟</FONT> </b> </center> </p>
+<p> Have you ever found yourself gazing into the distance, wondering what a special someone truly thinks or feels about you? With my exclusive service, I aim to unveil the most concealed thoughts and intense emotions of that significant individual in your life. </p>
+ <br> <p><b> <center> <FONT COLOR="#d9480d"> WHAT THIS SERVICE OFFERS: </FONT> </b> </center> </p>
+
+<p><strong>  •	A Deep Dive Into Their Mind: </strong>  Uncover the thoughts they might not even be fully aware of, from the fleeting daydreams to the profound reflections about you. </p>
+<p> <strong> •	Heart's Core Revealed: </strong> Discover the emotions they might be holding back or nurturing deep within their heart, be they of affection, curiosity, apprehension, or hope. </p>
+<p> <b> •	Personalized Insights: </b> Each reading is uniquely tailored to your energy and its interplay with theirs. The narrative isn't generic; it's specific to the nuances of your relationship. </p>
+<br>
+<p><b> <center> <FONT COLOR="#d9480d"> The Process</FONT> </b> </center> </p>
+<p>Upon receiving the necessary details from you, I enter a meditative state, where I connect with the cosmic energy resonating between you and the person in focus. This allows me to discern and articulate their hidden thoughts and deep-seated feelings towards you. </p>
+
+<br>
+<p><b> <center> <FONT COLOR="#d9480d"> Preparation for the Revelation </FONT> </b> </center> </p>
+<p>   Brace yourself for revelations that are both enlightening and potentially surprising. The universe operates in myriad ways, and the truths it holds might challenge your current perceptions. Remember, understanding someone's depth can be a mix of comforting affirmations and unexpected discoveries. </p>
+
+<br>
+<p><b> <center> <FONT COLOR="#d9480d"> The Soulmate Healer's Commitment: </FONT> </b> </center> </p>
+<p>  Your journey to understanding is sacred. Trust that you're receiving insights rooted in a blend of psychic intuition and spiritual connection, ensuring both clarity and authenticity in every reading. </p>
+
+<p>  Embark on this transformative experience, seeking the hidden and understanding the deep, and find clarity in the complexities of human connection. </p>
+
+	
                 
 				<br>
                         <a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER YOUR</a>
                     </div> <br clear="all">
                 </div>  
-                <p> <b> You are fully protected by the 100% satisfaction guarantee! </b> 
-				If for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send me an email and I'll refund every penny of your order cost. </p> 
-				<br> <br>
+                
 				</div>
-				 <p> <center> <strong>  <FONT COLOR="#d9480d">  Pictures from customers:  </FONT> </strong><center>  </p> 
-            <div class="col-lg-12">
-                    <div class="image-container">
-                        <img class="img-fluid" src="/images/scs.jpg" alt="alternative">
-                    </div> 
+				
                 </div> 
 			</div>
          </div>
