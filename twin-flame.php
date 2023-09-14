@@ -110,6 +110,7 @@ $count = $row['reviews'];
 <div class="flex flex-grow flex-col gap-3 max-w-full">
     <div class="min-h-[20px] flex flex-col items-start gap-3 overflow-x-auto whitespace-pre-wrap break-words">
         <div class="markdown prose w-full break-words dark:prose-invert light">
+		
              <p>Unearth the most intimate and powerful connection the universe has to offer with the &quot;Twin Flame Psychic Drawing.&quot; Your twin flame isn&rsquo;t merely a love connection but an echo of your own soul, resonating through time and space. With this service, you&apos;re not just discovering a partner, but a part of yourself.</p>
           <br>   <p>The portraits I create are not mere sketches; they are a conduit to the ethereal realm. Drawing upon a blend of heightened clairvoyance, deep spiritual alignment, and unparalleled artistry, I weave the tale of two souls destined to cross paths. Your twin flame is out there, and I&apos;m here to help you visualize and connect with them.</p>
           <br>   <p>To embark on this cosmic journey, I require just your name and date of birth. From there, I delve into the universe&apos;s vast tapestry, seeking the other half of your soul. The canvas comes alive under my touch, revealing not just the features of your twin flame, but the energy, essence, and emotions they carry. More than a mere portrait, this drawing becomes a beacon, guiding you closer to your other half.</p>
