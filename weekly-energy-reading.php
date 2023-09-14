@@ -32,7 +32,7 @@ $count = $row['reviews'];
 
                    <div class="col-lg-6 col-xl-5">
 						<div class="header-box">
-                        <h5 style="margin-top: 10px;">Personalised Weekly Energy Reading</h5>
+                        <h1 style="margin-top: 10px;">Personalised Weekly Energy Reading</h1>
 						<h4 style="text-align: center;font-size: 15px;font-weight: 500;margin-top:-10px;">
 						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
 						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
@@ -90,11 +90,11 @@ $count = $row['reviews'];
                 </div> 
 				
 				
-	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
+                <div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-6">
-                    <div class="text-container">
+                <div class="text-container">
                         <h2>WEEKLY  PERSONAL ENERGY READING</h2>
 						<p><b> <center> <FONT COLOR="#d9480d"> YOUR ESSENTIAL GUIDE TO THE WEEK AHEAD </FONT> </b> </center> </p>						
 <p>Every week is a universe of opportunities, challenges, and life-altering moments waiting to unfold. Are you prepared to harness the best of them? Dive deep into your very own &quot;Weekly Energy Reading&quot; subscription and equip yourself with unparalleled psychic insights that illuminate the path of the week ahead.</p>
@@ -114,15 +114,50 @@ $count = $row['reviews'];
 <p>In an ever-evolving world, staying updated is not just a luxury; it&rsquo;s a necessity. The <strong>Weekly Energy Reading</strong> isn&rsquo;t just another subscription; it&rsquo;s your <strong>secret weapon</strong> to seize control, anticipate change, and always be one step ahead. With a world teeming with unpredictability, isn&rsquo;t it comforting to know there&rsquo;s something you can consistently count on?</p>
 <br><p><strong>COMMITMENT TO EXCELLENCE: Authenticity and Resonance Guaranteed</strong></p>
 <p>Should a reading ever fall short of resonating with your journey or the accuracy you expect, a full refund for that week stands as our unwavering pledge to quality and your satisfaction.</p>
-                        <a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER</a>
-                    </div> <br clear="all">
-                </div>  
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="/images/soulmate-04.png" alt="alternative">
+                     
+                    </div>
+                </div>
+
+                <!--IMAGE ON THE RIGHT FOR PC DISPLAY -->
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
                     </div> 
-                </div> 
-            </div>
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                </div>
+
+                <!--IMAGE BELLOW THE TEXT IN PHONE DISPLAY -->
+                <div class="d-block d-lg-none row" style="padding-right: 15px;padding-left: 15px;">
+
+                    <div class="col-12">
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    </div> 
+                    <div class="col-12" style="margin-top:15px;">
+                    <div class="image-container">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    </div> 
+                </div>
+                
+                <div class="col-lg-12">
+                
+				<br><a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER YOUR</a>
+               
+                 </div> 
+
+             
+
+			</div>
          </div>
 	</div>
 

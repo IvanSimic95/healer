@@ -60,9 +60,11 @@ body, p {
 }
 
 h1 {
-	color: #26211c;
-	font: 700 2.5rem/3.125rem "Cabin", sans-serif;
-	letter-spacing: -0.2px;
+
+		color: #26211c;
+		font: 700 1.125rem/1.5rem "Cabin", sans-serif;
+		letter-spacing: -0.1px;
+
 }
 
 h2 {
@@ -1721,7 +1723,11 @@ a:hover.back-to-top {
 }
 
 .ex-6-header h1 {
-	font-size: 25px;
+
+		color: #26211c;
+		font: 700 1.125rem/1.5rem "Cabin", sans-serif;
+		letter-spacing: -0.1px;
+
     line-height: 30px;
 	margin-top:10px;
 }

@@ -30,9 +30,9 @@ $count = $row['reviews'];
                         </div>  
                    </div>				
 
-                   <div class="col-lg-6 col-xl-5">
+                   <div id="order"  class="col-lg-6 col-xl-5">
 						<div class="header-box">
-                        <h5 style="margin-top: 10px;">Your Twin Flame Psychic Drawing</h5>
+                        <h1 style="margin-top: 10px;">Your Twin Flame Psychic Drawing</h1>
 						<h4 style="text-align: center;font-size: 15px;font-weight: 500;margin-top:-10px;">
 						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
 						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
@@ -50,7 +50,7 @@ $count = $row['reviews'];
 						
 						
 
-						<div id="order" class="form-container">
+						<div class="form-container">
 						<p style="text-align:center;margin-top: -20px;font-size: 15px;">Fill in the form below to book your reading!</p>
                         <form id="ajax-form" data-toggle="validator" data-focus="false">
 								<div class="form-group">
@@ -100,11 +100,11 @@ $count = $row['reviews'];
                 </div> 
 				
 				
-	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
+                <div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-6">
-                    <div class="text-container">
+                <div class="text-container">
                         <h2>TWIN FLAME PSYCHIC DRAWING</h2>
 							<p><b> <center> <FONT COLOR="#d9480d"> DISCOVER YOUR DIVINE MIRROR </FONT> </b> </center> </p>
 <div class="flex flex-grow flex-col gap-3 max-w-full">
@@ -140,15 +140,57 @@ $count = $row['reviews'];
 <p>It&apos;s essential to approach the concept of twin flames with an open mind. While many people find comfort and profound meaning in this belief, others may see it differently. Always trust your intuition and personal experiences when it comes to such spiritual concepts.</p>
 <p>&nbsp;</p>
 
-                        <a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER</a>
-                    </div> <br clear="all">
-                </div>  
-                <div class="col-lg-6">
+                    </div>
+                </div>
+
+                <!--IMAGE ON THE RIGHT FOR PC DISPLAY -->
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                </div>
+
+                <!--IMAGE BELLOW THE TEXT IN PHONE DISPLAY -->
+                <div class="d-block d-lg-none row" style="padding-right: 15px;padding-left: 15px;">
+
+                    <div class="col-12">
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    </div> 
+                    <div class="col-12" style="margin-top:15px;">
                     <div class="image-container">
-                        <img class="img-fluid" src="/images/soulmate-04.png" alt="alternative">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    </div> 
+                </div>
+                
+                <div class="col-lg-12">
+                
+				<br><a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER YOUR</a>
+                <br clear="all"> <br clear="all">
+                <p> <b> You are fully protected by the 100% satisfaction guarantee! </b> 
+				If for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send me an email and I'll refund every penny of your order cost. </p> 
+				 <p> <center> <strong>  <FONT COLOR="#d9480d">  Pictures from customers:  </FONT> </strong><center>  </p> 
+                 </div> 
+
+                 <!-- CUSTOMER REVIEWS IMAGE -->
+                 <div class="col-lg-12">
+                    <div class="image-container">
+                        <img class="img-fluid" src="/images/scs.jpg" alt="alternative">
                     </div> 
                 </div> 
-            </div>
+
+			</div>
          </div>
 	</div>
 
