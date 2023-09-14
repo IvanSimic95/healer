@@ -45,7 +45,7 @@ p{
 <p>Throughout the annals of time, poets, philosophers, and scholars have rhapsodized about the mysterious and profound connections humans share with one another. Two terms frequently arise in these discussions: soulmates and twin flames. Though often used interchangeably, these terms represent different, albeit intertwined, spiritual concepts. This deep dive into soulmates and twin flames aims to elucidate their distinctions, commonalities, and significance in our lives.</span></p>
 <p>&nbsp;</span></p>
 
-<div class="col-12" style="margin: 0 auto;border-radius: 0.5rem;padding: 25px;background-color: #f8f1fd;">
+<div class="col-12" style="margin: 0 auto;border-radius: 0.5rem;padding: 25px;background-color: #eaceff;">
 <h5 style="margin-top: 10px;">Your Soulmate Psychic Drawing</h5>
 <div class="image-container" style="margin-top:15px;margin:0 auto;max-width:350px;">
 <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
