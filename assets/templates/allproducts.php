@@ -5,7 +5,7 @@
                     <h2 class="h2-heading">ALL PRODUCTS</h2>
                 </div>
                 <div class="col-md-4 col-6 m-auto">
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
+                    <div style="margin-bottom:0;border:0px;background-color:#e7d7f5;" class="card">
                         <div class="card-body">
                             <h4 class="card-title-prod">SOULMATE Psychic Drawing</h4>
                        </div>
@@ -16,7 +16,7 @@
 					<button onclick="location.href='/soulmate-drawing'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
                 </div>
 				<div class="col-md-4 col-6 m-auto">
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
+                    <div style="margin-bottom:0;border:0px;background-color:#e7d7f5;" class="card">
                         <div class="card-body">
                             <h4 class="card-title-prod">TWIN FLAME Psychic Drawing</h4>
                        </div>
@@ -27,7 +27,7 @@
 					<button onclick="location.href='/twin-flame'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
                 </div>
 				<div class="col-md-4 col-6 m-auto">
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
+                    <div style="margin-bottom:0;border:0px;background-color:#e7d7f5;" class="card">
                         <div class="card-body">
                             <h4 class="card-title-prod">FUTURE SPOUSE Psychic Drawing</h4>
                        </div>
@@ -38,7 +38,7 @@
 					<button onclick="location.href='/future-spouse'" style="border-radius: 0px 0px 5px 5px;;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
                 </div>
                 <div class="col-md-4 col-6 m-auto">				
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
+                    <div style="margin-bottom:0;border:0px;background-color:#e7d7f5;" class="card">
                         <div class="card-body">
                             <h4 class="card-title-prod">WEEKLY ENERGY READING</h4>
                        </div>
@@ -49,7 +49,7 @@
 					<button onclick="location.href='/weekly-energy-reading'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
                 </div>
 				<div class="col-md-4 col-6 m-auto">				
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
+                    <div style="margin-bottom:0;border:0px;background-color:#e7d7f5;" class="card">
                         <div class="card-body">
                             <h4 class="card-title-prod">FUTURE BABY DRAWING</h4>
                        </div>
@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="col-md-4 col-6 m-auto">
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
+                    <div style="margin-bottom:0;border:0px;background-color:#e7d7f5;" class="card">
                         <div class="card-body">
                             <h4 class="card-title-prod">CLEANISING & PURIFICATION</h4>
                        </div>
@@ -72,7 +72,7 @@
 					<button onclick="location.href='/purification'" style="border-radius: 0px 0px 5px 5px;;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
                 </div>
 				<div class="col-md-4 col-6 m-auto">				
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
+                    <div style="margin-bottom:0;border:0px;background-color:#e7d7f5;" class="card">
                         <div class="card-body">
                             <h4 class="card-title-prod">PERSONAL PSYCHIC READING</h4>
                        </div>
@@ -83,7 +83,7 @@
 					<button onclick="location.href='/readings'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
                 </div>
                 <div class="col-md-4 col-6 m-auto">				
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
+                    <div style="margin-bottom:0;border:0px;background-color:#e7d7f5;" class="card">
                         <div class="card-body">
                             <h4 class="card-title-prod">PAST LIFE DRAWING</h4>
                        </div>
@@ -94,7 +94,7 @@
 					<button onclick="location.href='/readings'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
                 </div>
                 <div class="col-md-4 col-6 m-auto">				
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
+                    <div style="margin-bottom:0;border:0px;background-color:#e7d7f5;" class="card">
                         <div class="card-body">
                             <h4 class="card-title-prod">HOW U'LL MEET YOUR HUSBAND</h4>
                        </div>
@@ -105,7 +105,7 @@
 					<button onclick="location.href='/husband'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
                 </div>
                 <div class="col-md-4 col-6 m-auto">				
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
+                    <div style="margin-bottom:0;border:0px;background-color:#e7d7f5;" class="card">
                         <div class="card-body">
                             <h4 class="card-title-prod">ASK ME ANYTHING</h4>
                        </div>
@@ -116,7 +116,7 @@
 					<button onclick="location.href='/ask'" style="border-radius: 0px 0px 5px 5px;margin-bottom:20px;" class="form-control-submit-button">READ MORE</button>
                 </div>
                 <div class="col-md-4 col-6 m-auto">				
-                    <div style="margin-bottom:5px;border:0px;background-color:#e7d7f5;" class="card">
+                    <div style="margin-bottom:0;border:0px;background-color:#e7d7f5;" class="card">
                         <div class="card-body">
                             <h4 class="card-title-prod">THEIR INNER THOUGHTS CHANNELED</h4>
                        </div>

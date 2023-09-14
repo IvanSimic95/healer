@@ -49,7 +49,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
                         <p>To encounter the Soulmate Healer is to step into a world where love transcends boundaries, where souls find their eternal matches, and where every heart discovers its true calling. In his presence, you'll uncover the depth of your connections and the boundless potential of love that resides within you.</p>
   <div class="col-lg-12">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/14.png" alt="alternative">
+                        <img class="img-fluid" src="images/14.png" alt="alternative" style="border-radius:0.5rem;">
                     </div> 
                 </div> 
 				<br>

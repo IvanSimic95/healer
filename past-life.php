@@ -36,7 +36,7 @@ if(isset($row['reviews'])){
 
                    <div class="col-lg-6 col-xl-5">
 						<div class="header-box">
-                        <h5 style="margin-top: 10px;">Past Life Drawing</h5>
+                        <h1 style="margin-top: 10px;">Past Life Drawing</h1>
 						<h4 style="text-align: center;font-size: 15px;font-weight: 500;margin-top:-10px;">
 						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
 						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
@@ -95,11 +95,11 @@ if(isset($row['reviews'])){
                 </div> 
 				
 				
-	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
+                <div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-6">
-                    <div class="text-container">
+                <div class="text-container">
                         <h2>Rediscover Yourself: Delve into Your Past Life Psychic Portrait</h2>
                         <p>In the vast chronicles of time, every soul leaves an indelible imprint. These imprints hold secrets, lessons, and memories that shape who we are today. Have you ever wondered why you're drawn to a particular era, place, or even a melody that seems hauntingly familiar? These aren't mere coincidences but echoes from a life once lived. The <b>Past Life Psychic Portrait</b> is your unique gateway to unlock these mysteries.</p>
                         <p>Crafted with unparalleled precision by the renowned Soulmate Healer, this service offers more than just a visual representation of your past self. It unveils the rich tapestry of experiences, emotions, and events that culminated into the person you are now. Each portrait is not merely an artistic endeavor but a mirror into a realm long gone, reflecting a version of you waiting to be acknowledged.</p>
@@ -109,15 +109,48 @@ if(isset($row['reviews'])){
                         <p>In a world where the future is uncertain, what better way to arm oneself than with the wisdom of the past? Don't let your past lives remain mere shadows. Let them illuminate your current journey, filling it with understanding, purpose, and unparalleled depth.</p>
                         <p>Embrace the continuum of your soul's story. By knowing where you've been, you shape where you're headed with greater clarity and conviction.</p>
                         
-                        <a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER</a>
-                    </div> <br clear="all">
-                </div>  
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="/images/soulmate-04.png" alt="alternative">
+                    </div>
+                </div>
+
+                <!--IMAGE ON THE RIGHT FOR PC DISPLAY -->
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
                     </div> 
-                </div> 
-            </div>
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                </div>
+
+                <!--IMAGE BELLOW THE TEXT IN PHONE DISPLAY -->
+                <div class="d-block d-lg-none row" style="padding-right: 15px;padding-left: 15px;">
+
+                    <div class="col-12">
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    </div> 
+                    <div class="col-12" style="margin-top:15px;">
+                    <div class="image-container">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    </div> 
+                </div>
+                
+                <div class="col-lg-12">
+                
+				<br><a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER YOUR</a>
+              
+                 </div> 
+
+
+			</div>
          </div>
 	</div>
 

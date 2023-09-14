@@ -31,7 +31,7 @@ $count = $row['reviews'];
 
                    <div class="col-lg-6 col-xl-5">
 						<div class="header-box">
-                        <h5 style="margin-top: 10px;">Ask Me Anything </h5>
+                        <h1 style="margin-top: 10px;">Ask Me Anything </h1>
 						<h4 style="text-align: center;font-size: 15px;font-weight: 500;margin-top:-10px;">
 						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
 						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
@@ -99,12 +99,11 @@ $count = $row['reviews'];
                     </div>  
                 </div> 
 				
-				
-	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
+                <div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row">
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-6">
-                    <div class="text-container">
+                <div class="text-container">
                         <h2>PSYCHIC DRAWING OF YOUR SOULMATE</h2>
 						<p><b> <center> <FONT COLOR="#d9480d"> YOUR KEY TO ETERNAL LOVE </FONT> </b> </center> </p>
                         <p> <b> I am The Soulmate Healer</b>, a master in the realm of psychic artistry, uniquely qualified to bring you face to face with your soul's true counterpart. I don't just offer predictions; I unlock the door to a love that will light up your life with joy, passion, and boundless fulfillment.</p>
@@ -117,15 +116,49 @@ $count = $row['reviews'];
 	                   <br>   <p> <center> <b> A COMMITMENT TO PRIVACY: Digital Delivery Only </b> </center>   </p>
 	                     <p> Your order will be securely delivered to the email address you provide, and will also be readily accessible from the user dashboard. Rest assured, your physical address remains confidential.  </p>
 	
-                        <a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER</a>
-                    </div> <br clear="all">
-                </div>  
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="/images/nobg.png" alt="alternative">
+                    </div>  
+                </div>
+
+                <!--IMAGE ON THE RIGHT FOR PC DISPLAY -->
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
                     </div> 
-                </div> 
-            </div>
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                </div>
+
+                <!--IMAGE BELLOW THE TEXT IN PHONE DISPLAY -->
+                <div class="d-block d-lg-none row" style="padding-right: 15px;padding-left: 15px;">
+
+                    <div class="col-12">
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    </div> 
+                    <div class="col-12" style="margin-top:15px;">
+                    <div class="image-container">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    </div> 
+                </div>
+                
+                <div class="col-lg-12">
+                
+				<br><a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER YOUR</a>
+ 
+                 </div> 
+
+                 
+
+			</div>
          </div>
 	</div>
 

@@ -31,7 +31,7 @@ $count = $row['reviews'];
 
                    <div class="col-lg-6 col-xl-5">
 						<div class="header-box" id="order" >
-                        <h5 style="margin-top: 10px;">Your Soulmate Psychic Drawing</h5>
+                        <h1 style="margin-top: 10px;">Your Soulmate Psychic Drawing</h1>
 						<h4 style="text-align: center;font-size: 15px;font-weight: 500;margin-top:-10px;">
 						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
 						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
@@ -155,7 +155,6 @@ $count = $row['reviews'];
                     </div> 
                 </div>
                 
-                <!--IMAGE ON THE BOTTOM -->
                 <div class="col-lg-12">
                 
 				<br><a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER YOUR</a>
