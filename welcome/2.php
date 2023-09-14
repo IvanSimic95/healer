@@ -89,10 +89,10 @@ $(function() {
                 <h1 class="headline"><span class="bolded-headline">PSYCHIC PORTRAIT OF<br/><img style="width: 100%;max-width: 40px;" src="https://clipart-library.com/img/2059621.gif"> YOUR SOULMATE</span></h1>
                 <div class="video w-embed w-script">
 					
-							<img style="border-radius:4px;max-width: 350px;" src="https://i.pinimg.com/736x/1d/00/83/1d0083d8c081911ebbea60cddc6d0f30.jpg">		
+							<img style="border-radius:4px;max-width: 350px;" src="https://soulmatehealer.com/images/yey.jpg">		
 							
                     <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post" data-rewardful>
-							<h2 class="headline dark-subheader inverted">Write down your details to find your perfect ❤️ soulmate</h2>
+							<h2 class="headline dark-subheader inverted">Begin your journey to love's true visage!️<br>❤️ Fill in your details below ❤️</h2>
                         <div class="form-floating form-floating-icon mb-2">
                             <input style="border: 1px solid #333;" class="form-control" id="fullname" type="text" name="form_name" placeholder="First & Last Name" required="">
                             <span class="icon-inside"><i class="far fa-user"></i></span>
@@ -253,7 +253,7 @@ $(function() {
                                     <div class="p-0 delivery-icon"><i class="fas fa-bolt"></i></div>
                                     <div class="flex-grow-1">
                                         <div style="color:#6667ab !important;" class="fw-bold text-dark">Express <span class="delivery">Delivery</span></div>
-                                        <div style="color:#c2a2d2 !important;" class="fs-sm text-muted">3 - 6 <span class="hours">Hours</span><span class="h">H</span></div>
+                                        <div style="color:#c2a2d2 !important;" class="fs-sm text-muted">1 <span class="hours"> Hour</span><span class="h">H</span></div>
 
                                     </div>
                                     <div class="fw-bold badge bg-dark">+ $19</div>
@@ -529,17 +529,17 @@ h5 {
                     <p style="" class="sub-paragraph pcenter bgtitle"><strong>YOUR DESTINY ILLUSTRATED</strong></p>
                     <p class="sub-paragraph notcenter">👋 Warm greetings from the <span style="background-color:#e9c023;color:#302a4e;padding:0px 6px;font-weight:700;">Soulmate Healer.</span> In a world where true connection feels like a rarity, I offer a beacon of hope.<br/><br/>• My unique gift doesn't just anticipate the future; it paints a vivid image of your heart's deepest yearning a love 💜 that promises warmth, understanding, and unwavering commitment.</p>
                     <p style="background-color:#201b39;padding:20px;border-radius:8px;" class="sub-paragraph notcenter">
-					<img style="margin-bottom: 25px;border-radius: 4px;" class="imgcontentdesk" src="https://i.pinimg.com/736x/1d/00/83/1d0083d8c081911ebbea60cddc6d0f30.jpg">	
-					Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. Lorem Ipsum a fost macheta standard a industriei încă din secolul al XVI-lea, când un tipograf anonim a luat o planşetă de litere şi le-a amestecat pentru a crea o carte demo:
+					<img style="margin-bottom: 25px;border-radius: 4px;" class="imgcontentdesk" src="https://soulmatehealer.com/images/yey3.jpg">	
+					My <span style="background-color:#e9c023;color:#302a4e;padding:0px 1px;font-weight:200;"> Soulmate Portraits</span> are no mere drawings; they're a magical blend of deep psychic connection and artistic talent. I channel a synergy of empathic projection, clairsentience, and clairvoyance, enhanced by my rich knowledge in spiritual healing and psychic artistry. I hold the power to see the unseen - to discern that perfect moment when you're ready to embrace true love and the ways to dismantle any walls that stand in your way.
 					<br/><br/>
-					<i class="far fa-check-circle" style="color: #3ad02f;font-size: 14px;"></i> pentru a crfost macheta standar;<br/>
-					<i class="far fa-check-circle" style="color: #3ad02f;font-size: 14px;"></i> ext a industriei tipog;<br/>
-					<i class="far fa-check-circle" style="color: #3ad02f;font-size: 14px;"></i> tipograf anonim a luat o plan;<br/>
-					<i class="fas fa-ban" style="color: #f02828;font-size: 14px;"></i> o planşetă dfost mach.
+					<i class="far fa-check-circle" style="color: #3ad02f;font-size: 14px;"></i> 99% Drawing Accuracy <br/>
+					<i class="far fa-check-circle" style="color: #3ad02f;font-size: 14px;"></i> 100% Satisfaction guarantee <br/>
+					<i class="far fa-check-circle" style="color: #3ad02f;font-size: 14px;"></i> Order now, receive within 1 hour <br/>
+					
 					</p>
                     <p class="sub-paragraph notcenter"><span style="background-color:#6932b1;padding:0px 6px;">Many women, just like you,</span> find themselves at life's crossroads - yearning for genuine love, a partner to share dreams with, someone to erase past hurts and promise a future filled with passion. This isn’t a mere illustration. It's a door to a future 🔮 filled with shared laughter, endless conversations, and moments where you feel seen and cherished.</p>
                     <p style="background-color:#201b39;padding:20px;border-radius:8px;" class="sub-paragraph notcenter">
-					<img style="margin-bottom: 25px;border-radius: 4px;" class="imgcontentdesk" src="https://i.pinimg.com/736x/1d/00/83/1d0083d8c081911ebbea60cddc6d0f30.jpg">	
+					<img style="margin-bottom: 25px;border-radius: 4px;" class="imgcontentdesk" src="https://soulmatehealer.com/images/yey1.jpg">	
 					• Simply entrust 👼 me with your name and date of birth, and I'll embark on a journey, delving into the universe's grand design.<br/><br/>• Within this vast expanse, I find your soul's counterpart the one person who will hold your hand through life's highs and lows, who will listen, truly listen, to every whispered hope and silent tear.<br/><br/><span style="background-color:#6932b1;padding:0px 6px;">As I sketch</span> 🖌️ every line captures a story, every shade encapsulates a promise, and every detail whispers of a love that’s waiting to be found.</p>
                     <p class="sub-paragraph notcenter">⚡ Meeting your soulmate isn't just another chapter; it's a whole new book, a fresh start. It's about waking up to mornings filled with hope, spending days wrapped in shared dreams, and nights basking in mutual affection.</p>
                     <p style="" class="sub-paragraph pcenter bgtitle"><strong>SPECIAL REVEAL</strong><br/>The Moment of Serendipity</p>
@@ -549,7 +549,14 @@ h5 {
                     <p class="sub-paragraph notcenter">💌 All revelations will be sent directly to your chosen email ensuring your personal details remain private.<br/><br/>👉 With round-the-clock access from your user portal, know that your journey towards love is both safe and sacred.</p>
                 </div>
             </div>
+			<br>
+ <div class="button-wrapper">
 
+		<a href="#" id="submitbtn" style="font-weight:400;font-size:25px;text-decoration:none;" value="Place an order">ORDER NOW</b>
+			<br>
+				<span style="font-weight:400" class="btn-sub-text">👉 And Watch Your Life Magically Change</span>
+		</a>	
+		</div>
         <?php } elseif ($v == 2) { ?>
 
             <div class="main-body-section wf-section">
