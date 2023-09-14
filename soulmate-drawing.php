@@ -39,7 +39,7 @@ $count = $row['reviews'];
 						<p style="color: #000;text-align: left;padding: 0px 17px;margin-top: 23px;">
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> 99% Accuracy <br/>
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> 100% Satisfaction guarantee<br/>
-						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order now, receive within 6 hours
+						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order now, receive within 1 hour
 						</p>
 						
 						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$29</h2>  
@@ -50,7 +50,7 @@ $count = $row['reviews'];
 						
 
 						<div class="form-container">
-						<p style="text-align:center;margin-top: -20px;font-size: 15px;">Fill in the form below to book your reading!</p>
+						<p style="text-align:center;margin-top: -20px;font-size: 15px;">Ready for clarity? Start your experience by filling out the form below:</p>
 							<form id="ajax-form" data-toggle="validator" data-focus="false">
 								<div class="form-group">
 									<input type="text" class="form-control-input" id="sname" name="form_name" required>
