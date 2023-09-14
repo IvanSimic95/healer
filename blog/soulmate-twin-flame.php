@@ -44,6 +44,24 @@ p{
 <p><b> <center> <FONT COLOR="#d9480d">   Introduction  </FONT> </b> </center> </p>
 <p>Throughout the annals of time, poets, philosophers, and scholars have rhapsodized about the mysterious and profound connections humans share with one another. Two terms frequently arise in these discussions: soulmates and twin flames. Though often used interchangeably, these terms represent different, albeit intertwined, spiritual concepts. This deep dive into soulmates and twin flames aims to elucidate their distinctions, commonalities, and significance in our lives.</span></p>
 <p>&nbsp;</span></p>
+
+<div class="col-12" style="margin: 0 auto;border-radius: 0.5rem;padding: 25px;background-color: #f8f1fd;">
+<h5 style="margin-top: 10px;">Your Soulmate Psychic Drawing</h5>
+<div class="image-container" style="margin-top:15px;margin:0 auto;max-width:350px;">
+<img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
+</div>
+
+<div style="font-size: 17px;padding-top:10px;padding-bottom:10px;">
+<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+<span style="font-size:14px;font-weight:600;">3194 reviews</span>
+</div>
+
+<a href="/soulmate" style="color: #fff;max-width:350px;width:100%;display:block;height:auto;" class="blob purple">🔮 Yes, Let's Dive Deeper Together</a>
+</div>
+
+
+
+
 <h2> <p><b> <center> <FONT COLOR="#d9480d">   Origins and Definitions   </FONT> </b> </center> </p> </h2>
 <p><strong>Soulmates:</strong><br>&nbsp;A soulmate is someone with whom we share a deep and natural affinity, intimacy, and compatibility. This connection can manifest in various relationships - be it romantic, platonic, familial, or even adversarial. The key attribute of a soulmate connection is the sense of having known the person for lifetimes, even if you&apos;ve just met.</span></p>
 <br>
