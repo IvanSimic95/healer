@@ -31,7 +31,7 @@ $count = $row['reviews'];
 
                    <div class="col-lg-6 col-xl-5">
 						<div class="header-box" id="order" >
-                        <h5 style="margin-top: 10px;">Your Soulmate Psychic Drawing</h5>
+                        <h1 style="margin-top: 10px;">Your Soulmate Psychic Drawing</h1>
 						<h4 style="text-align: center;font-size: 15px;font-weight: 500;margin-top:-10px;">
 						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
 						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
@@ -39,7 +39,7 @@ $count = $row['reviews'];
 						<p style="color: #000;text-align: left;padding: 0px 17px;margin-top: 23px;">
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> 99% Accuracy <br/>
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> 100% Satisfaction guarantee<br/>
-						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order now, receive within 6 hours
+						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order now, receive within 1 hour
 						</p>
 						
 						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$29</h2>  
@@ -50,7 +50,7 @@ $count = $row['reviews'];
 						
 
 						<div class="form-container">
-						<p style="text-align:center;margin-top: -20px;font-size: 15px;">Fill in the form below to book your reading!</p>
+						<p style="text-align:center;margin-top: -20px;font-size: 15px;">Ready for clarity? Start your experience by filling out the form below:</p>
 							<form id="ajax-form" data-toggle="validator" data-focus="false">
 								<div class="form-group">
 									<input type="text" class="form-control-input" id="sname" name="form_name" required>
@@ -155,7 +155,6 @@ $count = $row['reviews'];
                     </div> 
                 </div>
                 
-                <!--IMAGE ON THE BOTTOM -->
                 <div class="col-lg-12">
                 
 				<br><a style="width:100%;text-align:center;" class="btn-solid-reg" href="#order">ORDER YOUR</a>
