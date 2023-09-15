@@ -141,8 +141,6 @@
 
 
 		 
-        var product_code = $('.product_code').text()
-                            $('.product').val(product_code);
 
                             $(document).ready(function($) {
 
