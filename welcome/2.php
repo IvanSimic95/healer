@@ -254,8 +254,8 @@ $(function() {
                         <div class="form_box input-group">
 
                             <div class="option">
-                                <input type="radio" name="priority" id="prio12" value="12">
-                                <label for="prio12" aria-label="12 Hour Delivery" class="d-flex justify-content-start align-items-center">
+                                <input type="radio" name="priority" id="prio12" value="1">
+                                <label for="prio1" aria-label="12 Hour Delivery" class="d-flex justify-content-start align-items-center">
                                     <span></span>
                                     <div class="p-0 delivery-icon"><i class="fas fa-bolt"></i></div>
                                     <div class="flex-grow-1">
@@ -305,7 +305,7 @@ $(function() {
                             });
 
                             $("#helper-delivery-express").click(function() {
-                                $("#prio12").prop("checked", true);
+                                $("#prio1").prop("checked", true);
                                 jQuery('.new_prce').animate({
                                     'opacity': 0
                                 }, 200, function() {
@@ -343,7 +343,7 @@ $(function() {
 
 
                             jQuery('input[name="priority"]').change(function() {
-                                if (this.value == '12') {
+                                if (this.value == '1') {
                                     jQuery('.new_prce').animate({
                                         'opacity': 0
                                     }, 200, function() {
