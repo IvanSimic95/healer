@@ -691,7 +691,7 @@ input[type='checkbox'] {
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-	color: #fff;
+	color: red;
 	opacity: 1;
 }
 
@@ -732,7 +732,7 @@ input[type='checkbox'] {
 
 .navbar-custom .dropdown-item:hover {
 	background-color: #f2ece7;
-	color: #fff;
+	color: red;
 	opacity: 1;
 }
 
@@ -762,7 +762,7 @@ input[type='checkbox'] {
 .navbar-custom .navbar-toggler {
 	padding: 0;
 	border: none;
-	color: #fff;
+	color: red;
 	font-size: 2rem;
 }
 
