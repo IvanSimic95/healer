@@ -256,7 +256,7 @@ $(function() {
                                         <div style="color:#c2a2d2 !important;" class="fs-sm text-muted">1 <span class="hours"> Hour</span><span class="h">H</span></div>
 
                                     </div>
-                                    <div class="fw-bold badge bg-dark">+ $19</div>
+                                    <div class="fw-bold badge bg-dark">+ $20</div>
                                 </label>
                             </div>
 
@@ -270,7 +270,7 @@ $(function() {
                                         <div style="color:#c2a2d2 !important;" class="fs-sm text-muted">18 - 24 <span class="hours">Hours</span><span class="h">H</span></div>
 
                                     </div>
-                                    <div class="fw-bold badge bg-dark">+ $9</div>
+                                    <div class="fw-bold badge bg-dark">+ $10</div>
                                 </label>
                             </div>
 
