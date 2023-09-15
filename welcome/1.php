@@ -280,7 +280,7 @@ if ($v > 3) {
                                 jQuery('.new_prce').animate({
                                     'opacity': 0
                                 }, 200, function() {
-                                    jQuery('.new_prce').html('$59.99').animate({
+                                    jQuery('.new_prce').html('$59').animate({
                                         'opacity': 1
                                     }, 200);
                                 });
@@ -292,7 +292,7 @@ if ($v > 3) {
                                 jQuery('.new_prce').animate({
                                     'opacity': 0
                                 }, 200, function() {
-                                    jQuery('.new_prce').html('$39.99').animate({
+                                    jQuery('.new_prce').html('$39').animate({
                                         'opacity': 1
                                     }, 200);
                                 });
@@ -304,7 +304,7 @@ if ($v > 3) {
                                 jQuery('.new_prce').animate({
                                     'opacity': 0
                                 }, 200, function() {
-                                    jQuery('.new_prce').html('$29.99').animate({
+                                    jQuery('.new_prce').html('$29').animate({
                                         'opacity': 1
                                     }, 200);
                                 });
@@ -317,7 +317,7 @@ if ($v > 3) {
                                     jQuery('.new_prce').animate({
                                         'opacity': 0
                                     }, 200, function() {
-                                        jQuery('.new_prce').html('$59.99').animate({
+                                        jQuery('.new_prce').html('$59').animate({
                                             'opacity': 1
                                         }, 200);
                                     });
@@ -327,7 +327,7 @@ if ($v > 3) {
                                     jQuery('.new_prce').animate({
                                         'opacity': 0
                                     }, 200, function() {
-                                        jQuery('.new_prce').html('$39.99').animate({
+                                        jQuery('.new_prce').html('$39').animate({
                                             'opacity': 1
                                         }, 200);
                                     });
@@ -337,7 +337,7 @@ if ($v > 3) {
                                     jQuery('.new_prce').animate({
                                         'opacity': 0
                                     }, 200, function() {
-                                        jQuery('.new_prce').html('$29.99').animate({
+                                        jQuery('.new_prce').html('$29').animate({
                                             'opacity': 1
                                         }, 200);
                                     });
@@ -408,7 +408,7 @@ if ($v > 3) {
 
 
                         <div class="d-flex flex-row flex-wrap align-items-center position-relative fs-4 price-total">
-                            <span style="color:#ec1e3b !important;font-weight:400" class="badge me-0 new_prce">$ <b>19</b><sup style="font-size: 19px;">99</sup></span>
+                            <span style="color:#ec1e3b !important;font-weight:400" class="badge me-0 new_prce">$ <b>29</b><sup style="font-size: 19px;">99</sup></span>
 
 
                             <hr>
