@@ -98,7 +98,7 @@ $(function() {
 					
 							<img style="border-radius:4px;max-width: 350px;" src="https://soulmatehealer.com/images/yey.jpg">		
 							
-                    <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post" novalidate="false">
+                    <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post">
 							<h2 class="headline dark-subheader inverted">Begin your journey to love's true visage!️<br>❤️ Fill in your details below ❤️</h2>
                         <div class="form-floating form-floating-icon mb-2">
                             <input style="border: 1px solid #333;" class="form-control" id="fullname" type="text" name="form_name" placeholder="First & Last Name" required="">
