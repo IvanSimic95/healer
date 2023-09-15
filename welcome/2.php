@@ -547,16 +547,17 @@ h5 {
                     <p class="sub-paragraph notcenter">🌠 Over the years, from silver screens to ordinary streets, countless women have sought the revelations I provide.<<br/><br/>🧙‍♀️ It's a universal quest, this search for <span style="background-color:#6932b1;padding:0px 6px;">true love,</span> and every woman, no matter her journey, deserves her fairy - tale ending.<br/><br/>✨ By choosing this path, you're not just seeking a face. You're seeking a future, and I am honored to guide you towards it.</p>
                     <p style="" class="sub-paragraph pcenter bgtitle"><strong>YOUR PRIVACY, OUR PRIORITY</strong><br/>Exclusively Digital, Unquestionably Confidential</p>
                     <p class="sub-paragraph notcenter">💌 All revelations will be sent directly to your chosen email ensuring your personal details remain private.<br/><br/>👉 With round-the-clock access from your user portal, know that your journey towards love is both safe and sacred.</p>
+                    <div class="button-wrapper">
+
+<a href="#" id="submitbtn" style="font-weight:400;font-size:25px;text-decoration:none;" value="Place an order">ORDER NOW</b>
+    <br>
+        <span style="font-weight:400" class="btn-sub-text">👉 And Watch Your Life Magically Change</span>
+</a>	
+</div>
                 </div>
             </div>
 			<br>
- <div class="button-wrapper">
 
-		<a href="#" id="submitbtn" style="font-weight:400;font-size:25px;text-decoration:none;" value="Place an order">ORDER NOW</b>
-			<br>
-				<span style="font-weight:400" class="btn-sub-text">👉 And Watch Your Life Magically Change</span>
-		</a>	
-		</div>
         <?php } elseif ($v == 2) { ?>
 
             <div class="main-body-section wf-section">
