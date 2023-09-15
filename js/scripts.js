@@ -201,64 +201,62 @@
     
 
 		 
-        // hide messages 
-        $("#error").hide();
-        $("#show_message").hide();
-     
-        // on submit...
-        $('#ajax-form').validator().on("submit", function(event) {
-            if (event.isDefaultPrevented()) {
-                // handle the invalid form...
-                sformError();
-                ssubmitMSG(false, "Please fill all fields!");
-            } else {
-                // everything looks good!
-                event.preventDefault();
-                csubmitForm();
-           
-     
-            $("#error").hide();
-            $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Loading...');
-            $("#submitbtn").prop('disabled', true);
-     
-           //First name required
-           var name = $("input#fullname").val();
-           if(name == ""){
-                $("#error").fadeIn().text("First & Last Name Field required.");
-                $("input#fname").focus();
-                return false;
-            }		 
-            // ajax
-            $.ajax({
-                type:"POST",
-                url: "/ajax/order.php",
-                dataType: 'json',
-                data: $(this).serialize(),
-                success: function(data){
-                  var SubmitStatus = data[0];
-                  var DataMSG = data[1];
-     
-                  if (SubmitStatus == "Success"){
-                  var Redirect = data[2];
-                  $("#show_message").html(DataMSG);
-                  $("#show_message").fadeIn();
-                  $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Redirecting to Payment Page...');
-                  
-                  setTimeout(function(){
-                    window.location.href = Redirect;
-                  }, 2500);
+        var product_code = $('.product_code').text()
+                            $('.product').val(product_code);
 
-                  }else{
-                  $("#error").html(DataMSG);
-                  $("#error").fadeIn();
-                  $("#submitbtn").html("Error Occured!");
-                  }
+                            $(document).ready(function($) {
 
-                }
-            });
-        } });  
-     
+                                // hide messages 
+                                $("#error").hide();
+                                $("#show_message").hide();
 
+                                // on submit...
+                                $('#ajax-form').submit(function(e) {
+
+                                    e.preventDefault();
+
+                                    $("#error").hide();
+                                    $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Loading...');
+
+                                    //First name required
+                                    var name = $("input#fullname").val();
+                                    if (name == "") {
+                                        $("#error").fadeIn().text("First & Last Name Field required.");
+                                        $("input#fname").focus();
+                                        return false;
+                                    }
+                                    // ajax
+                                    $.ajax({
+                                        type: "POST",
+                                        url: "/ajax/order.php",
+                                        dataType: 'json',
+                                        data: $(this).serialize(),
+                                        success: function(data) {
+                                            var SubmitStatus = data[0];
+                                            var DataMSG = data[1];
+
+                                            if (SubmitStatus == "Success") {
+                                                var Redirect = data[2];
+                                                $("#show_message").html(DataMSG);
+                                                $("#show_message").fadeIn();
+                                                $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Redirecting...');
+
+                                                setTimeout(function() {
+                                                    window.location.href = Redirect;
+                                                }, 2000);
+
+                                            } else {
+                                                $("#error").html(DataMSG);
+                                                $("#error").fadeIn();
+                                                $("#submitbtn").html("Error Occured!");
+                                            }
+
+                                        }
+                                    });
+                                });
+
+                                return false;
+                            });
 
 
     function csubmitForm() {
