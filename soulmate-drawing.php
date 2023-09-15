@@ -51,7 +51,7 @@ $count = $row['reviews'];
 
 						<div class="form-container">
 						<p style="text-align:center;margin-top: -20px;font-size: 15px;">Ready for clarity? Start your experience by filling out the form below:</p>
-							<form id="ajax-form" data-toggle="validator" data-focus="false">
+							<form id="ajax-form"  data-focus="false" novalidate="false">
 								<div class="form-group">
 									<input type="text" class="form-control-input" id="sname" name="form_name" required>
 									<label class="label-control" for="sname">Full Name</label>
