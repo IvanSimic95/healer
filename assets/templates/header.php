@@ -53,6 +53,7 @@ DeBounce_APIKEY = 'public_WnlvZnE2TkZCSjNjeG9yUWNPODV1dz09'; // Your DeBounce Pu
 DeBounce_DisablePlaceholder = 'true'; // Disable converting the invalid email to placeholder or not.
 DeBounce_DisableLink = 'true'; // Disable link to DeBounce website or not.
 DeBounce_DisableTooltip = 'true';
+DeBounce_RedBackgound = 'true'; // Convert input background to red for an invalid email or not.
 </script>
 
 <script async type="text/javascript" src="https://cdn.debounce.io/widget/DeBounce.v2.js"></script>
