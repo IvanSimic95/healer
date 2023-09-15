@@ -97,7 +97,23 @@ Phone: +40735494574<br>
 text-align: left;margin-top: 15px;
 }
 </style>
-
+<script>
+var _watch = null;
+var the_code = null;
+setInterval(function() {
+    if ( _watch !== the_code ) {
+        _watch = the_code;
+        //--- Variable (the_code) will get the value of validation results.
+        //--- See a list of result codes here: https://bit.ly/dbnccodes
+        if (the_code==6){
+            alert('Email is valid. Variable changed: ' + the_code);
+            const el = document.querySelector('#submitbtn');
+            el.classList.remove("disabled");
+        }
+        //--- Do some stuff ---
+    }
+}, 100);
+</script>
     <script src="/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
     <script src="/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
