@@ -45,7 +45,14 @@ if ($v > 3) {
     <link href="/welcome/css/welcome/spellvixen.css" rel="stylesheet" type="text/css">
     <link href="/welcome/css/welcome/style.css" rel="stylesheet" type="text/css">
     <link href="/welcome/css/welcome/welcome.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+DeBounce_APIKEY = 'public_WnlvZnE2TkZCSjNjeG9yUWNPODV1dz09'; // Your DeBounce Public API Key.
+DeBounce_DisablePlaceholder = 'true'; // Disable converting the invalid email to placeholder or not.
+DeBounce_DisableLink = 'true'; // Disable link to DeBounce website or not.
+DeBounce_DisableTooltip = 'true';
+</script>
 
+<script async type="text/javascript" src="https://cdn.debounce.io/widget/DeBounce.v2.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
