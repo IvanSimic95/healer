@@ -242,7 +242,7 @@ $logArray[] = "
 					$theader = $generalOrderHeader;
 					$tfooter = $generalOrderFooter;
 
-					$sql_pick = "SELECT * FROM orders_image WHERE product = '$orderProduct' AND sex = '$orderSex' order by RAND() limit 1";
+					$sql_pick = "SELECT * FROM orders_image WHERE product = '$orderProduct' order by RAND() limit 1";
 					$sql_pick_res = $conn->query($sql_pick);
 					if($sql_pick_res->num_rows == 0) {
 							 $image_name = "";
