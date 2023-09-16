@@ -493,7 +493,7 @@ h5 {
                            
 						   <div class="form_box" style="width:100%;">
 							
-                                <button type="submit" name="form_submit" id="submitbtn" style="font-weight:400;font-size:25px;" value="Place an order">
+                                <button type="submit" name="form_submit" id="submitbtn" style="font-weight:400;font-size:22px;" value="Place an order">
 
 								Order a <b>Soulmate Drawing</b>
 								
