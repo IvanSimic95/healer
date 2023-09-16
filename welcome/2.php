@@ -254,8 +254,8 @@ $(function() {
                         <div class="form_box input-group">
 
                             <div class="option">
-                                <input type="radio" name="priority" id="prio12" value="1">
-                                <label for="prio1" aria-label="12 Hour Delivery" class="d-flex justify-content-start align-items-center">
+                                <input type="radio" name="priority" id="prio1" value="1">
+                                <label for="prio1" aria-label="1 Hour Delivery" class="d-flex justify-content-start align-items-center">
                                     <span></span>
                                     <div class="p-0 delivery-icon"><i class="fas fa-bolt"></i></div>
                                     <div class="flex-grow-1">
