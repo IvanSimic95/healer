@@ -32,8 +32,8 @@ $_SESSION['orderFName'] = $row['first_name'];
 $_SESSION['orderLName'] = $row['last_name'];
 $_SESSION['orderBirthday'] = $row['birthday'];
 $_SESSION['orderAge'] = $row['user_age'];
-$_SESSION['orderGender'] = $row['user_sex'];
-$_SESSION['orderPartnerGender'] = $row['pick_sex'];
+$_SESSION['orderGender'] = $row['gender'];
+$_SESSION['orderPartnerGender'] = $row['partner_gender'];
 $_SESSION['BGEmail'] = $row['order_email'];
 
 $_SESSION['fbfirepixel'] = 1;
@@ -60,8 +60,8 @@ $_SESSION['orderFName'] = $row['first_name'];
 $_SESSION['orderLName'] = $row['last_name'];
 $_SESSION['orderBirthday'] = $row['birthday'];
 $_SESSION['orderAge'] = $row['user_age'];
-$_SESSION['orderGender'] = $row['user_sex'];
-$_SESSION['orderPartnerGender'] = $row['pick_sex'];
+$_SESSION['orderGender'] = $row['gender'];
+$_SESSION['orderPartnerGender'] = $row['partner_gender'];
 $_SESSION['BGEmail'] = $row['order_email'];
 
 $_SESSION['fbfirepixel'] = 1;

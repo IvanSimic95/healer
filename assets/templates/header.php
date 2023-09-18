@@ -58,6 +58,16 @@ DeBounce_RedBackgound = 'true'; // Convert input background to red for an invali
 
 <script async type="text/javascript" src="https://cdn.debounce.io/widget/DeBounce.v2.js"></script>
 <?php }  ?>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0FGHPWR8X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q0FGHPWR8X');
+</script>
 	<!-- Favicon  -->
     <link rel="icon" href="/images/favicon.png">
 </head>

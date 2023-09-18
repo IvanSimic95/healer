@@ -24,7 +24,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
                         <div class="col-lg-12">
                             <div class="text-container row">
                                 <div class="col-12">
-                                    <h2>Welcome to Your Safety Place</h2>
+                                    <h1 style="color: #ec5540;">Welcome to Your Safety Place</h1>
                                 </div>
                                 <div class="col-lg-6 col-12">
                                     <div class="image-container">
