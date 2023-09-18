@@ -188,7 +188,7 @@ box-shadow: 0 8px 15px rgb(0 0 0 / 30%);
   padding-top: 50px;
       padding-bottom: 150px;
   }
-  }
+  
 </style>
 
 

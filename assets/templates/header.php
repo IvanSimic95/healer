@@ -1,6 +1,14 @@
 <?php
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
+if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
+$url = "https://";   
+else  
+$url = "http://";   
+// Append the host(domain name, ip) to the URL.   
+$url.= $_SERVER['HTTP_HOST'];   
 
+// Append the requested resource location to the URL   
+$url.= $_SERVER['REQUEST_URI'];    
 use Melbahja\Seo\MetaTags;
 if(isset($t_product_name)){
 $metatags = new MetaTags();
@@ -9,7 +17,8 @@ $metatags
         ->description($description)
         ->meta('author', 'Soulmate Healer')
         ->image('https://soulmatehealer.com/images/products/'.$t_product_form_name.'.png')
-        ->mobile('https://soulmatehealer.com/images/products/'.$t_product_form_name.'.png');
+        ->mobile('https://soulmatehealer.com/images/products/'.$t_product_form_name.'.png')
+        ->canonical($url);
 
 
 }else{
@@ -19,7 +28,8 @@ $metatags
           ->description($description)
           ->meta('author', 'Soulmate Healer')
           ->image('https://soulmatehealer.com/images/soulmate-05.png')
-          ->mobile('https://soulmatehealer.com/images/soulmate-05.png');
+          ->mobile('https://soulmatehealer.com/images/soulmate-05.png')
+          ->canonical($url);
 }
 
 ?><!DOCTYPE html>

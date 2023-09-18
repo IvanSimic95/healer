@@ -1,9 +1,18 @@
 <?php 
+include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 $t_product_name = "smtf";
 $t_product_form_name = "smtf";
 $title = "Soulmate vs. Twin flame";
 $description = "Throughout the annals of time, poets, philosophers, and scholars have rhapsodized about the mysterious and profound connections humans share with one another. Two terms frequently arise in these discussions: soulmates and twin flames. Though often used interchangeably, these terms represent different, albeit intertwined, spiritual concepts. This deep dive into soulmates and twin flames aims to elucidate their distinctions, commonalities, and significance in our lives....";
-include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
+$PRurl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]".strtok($_SERVER["REQUEST_URI"],'?');
+$productMETA = <<<EOT
+    <!-- Meta Catalog Tags --> 
+    <meta property="og:url" content="$PRurl" />
+    <meta property="og:type" content="blog" />
+
+EOT;
+include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
+?>
 <style>
     #ds24b-27657,#ds24b-2765750,.footer-guarantee{display:none;}
     .ex-6-header p{max-width:none;}

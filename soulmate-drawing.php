@@ -1,8 +1,28 @@
 <?php 
+include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 $t_product_name = "SOULMATE";
 $t_product_form_name = "soulmate";
 $title = "Soulmate Drawing | Soulmate Healer";
 $description = "I will draw your SOULMATE with 100% accuracy";
+
+
+
+$PRurl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]".strtok($_SERVER["REQUEST_URI"],'?');
+
+$productMETA = <<<EOT
+    <!-- Meta Catalog Tags --> 
+    <meta property="og:url" content="$PRurl" />
+    <meta property="og:type" content="website" />
+
+    <meta property="product:brand" content="Soulmate Healer">
+    <meta property="product:availability" content="in stock">
+    <meta property="product:condition" content="new">
+    <meta property="product:price:amount" content="29">
+    <meta property="product:price:currency" content="USD">
+    <meta property="product:retailer_item_id" content="$t_product_form_name">
+
+
+EOT;
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <?php
