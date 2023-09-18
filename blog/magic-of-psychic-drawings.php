@@ -1,7 +1,7 @@
 <?php 
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
-$t_product_name = "yey1";
-$t_product_form_name = "yey1";
+$t_product_name = "fmm";
+$t_product_form_name = "fmm";
 $title = "See Your Future Love: The Magic of Psychic Drawings";
 $description = "Throughout the annals of time, poets, philosophers, and scholars have rhapsodized about the mysterious and profound connections humans share with one another. Two terms frequently arise in these discussions: soulmates and twin flames. Though often used interchangeably, these terms represent different, albeit intertwined, spiritual concepts. This deep dive into soulmates and twin flames aims to elucidate their distinctions, commonalities, and significance in our lives....";
 $PRurl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]".strtok($_SERVER["REQUEST_URI"],'?');
@@ -42,8 +42,8 @@ p{
                     <h2 class="h2-heading">See Your Future Love: The Magic of Psychic Drawings</h2>
                 </div>
                 <div class="col-sm-12 col-12">
+							<img class="img-fluid featured-img" src="/images/blog/fmm.png" alt="alternative">
 						<div class="image-container">
-							<img class="img-fluid featured-img" src="/images/blog/yey1.png" alt="alternative">
 						</div> 
                     </div>
                 </div>
