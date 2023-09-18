@@ -145,7 +145,7 @@ src="https://www.facebook.com/tr?id=<?php echo $FBPixel; ?>&ev=PageView&noscript
 /></noscript>
 <!-- End Meta Pixel Code -->
 <?php }} ?>
-
+<?php echo $FBPurchasePixel; ?>
 
 </body>
 </html>						
