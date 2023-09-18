@@ -32,7 +32,7 @@
             role: "customer"
         });
         window.talkSession = new Talk.Session({
-            appId: "tO6umIcS",
+            appId: "zQQphoB0",
             me: other
         });
         var conversation = talkSession.getOrCreateConversation("test_21");

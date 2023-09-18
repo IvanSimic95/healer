@@ -7,7 +7,7 @@ if(empty($email_address))
 }
 include_once $_SERVER['DOCUMENT_ROOT'].'/admin/partials/head.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/admin/partials/navbar.php';
-$signature = hash_hmac('sha256', 'administrator', 'sk_test_omv9jN0lymrWKOJ2kvyL4yOOHwRDVL8W');
+$signature = hash_hmac('sha256', 'administrator', 'sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv');
 ?>
 <div class="container-fluid px-4">
     <div class="row justify-content-start" style="">
@@ -37,7 +37,7 @@ $signature = hash_hmac('sha256', 'administrator', 'sk_test_omv9jN0lymrWKOJ2kvyL4
          role: "administrator"
      });
      window.talkSession = new Talk.Session({
-         appId: "tO6umIcS",
+         appId: "zQQphoB0",
          me: admin,
          signature: "<?php echo $signature; ?>"
      });

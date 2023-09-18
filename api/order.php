@@ -44,7 +44,7 @@ $data = [
 "custom" => ["email" => $order_email, "lastOrder" => $orderID]
 ];
 $data1 = json_encode($data);
-curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/tO6umIcS/users/'.$userID);
+curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/users/'.$userID);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
     
@@ -52,7 +52,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $data1);
     
 $headers = array();
 $headers[] = 'Content-Type: application/json';
-$headers[] = 'Authorization: Bearer sk_test_omv9jN0lymrWKOJ2kvyL4yOOHwRDVL8W';
+$headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
     
 $result = curl_exec($ch);
@@ -71,7 +71,7 @@ $data2 = [
 "custom" => ["status" => "Paid"]
 ];
 $data22 = json_encode($data2);
-curl_setopt($ch2, CURLOPT_URL, 'https://api.talkjs.com/v1/tO6umIcS/conversations/'.$orderID);
+curl_setopt($ch2, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/conversations/'.$orderID);
 curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch2, CURLOPT_CUSTOMREQUEST, 'PUT');
 
@@ -79,7 +79,7 @@ curl_setopt($ch2, CURLOPT_POSTFIELDS, $data22);
 
 $headers = array();
 $headers[] = 'Content-Type: application/json';
-$headers[] = 'Authorization: Bearer sk_test_omv9jN0lymrWKOJ2kvyL4yOOHwRDVL8W';
+$headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
 curl_setopt($ch2, CURLOPT_HTTPHEADER, $headers);
 
 $result2 = curl_exec($ch2);

@@ -142,7 +142,7 @@ text-align: center!important;
                         var me = new Talk.User("administrator");
                         var other = conversationId;
                         window.talkSession = new Talk.Session({
-                            appId: "tO6umIcS",
+                            appId: "zQQphoB0",
                             me: me,
                             other: other
                         });

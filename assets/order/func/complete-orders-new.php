@@ -59,8 +59,8 @@ $newImageFullPath = $base_url .$newImageShortPath;
 $newImageNameHash = copy($oldImageServerPath, $newImageServerPath);
 
 $ch = curl_init();
-$authorization = "Bearer sk_test_omv9jN0lymrWKOJ2kvyL4yOOHwRDVL8W";
-curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/tO6umIcS/files');
+$authorization = "Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv";
+curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/files');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
 

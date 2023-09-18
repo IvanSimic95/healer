@@ -760,8 +760,8 @@ $logArray[] = "
 
 
 							$ch = curl_init();
-							$authorization = "Bearer sk_test_omv9jN0lymrWKOJ2kvyL4yOOHwRDVL8W";
-							curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/tO6umIcS/files');
+							$authorization = "Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv";
+							curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/files');
 							curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 							curl_setopt($ch, CURLOPT_POST, 1);
 							
@@ -813,7 +813,7 @@ $logArray[] = "
 
                 $data1 = json_encode($data);
 
-                curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/tO6umIcS/conversations/' . $row["order_id"] . '/messages');
+                curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/conversations/' . $row["order_id"] . '/messages');
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
                 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
 
@@ -821,7 +821,7 @@ $logArray[] = "
 
                 $headers = array();
                 $headers[] = 'Content-Type: application/json';
-                $headers[] = 'Authorization: Bearer sk_test_omv9jN0lymrWKOJ2kvyL4yOOHwRDVL8W';
+                $headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
                 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
                 $result = curl_exec($ch);
@@ -875,7 +875,7 @@ $logArray[] = "
 					$data1 = json_encode($data);
 				  
 	  
-					  curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/tO6umIcS/conversations/' . $row["order_id"] . '/messages');
+					  curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/conversations/' . $row["order_id"] . '/messages');
 					  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 					  curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
 	  
@@ -883,7 +883,7 @@ $logArray[] = "
 	  
 					  $headers = array();
 					  $headers[] = 'Content-Type: application/json';
-					  $headers[] = 'Authorization: Bearer sk_test_omv9jN0lymrWKOJ2kvyL4yOOHwRDVL8W';
+					  $headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
 					  curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 	  
 					  $result = curl_exec($ch);
@@ -933,8 +933,8 @@ $newImageNameHash = copy($oldImageServerPath, $newImageServerPath);
 
 
 $ch = curl_init();
-$authorization = "Bearer sk_test_omv9jN0lymrWKOJ2kvyL4yOOHwRDVL8W";
-curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/tO6umIcS/files');
+$authorization = "Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv";
+curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/files');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
 
@@ -986,7 +986,7 @@ $data = [[
 
 $data1 = json_encode($data);
 
-curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/tO6umIcS/conversations/' . $row["order_id"] . '/messages');
+curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/conversations/' . $row["order_id"] . '/messages');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
 
@@ -994,7 +994,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $data1);
 
 $headers = array();
 $headers[] = 'Content-Type: application/json';
-$headers[] = 'Authorization: Bearer sk_test_omv9jN0lymrWKOJ2kvyL4yOOHwRDVL8W';
+$headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
 $result = curl_exec($ch);
@@ -1041,7 +1041,7 @@ $data = [
 ];
 $data1 = json_encode($data);
 print_r($data1);
-curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/tO6umIcS/conversations/'.$orderID);
+curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/conversations/'.$orderID);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
 
@@ -1049,7 +1049,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $data1);
 
 $headers = array();
 $headers[] = 'Content-Type: application/json';
-$headers[] = 'Authorization: Bearer sk_test_omv9jN0lymrWKOJ2kvyL4yOOHwRDVL8W';
+$headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
 $result = curl_exec($ch);
