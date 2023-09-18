@@ -39,25 +39,24 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 
 <br/>	
 	
- <!--
-	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row" onclick="location.href='/blog/soulmate-test'">
+
+	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row" onclick="location.href='/blog/magic-of-psychic-drawings'">
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">titlu articol</h2>
+                    <h2 class="h2-heading">See Your Future Love: The Magic of Psychic Drawings</h2>
                 </div>
                 <div class="col-sm-2 col-4">
                     <div style="" class="card-1">
 						<div class="image-container">
-							<img class="img-fluid" src="/images/blog/test01.png" alt="alternative">
+							<img class="img-fluid" src="/images/blog/yey1.jpg" alt="alternative">
 						</div> 
                     </div>
                 </div>
 				<div class="col-sm-10 col-8">
                     <div style="" class="card-1">
                         <p style="text-align: left;font-size: 14px;line-height: 17px;max-width: 100%;">
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu nown printer took a galley of type and scrambled it to make a type<br/><br/>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry... <a href="/blog/soulmate-test" style="" class="">Read more</a>
+						Everyone's curious about the future. We've all daydreamed about what's next—especially when it comes to love. Who hasn't wondered about their next big romance or if their true love is just around the corner? For many, it's a game of waiting and seeing, hoping that fate has some good news in store. But what if you didn't have to wait in the dark? What if you could get a tiny  <a href="/blog/magic-of-psychic-drawings" style="" class="">Read more</a>
 						</p>
                     </div>
                 </div>
@@ -67,7 +66,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 	
 
 <br/>	
-	
+	 <!--
  
 	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row" onclick="location.href='/blog/soulmate-test'">
          <div class="col-lg-12 col-xl-12">
