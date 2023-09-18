@@ -38,6 +38,9 @@ echo "Starting complete-orders.php...<br><br>";
 			$orderAge = $row["user_age"];
 			$energyCurrentWeek = $row["weekly_count"];
 			$orderPrio = $row["order_priority"];
+			if($orderPrio == 1){
+				$orderPrio = 2;
+			}
 			$orderProduct = $row["order_product"];
 			$orderSex = $row["partner_gender"];
 			$userSex = $row["gender"];
@@ -53,6 +56,7 @@ echo "Starting complete-orders.php...<br><br>";
 			$reading = $row["reading"];
 			$color = $row["color"];
 
+			
 		
 
 			$trigger = 0;
