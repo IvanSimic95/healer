@@ -6,10 +6,9 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
 $debounce = 1;
-$startpixel  = 0;
+$startpixel  = 1;
 
 $FBPixel  = "692217912347910";
-$FBPixel2 = "478846387559798";
 
 $FBPurchasePixel = "";
 $FBViewContent = "";
