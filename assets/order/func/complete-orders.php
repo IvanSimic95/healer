@@ -65,7 +65,7 @@ $logArray[] = "
 ".$orderID." | ";
 			
 
-			if ($hours >= $orderPrio) {
+			if ($hours > $orderPrio) {
 				echo "Active | ";
 				$logArray[] = "Active | ";
 				 $trigger = 1;
