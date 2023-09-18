@@ -77,7 +77,7 @@ $_SESSION['fbproduct'] = $row['order_product'];
 
   }
 }
-
+$FirePixel = $_SESSION['fbfirepixel'];
 ?>
 
 <script src="https://www.digistore24.com/service/digistore.js"></script><script>digistoreUpsell()</script>
