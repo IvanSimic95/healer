@@ -4,6 +4,7 @@ $t_product_name = "yey1";
 $t_product_form_name = "yey1";
 $title = "See Your Future Love: The Magic of Psychic Drawings";
 $description = "Throughout the annals of time, poets, philosophers, and scholars have rhapsodized about the mysterious and profound connections humans share with one another. Two terms frequently arise in these discussions: soulmates and twin flames. Though often used interchangeably, these terms represent different, albeit intertwined, spiritual concepts. This deep dive into soulmates and twin flames aims to elucidate their distinctions, commonalities, and significance in our lives....";
+$PRurl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]".strtok($_SERVER["REQUEST_URI"],'?');
 $productMETA = <<<EOT
     <!-- Meta Catalog Tags --> 
     <meta property="og:url" content="$PRurl" />
