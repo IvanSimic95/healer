@@ -39,7 +39,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 
 <br/>	
 	
- 
+ <!--
 	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row" onclick="location.href='/blog/soulmate-test'">
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
@@ -93,7 +93,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
             </div>
          </div>
 	</div>
-	
+-->	
 	
 <br clear="all">			
 				
