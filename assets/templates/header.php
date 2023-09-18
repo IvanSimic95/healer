@@ -42,9 +42,9 @@ $metatags
 
     <!-- Website Title -->
     
-    <?php echo $metatags; ?>
+<?php echo $metatags; ?>
     <!-- Styles -->
-    <?php echo $productMETA; ?>
+<?php echo $productMETA; ?>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/fontawesome-all.css" rel="stylesheet">
