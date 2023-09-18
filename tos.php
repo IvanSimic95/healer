@@ -63,6 +63,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
       <h2>Newsletter : Subscription and Disclaimer</h2>
       <p><strong>If you choose to provide us with your email address or any other personally identifiable information, we will use it only to send you our newsletter or respond to your query.</strong></p>
       <p>If you choose to unsubscribe from the newsletters, you’ll stop receiving any newsletters.</p>
+	  <p> If you wish to unsubscribe from our newsletters, you can do so at any time by following the 'Unsubscribe' link located at the bottom of every newsletter email we send. Clicking on this link will guide you through a simple process to remove your email address from our mailing list. Alternatively, if you face any difficulties, you can contact us directly at info@soulmatehealer.com and we will assist you in the unsubscription process.
       <p><strong>COPYRIGHT</strong></p>
       <p>We Soulmate Healer, reserve all copyrights on text or images on the newsletter. The text or images in the newsletter may not be copied or distributed without prior permission of Soulmate Healer.</p>
       <p>If there is any approved use of content, the following conditions should be followed:</p>

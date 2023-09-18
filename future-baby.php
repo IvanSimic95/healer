@@ -38,7 +38,7 @@ $count = $row['reviews'];
                         <p style="color: #000;text-align: left;padding: 0px 17px;margin-top: 23px;">
                             <i class="fas fa-check-square" style="color: #0bd10b;"></i> 99% Accuracy <br />
                             <i class="fas fa-check-square" style="color: #0bd10b;"></i> 100% Satisfaction guarantee<br />
-                            <i class="fas fa-check-square" style="color: #0bd10b;"></i> Order now, receive within 6 hours
+                            <i class="fas fa-check-square" style="color: #0bd10b;"></i> Order now, receive within 1 hour
                         </p>
 
                         <h2 class="new_prce" style="font-size: 35px;display: inline-block;">$15</h2>

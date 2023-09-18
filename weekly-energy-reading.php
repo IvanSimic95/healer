@@ -114,7 +114,7 @@ $count = $row['reviews'];
 <p>In an ever-evolving world, staying updated is not just a luxury; it&rsquo;s a necessity. The <strong>Weekly Energy Reading</strong> isn&rsquo;t just another subscription; it&rsquo;s your <strong>secret weapon</strong> to seize control, anticipate change, and always be one step ahead. With a world teeming with unpredictability, isn&rsquo;t it comforting to know there&rsquo;s something you can consistently count on?</p>
 <br><p><strong>COMMITMENT TO EXCELLENCE: Authenticity and Resonance Guaranteed</strong></p>
 <p>Should a reading ever fall short of resonating with your journey or the accuracy you expect, a full refund for that week stands as our unwavering pledge to quality and your satisfaction.</p>
-                     
+        <br> <p> Enjoy my weekly subscription, with the flexibility to cancel whenever you wish! 😊 </p>             
                     </div>
                 </div>
 
