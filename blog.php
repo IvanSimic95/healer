@@ -29,7 +29,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
                     <div style="" class="card-1">
                         <p style="text-align: left;font-size: 14px;line-height: 17px;max-width: 100%;">
 						Throughout the annals of time, poets, philosophers, and scholars have rhapsodized about the mysterious and profound connections humans share with one another. <br/><br/>
-						Two terms frequently arise in these discussions: soulmates and twin flames. Though often...<a href="/blog/soulmate-test" style="" class="">Read more</a>
+						Two terms frequently arise in these discussions: soulmates and twin flames. Though often...<a href="/blog/soulmate-twin-flame" style="" class="">Read more</a>
 						</p>
                     </div>
                 </div>
