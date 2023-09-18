@@ -218,9 +218,7 @@ $count = $row['reviews'];
             </div>  
         </div>  
     </header>  
-    <script>
-  fbq('track', 'Schedule');
-</script>
+
     <script>
 jQuery('input[name="priority"]').change(function(){
     if (this.value == '1') {
@@ -242,3 +240,6 @@ jQuery('input[name="priority"]').change(function(){
 </script>
 
     <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php'; ?>
+    <script>
+  fbq('track', 'Schedule');
+</script>
