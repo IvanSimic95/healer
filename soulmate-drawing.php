@@ -238,8 +238,8 @@ jQuery('input[name="priority"]').change(function(){
     }
 })
 </script>
-<script>
+
+    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php'; ?>
+    <script>
   fbq('track', 'Schedule');
 </script>
-    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php'; ?>
-   
