@@ -81,7 +81,9 @@ DeBounce_RedBackgound = 'true'; // Convert input background to red for an invali
 	<!-- Favicon  -->
     <link rel="icon" href="/images/favicon.png">
 
-
+<!-- 100% privacy-first analytics -->
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
