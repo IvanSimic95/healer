@@ -170,8 +170,25 @@ switch ($order_priority){
     }
 
 }elseif($order_product == "personal"){
-  $cbproduct = "513960";
+  
+  switch ($order_priority){
+    case "48":
+      
+  $cbproduct = "517078";
   $cbprice = "49";
+    break;
+  
+    case "24":
+      $cbproduct = "517079";
+      $cbprice = "59";
+    break;
+  
+    case "1":
+      $cbproduct = "517080";
+      $cbprice = "69";
+    break;
+    }
+
 }elseif($order_product == "pastlife"){
   $cbproduct = "514037";
   $cbprice = "21";
