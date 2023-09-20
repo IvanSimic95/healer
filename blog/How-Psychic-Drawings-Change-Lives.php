@@ -39,7 +39,7 @@ p{
          <div class="col-lg-12 col-xl-12" style="padding:0;">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Soulmates vs. Twin Flames: The Eternal Dance of Love and Connection</h2>
+                    <h2 class="h2-heading">The Magic of Seeing Beyond: How Psychic Pictures Change Lives</h2>
                 </div>
                 <div class="col-sm-12 col-12">
 						<div class="image-container">
