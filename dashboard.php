@@ -10,7 +10,7 @@ $rlink = "/dologin?email=".$email;
 if(isset($_GET['autologin'])){
     $userID = $_GET['u'];
     autologin($userID);
-    $rLink = "/dashboard";
+    $rlink = "/dashboard";
     header('Location: '.$rlink);
     die();
 }
