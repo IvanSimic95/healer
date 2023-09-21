@@ -401,6 +401,7 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 					 "event_name" => "Purchase",
 					 "event_time" => time(),
 					 "event_id" => $orderId,
+					 "test_event_code"  => "TEST62484",
 					 "user_data" => array(
 						 "fn" => hash('sha256', $Ffirst_name),
 						 "ln" => hash('sha256', $Flast_name),
@@ -429,7 +430,7 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 					 "event_source_url"  => "https://".$domain."/offer/color",
 					 
 				),
-				"test_event_code"  => "TEST62484"
+				
 			 ),
 				"access_token" => $fbAccessToken,
 				
