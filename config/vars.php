@@ -16,13 +16,9 @@ $productMETA = "";
 
 
 //Data for FB Conversions API
-$accessToken1 = "EAAxkvwzdc3kBAM3YGxUaEygEr7cdXJ9bxE8hGZC2tfmkW9BXAWZA67HcZB0SyoDYrMLs9Afgp086Yqm55zDg";
-$accessToken2 = "DZAdoLErhsa7kHwFJVZA7C6HBMqdIsERWoJ8zXZAeaQtDqFgAMCTa8K0kVMdp3EPZBYGhnOjPjTOg9KkjPelq9Mu1qmvU9iTZBrm";
+$accessToken1 = "EAAJw55TSSlwBOxWZCaV1ZBBmGhRJHxZAllxvgkVNmnkmYPPlLa3zPmrWHiHZAi3hSF3pZA9YWy2Rl5pBjq";
+$accessToken2 = "pAGHM4NzRaaZAne20q4JZCDZAKDZCDHJUarijbzRLeyFdKSpMvZBgmpWZBO2hKTJMWNAgpDxrMWZCrJa8FpdZBHCZAJKHLhbhEyyXT34frOqefIPsCBw5wZDZD";
 $fbAccessToken = $accessToken1 . $accessToken2;
-
-$saccessToken1 = "EAAxkvwzdc3kBAIvvgoZABpvbTN46utbt6lItTSl7BLRJRSfZAk5BoZBnzk6X6ZB8beFD9nIUjZBKZB7Xf";
-$saccessToken2 = "puADsSevecDUs63SUTIZBHalcWG5iUXCPsZA3qv5qpJNA5K6iNPyj05yKho68TZAPnqvKCDfgzondZBXksQxVKhMbYG2y8F5JQ7Mrm8a6";
-$sfbAccessToken = $saccessToken1 . $saccessToken2;
 
 $sendFBAPI = 0; #Set to 1 to send data via api
 
