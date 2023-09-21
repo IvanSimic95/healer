@@ -11,7 +11,32 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
         <div class="header-content">
             <div class="container">
 
-				
+		<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row" onclick="location.href='/blog/psychic-soulmate-drawings'">
+         <div class="col-lg-12 col-xl-12">
+            <div style="margin-top: 15px;margin-bottom:15px;" class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Unlocking Connections: The Transformative Journey of Psychic Soulmate Drawings</h2>
+                </div>
+                <div class="col-sm-2 col-4">
+                    <div style="" class="card-1">
+						<div class="image-container">
+							<img class="img-fluid" src="/images/blog/psychic-soulmate.png" alt="psychic soulmate drawing">
+						</div> 
+                    </div>
+                </div>
+				<div class="col-sm-10 col-8">
+                    <div style="" class="card-1">
+                        <p style="text-align: left;font-size: 14px;line-height: 17px;max-width: 100%;">
+						Delve into the mystical realms of connection with a psychic soulmate draw! Discover the transformative power and insights these psychic drawings reveal about soulmate love and beyond. <br/><br/>
+						In a world veiled with mystery and laden with celestial wonders, the allure of psychic drawing unfolds as a beacon of understanding and insight into our most profound questions and desires. The concept of creating a soulmate draw serves as a miraculous gateway to not only uncovering intricate details about...<a href="/blog/psychic-soulmate-drawings" style="" class="">Read more</a>
+						</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+	</div>
+	<br> 
+	
 	<div style="background-color:#f5f5f5;margin-right: 0px;margin-left: 0px;border-radius:0.5rem;" class="row" onclick="location.href='/blog/soulmate-twin-flame'">
          <div class="col-lg-12 col-xl-12">
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
