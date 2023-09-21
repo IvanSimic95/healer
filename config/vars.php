@@ -20,7 +20,7 @@ $accessToken1 = "EAAJw55TSSlwBOxWZCaV1ZBBmGhRJHxZAllxvgkVNmnkmYPPlLa3zPmrWHiHZAi
 $accessToken2 = "pAGHM4NzRaaZAne20q4JZCDZAKDZCDHJUarijbzRLeyFdKSpMvZBgmpWZBO2hKTJMWNAgpDxrMWZCrJa8FpdZBHCZAJKHLhbhEyyXT34frOqefIPsCBw5wZDZD";
 $fbAccessToken = $accessToken1 . $accessToken2;
 
-$sendFBAPI = 0; #Set to 1 to send data via api
+$sendFBAPI = 1; #Set to 1 to send data via api
 
 
 #error_reporting(0);
