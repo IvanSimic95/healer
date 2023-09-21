@@ -68,7 +68,7 @@ if ($c == "[CUSTOM]") {
             $UserGender = $row2['gender'];
             $PartnerGender = $row2['partner_gender'];
 
-            if ($genderAcc >= 95) {
+            if ($genderAcc >= 101) {
                 $thankyou = 1;
             } else {
 
@@ -116,9 +116,9 @@ if ($c == "[CUSTOM]") {
                             <h3 id="finalnotice">You will receive your order in 6-48 hours depending on priority you picked and it will be delivered via email!<br></h3>
                             <h3 id="finalnoticeinfo">If you need help or support with your order please reach out to us by clicking <a href="/contact">Here</a><br></h3>
                             <?php if ($c != "none") { ?>
-                                <form id="autologin" data-toggle="validator" data-focus="false" action="/dashboard" method="post">
+                                <form id="autologin" data-toggle="validator" data-focus="false" action="/dashboard" method="GET">
                                     <input class="orderID" type="hidden" name="autologin" value="yes">
-                                    <input class="orderID" type="hidden" name="userID" value="<?php echo $c; ?>">
+                                    <input class="orderID" type="hidden" name="u" value="<?php echo $c; ?>">
                                     <button style="margin-top:15px; padding:15px; width:100%; font-size:100%; text-decoration: none;border-radius:0.25rem;" class="btn form-control-submit-button"><i class="fa fa-user"></i> Login to User Dashboard!</button>
                                 <?php } else { ?>
                                     <a href="/dashboard" style="margin-top:15px; padding:15px; width:100%; font-size:100%; text-decoration: none;border-radius:0.25rem;" class="btn form-control-submit-button"><i class="fa fa-user"></i> Login to User Dashboard!</a>

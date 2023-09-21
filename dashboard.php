@@ -1,9 +1,18 @@
 <?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 $r = 0;
 if(isset($_GET['check_email'])){
     $email = $_GET['check_email'];
 $r = 1;
 $rlink = "/dologin?email=".$email;
+}
+
+if(isset($_GET['autologin'])){
+    $userID = $_GET['u'];
+    autologin($userID);
+    $rlink = "/dashboard";
+    header('Location: '.$rlink);
+    die();
 }
 if($r == 1){
     header('Location: '.$rlink);

@@ -31,6 +31,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/admin/partials/navbar.php';
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Product</th>
+                                <th>Reading</th>
+                                <th>Initials</th>
+                                <th>Color</th>
                                 <th>Status</th>
                                 <th>Price</th>
                                 <th>Priority</th>
@@ -50,6 +53,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/admin/partials/navbar.php';
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Product</th>
+                                <th>Reading</th>
+                                <th>Initials</th>
+                                <th>Color</th>
                                 <th>Status</th>
                                 <th>Price</th>
                                 <th>Priority</th>

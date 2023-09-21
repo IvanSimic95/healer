@@ -95,6 +95,9 @@ $count = $row['reviews'];
                             </div>
 
                             <input class="product" type="hidden" name="product" value="thoughts">
+                            <input class="fbproduct" type="hidden" name="fbCampaign" value="<?php echo $_SESSION['fbCampaign']; ?>">
+                            <input class="fbproduct" type="hidden" name="fbAdset" value="<?php echo $_SESSION['fbAdset']; ?>">
+                            <input class="fbproduct" type="hidden" name="fbAd" value="<?php echo $_SESSION['fbAd']; ?>">
                             <div id="error" class="alert alert-danger" style="display: none"></div>
 
                             <div class="form-group">

@@ -34,7 +34,7 @@ $name = $fname." ".$lname;
         $pstatus = "paid";
         $sql55 = "UPDATE `orders` SET `order_status`='$pstatus' WHERE order_id='$orderID'";
         $result55 = $conn->query($sql55);
-        if ($result5){
+        if ($result55){
             echo "Existing Energy Reading order updated";
         }else{
             echo "error updating existing order";

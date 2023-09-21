@@ -34,11 +34,18 @@ $order_product = $_POST['product'];
 $order_priority = $_POST['priority'];
 $order_date = date('Y-m-d H:i:s');
 
+$fbCampaign = $_POST['fbCampaign'];
+$fbAdset = $_POST['fbAdset'];
+$fbAd = $_POST['fbAd'];
+
+
 $parser = new TheIconic\NameParser\Parser();
 $name = $parser->parse($user_name);
 
 $fName = $name->getFirstname();
 $lName = $name->getLastname();
+
+$userIP = $userip;
 
 $oStatus = "pending";
     
@@ -330,10 +337,12 @@ $sql5 = "SELECT * FROM users WHERE email = '".$user_email."'";
         
 
     }
-    
+    $fbCampaign = $_POST['fbCampaign'];
+    $fbAdset = $_POST['fbAdset'];
+    $fbAd = $_POST['fbAd'];   
 
-$sql = "INSERT INTO orders (user_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, gender, genderAcc, partner_gender) 
-VALUES ('$userID', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender')";
+$sql = "INSERT INTO orders (user_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, gender, genderAcc, partner_gender, fbc, fbp, ip, user_agent, fbCampaign, fbAdset, fbAd) 
+VALUES ('$userID', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender', '$UserFBC', '$UserFBP', '$userIP', '$userAgent',  '$fbCampaign', '$fbAdset', '$fbAd')";
 
 
 
