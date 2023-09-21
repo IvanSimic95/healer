@@ -5,6 +5,12 @@ if(isset($_GET['check_email'])){
 $r = 1;
 $rlink = "/dologin?email=".$email;
 }
+
+if(isset($_GET['autologin'])){
+    $userID = $_GET['u'];
+    autologin($userID);
+    header('Location: /dashboard');
+}
 if($r == 1){
     header('Location: '.$rlink);
     die();
