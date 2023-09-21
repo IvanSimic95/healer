@@ -296,6 +296,11 @@ $Flast_name = $row["last_name"];
 $customer_emailaddress = $row["order_email"];
 $birthday = $row["birthday"];
 
+$ip = $row["ip"];
+$agent = $row["user_agent"];
+$zip = $row["zip"];
+$country = $row["country"];
+
 
 if($userSex == "male"){
 	$usersex1 = "m";
@@ -342,7 +347,7 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 					 ),
 					 "action_source" => "website",
 					 "event_source_url"  => "https://".$domain."/offer/color",
-					 "test_evenct_code"  => "TEST62484",
+					 "test_event_code"  => "TEST62484",
 				),
 			 ),
 				"access_token" => $fbAccessToken,
@@ -381,7 +386,7 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 					 ),
 					 "action_source" => "website",
 					 "event_source_url"  => "https://".$domain."/offer/color",
-					 "test_evenct_code"  => "TEST62484",
+					 "test_event_code"  => "TEST62484",
 				),
 			 ),
 				"access_token" => $fbAccessToken,
@@ -422,7 +427,7 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 					 ),
 					 "action_source" => "website",
 					 "event_source_url"  => "https://".$domain."/offer/color",
-					 "test_evenct_code"  => "TEST62484",
+					 "test_event_code"  => "TEST62484",
 				),
 			 ),
 				"access_token" => $fbAccessToken,
@@ -460,7 +465,7 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 				 ),
 				 "action_source" => "website",
 				 "event_source_url"  => "https://".$domain."/offer/color",
-				 "test_evenct_code"  => "TEST62484",
+				 "test_event_code"  => "TEST62484",
 			),
 		 ),
 			"access_token" => $fbAccessToken,
