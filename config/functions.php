@@ -204,7 +204,7 @@ if (isset($_GET['utm_campaign'])) {
   $fbTrack = 1;
 
   $fbVariable = $_GET['utm_campaign'];
-  $ex = explode("+", $fbVariable);
+  $ex = explode(" ", $fbVariable);
 
   $fbCampaign = $ex["0"];
   $fbAdset = $ex["1"];
