@@ -427,8 +427,9 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 					 ),
 					 "action_source" => "website",
 					 "event_source_url"  => "https://".$domain."/offer/color",
-					 "test_event_code"  => "TEST62484",
+					 
 				),
+				"test_event_code"  => "TEST62484"
 			 ),
 				"access_token" => $fbAccessToken,
 				
