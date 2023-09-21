@@ -68,7 +68,7 @@ if ($c == "[CUSTOM]") {
             $UserGender = $row2['gender'];
             $PartnerGender = $row2['partner_gender'];
 
-            if ($genderAcc >= 95) {
+            if ($genderAcc >= 101) {
                 $thankyou = 1;
             } else {
 
