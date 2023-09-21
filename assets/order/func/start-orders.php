@@ -433,7 +433,6 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 				
 			 ),
 				"access_token" => $fbAccessToken,
-				"test_event_code"  => "TEST62484",
 				
 			 ); 
 	 }else{
