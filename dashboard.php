@@ -1,4 +1,5 @@
 <?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 $r = 0;
 if(isset($_GET['check_email'])){
     $email = $_GET['check_email'];
