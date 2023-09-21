@@ -9,7 +9,7 @@ isset($_POST['email']) ? $order_email           = $_POST['email']           : $e
 isset($_POST['first_name'])  ? $fname           = $_POST['first_name']      : $errorDisplay .= " Missing First Name <br>";
 isset($_POST['last_name'])  ? $lname            = $_POST['last_name']       : $errorDisplay .= " Missing Last Name <br>";
 isset($_POST['order_id'])  ? $DigiOrderID       = $_POST['order_id']        : $errorDisplay .= " Missing Digi24 Order ID <br>";
-isset($_POST['zip'])  ? $zip                    = $_POST['zip']             : $errorDisplay .= " Missing ZIP <br>";
+isset($_POST['zipcode'])  ? $zip                    = $_POST['zipcode']             : $errorDisplay .= " Missing ZIP <br>";
 
 empty($errorDisplay) ?  $testError = FALSE : $testError = TRUE;
 if($testError == TRUE){
