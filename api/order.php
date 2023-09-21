@@ -10,6 +10,7 @@ isset($_POST['first_name'])  ? $fname           = $_POST['first_name']      : $e
 isset($_POST['last_name'])  ? $lname            = $_POST['last_name']       : $errorDisplay .= " Missing Last Name <br>";
 isset($_POST['order_id'])  ? $DigiOrderID       = $_POST['order_id']        : $errorDisplay .= " Missing Digi24 Order ID <br>";
 isset($_POST['zipcode'])  ? $zip                    = $_POST['zipcode']             : $errorDisplay .= " Missing ZIP <br>";
+isset($_POST['country_code'])  ? $country                   = $_POST['country_code']             : $errorDisplay .= " Missing Country <br>";
 
 empty($errorDisplay) ?  $testError = FALSE : $testError = TRUE;
 if($testError == TRUE){
@@ -30,7 +31,7 @@ $name = $fname." ".$lname;
     $userID = $row['user_id'];
 
         if($orderStatus=="pending" OR $orderStatus=="paid" OR $orderStatus=="processing"){
-            $sql = "UPDATE `orders` SET `order_email`='$order_email', `buygoods_order_id`='$DigiOrderID', `order_status`='paid', `zip`='$zip' WHERE order_id='$orderID'";
+            $sql = "UPDATE `orders` SET `order_email`='$order_email', `buygoods_order_id`='$DigiOrderID', `order_status`='paid', `zip`='$zip', `country`='$country' WHERE order_id='$orderID'";
             $result = $conn->query($sql);
 
 

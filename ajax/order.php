@@ -341,8 +341,8 @@ $sql5 = "SELECT * FROM users WHERE email = '".$user_email."'";
     $fbAdset = $_POST['fbAdset'];
     $fbAd = $_POST['fbAd'];   
 
-$sql = "INSERT INTO orders (user_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, gender, genderAcc, partner_gender, fbc, fbp, ip, fbCampaign, fbAdset, fbAd) 
-VALUES ('$userID', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender', '$userIP', '$UserFBC', '$UserFBP', '$fbCampaign', '$fbAdset', '$fbAd')";
+$sql = "INSERT INTO orders (user_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, gender, genderAcc, partner_gender, fbc, fbp, ip, user_agent, fbCampaign, fbAdset, fbAd) 
+VALUES ('$userID', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender', '$userIP', '$userAgent', '$UserFBC', '$UserFBP', '$fbCampaign', '$fbAdset', '$fbAd')";
 
 
 

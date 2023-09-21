@@ -305,61 +305,180 @@ if($userSex == "male"){
 
 //Facebook API conversion
 if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProduct == "twinflame"){
-   if($sendFBAPI == 1){
-    $fixedBirthday = date("Ymd", strtotime($birthday));
-    $data = array( // main object
-        "data" => array( // data array
-            array(
+	if($sendFBAPI == 1){
+	 $fixedBirthday = date("Ymd", strtotime($birthday));
+ 
+ 
+	 if (!empty($fbc) AND empty($fbp)) {
+		 $data = array( // main object
+			 "data" => array( // data array
+				 array(
+					 
+					 "event_name" => "Purchase",
+					 "event_time" => time(),
+					 "event_id" => $orderId,
+					 "user_data" => array(
+						 "fn" => hash('sha256', $Ffirst_name),
+						 "ln" => hash('sha256', $Flast_name),
+						 "em" => hash('sha256', $customer_emailaddress),
+						 "db" => hash('sha256', $fixedBirthday),
+						 "ge" => hash('sha256', $usersex1),
+						 "external_id" => hash('sha256', $orderId),
+						 "fbc" => $fbc,
+						 "client_ip_address" => $ip,
+						 "client_user_agent" => $agent,
+						 "zp" => hash('sha256', $zip),
+						 "country" => hash('sha256', $country),
+					 ),
+					 "contents" => array(
+						 array(
+						 "id" => $orderProduct,
+						 "quantity" => 1
+						 ),
+					 ),
+					 "custom_data" => array(
+						 "currency" => "USD",
+						 "value"    => $orderPrice,
+					 ),
+					 "action_source" => "website",
+					 "event_source_url"  => "https://".$domain."/readings.php",
+				),
+			 ),
+				"access_token" => $fbAccessToken,
 				
-                "event_name" => "Purchase",
-                "event_time" => time(),
-                "event_id" => $orderId,
-                "user_data" => array(
-                    "fn" => hash('sha256', $Ffirst_name),
-                    "ln" => hash('sha256', $Flast_name),
-                    "em" => hash('sha256', $customer_emailaddress),
-                    "db" => hash('sha256', $fixedBirthday),
-                    "ge" => hash('sha256', $usersex1),
-                    "external_id" => hash('sha256', $orderId),
-					"client_ip_address" => $ip,
+			 ); 
+	 }elseif(empty($fbp) AND !empty($fbc)){
+		 $data = array( // main object
+			 "data" => array( // data array
+				 array(
+					 
+					 "event_name" => "Purchase",
+					 "event_time" => time(),
+					 "event_id" => $orderId,
+					 "user_data" => array(
+						 "fn" => hash('sha256', $Ffirst_name),
+						 "ln" => hash('sha256', $Flast_name),
+						 "em" => hash('sha256', $customer_emailaddress),
+						 "db" => hash('sha256', $fixedBirthday),
+						 "ge" => hash('sha256', $usersex1),
+						 "external_id" => hash('sha256', $orderId),
+						 "fbp" => $fbp,
+						 "client_ip_address" => $ip,
+						 "client_user_agent" => $agent,
+						 "zp" => hash('sha256', $zip),
+						 "country" => hash('sha256', $country),
+					 ),
+					 "contents" => array(
+						 array(
+						 "id" => $orderProduct,
+						 "quantity" => 1
+						 ),
+					 ),
+					 "custom_data" => array(
+						 "currency" => "USD",
+						 "value"    => $orderPrice,
+					 ),
+					 "action_source" => "website",
+					 "event_source_url"  => "https://".$domain."/offer/color",
+				),
+			 ),
+				"access_token" => $fbAccessToken,
 				
-					"zp" => hash('sha256', $zip),
-					"country" => hash('sha256', $country),
-                ),
-                "contents" => array(
-					array(
-                    "id" => $orderProduct,
-                    "quantity" => 1
-					),
-                ),
-                "custom_data" => array(
-                    "currency" => "USD",
-                    "value"    => $orderPrice,
-                ),
-                "action_source" => "website",
-                "event_source_url"  => "https://".$domain."/readings.php",
-           ),
-        ),
-           "access_token" => $fbAccessToken,
-		   
-        );  
-        
-
-        $dataString = json_encode($data);                                                                                                              
-        $ch = curl_init('https://graph.facebook.com/v11.0/'.$FBPixel.'/events');                                                                      
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $dataString);                                                                  
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
-            'Content-Type: application/json',                                                                                
-            'Content-Length: ' . strlen($dataString))                                                                       
-        );                                                                                                                                                                       
-        $response = curl_exec($ch);
-		$logArray[] = $response;
-		echo "<br>Sent to Pixel ID: ".$FBPixel;
-		echo $response;
-    }
-}
+			 ); 
+ 
+	 }elseif(!empty($fbp) AND !empty($fbc)){
+		 $data = array( // main object
+			 "data" => array( // data array
+				 array(
+					 
+					 "event_name" => "Purchase",
+					 "event_time" => time(),
+					 "event_id" => $orderId,
+					 "user_data" => array(
+						 "fn" => hash('sha256', $Ffirst_name),
+						 "ln" => hash('sha256', $Flast_name),
+						 "em" => hash('sha256', $customer_emailaddress),
+						 "db" => hash('sha256', $fixedBirthday),
+						 "ge" => hash('sha256', $usersex1),
+						 "external_id" => hash('sha256', $orderId),
+						 "fbc" => $fbc,
+						 "fbp" => $fbp,
+						 "client_ip_address" => $ip,
+						 "client_user_agent" => $agent,
+						 "zp" => hash('sha256', $zip),
+						 "country" => hash('sha256', $country),
+					 ),
+					 "contents" => array(
+						 array(
+						 "id" => $orderProduct,
+						 "quantity" => 1
+						 ),
+					 ),
+					 "custom_data" => array(
+						 "currency" => "USD",
+						 "value"    => $orderPrice,
+					 ),
+					 "action_source" => "website",
+					 "event_source_url"  => "https://".$domain."/readings.php",
+				),
+			 ),
+				"access_token" => $fbAccessToken,
+				
+			 ); 
+	 }else{
+	 $data = array( // main object
+		 "data" => array( // data array
+			 array(
+				 
+				 "event_name" => "Purchase",
+				 "event_time" => time(),
+				 "event_id" => $orderId,
+				 "user_data" => array(
+					 "fn" => hash('sha256', $Ffirst_name),
+					 "ln" => hash('sha256', $Flast_name),
+					 "em" => hash('sha256', $customer_emailaddress),
+					 "db" => hash('sha256', $fixedBirthday),
+					 "ge" => hash('sha256', $usersex1),
+					 "external_id" => hash('sha256', $orderId),
+					 "client_ip_address" => $ip,
+					 "client_user_agent" => $agent,
+					 "zp" => hash('sha256', $zip),
+					 "country" => hash('sha256', $country),
+				 ),
+				 "contents" => array(
+					 array(
+					 "id" => $orderProduct,
+					 "quantity" => 1
+					 ),
+				 ),
+				 "custom_data" => array(
+					 "currency" => "USD",
+					 "value"    => $orderPrice,
+				 ),
+				 "action_source" => "website",
+				 "event_source_url"  => "https://".$domain."/readings.php",
+			),
+		 ),
+			"access_token" => $fbAccessToken,
+			
+		 );  
+		 
+	 }
+		 $dataString = json_encode($data);                                                                                                              
+		 $ch = curl_init('https://graph.facebook.com/v11.0/'.$FBPixel.'/events');                                                                      
+		 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
+		 curl_setopt($ch, CURLOPT_POSTFIELDS, $dataString);                                                                  
+		 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
+		 curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
+			 'Content-Type: application/json',                                                                                
+			 'Content-Length: ' . strlen($dataString))                                                                       
+		 );                                                                                                                                                                       
+		 $response = curl_exec($ch);
+		 $logArray[] = $response;
+		 echo "<br>Sent to Pixel ID: ".$FBPixel;
+		 echo $response;
+	 }
+ }
 
       		} else {
 			echo "Error";
