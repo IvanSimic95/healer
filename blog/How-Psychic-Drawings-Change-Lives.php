@@ -15,7 +15,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
 ?>
 <style>
     #ds24b-27657,#ds24b-2765750,.footer-guarantee{display:none;}
-    .ex-6-header p{max-width:none;}
+   .ex-6-header p{max-width:855px;}
 
     @media only screen and (min-width: 768px) {
   .featured-img {
