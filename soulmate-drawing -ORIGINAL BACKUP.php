@@ -136,23 +136,47 @@ $count = $row['reviews'];
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h2>PSYCHIC DRAWING OF YOUR SOULMATE</h2>
-						<p><b> <center> <FONT COLOR="#d9480d">🔥 Ignite the Cosmic Dance – The Unveiling Awaits! 🔥 </FONT> </b> </center> </p>
-				<p>This isn’t mere fortune-telling; this is the grand unveiling! The portraits I create are vessels of cosmic energies, a magical amalgamation of deep spiritual connection and divine artistry. With your name and date of birth, I delve into the divine dance of the cosmos, where your soulmate resides, waiting for the reunion! </p>
-				<p> I connect to the cosmic consciousness in a sacred trance, the celestial energies weaving around, revealing the exquisite features, the unique life details, and the magnificent love story destined for you. </p>
-				<br>
-						<p><b> <center> <FONT COLOR="#d9480d">🚀 Embrace Your Destiny – Transformative Revelations! 🚀 </FONT> </b> </center> </p>
-						<p> Rise above the mundane! Experience the soul-shifting transformations, the unfolding of a life of radiant joy and boundless love, and propel forward, shielded and fueled by the protective and inspiring energies of your soulmate. It’s more than romance; it’s a journey to profound self-discovery and boundless spiritual and emotional growth. </p>
-						<br>
-						<p><b> <center> <FONT COLOR="#d9480d">💫 The Sacred Call – For the Chosen Few! 💫</FONT> </b> </center> </p>
-						<p> The stars have aligned! The celestial entities whisper, and the universe is in harmonious symphony, beckoning the chosen few to experience this cosmic dance! Thousands, including celebrities, have embraced their destiny, have you? The time is now, or the moment might slip into the cosmic dance forever.</p>
-						<br><p><b> <center> <FONT COLOR="#d9480d">🔒 Sacred Secrecy – Your Journey is Divine! 🔒</FONT> </b> </center> </p>	
-						 <p> Your journey and your revelations will be delivered securely to your email, your path is personal, and your details, confidential. </p>
-						<br><p><b> <center> <FONT COLOR="#d9480d">🌌 Answer the Celestial Call – Your Universe Awaits! 🌌</FONT> </b> </center> </p>						
-						<p> Heed the call! Immerse in the cosmic dance and witness the transformative power of the universe unfolding before you! Grab this chance to journey towards eternal happiness and divine fulfillment! <b> Dare to dance with the divine! </b> </p>                    </div>  
+						<p><b> <center> <FONT COLOR="#d9480d"> YOUR KEY TO ETERNAL LOVE </FONT> </b> </center> </p>
+                        <p> <b> I am The Soulmate Healer</b>, a master in the realm of psychic artistry, uniquely qualified to bring you face to face with your soul's true counterpart. I don't just offer predictions; I unlock the door to a love that will light up your life with joy, passion, and boundless fulfillment.</p>
+                        <br> <p>My soulmate portraits are no mere drawings; they're a magical blend of deep psychic connection and artistic talent. I channel a synergy of empathic projection, clairsentience, and clairvoyance, enhanced by my rich knowledge in spiritual healing and psychic artistry. I hold the power to see the unseen - to discern that perfect moment when you're ready to embrace true love and the ways to dismantle any walls that stand in your way.</p>
+                        <br> <p>All I need is your name and date of birth to embark on this mystical journey. My process is a sacred ritual: I plunge into a deep meditative trance, connecting to the cosmic consciousness where your soulmate awaits. The features, the life details, the love story that is destined for you, all come into vivid focus. My hand moves as if by magic, bringing to life an exquisitely detailed portrait, paired with a heartfelt description of your soulmate's personality. Finally, I tap into the vibrations of your aura, pinpointing that fateful moment when your worlds will collide.</p>
+                       <br>  <p>  Finding your soulmate is a transformative experience, like the unfolding of a magnificent rose. Your love will be delicate yet enduring, replacing past sorrows with radiant joy. You will find yourself propelled forward, inspired to chase your dreams with a heart shielded by love and protection. </p>
+	                   <br>   <br> <p> <b> BONUS: I Will Tell You Exactly When Your Paths Cross</b>  </p>
+	                    <br>  <p>  Your soulmate is not just a romantic partner; they are the mirror of your soul, guiding you towards profound self-discovery and deeper understanding. Their presence will mark a seismic shift in your life, unlocking unparalleled emotional and spiritual growth. </p>
+	                   <br>   <p>  My unparalleled insights have captivated the hearts of stars and celebrities, drawing thousands to my door in search of their soulmate. I have unfailingly answered each call, for every soul deserves to bask in the glow of true love. Should you choose to join this sacred journey, I will be your steadfast companion, ensuring that your heart's desires are manifested in their fullest form. </p>
+	                   <br>   <p> <center> <b> A COMMITMENT TO PRIVACY: Digital Delivery Only </b> </center>   </p>
+	                     <p> Your order will be securely delivered to the email address you provide, and will also be readily accessible from the user dashboard. Rest assured, your physical address remains confidential.  </p>
+                    </div>  
                 </div>
 
-              
-                   
+                <!--IMAGE ON THE RIGHT FOR PC DISPLAY -->
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                </div>
+
+                <!--IMAGE BELLOW THE TEXT IN PHONE DISPLAY -->
+                <div class="d-block d-lg-none row" style="padding-right: 15px;padding-left: 15px;">
+
+                    <div class="col-12">
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    </div> 
+                    <div class="col-12" style="margin-top:15px;">
+                    <div class="image-container">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
                     </div> 
                 </div>
                 
@@ -162,11 +186,15 @@ $count = $row['reviews'];
                 <br clear="all"> <br clear="all">
                 <p> <b> You are fully protected by the 100% satisfaction guarantee! </b> 
 				If for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send me an email and I'll refund every penny of your order cost. </p> 
-			
+				 <p> <center> <strong>  <FONT COLOR="#d9480d">  Pictures from customers:  </FONT> </strong><center>  </p> 
                  </div> 
 
-                 
-              
+                 <!-- CUSTOMER REVIEWS IMAGE -->
+                 <div class="col-lg-12">
+                    <div class="image-container">
+                        <img class="img-fluid" src="/images/scs.jpg" alt="alternative">
+                    </div> 
+                </div> 
 
 			</div>
          </div>
