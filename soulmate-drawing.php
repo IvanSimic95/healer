@@ -44,7 +44,7 @@ $count = $row['reviews'];
                    <div class="col-lg-6 col-xl-7">
                         <div class="image-container">
                             <div class="img-wrapper">
-                                <img class="img-fluid" src="/images/soulmate-01.png" style="border-radius: 0.5rem;" alt="alternative">
+                                <img class="img-fluid" src="/images/yey1.png" style="border-radius: 0.5rem;" alt="alternative">
                             </div>  
                         </div>  
                    </div>				
@@ -136,23 +136,48 @@ $count = $row['reviews'];
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h2>PSYCHIC DRAWING OF YOUR SOULMATE</h2>
-						<p><b> <center> <FONT COLOR="#d9480d">🔥 Ignite the Cosmic Dance – The Unveiling Awaits! 🔥 </FONT> </b> </center> </p>
-				<p>This isn’t mere fortune-telling; this is the grand unveiling! The portraits I create are vessels of cosmic energies, a magical amalgamation of deep spiritual connection and divine artistry. With your name and date of birth, I delve into the divine dance of the cosmos, where your soulmate resides, waiting for the reunion! </p>
-				<p> I connect to the cosmic consciousness in a sacred trance, the celestial energies weaving around, revealing the exquisite features, the unique life details, and the magnificent love story destined for you. </p>
-				<br>
-						<p><b> <center> <FONT COLOR="#d9480d">🚀 Embrace Your Destiny – Transformative Revelations! 🚀 </FONT> </b> </center> </p>
-						<p> Rise above the mundane! Experience the soul-shifting transformations, the unfolding of a life of radiant joy and boundless love, and propel forward, shielded and fueled by the protective and inspiring energies of your soulmate. It’s more than romance; it’s a journey to profound self-discovery and boundless spiritual and emotional growth. </p>
-						<br>
-						<p><b> <center> <FONT COLOR="#d9480d">💫 The Sacred Call – For the Chosen Few! 💫</FONT> </b> </center> </p>
-						<p> The stars have aligned! The celestial entities whisper, and the universe is in harmonious symphony, beckoning the chosen few to experience this cosmic dance! Thousands, including celebrities, have embraced their destiny, have you? The time is now, or the moment might slip into the cosmic dance forever.</p>
-						<br><p><b> <center> <FONT COLOR="#d9480d">🔒 Sacred Secrecy – Your Journey is Divine! 🔒</FONT> </b> </center> </p>	
-						 <p> Your journey and your revelations will be delivered securely to your email, your path is personal, and your details, confidential. </p>
-						<br><p><b> <center> <FONT COLOR="#d9480d">🌌 Answer the Celestial Call – Your Universe Awaits! 🌌</FONT> </b> </center> </p>						
-						<p> Heed the call! Immerse in the cosmic dance and witness the transformative power of the universe unfolding before you! Grab this chance to journey towards eternal happiness and divine fulfillment! <b> Dare to dance with the divine! </b> </p>                    </div>  
+						<br> <p><b> <center> <FONT COLOR="#d9480d">💕 Dear Beautiful Soul, 💕 </FONT> </b> </center> </p>
+ <p>Are you weary of the relentless pursuit of love? Longing for a connection that speaks to your soul and a companion that’s truly destined for you?    </p> 
+ <p>  I am The Soulmate Healer, and I’m here to unveil the mysteries of your heart, to guide you to a love that’s beyond imagination, a love that’s exclusively yours. </p> 
+<br><p><b> <center> <FONT COLOR="#d9480d">🌟 What is a Soulmate Drawing? 🌟 <FONT COLOR="#d9480d"> </FONT> </b> </center> </p>
+ <p> A Soulmate Drawing is your personal gateway to the future. It’s not just a portrait; it’s the revelation of your destined companion, combined with my psychic insights and artistic talents to bring you closer to your destined love. It's a mirror reflecting the true essence of your heart and the person who’s bound to complete you.  </p> 
+ <br><p><b> <center> <FONT COLOR="#d9480d"> 🌷 Feel Seen, Feel Understood… 🌷</FONT> </b> </center> </p>
+<p>  Ever feel alone in a crowd, like no one really gets you? You laugh, you talk, but inside, you're asking, “Where’s the one who really sees me? Who gets the real me?” We all want someone who knows our story, who understands our silence, who makes us feel we belong.</p> 
+<p>Imagine finally meeting someone who gets your jokes, who knows your favorite songs, who can make you smile just by being there. Imagine having a buddy, a pal, someone to share your dreams and your worries with. Someone who knows you, the real you, and loves you because of it, not in spite of it.  </p> 
+<p>  This isn’t just about finding love. It’s about finding your other half, your true buddy, who makes you feel whole, understood, and truly at home. It’s about feeling seen, feeling loved, for who you really are.</p> 
+<p> I’m here to help you find this friend, this <b> soulmate</b>. I’ll draw them for you, and I’ll tell you how you’ll meet them. Your soulmate isn’t just someone to love; they’re your best friend, your partner in crime, your shoulder to lean on. So, are you ready to meet the one who’ll dance through life with you, laughing all the way? </p> 
+
+ <br><p><b> <center>💖 Your Journey to Self-Discovery… 💖 <FONT COLOR="#d9480d"> </FONT> </b> </center> </p>
+ <p> Meet not just a partner, but a soul who will guide you towards profound self-discovery and deeper understanding. This transformative encounter is your opportunity to bloom and to experience emotional and spiritual growth like never before.  </p> 
+ <br><p><b> <center> 💖 Your Happiness, Guaranteed! 💖 <FONT COLOR="#d9480d"> </FONT> </b> </center> </p>
+ <p>  Your happiness is my mission! If your soulmate drawing doesn’t bring you the joy and clarity you hoped for, just reach out. I’ll refund every penny immediately, no questions, no hassle! It’s all about your peace of mind and heartfelt satisfaction! </p> 
+ <p><b> <center> <FONT COLOR="#d9480d"> </FONT> </b> </center> </p>
+ <br><p> <b>💠 Please Note: </b> This is a digital delivery product sent straight to your email. No physical items will be sent to your home, allowing for a quick and seamless experience!  </p> 
+</div>  
                 </div>
 
-              
+                <!--IMAGE ON THE RIGHT FOR PC DISPLAY -->
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="margin-top:15px;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                </div>
+
+                <!--IMAGE BELLOW THE TEXT IN PHONE DISPLAY -->
+                <div class="d-block d-lg-none row" style="padding-right: 15px;padding-left: 15px;">
+
                    
+                
+                    <div class="col-12" style="margin-top:15px;">
+                    <div class="image-container">
+                        <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
                     </div> 
                 </div>
                 
@@ -162,11 +187,15 @@ $count = $row['reviews'];
                 <br clear="all"> <br clear="all">
                 <p> <b> You are fully protected by the 100% satisfaction guarantee! </b> 
 				If for any reason, or no reason at all, you're not 100% satisfied with what's inside, simply send me an email and I'll refund every penny of your order cost. </p> 
-			
+				 <p> <center> <strong>  <FONT COLOR="#d9480d">  Pictures from customers:  </FONT> </strong><center>  </p> 
                  </div> 
 
-                 
-              
+                 <!-- CUSTOMER REVIEWS IMAGE -->
+                 <div class="col-lg-12">
+                    <div class="image-container">
+                        <img class="img-fluid" src="/images/scs.jpg" alt="alternative">
+                    </div> 
+                </div> 
 
 			</div>
          </div>
