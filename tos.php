@@ -11,6 +11,13 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
     <div class="title_area"><h1>Terms and Conditions</h1></div>
     <div class="paragraph_area">
 	<br>
+	<p> Company Details: </p>
+	<p> PLATINUM MEDIA SRL<br>
+Reg. Nr.: J29/1108/2020<br>
+Sat Olarii Vechi Nr.257<br>
+107271 Com. Olari<br>
+Romania<br>
+Phone number: +40762613098 </p><br>
 	<br> <p> Disclaimer: The information contained herein should not be used as a substitute for the advice of appropriately qualified and licensed person. According to the laws in force, I must state that my services are for entertainments purposes only. I have no liability and/or responsibility for any actions and/or decisions any buyer/client chooses to take or make based on his/her consultation. You acknowledge that I am not a licensed psychologist, lawyer, or health care professional and my services do not replace the care of lawyers, psychologists, or other healthcare professionals. Tarot and numerology are in no way to be construed or substituted as psychological counseling or any other type of therapy or medical advice. I will at all times exercise my best professional efforts, skills, and care.</p> 
       <p>https://soulmatehealer.com REQUIRES CONSIDERATION FOR AND AS A CONDITION OF ALLOWING YOUR USE OF https://soulmatehealer.com.</p>
       <p>BY ACCESSING OR USING THIS SITE YOU REPRESENT THAT YOU HAVE THE FULL AUTHORITY TO ACT TO BIND YOURSELF, ANY THIRD PARTY, COMPANY, OR LEGAL ENTITY, AND THAT YOUR USE AND/OR INTERACTION, AS WELL AS CONTINUING TO USE OR INTERACT, WITH THE SITE CONSTITUTES YOUR HAVING READ AND AGREED TO THESE TERMS OF USE AS WELL AS OTHER AGREEMENTS THAT WE MAY POST ON THE SITE.</p>
