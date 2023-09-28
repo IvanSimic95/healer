@@ -376,7 +376,7 @@ $logArray[] = "
 				}
 					
 
-				$sql_pick = "SELECT * FROM  orders_image WHERE product = 'futurebaby' AND sex = '$babyGender' order by RAND() limit 1";
+				$sql_pick = "SELECT * FROM  orders_image WHERE product = 'baby' AND sex = '$babyGender' order by RAND() limit 1";
 				$sql_pick_res = $conn->query($sql_pick);
 				
 				if($sql_pick_res->num_rows == 0) {
@@ -391,7 +391,7 @@ $logArray[] = "
 					$image_name = $rowImages['name'];
 					}
 				}
-				$sql_text = "SELECT * FROM orders_text WHERE product = 'futurebaby' AND gender = '$babyGender' order by RAND() limit 1";
+				$sql_text = "SELECT * FROM orders_text WHERE product = 'baby' AND gender = '$babyGender' order by RAND() limit 1";
 				$sql_text_res = $conn->query($sql_text);
 				if($sql_text_res->num_rows == 0) {
 						$email_text = "";
