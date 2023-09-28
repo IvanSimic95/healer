@@ -33,7 +33,23 @@ $name = $fname." ".$lname;
             $result5 = $conn->query($sql5);
             if ($result5){
 
-
+              if($push == 1){
+                $pushTitle = "Reading Upgrade for order #".$orderID;
+                $pushMessage = "Price: $9.67";
+              curl_setopt_array($ch = curl_init(), array(
+                CURLOPT_URL => "https://api.pushover.net/1/messages.json",
+                CURLOPT_POSTFIELDS => array(
+                  "token" => "aayvxh42e8rfzhuxssiiwo7ko3pcej",
+                  "user" => "u24izth113b2jc8jwt4g68vvzppk12",
+                  "title" => $pushTitle,
+                  "message" => $pushMessage,
+                ),
+                CURLOPT_SAFE_UPLOAD => true,
+                CURLOPT_RETURNTRANSFER => true,
+                ));
+                curl_exec($ch);
+                curl_close($ch);
+              }
 
 
             echo "Order Reading Added";
