@@ -228,12 +228,12 @@ $count = $row['reviews'];
     <script>
 jQuery('input[name="priority"]').change(function(){
     if (this.value == '1') {
-        jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$59').animate({'opacity': 1}, 200);});
+        jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$49').animate({'opacity': 1}, 200);});
 		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$100').animate({'opacity': 0.25}, 300);});
 		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$540</b> (90%)').animate({'opacity': 1}, 400);});	
     }
     if (this.value == '24') {
-		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$39').animate({'opacity': 1}, 200);});
+		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$29').animate({'opacity': 1}, 200);});
 		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$70').animate({'opacity': 0.25}, 300);});
 		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$360</b> (90%)').animate({'opacity': 1}, 400);});
     }
