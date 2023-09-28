@@ -373,6 +373,8 @@ $logArray[] = "
 				$babyGender = "male";
 				}elseif($userSex == "female"){ //If customer sex is set as female
 				$babyGender = "female";
+				}else{
+				$babyGender = "male";
 				}
 					
 
