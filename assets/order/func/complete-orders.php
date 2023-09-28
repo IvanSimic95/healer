@@ -401,10 +401,12 @@ $logArray[] = "
 						$logError[] = "Missing Text";
 						$logError[] = $orderID;
 						$logError[] = $orderEmail;
+						$logError[] = $sql_text;
 						missingLog($logError);
 				} else {
 					while($rowText = $sql_text_res->fetch_assoc()) {
 						$email_text = $rowText['text'];
+						$logArray[] = $email_text;
 						$message = $theader.$email_text.$tfooter;
 						
 					}
