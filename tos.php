@@ -137,8 +137,6 @@ Phone number: +40762613098 </p><br>
       <div class="sub_area" id="company">
         <h2>Company Details</h2>
       <p>P L A T I N U M &nbsp; M E D I A </p>
-      <p>R O M A N I A </p>
-      <p>+1 3522 194 990 </p>
       <p>info@soulmatehealer.com </p>
 
 
