@@ -32,7 +32,23 @@ $name = $fname." ".$lname;
             $sql = "UPDATE `orders` SET `premium`='$rnumber' WHERE order_id='$orderID'";
             $result5 = $conn->query($sql);
             if ($result5){
-
+              if($push == 1){
+                $pushTitle = "Initials Upgrade for order #".$orderID;
+                $pushMessage = "Price: $4.87";
+              curl_setopt_array($ch = curl_init(), array(
+                CURLOPT_URL => "https://api.pushover.net/1/messages.json",
+                CURLOPT_POSTFIELDS => array(
+                  "token" => "aayvxh42e8rfzhuxssiiwo7ko3pcej",
+                  "user" => "u24izth113b2jc8jwt4g68vvzppk12",
+                  "title" => $pushTitle,
+                  "message" => $pushMessage,
+                ),
+                CURLOPT_SAFE_UPLOAD => true,
+                CURLOPT_RETURNTRANSFER => true,
+                ));
+                curl_exec($ch);
+                curl_close($ch);
+              }
 
 
 

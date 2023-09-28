@@ -35,7 +35,7 @@ $name = $fname." ".$lname;
 
               if($push == 1){
                 $pushTitle = "Reading Upgrade for order #".$orderID;
-                $pushMessage = "Price: $9.67";
+                $pushMessage = "Price: $7.65";
               curl_setopt_array($ch = curl_init(), array(
                 CURLOPT_URL => "https://api.pushover.net/1/messages.json",
                 CURLOPT_POSTFIELDS => array(
