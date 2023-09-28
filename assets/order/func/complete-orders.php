@@ -361,6 +361,7 @@ $logArray[] = "
 				//START IF PRODUCT = FUTURE BABY
 			    }elseif ($orderProduct == "futurebaby")  { 
 				$image_send = 1;
+				$text_send = 1;
 				$prod_type = "baby";
 				$img_folder_name = "baby";
 				$babyGender = "female";
