@@ -56,8 +56,10 @@ if ($c == "[CUSTOM]") {
             if ($row5 > 0) {
                 $row5 = $result5->fetch_assoc();
                 $userID = $row5['user_id'];
+                $orderType = $row5['order_product'];
             } else {
                 $userID = $_SESSION['UserID'];
+                $orderType = "unknown";
             }
 
             $sql2 = "SELECT * FROM users WHERE id = '" . $userID . "'";
@@ -71,6 +73,13 @@ if ($c == "[CUSTOM]") {
             if ($genderAcc >= 101) {
                 $thankyou = 1;
             } else {
+
+                $thankyou = 0;
+            }
+
+            if($orderType == "futurebaby"){
+                $thankyou = 1;
+            }else {
 
                 $thankyou = 0;
             }
