@@ -44,7 +44,7 @@ $count = $row['reviews'];
                    <div class="col-lg-6 col-xl-7">
                         <div class="image-container">
                             <div class="img-wrapper">
-                                <img class="img-fluid" src="/images/yey1.png" style="border-radius: 0.5rem;" alt="alternative">
+                                <img class="img-fluid" src="/images/soulmate-01.png" style="border-radius: 0.5rem;" alt="alternative">
                             </div>  
                         </div>  
                    </div>				
@@ -62,9 +62,9 @@ $count = $row['reviews'];
 						<i class="fas fa-check-square" style="color: #0bd10b;"></i> Order now, receive within 1 hour
 						</p>
 						
-						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$19</h2>  
-                        <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$34</h2> 
-						<p style="display:none;">You save <span class="saveda"><b>$270</b> (90%)</span></p>
+						<h2 class="new_prce" style="font-size: 35px;display: inline-block;">$29</h2>  
+                        <h2 class="old_price" style="font-size: 25px;opacity: 0.25;display: inline-block;text-decoration: line-through;">$299</h2> 
+						<p style="">You save <span class="saveda"><b>$270</b> (90%)</span></p>
 						</div>
 						
 						
@@ -136,24 +136,17 @@ $count = $row['reviews'];
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h2>PSYCHIC DRAWING OF YOUR SOULMATE</h2>
-						<br> <p><b> <center> <FONT COLOR="#d9480d">💕 Dear Beautiful Soul, 💕 </FONT> </b> </center> </p>
- <p>Are you weary of the relentless pursuit of love? Longing for a connection that speaks to your soul and a companion that’s truly destined for you?    </p> 
- <p>  I am The Soulmate Healer, and I’m here to unveil the mysteries of your heart, to guide you to a love that’s beyond imagination, a love that’s exclusively yours. </p> 
-<br><p><b> <center> <FONT COLOR="#d9480d">🌟 What is a Soulmate Drawing? 🌟 <FONT COLOR="#d9480d"> </FONT> </b> </center> </p>
- <p> A Soulmate Drawing is your personal gateway to the future. It’s not just a portrait; it’s the revelation of your destined companion, combined with my psychic insights and artistic talents to bring you closer to your destined love. It's a mirror reflecting the true essence of your heart and the person who’s bound to complete you.  </p> 
- <br><p><b> <center> <FONT COLOR="#d9480d"> 🌷 Feel Seen, Feel Understood… 🌷</FONT> </b> </center> </p>
-<p>  Ever feel alone in a crowd, like no one really gets you? You laugh, you talk, but inside, you're asking, “Where’s the one who really sees me? Who gets the real me?” We all want someone who knows our story, who understands our silence, who makes us feel we belong.</p> 
-<p>Imagine finally meeting someone who gets your jokes, who knows your favorite songs, who can make you smile just by being there. Imagine having a buddy, a pal, someone to share your dreams and your worries with. Someone who knows you, the real you, and loves you because of it, not in spite of it.  </p> 
-<p>  This isn’t just about finding love. It’s about finding your other half, your true buddy, who makes you feel whole, understood, and truly at home. It’s about feeling seen, feeling loved, for who you really are.</p> 
-<p> I’m here to help you find this friend, this <b> soulmate</b>. I’ll draw them for you, and I’ll tell you how you’ll meet them. Your soulmate isn’t just someone to love; they’re your best friend, your partner in crime, your shoulder to lean on. So, are you ready to meet the one who’ll dance through life with you, laughing all the way? </p> 
-
- <br><p><b> <center>💖 Your Journey to Self-Discovery… 💖 <FONT COLOR="#d9480d"> </FONT> </b> </center> </p>
- <p> Meet not just a partner, but a soul who will guide you towards profound self-discovery and deeper understanding. This transformative encounter is your opportunity to bloom and to experience emotional and spiritual growth like never before.  </p> 
- <br><p><b> <center> 💖 Your Happiness, Guaranteed! 💖 <FONT COLOR="#d9480d"> </FONT> </b> </center> </p>
- <p>  Your happiness is my mission! If your soulmate drawing doesn’t bring you the joy and clarity you hoped for, just reach out. I’ll refund every penny immediately, no questions, no hassle! It’s all about your peace of mind and heartfelt satisfaction! </p> 
- <p><b> <center> <FONT COLOR="#d9480d"> </FONT> </b> </center> </p>
- <br><p> <b>💠 Please Note: </b> This is a digital delivery product sent straight to your email. No physical items will be sent to your home, allowing for a quick and seamless experience!  </p> 
-</div>  
+						<p><b> <center> <FONT COLOR="#d9480d"> YOUR KEY TO ETERNAL LOVE </FONT> </b> </center> </p>
+                        <p> <b> I am The Soulmate Healer</b>, a master in the realm of psychic artistry, uniquely qualified to bring you face to face with your soul's true counterpart. I don't just offer predictions; I unlock the door to a love that will light up your life with joy, passion, and boundless fulfillment.</p>
+                        <br> <p>My soulmate portraits are no mere drawings; they're a magical blend of deep psychic connection and artistic talent. I channel a synergy of empathic projection, clairsentience, and clairvoyance, enhanced by my rich knowledge in spiritual healing and psychic artistry. I hold the power to see the unseen - to discern that perfect moment when you're ready to embrace true love and the ways to dismantle any walls that stand in your way.</p>
+                        <br> <p>All I need is your name and date of birth to embark on this mystical journey. My process is a sacred ritual: I plunge into a deep meditative trance, connecting to the cosmic consciousness where your soulmate awaits. The features, the life details, the love story that is destined for you, all come into vivid focus. My hand moves as if by magic, bringing to life an exquisitely detailed portrait, paired with a heartfelt description of your soulmate's personality. Finally, I tap into the vibrations of your aura, pinpointing that fateful moment when your worlds will collide.</p>
+                       <br>  <p>  Finding your soulmate is a transformative experience, like the unfolding of a magnificent rose. Your love will be delicate yet enduring, replacing past sorrows with radiant joy. You will find yourself propelled forward, inspired to chase your dreams with a heart shielded by love and protection. </p>
+	                   <br>   <br> <p> <b> BONUS: I Will Tell You Exactly When Your Paths Cross</b>  </p>
+	                    <br>  <p>  Your soulmate is not just a romantic partner; they are the mirror of your soul, guiding you towards profound self-discovery and deeper understanding. Their presence will mark a seismic shift in your life, unlocking unparalleled emotional and spiritual growth. </p>
+	                   <br>   <p>  My unparalleled insights have captivated the hearts of stars and celebrities, drawing thousands to my door in search of their soulmate. I have unfailingly answered each call, for every soul deserves to bask in the glow of true love. Should you choose to join this sacred journey, I will be your steadfast companion, ensuring that your heart's desires are manifested in their fullest form. </p>
+	                   <br>   <p> <center> <b> A COMMITMENT TO PRIVACY: Digital Delivery Only </b> </center>   </p>
+	                     <p> Your order will be securely delivered to the email address you provide, and will also be readily accessible from the user dashboard. Rest assured, your physical address remains confidential.  </p>
+                    </div>  
                 </div>
 
                 <!--IMAGE ON THE RIGHT FOR PC DISPLAY -->
@@ -172,8 +165,14 @@ $count = $row['reviews'];
                 <!--IMAGE BELLOW THE TEXT IN PHONE DISPLAY -->
                 <div class="d-block d-lg-none row" style="padding-right: 15px;padding-left: 15px;">
 
-                   
-                
+                    <div class="col-12">
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    <div class="image-container" style="display:inline-block;width:49%;">
+                        <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                    </div> 
+                    </div> 
                     <div class="col-12" style="margin-top:15px;">
                     <div class="image-container">
                         <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
@@ -229,17 +228,17 @@ $count = $row['reviews'];
 jQuery('input[name="priority"]').change(function(){
     if (this.value == '1') {
         jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$59').animate({'opacity': 1}, 200);});
-		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$100').animate({'opacity': 0.25}, 300);});
+		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$599').animate({'opacity': 0.25}, 300);});
 		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$540</b> (90%)').animate({'opacity': 1}, 400);});	
     }
     if (this.value == '24') {
 		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$39').animate({'opacity': 1}, 200);});
-		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$70').animate({'opacity': 0.25}, 300);});
+		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$399').animate({'opacity': 0.25}, 300);});
 		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$360</b> (90%)').animate({'opacity': 1}, 400);});
     }
     if (this.value == '48') {
-		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$19').animate({'opacity': 1}, 200);});
-		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$34').animate({'opacity': 0.25}, 300);});
+		jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$29').animate({'opacity': 1}, 200);});
+		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$299').animate({'opacity': 0.25}, 300);});
 		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$270</b> (90%)').animate({'opacity': 1}, 400);});
     }
 })

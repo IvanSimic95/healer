@@ -71,11 +71,13 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/admin/partials/navbar.php';
 
  
 
-        <div class="chat_box" style="width: 450px; margin: 0px; max-height:60vh; height: 800px; position:fixed;bottom:0;right:0;z-index:999;">
+        <div class="chat_box" style="">
         <div class="card mb-4">
                 <div class="card-header">
                     <i class="fa fa-comment"></i>
                     Orders Chat
+                    <span id="minimizechat" style="float:right;padding-left:10px;padding-right:10px;cursor: pointer;"> <i class="fa fa-times"></i></span>
+                    <span id="maximizechat" style="float:right;padding-left:5px;padding-right:5px;cursor: pointer;"> <i class="fa fa-arrow-up"></i></span>
                 </div>
                 <div class="card-body">
                   
@@ -83,8 +85,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/admin/partials/navbar.php';
                         <i>Click on chat ID in table to load it.</i>
                     </div>
                 </div>
-                <div class="card-footer small text-muted"><i class="fa fa-clock" style="margin-right:5px;"></i>Updated
-                    <?php echo time_ago(date('F jS, Y, H:i:s')); ?> </div>
+             
             </div>
         </div>
 
@@ -93,7 +94,41 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/admin/partials/navbar.php';
 </div>
 </div>
 </div>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $("#minimizechat").on('click', function(){
+          $("#minimizechat").hide();
+          $("#maximizechat").show();
+          $(".chat_box").addClass("small_chat");
+        });
+
+    $("#maximizechat").on('click', function(){
+          $("#minimizechat").show();
+          $("#maximizechat").hide();
+          $(".chat_box").removeClass("small_chat");
+    });
+});
+
+</script>
 <style>
+  #maximizechat{
+    display:none;
+  }
+  .chat_box{
+    width: 450px; 
+    margin: 0px; 
+    max-height:80vh; 
+    height: 1000px; 
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    z-index:999;
+  }
+  .small_chat{
+    height: 42px;
+    width:175px;
+  }
 tr {
 vertical-align: middle!important;
 text-align: center!important;
