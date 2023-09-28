@@ -74,7 +74,7 @@ $logArray[] = "
 				$logArray[] = "Active | ";
 				 $trigger = 1;
 			}else {
-				echo "Waiting | ";
+				echo "Waiting | hours:".$hours;
 				$logArray[] = "Waiting | ";
 			}
 			
