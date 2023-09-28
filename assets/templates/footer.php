@@ -10,7 +10,13 @@
                 </div> <!-- end of col -->
                 <div class="col-md-4">
                     <div class="footer-col middle">
-                        <h4>Business Company Details: </h4>
+                   	<p> Company Details: </p>
+	<p> PLATINUM MEDIA SRL<br>
+Reg. Nr.: J29/1108/2020<br>
+Sat Olarii Vechi Nr.257<br>
+107271 Com. Olari<br>
+Romania<br>
+Phone number: +40762613098 </p><br>
 						<h4>  <br> <br> 
 						</h2> 
                         <ul class="list-unstyled li-space-lg p-small">
