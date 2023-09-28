@@ -312,8 +312,8 @@ if($userSex == "male"){
 //Push notification for phone
 
 if($push == 1){
-	$pushTitle = "Order: ".$order_product_nice." - ".$orderPriority."h";
-	$pushMessage = "Price: $".$orderPrice;
+	$pushTitle = "Order #".$orderId.": ".$order_product_nice." - ".$orderPriority."h";
+	$pushMessage = "Order #".$orderId.": ".$order_product_nice." - ".$orderPriority."h<br>Price: $".$orderPrice;
 curl_setopt_array($ch = curl_init(), array(
 	CURLOPT_URL => "https://api.pushover.net/1/messages.json",
 	CURLOPT_POSTFIELDS => array(
