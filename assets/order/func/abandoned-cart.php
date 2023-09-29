@@ -1,7 +1,6 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
-use SendGrid\Mail\Mail;
 echo "Starting abbandoned-carts.php...<br><br>";
 
 

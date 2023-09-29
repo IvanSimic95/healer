@@ -364,7 +364,7 @@ if($order_product == "ask"){
 $active = 1;
 $abandon_link = $redirectPayment;
 //Abandoned email
-$sql15 = "SELECT * FROM abandoned WHERE user = '".$userID."'";
+$sql15 = "SELECT * FROM abandoned WHERE active = '1' AND user = '".$userID."'";
     $result15 = $conn->query($sql15);
     if ($result15){
         $row15 = mysqli_num_rows($result15);
