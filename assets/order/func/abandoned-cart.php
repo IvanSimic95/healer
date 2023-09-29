@@ -67,7 +67,7 @@ while($row = $resultpending->fetch_assoc()) {
 			$ch2 = curl_init();
 
 			$data2 = [
-			"subject" => "Order #".$orderID." | ".$order_product_nice,
+			"subject" => "Order #".$orderID." | ".$product,
 			"participants" => ["administrator", $user],
 			"custom" => ["status" => "Not Paid"]
 			];
