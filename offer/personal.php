@@ -311,7 +311,7 @@ Whether it’s understanding a past love, strengthening a current bond, or prepa
 <br/><br/>
 Discover how to nurture yourself holistically, ensuring vitality in every facet of your being.
 <br/><br/>
-<span style="font-weight:600;font-size: 22px;color:#8e44ad;">Right now, I’m offering you this personalized reading at an exclusive <span style="font-weight:700;color:#f04040;">25% DISCOUNT</span>!</span>
+<span style="font-weight:600;font-size: 22px;color:#8e44ad;">Right now, I’m offering you this personalized reading at an exclusive <span style="font-weight:700;color:#f04040;">50% DISCOUNT</span>!</span>
 <br/><br/>
 This isn’t just a service; it’s a partnership. It's my hand extended to you in your journey of discovery.
 				
@@ -321,17 +321,17 @@ This isn’t just a service; it’s a partnership. It's my hand extended to you 
                         <img class="img-fluid" src="/images/products/personal.png" style="width:450px;display:none;">
 							<div style="padding:5px;margin-bottom:0px;">
 
-						<h2 style="font-size: 40px;background:none;color:#000;font-weight:800;margin-top:15px;line-height:30px;">$37.5<br/><span style="opacity: 0.25;font-weight:500;font-size:20px;">$49.99</span></h2> 
-						<p style="margin-top: -10px;">25% discount applied</p>
+						<h2 style="font-size: 40px;background:none;color:#000;font-weight:800;margin-top:15px;line-height:30px;">$23<br/><span style="opacity: 0.25;font-weight:500;font-size:20px;">$46</span></h2> 
+						<p style="margin-top: -10px;">50% discount applied</p>
 
 				<div style="margin-bottom: -8px;margin-top: -17px;font-size: 12px;;">
 					<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
 					<span style="font-size:11px;font-weight:600;"><?php echo $count; ?> reviews</span>
 				</div>
 				<br clear="all">
-								<a href="https://www.digistore24.com/answer/yes?template=light" style="color: #fff;" class="blob purple">🔮 Yes, Let's Dive Deeper Together</a>
+								<a href="https://www.digistore24.com/answer/yes?template=light" style="color: #fff;" class="blob purple">🔮 Yes, I Want My Personal Psychic Reading</a>
 								<p></p>
-								<a href="https://www.digistore24.com/answer/no" style="font-size: 12px;color:blue;" href="">I'll remain in the shadows of uncertainty</a>
+								<a href="https://www.digistore24.com/answer/no" style="font-size: 14px;color:blue;" href="">No, I'll remain in the shadows of uncertainty</a>
 								<p style="letter-spacing: -0.25px;font-size: 13px;line-height: 1.2;margin-top: 20px;">This special offer is only here and now. <span style="font-weight:600;">If you leave this page, you'll lose out on the chance to get the discount</span>. So, <span style="color:#8e44ad;font-weight:600;text-decoration:underline;">click the magic button now</span>!</p>
 								
 								<p style="letter-spacing: -0.25px;font-size: 12px;line-height: 1.2;margin-top: 20px;">
