@@ -32,21 +32,9 @@ while($row = $resultpending->fetch_assoc()) {
 			$difference = $delta / 60;
 			echo "Minutes difference: ".$difference;
 
-			//Sending First Message
-			if($difference >= "20" && $first == "0"){
-				echo "sending first message";
-
-			//Sending Second Message
-			}elseif($difference >= "40" && $first == "1" && $second == "0"){
-				echo "sending second message";
-			
-			//Sending Third Message
-			}elseif($difference >= "2880" && $first == "1" && $second == "1" && $third == "0"){
-				echo "sending third message";
-
-			}
-			/*
-			//First create TalkJS User with same ID as conversation
+		
+		/*
+			//First create TalkJS User
 			$ch = curl_init();
 			$data = [
 			"id" => $user,
@@ -74,7 +62,6 @@ while($row = $resultpending->fetch_assoc()) {
 			}
 			curl_close($ch);
 			echo $result;
-
 
 			//Now create new conversation
 			$ch2 = curl_init();
@@ -104,14 +91,44 @@ while($row = $resultpending->fetch_assoc()) {
 			curl_close($ch2);
 			echo $result2;
 			//END CREATE CONVERSATION
+*/
 
 
+
+
+
+
+
+			//Sending First Message
+			if($difference >= "20" && $first == "0"){
+				
+
+				$sqlupdate = "UPDATE `abandoned` SET `first`='1' WHERE id='$id'";
+				if ($conn->query($sqlupdate) === TRUE) {
+					echo "sending first message";
+				}
+
+			//Sending Second Message
+			}elseif($difference >= "40" && $first == "1" && $second == "0"){
+
+				$sqlupdate = "UPDATE `abandoned` SET `second`='1' WHERE id='$id'";
+				if ($conn->query($sqlupdate) === TRUE) {
+					echo "sending second message";
+				}
+			
+			//Sending Third Message
+			}elseif($difference >= "2880" && $first == "1" && $second == "1" && $third == "0"){
+				
+				$sqlupdate = "UPDATE `abandoned` SET `third`='1' WHERE id='$id'";
+				if ($conn->query($sqlupdate) === TRUE) {
+					echo "sending third message";
+				}
+
+			}	
+/*
 			//SEND MESSAGE TO TALKJS
 			$ch = curl_init();
-			$data = [[
-				"text" => $OrderProcessingMessage,
-				"type" => "SystemMessage"
-			],
+			$data = [
 			[
 				"sender"  => "administrator",
 				"text" => $message,
@@ -131,10 +148,9 @@ while($row = $resultpending->fetch_assoc()) {
 				echo 'Error:' . curl_error($ch);
 			}
 			curl_close($ch);
-
-
 */
-		  
+
+ 
             
 }
 
