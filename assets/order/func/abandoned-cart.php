@@ -28,7 +28,7 @@ while($row = $resultpending->fetch_assoc()) {
 			$third = $row["third"];
 		
 			$delta = time() - strtotime($time);
-			$difference = $delta * 60;
+			$difference = $delta / 60;
 			echo "Minutes difference: ".$difference;
 						
 			/*
