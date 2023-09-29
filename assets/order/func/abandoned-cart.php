@@ -37,7 +37,7 @@ while($row = $resultpending->fetch_assoc()) {
 				echo "sending first message";
 
 			//Sending Second Message
-			}elseif($difference >= "1440" && $first == "1" && $second == "0"){
+			}elseif($difference >= "40" && $first == "1" && $second == "0"){
 				echo "sending second message";
 			
 			//Sending Third Message
