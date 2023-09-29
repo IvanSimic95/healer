@@ -368,8 +368,8 @@ $sql15 = "SELECT * FROM abandoned WHERE user = '".$userID."'";
     $result15 = $conn->query($sql15);
     if ($result15){
         $row15 = mysqli_num_rows($result15);
-            if ($row5 > 0){ //abandoned already exists, do nothing
-                
+            if ($row15 > 0){ //abandoned already exists, do nothing
+              error_log("abandon already exists");
             }else{ //no abandoned found, create new one
               $sqla = "INSERT INTO abandoned (user, email, product, time, link, active) 
               VALUES ('$userID', '$user_email', '$order_product_nice', '$order_date', '$abandon_link', '$active')";
