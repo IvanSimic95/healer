@@ -38,9 +38,7 @@ echo "Starting complete-orders.php...<br><br>";
 			$orderAge = $row["user_age"];
 			$energyCurrentWeek = $row["weekly_count"];
 			$orderPrio = $row["order_priority"];
-			if($orderPrio == 1){
-				$orderPrio = 2;
-			}
+
 			$orderProduct = $row["order_product"];
 			$orderSex = $row["partner_gender"];
 			$userSex = $row["gender"];
@@ -74,7 +72,7 @@ $logArray[] = "
 				$logArray[] = "Active | ";
 				 $trigger = 1;
 			}else {
-				echo "Waiting | ";
+				echo "Waiting | hours:". $orderPrio;
 				$logArray[] = "Waiting | ";
 			}
 			
@@ -361,6 +359,7 @@ $logArray[] = "
 				//START IF PRODUCT = FUTURE BABY
 			    }elseif ($orderProduct == "futurebaby")  { 
 				$image_send = 1;
+				$text_send = 1;
 				$prod_type = "baby";
 				$img_folder_name = "baby";
 				$babyGender = "female";
@@ -373,10 +372,12 @@ $logArray[] = "
 				$babyGender = "male";
 				}elseif($userSex == "female"){ //If customer sex is set as female
 				$babyGender = "female";
+				}else{
+				$babyGender = "male";
 				}
 					
 
-				$sql_pick = "SELECT * FROM  orders_image WHERE product = 'futurebaby' AND sex = '$babyGender' order by RAND() limit 1";
+				$sql_pick = "SELECT * FROM  orders_image WHERE product = 'baby' AND sex = '$babyGender' order by RAND() limit 1";
 				$sql_pick_res = $conn->query($sql_pick);
 				
 				if($sql_pick_res->num_rows == 0) {
@@ -391,7 +392,7 @@ $logArray[] = "
 					$image_name = $rowImages['name'];
 					}
 				}
-				$sql_text = "SELECT * FROM orders_text WHERE product = 'futurebaby' AND gender = '$babyGender' order by RAND() limit 1";
+				$sql_text = "SELECT * FROM orders_text WHERE product = 'baby' AND gender = '$babyGender' order by RAND() limit 1";
 				$sql_text_res = $conn->query($sql_text);
 				if($sql_text_res->num_rows == 0) {
 						$email_text = "";
@@ -399,6 +400,7 @@ $logArray[] = "
 						$logError[] = "Missing Text";
 						$logError[] = $orderID;
 						$logError[] = $orderEmail;
+						$logError[] = $sql_text;
 						missingLog($logError);
 				} else {
 					while($rowText = $sql_text_res->fetch_assoc()) {

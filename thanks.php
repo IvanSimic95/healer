@@ -56,8 +56,10 @@ if ($c == "[CUSTOM]") {
             if ($row5 > 0) {
                 $row5 = $result5->fetch_assoc();
                 $userID = $row5['user_id'];
+                $orderType = $row5['order_product'];
             } else {
                 $userID = $_SESSION['UserID'];
+                $orderType = "unknown";
             }
 
             $sql2 = "SELECT * FROM users WHERE id = '" . $userID . "'";
@@ -71,6 +73,13 @@ if ($c == "[CUSTOM]") {
             if ($genderAcc >= 101) {
                 $thankyou = 1;
             } else {
+
+                $thankyou = 0;
+            }
+
+            if($orderType == "futurebaby"){
+                $thankyou = 1;
+            }else {
 
                 $thankyou = 0;
             }
@@ -113,7 +122,7 @@ if ($c == "[CUSTOM]") {
                         </div>
                         <div class="wrap-white" style="padding-top:30px;padding-bottom:40px;">
 
-                            <h3 id="finalnotice">You will receive your order in 6-48 hours depending on priority you picked and it will be delivered via email!<br></h3>
+                            <h3 id="finalnotice">You will receive your order in 1-48 hours depending on priority you picked and it will be delivered via email!<br></h3>
                             <h3 id="finalnoticeinfo">If you need help or support with your order please reach out to us by clicking <a href="/contact">Here</a><br></h3>
                             <?php if ($c != "none") { ?>
                                 <form id="autologin" data-toggle="validator" data-focus="false" action="/dashboard" method="GET">

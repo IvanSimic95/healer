@@ -5,8 +5,10 @@ date_default_timezone_set('Europe/Bucharest');
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-$debounce = 1;
-$startpixel  = 1;
+$debounce = 0; //Debounce for email Verification
+$startpixel  = 1; //Facebook pixel pageviews
+
+$push = 1; //Send push notifications for phone on sales
 
 $FBPixel  = "692217912347910";
 

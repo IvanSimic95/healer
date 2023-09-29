@@ -70,17 +70,17 @@ if($order_product == "soulmate"){
   switch ($order_priority){
     case "48":
       $cbproduct = "513356";
-      $cbprice = "29";
+      $cbprice = "19";
     break;
   
     case "24":
       $cbproduct = "513365";
-      $cbprice = "39";
+      $cbprice = "29";
     break;
   
     case "1":
       $cbproduct = "513366";
-      $cbprice = "59";
+      $cbprice = "49";
     break;
   }
 
@@ -90,17 +90,17 @@ if($order_product == "soulmate"){
 switch ($order_priority){
   case "48":
     $cbproduct = "513421";
-    $cbprice = "29";
+    $cbprice = "19";
   break;
 
   case "24":
     $cbproduct = "513422";
-    $cbprice = "39";
+    $cbprice = "29";
   break;
 
   case "1":
     $cbproduct = "513428";
-    $cbprice = "59";
+    $cbprice = "49";
   break;
 }
 
@@ -110,17 +110,17 @@ switch ($order_priority){
 switch ($order_priority){
   case "48":
     $cbproduct = "513430";
-    $cbprice = "29";
+    $cbprice = "19";
   break;
 
   case "24":
     $cbproduct = "513431";
-    $cbprice = "39";
+    $cbprice = "29";
   break;
 
   case "1":
     $cbproduct = "513432";
-    $cbprice = "59";
+    $cbprice = "49";
   break;
 }
 

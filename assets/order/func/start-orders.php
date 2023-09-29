@@ -308,6 +308,27 @@ if($userSex == "male"){
 	$usersex1 = "f";
 }
 
+
+//Push notification for phone
+
+if($push == 1){
+	$pushTitle = "Order #".$orderId.": ".$order_product_nice." - ".$orderPriority."h";
+	$pushMessage = "Order #".$orderId.": ".$order_product_nice." - ".$orderPriority."h
+	Price: $".$orderPrice;
+curl_setopt_array($ch = curl_init(), array(
+	CURLOPT_URL => "https://api.pushover.net/1/messages.json",
+	CURLOPT_POSTFIELDS => array(
+	  "token" => "aayvxh42e8rfzhuxssiiwo7ko3pcej",
+	  "user" => "u24izth113b2jc8jwt4g68vvzppk12",
+	  "title" => $pushTitle,
+	  "message" => $pushMessage,
+	),
+	CURLOPT_SAFE_UPLOAD => true,
+	CURLOPT_RETURNTRANSFER => true,
+  ));
+  curl_exec($ch);
+  curl_close($ch);
+}
 //Facebook API conversion
 if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProduct == "twinflame"){
 	if($sendFBAPI == 1){
@@ -347,7 +368,7 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 					 ),
 					 "action_source" => "website",
 					 "event_source_url"  => "https://".$domain."/offer/color",
-					 "test_event_code"  => "TEST62484",
+					
 				),
 			 ),
 				"access_token" => $fbAccessToken,
@@ -386,7 +407,7 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 					 ),
 					 "action_source" => "website",
 					 "event_source_url"  => "https://".$domain."/offer/color",
-					 "test_event_code"  => "TEST62484",
+					
 				),
 			 ),
 				"access_token" => $fbAccessToken,
@@ -467,7 +488,7 @@ if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProdu
 				 ),
 				 "action_source" => "website",
 				 "event_source_url"  => "https://".$domain."/offer/color",
-				 "test_event_code"  => "TEST62484",
+				
 			),
 		 ),
 			"access_token" => $fbAccessToken,

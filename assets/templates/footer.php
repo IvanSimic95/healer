@@ -10,7 +10,6 @@
                 </div> <!-- end of col -->
                 <div class="col-md-4">
                     <div class="footer-col middle">
-                        <h4>Business Company Details: </h4>
 						<h4>  <br> <br> 
 						</h2> 
                         <ul class="list-unstyled li-space-lg p-small">
