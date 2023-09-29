@@ -4,7 +4,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 echo "Starting abbandoned-carts.php...<br><br>";
 
 
-// 1. Check and select paid orders.
+// 1. Check and select abanconed orders.
 
 	$sqlpending = "SELECT * FROM `abandoned` WHERE active = '1'";
 	$resultpending = $conn->query($sqlpending);
@@ -27,10 +27,24 @@ while($row = $resultpending->fetch_assoc()) {
 			$second = $row["second"];
 			$third = $row["third"];
 		
+			//Get the time difference
 			$delta = time() - strtotime($time);
 			$difference = $delta / 60;
 			echo "Minutes difference: ".$difference;
-						
+
+			//Sending First Message
+			if($difference >= "20" && $first == "0"){
+				echo "sending first message";
+
+			//Sending Second Message
+			}elseif($difference >= "1440" && $first == "1" && $second == "0"){
+				echo "sending second message";
+			
+			//Sending Third Message
+			}elseif($difference >= "2880" && $first == "1" && $second == "1" && $third == "0"){
+				echo "sending third message";
+
+			}
 			/*
 			//First create TalkJS User with same ID as conversation
 			$ch = curl_init();
