@@ -18,6 +18,7 @@ while($row = $resultpending->fetch_assoc()) {
 			$id = $row["id"];
 			$user = $row["user"];
 			$email = $row["email"];
+			$name = $row["name"];
 			$orderID = $row["order_id"];
 			$product = $row["product"];
 			$time = $row["time"];
@@ -26,20 +27,23 @@ while($row = $resultpending->fetch_assoc()) {
 			$second = $row["second"];
 			$third = $row["third"];
 		
-
+			$delta = time() - strtotime($time);
+			$difference = $delta * 60;
+			echo "Minutes difference: ".$difference;
 						
+			/*
 			//First create TalkJS User with same ID as conversation
 			$ch = curl_init();
 			$data = [
 			"id" => $user,
-			"name" => $customerName,
-			"email" => [$orderEmail],
+			"name" => $name,
+			"email" => [$email],
 			"role" => "customer",
-			"photoUrl" => "https://avatars.dicebear.com/api/adventurer/".$orderEmail.".svg?skinColor=variant02",
-			"custom" => ["email" => $orderEmail, "lastOrder" => $orderId]
+			"photoUrl" => "https://avatars.dicebear.com/api/adventurer/".$email.".svg?skinColor=variant02",
+			"custom" => ["email" => $email, "lastOrder" => $orderID]
 			];
 			$data1 = json_encode($data);
-			curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/users/'.$orderId);
+			curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/users/'.$orderID);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
 				
@@ -62,13 +66,13 @@ while($row = $resultpending->fetch_assoc()) {
 			$ch2 = curl_init();
 
 			$data2 = [
-			"subject" => "Order #".$orderId." | ".$order_product_nice,
-			"participants" => ["administrator", $userID],
-			"custom" => ["status" => "Paid"]
+			"subject" => "Order #".$orderID." | ".$order_product_nice,
+			"participants" => ["administrator", $user],
+			"custom" => ["status" => "Not Paid"]
 			];
 
 			$data22 = json_encode($data2);
-			curl_setopt($ch2, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/conversations/'.$orderId);
+			curl_setopt($ch2, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/conversations/'.$orderID);
 			curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt($ch2, CURLOPT_CUSTOMREQUEST, 'PUT');
 
@@ -85,7 +89,38 @@ while($row = $resultpending->fetch_assoc()) {
 			}
 			curl_close($ch2);
 			echo $result2;
+			//END CREATE CONVERSATION
 
+
+			//SEND MESSAGE TO TALKJS
+			$ch = curl_init();
+			$data = [[
+				"text" => $OrderProcessingMessage,
+				"type" => "SystemMessage"
+			],
+			[
+				"sender"  => "administrator",
+				"text" => $message,
+				"type" => "UserMessage"
+			]];
+			$data1 = json_encode($data);
+			curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/conversations/' . $orderID . '/messages');
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $data1);
+			$headers = array();
+			$headers[] = 'Content-Type: application/json';
+			$headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
+			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+			$result = curl_exec($ch);
+			if (curl_errno($ch)) {
+				echo 'Error:' . curl_error($ch);
+			}
+			curl_close($ch);
+
+
+*/
+		  
             
 }
 
