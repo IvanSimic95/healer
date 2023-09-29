@@ -371,8 +371,8 @@ $sql15 = "SELECT * FROM abandoned WHERE active = '1' AND user = '".$userID."'";
             if ($row15 > 0){ //abandoned already exists, do nothing
               
             }else{ //no abandoned found, create new one
-              $sqla = "INSERT INTO abandoned (user, email, order_id, product, time, link, active) 
-              VALUES ('$userID', '$user_email', '$lastRowInsert', '$order_product_nice', '$order_date', '$abandon_link', '$active')";
+              $sqla = "INSERT INTO abandoned (user, email, name, order_id, product, time, link, active) 
+              VALUES ('$userID', '$user_email', '$fName', '$lastRowInsert', '$order_product_nice', '$order_date', '$abandon_link', '$active')";
 
               if(mysqli_query($conn,$sqla)){
               //Added to abandon table

@@ -6,7 +6,7 @@ echo "Starting abbandoned-carts.php...<br><br>";
 
 // 1. Check and select paid orders.
 
-	$sqlpending = "SELECT * FROM `orders` WHERE (`order_status` = 'pending' AND `order_product` = 'soulmate' AND `abandoned_cart` = 'active') OR (`order_status` = 'pending' AND `order_product` = 'futurespouse' AND `abandoned_cart` = 'active')";
+	$sqlpending = "SELECT * FROM `abandoned` WHERE active = '1'";
 	$resultpending = $conn->query($sqlpending);
 	if($resultpending->num_rows == 0) {
 	   echo "No Orders with pending cart abandon email to be sent";
@@ -15,151 +15,76 @@ echo "Starting abbandoned-carts.php...<br><br>";
 
 while($row = $resultpending->fetch_assoc()) {
    
-			
-			$orderDate = $row["order_date"];
-			$orderName = $row["user_name"];
-		    $ex = explode(" ",$orderName);
-			$customerName =  $ex["0"];
+			$id = $row["id"];
+			$user = $row["user"];
+			$email = $row["email"];
 			$orderID = $row["order_id"];
-			$cart = $row["abandoned_cart"];
-			$orderProduct = $row["order_product"];
-			$orderPriority = $row["order_priority"];
-			$orderEmail = $row["order_email"];
-			$orderStatus = $row["order_status"];
-			$emailLink = $base_url ."/dashboard.php?check_email=" .$orderEmail;
-			$restoreLink = $row["cart_recover"];
-			$partner = $row['pick_sex'];
-			$birthday = $row['birthday'];
-			$orderPrice = $row['order_price'];
-			$cartRecover = $row['cart_recover'];
-			$newPrice = $orderPrice / 2;
+			$product = $row["product"];
+			$time = $row["time"];
+			$link = $row["link"];
+			$first = $row["first"];
+			$second = $row["second"];
+			$third = $row["third"];
 		
 
-            $date1 = $orderDate;
-			$date2 =  date("Y-m-d H:i:s");
-			$start = new \DateTime($date1);
-			$end = new \DateTime($date2);
-			$interval = new \DateInterval('PT1H');
-			$periods = new \DatePeriod($start, $interval, $end);
-			$hours = iterator_count($periods);
-
-			$CreatedAt = time();
-			
-			echo "<hr>";
-
-echo $hours;
-echo "<br>";
-echo $orderID;
-echo "<br>";
-
-
-$order_product_test = ucwords($orderProduct);
-switch ($order_product_test) {
-	case "Husband":
-	  if($partner=="male"){
-		$order_product_nice  = "Future Husband Drawing";
-	  }else{
-		  $order_product_nice  = "Future Wife Drawing";
-	  }
-	  break;
-	  case "Futurespouse":
-		if($partner=="male"){
-		  $order_product_nice  = "Future Husband Drawing";
-		}else{
-		  $order_product_nice  = "Future Wife Drawing";
-		}
-		break;
-  case "Pastlife":
-	  $order_product_nice = "Past Life Drawing";
-	  break;
-  case "Baby":
-	  $order_product_nice = "Future Baby Drawing";
-	  break;
-  case "Soulmate":
-	  $order_product_nice = "Soulmate Drawing";
-	  break;
-  case "Twinflame":
-	  $order_product_nice = "Twin Flame Drawing";
-		  break;
-		  case "Spiritguide":
-			$order_product_nice = "Spirit Guide Drawing";
-				break;
-				case "Higherself":
-				  $order_product_nice = "Higher Self Drawing";
-					  break;
-  }
+						
+			//First create TalkJS User with same ID as conversation
+			$ch = curl_init();
+			$data = [
+			"id" => $user,
+			"name" => $customerName,
+			"email" => [$orderEmail],
+			"role" => "customer",
+			"photoUrl" => "https://avatars.dicebear.com/api/adventurer/".$orderEmail.".svg?skinColor=variant02",
+			"custom" => ["email" => $orderEmail, "lastOrder" => $orderId]
+			];
+			$data1 = json_encode($data);
+			curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/users/'.$orderId);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
+				
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $data1);
+				
+			$headers = array();
+			$headers[] = 'Content-Type: application/json';
+			$headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
+			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+				
+			$result = curl_exec($ch);
+			if (curl_errno($ch)) {
+			echo 'Error:' . curl_error($ch);
+			}
+			curl_close($ch);
+			echo $result;
 
 
+			//Now create new conversation
+			$ch2 = curl_init();
 
+			$data2 = [
+			"subject" => "Order #".$orderId." | ".$order_product_nice,
+			"participants" => ["administrator", $userID],
+			"custom" => ["status" => "Paid"]
+			];
 
-	if($hours > 1 && $hours <= 47){
-		if($cart == "active"){
-			
-			
-			//Check if any previous orders
-			$sql = "SELECT * FROM `orders` WHERE (`order_email` = '$orderEmail' AND `order_product` = '$orderProduct' AND `order_status` = 'processing') OR (`order_email` = '$orderEmail' AND `order_product` = '$orderProduct' AND `order_status` = 'shipped') ORDER BY `order_id` DESC";
-			$result = $conn->query($sql);
-			$count = $result->num_rows;
+			$data22 = json_encode($data2);
+			curl_setopt($ch2, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/conversations/'.$orderId);
+			curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($ch2, CURLOPT_CUSTOMREQUEST, 'PUT');
 
-				if($count <= 1) {
-					$email = NULL;
-					$sendgrid = NULL;
-					$response = NULL;
-					$email = new Mail();
-					$email->setFrom("info@soulmatehealer.com", "Soulmate Healer Psychic");
-					$email->setSubject($AbandonSubject);
-					$email->addTo(
-						$orderEmail,
-						$orderName,
-						[
-							"name" => $orderName,
-							"email" => $orderEmail,
-							"status" => $orderStatus,
-							"product" => $order_product_nice,
-							"orderid" => $orderID,
-							"partner" => $partner,
-							"birthday" => $birthday,
-							"price" => $orderPrice,
-							"newprice" => $newPrice,
-							"restorelink" => $cartRecover,
-							"msg" => $AbandonMessage
-						]
-					);
-					$email->setTemplateId("d-7ef6c271357e4b6092f423cc1a96ab5e");
-					$sendgrid = new \SendGrid($sendg3);
-					try {
-						$response = $sendgrid->send($email);
-						print_r($response);
-						error_log($orderEmail);
+			curl_setopt($ch2, CURLOPT_POSTFIELDS, $data22);
 
-						//Mark the cart abandon email as sent in DB
-						$sqlupdate = "UPDATE `orders` SET `abandoned_cart`='sent' WHERE order_id='$orderID'";
-						if ($conn->query($sqlupdate) === TRUE) {
-						}
-					} catch (Exception $e) { 
-						echo 'Caught exception: '.  $e->getMessage(). "\n";
-						error_log('$e->getMessage()');
-					}
+			$headers = array();
+			$headers[] = 'Content-Type: application/json';
+			$headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
+			curl_setopt($ch2, CURLOPT_HTTPHEADER, $headers);
 
-
-				}
-
-			
-			
-		
-		}
-	}elseif($hours > 72){
-            
-			
-			//Set order to canceled
-			$sqlupdate = "UPDATE `orders` SET `order_status`='canceled', `abandoned_cart`='canceled' WHERE order_id='$orderID'";
-            if ($conn->query($sqlupdate) === TRUE) {
-				echo "Order canceled <br>";
-            }
-
-
-
-	}
+			$result2 = curl_exec($ch2);
+			if (curl_errno($ch2)) {
+				echo 'Error:' . curl_error($ch2);
+			}
+			curl_close($ch2);
+			echo $result2;
 
             
 }
