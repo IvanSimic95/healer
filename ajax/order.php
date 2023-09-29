@@ -366,7 +366,7 @@ $abandon_link = $redirectPayment;
 //Abandoned email
 $sql15 = "SELECT * FROM abandoned WHERE user = '".$userID."'";
     $result15 = $conn->query($sql15);
-    if ($result5){
+    if ($result15){
         $row15 = mysqli_num_rows($result15);
             if ($row5 > 0){ //abandoned already exists, do nothing
                 
