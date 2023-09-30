@@ -331,7 +331,7 @@ This isn’t just a service; it’s a partnership. It's my hand extended to you 
 				<br clear="all">
 								<a href="https://www.digistore24.com/answer/yes?template=light" style="color: #fff;" class="blob purple">🔮 Yes, I Want My Personal Psychic Reading</a>
 								<p></p>
-								<a href="https://www.digistore24.com/answer/no" style="font-size: 14px;color:blue;" href="">No, I'll remain in the shadows of uncertainty</a>
+							<br>	<a href="https://www.digistore24.com/answer/no" style="font-size: 18px;color:blue;" href="">No Thanks, I'll remain in the shadows of uncertainty</a>
 								<p style="letter-spacing: -0.25px;font-size: 13px;line-height: 1.2;margin-top: 20px;">This special offer is only here and now. <span style="font-weight:600;">If you leave this page, you'll lose out on the chance to get the discount</span>. So, <span style="color:#8e44ad;font-weight:600;text-decoration:underline;">click the magic button now</span>!</p>
 								
 								<p style="letter-spacing: -0.25px;font-size: 12px;line-height: 1.2;margin-top: 20px;">

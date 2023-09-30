@@ -399,7 +399,7 @@ if(isset($_SESSION['product'])){
 				<br clear="all">
 								<a href="https://www.digistore24.com/answer/yes?template=light" style="color: #fff;" class="blob orange"><i style="margin-right: 10px;" class="fa fa-shopping-cart" aria-hidden="true"></i>UPGRADE NOW</a>
 								<p></p>
-								<a href="https://www.digistore24.com/answer/no" style="font-size: 14px;color:blue;" href="">No Thanks, I'll Stick With Black & White</a>
+<br>								<a href="https://www.digistore24.com/answer/no" style="font-size: 18px;color:blue;" href="">No Thanks, I'll Stick With Black & White</a>
 								<p style="letter-spacing: -0.25px;font-size: 13px;line-height: 1.2;margin-top: 20px;">This special offer is only here and now. <span style="font-weight:600;">If you leave this page, you'll lose out on the chance to get colored drawing</span>. So, <span style="color:#ff793f;font-weight:600;text-decoration:underline;">click the upgrade button now</span>!</p>
 								
 								<p style="letter-spacing: -0.25px;font-size: 12px;line-height: 1.2;margin-top: 20px;">
