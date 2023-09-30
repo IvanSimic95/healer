@@ -106,7 +106,10 @@ while($row = $resultpending->fetch_assoc()) {
 				$sqlupdate = "UPDATE `abandoned` SET `first`='1' WHERE id='$id'";
 				if ($conn->query($sqlupdate) === TRUE) {
 					echo "sending first message";
-					$message = "This is first message trying to recover your order";
+					$message = $firstAbandon;
+					$message = str_replace("%FIRSTNAME%", $name, $message);
+					$message = str_replace("%PRODUCT%", $product, $message);
+					$message = str_replace("%LINK%", $link, $message);
 
 					//SEND MESSAGE TO TALKJS
 					$ch = curl_init();
