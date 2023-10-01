@@ -361,6 +361,28 @@ if($order_product == "ask"){
 }
 
 }
+$active = 1;
+$abandon_link = $redirectPayment;
+//Abandoned email
+$sql15 = "SELECT * FROM abandoned WHERE active = '1' AND user = '".$userID."'";
+    $result15 = $conn->query($sql15);
+    if ($result15){
+        $row15 = mysqli_num_rows($result15);
+            if ($row15 > 0){ //abandoned already exists, do nothing
+              
+            }else{ //no abandoned found, create new one
+              $sqla = "INSERT INTO abandoned (user, email, name, order_id, product, time, link, active) 
+              VALUES ('$userID', '$user_email', '$fName', '$lastRowInsert', '$order_product_nice', '$order_date', '$abandon_link', '$active')";
+
+              if(mysqli_query($conn,$sqla)){
+              //Added to abandon table
+              }
+              
+            }
+    }
+
+
+
 
 
 $returnData = [$submitStatus,$SuccessMessage,$redirectPayment];
