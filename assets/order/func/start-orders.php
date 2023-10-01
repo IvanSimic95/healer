@@ -103,6 +103,17 @@ break;
       		echo "Updated";
 
 
+			//Check if abandoned is running
+			  $sqlpending = "SELECT * FROM `abandoned` WHERE user = '$userID' AND active = '1'";
+			  $resultpending = $conn->query($sqlpending);
+			  if($resultpending->num_rows == 0) {
+				 //No abandoned cart found
+			  }else{
+				$sqlupdate2 = "UPDATE `abandoned` SET `active`='0' WHERE user='$userID'";
+				if ($conn->query($sqlupdate2) === TRUE) {
+				}
+			  }
+
 //First create TalkJS User with same ID as conversation
 $ch = curl_init();
 $data = [

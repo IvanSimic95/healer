@@ -78,6 +78,8 @@ $AbandonSubject = "The Timer's Going Off on Your Order!";
 $AbandonMessage = "Look's like you forgot to finish your order... But don't worry, we kept it safe for you! Click the button below to finish your purchase & get closer to your soulmate.";
 
 
-$firstAbandon = "Hi %FIRSTNAME%,\n\nThanks for requesting your very own %PRODUCT%, you are so close to getting it.\n\nIn case you haven't completed the payment for your sketch, <%LINK%|CLICK HERE>   NOTE: (If you did already purchase, you can disregard this)\n\nI cannot wait to show you who your Soulmate could be, it may actually surprise you!\n\nFinish Completing Your %PRODUCT% Order <%LINK%|here>\n\nBest Wishes,\n\nSoulmate Healer";
+$firstAbandon = "Hi %FIRSTNAME%,\n\nThanks for requesting your very own %PRODUCT%, you are so close to getting it.\n\nIn case you haven't completed the payment for your sketch, <%LINK%|CLICK HERE>   NOTE: (If you did already purchase, you can disregard this)\n\nI cannot wait to show you your %PRODUCT%, it may actually surprise you!\n\nFinish Completing Your %PRODUCT% Order <%LINK%|here>\n\nBest Wishes,\n\nSoulmate Healer";
+$secondAbandon = "Hi %FIRSTNAME%,\n\nWe noticed you started a purchase of %PRODUCT%, but didn't complete it.\n\nIn case the price was an issue we are prepared to provide you with one time only special 20% discount.\n\nYou can claim it by <%LINK%|CLICKING HERE>   NOTE: (If you did already purchase, you can disregard this)\n\nI understand some people can't afford my products so sometimes I reward some with discounts!\n\nFinish Completing Your %PRODUCT% Order <%LINK%|here>\n\nBest Wishes,\n\nSoulmate Healer";
+
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/functions.php';
 ?>
