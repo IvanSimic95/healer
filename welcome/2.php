@@ -350,7 +350,7 @@ $(function() {
                                     jQuery('.new_prce').animate({
                                         'opacity': 0
                                     }, 200, function() {
-                                        jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">2</span><span class="christmas-blue">9</span>').animate({
+                                        jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">3</span><span class="christmas-blue">9</span>').animate({
                                             'opacity': 1
                                         }, 200);
                                     });
@@ -360,7 +360,7 @@ $(function() {
                                     jQuery('.new_prce').animate({
                                         'opacity': 0
                                     }, 200, function() {
-                                        jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">1</span><span class="christmas-blue">9</span>').animate({
+                                        jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">2</span><span class="christmas-blue">9</span>').animate({
                                             'opacity': 1
                                         }, 200);
                                     });
