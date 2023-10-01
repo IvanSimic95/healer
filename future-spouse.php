@@ -199,7 +199,7 @@ $count = $row['reviews'];
 
     <script>
 jQuery('input[name="priority"]').change(function(){
-    if (this.value == '6') {
+    if (this.value == '1') {
         jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$59').animate({'opacity': 1}, 200);});
 		jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$599').animate({'opacity': 0.25}, 300);});
 		jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('<b>$540</b> (90%)').animate({'opacity': 1}, 400);});	
