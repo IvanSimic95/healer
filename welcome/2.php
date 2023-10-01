@@ -45,14 +45,7 @@ if ($v > 3) {
     <link href="/welcome/css/welcome/spellvixen.css" rel="stylesheet" type="text/css">
     <link href="/welcome/css/welcome/style.css" rel="stylesheet" type="text/css">
     <link href="/welcome/css/welcome/welcome.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript">
-DeBounce_APIKEY = 'public_WnlvZnE2TkZCSjNjeG9yUWNPODV1dz09'; // Your DeBounce Public API Key.
-DeBounce_DisablePlaceholder = 'true'; // Disable converting the invalid email to placeholder or not.
-DeBounce_DisableLink = 'true'; // Disable link to DeBounce website or not.
-DeBounce_DisableTooltip = 'true';
-</script>
 
-<script async type="text/javascript" src="https://cdn.debounce.io/widget/DeBounce.v2.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -309,7 +302,7 @@ $(function() {
                                 jQuery('.new_prce').animate({
                                     'opacity': 0
                                 }, 200, function() {
-                                    jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">5</span><span class="christmas-blue">9</span>').animate({
+                                    jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">4</span><span class="christmas-blue">9</span>').animate({
                                         'opacity': 1
                                     }, 200);
                                 });
@@ -322,7 +315,7 @@ $(function() {
                                 jQuery('.new_prce').animate({
                                     'opacity': 0
                                 }, 200, function() {
-                                    jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">3</span><span class="christmas-blue">9</span>').animate({
+                                    jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">2</span><span class="christmas-blue">9</span>').animate({
                                         'opacity': 1
                                     }, 200);
                                 });
@@ -334,7 +327,7 @@ $(function() {
                                 jQuery('.new_prce').animate({
                                     'opacity': 0
                                 }, 200, function() {
-                                    jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">2</span><span class="christmas-blue">9</span>').animate({
+                                    jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">1</span><span class="christmas-blue">9</span>').animate({
                                         'opacity': 1
                                     }, 200);
                                 });
@@ -347,7 +340,7 @@ $(function() {
                                     jQuery('.new_prce').animate({
                                         'opacity': 0
                                     }, 200, function() {
-                                        jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">5</span><span class="christmas-blue">9</span>').animate({
+                                        jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">4</span><span class="christmas-blue">9</span>').animate({
                                             'opacity': 1
                                         }, 200);
                                     });
@@ -357,7 +350,7 @@ $(function() {
                                     jQuery('.new_prce').animate({
                                         'opacity': 0
                                     }, 200, function() {
-                                        jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">3</span><span class="christmas-blue">9</span>').animate({
+                                        jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">2</span><span class="christmas-blue">9</span>').animate({
                                             'opacity': 1
                                         }, 200);
                                     });
@@ -367,7 +360,7 @@ $(function() {
                                     jQuery('.new_prce').animate({
                                         'opacity': 0
                                     }, 200, function() {
-                                        jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">2</span><span class="christmas-blue">9</span>').animate({
+                                        jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">1</span><span class="christmas-blue">9</span>').animate({
                                             'opacity': 1
                                         }, 200);
                                     });
@@ -488,7 +481,7 @@ h5 {
                             <div id="show_message" class="alert alert-success" style="display: none">Loading..</div>
                             <div id="error" class="alert alert-danger" style="display: none"></div>
 									
-									<h5 style="font-size: 90px;padding-bottom:45px;padding-top:30px;" class="new_prce christmas">$29</h5>
+									<h5 style="font-size: 90px;padding-bottom:45px;padding-top:30px;" class="new_prce christmas">$19</h5>
 
                            
 						   <div class="form_box" style="width:100%;">
