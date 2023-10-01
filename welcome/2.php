@@ -256,7 +256,7 @@ $(function() {
                                         <div style="color:#c2a2d2 !important;" class="fs-sm text-muted">1 <span class="hours"> Hour</span><span class="h">H</span></div>
 
                                     </div>
-                                    <div class="fw-bold badge bg-dark">+ $20</div>
+                                    <div class="fw-bold badge bg-dark">+ $30</div>
                                 </label>
                             </div>
 
