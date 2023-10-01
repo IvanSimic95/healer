@@ -256,7 +256,7 @@ $(function() {
                                         <div style="color:#c2a2d2 !important;" class="fs-sm text-muted">1 <span class="hours"> Hour</span><span class="h">H</span></div>
 
                                     </div>
-                                    <div class="fw-bold badge bg-dark">+ $30</div>
+                                    <div class="fw-bold badge bg-dark">+ $20</div>
                                 </label>
                             </div>
 
@@ -315,7 +315,7 @@ $(function() {
                                 jQuery('.new_prce').animate({
                                     'opacity': 0
                                 }, 200, function() {
-                                    jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">2</span><span class="christmas-blue">9</span>').animate({
+                                    jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">3</span><span class="christmas-blue">9</span>').animate({
                                         'opacity': 1
                                     }, 200);
                                 });
@@ -327,7 +327,7 @@ $(function() {
                                 jQuery('.new_prce').animate({
                                     'opacity': 0
                                 }, 200, function() {
-                                    jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">1</span><span class="christmas-blue">9</span>').animate({
+                                    jQuery('.new_prce').html('<span class="christmas-blue">$</span><span class="christmas-blue">2</span><span class="christmas-blue">9</span>').animate({
                                         'opacity': 1
                                     }, 200);
                                 });
