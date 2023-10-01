@@ -54,7 +54,9 @@ echo "Starting complete-orders.php...<br><br>";
 			$reading = $row["reading"];
 			$color = $row["color"];
 
-			
+			if($orderPrio == "48"){
+				$orderPrio = "40";
+			}
 		
 
 			$trigger = 0;
@@ -72,7 +74,7 @@ $logArray[] = "
 				$logArray[] = "Active | ";
 				 $trigger = 1;
 			}else {
-				echo "Waiting | hours:". $orderPrio;
+				echo "Waiting | ";
 				$logArray[] = "Waiting | ";
 			}
 			
