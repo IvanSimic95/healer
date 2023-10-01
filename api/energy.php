@@ -58,7 +58,7 @@ $name = $fname." ".$lname;
     $order_priority = rand(24,36);
     $cbprice = "15";
     $userGender = $row22['gender'];
-    $userGenderAcc =$row22['GenderAcc'];
+    $userGenderAcc =$row22['genderAcc'];
     $partnerGender = $row22['partner_gender'];
 
     //Create new order
