@@ -32,8 +32,6 @@ while($row = $resultpending->fetch_assoc()) {
 			$difference = $delta / 60;
 			echo "Minutes difference: ".$difference;
 
-		//REMOVE AFTER TEST 
-		if($user == "10018"){
 			//First create TalkJS User
 			$ch = curl_init();
 			$data = [
@@ -210,7 +208,7 @@ while($row = $resultpending->fetch_assoc()) {
 
 			}
 			
-		}
+		
 
  
             
