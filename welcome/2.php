@@ -1,4 +1,5 @@
 <?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 if (isset($_GET['v'])) {
     $v = $_GET['v'];
 } else {
@@ -71,12 +72,7 @@ $(function() {
 
 </script>
 
-    <script type="text/javascript">
-        DeBounce_APIKEY = 'public_WnlvZnE2TkZCSjNjeG9yUWNPODV1dz09'; // Your DeBounce Public API Key.
-        DeBounce_DisablePlaceholder = 'true'; // Disable converting the invalid email to placeholder or not.
-        DeBounce_DisableLink = 'true'; // Disable link to DeBounce website or not.
-        DeBounce_DisableTooltip = 'true';
-    </script>
+  
 </head>
 
     <body class="body">
@@ -503,6 +499,10 @@ h5 {
                             <div style="font-size: 14px;" class="secure-badge">
                                 🔒 <div class="secure-checkout-text">Safe &amp; Secure • 365 Money Back Guarantee</div>
                             </div>
+
+                            <input class="fbproduct" type="hidden" name="fbCampaign" value="<?php echo $_SESSION['fbCampaign']; ?>">
+                            <input class="fbproduct" type="hidden" name="fbAdset" value="<?php echo $_SESSION['fbAdset']; ?>">
+                            <input class="fbproduct" type="hidden" name="fbAd" value="<?php echo $_SESSION['fbAd']; ?>">
 							
                     </form>
 
