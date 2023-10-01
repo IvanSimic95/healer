@@ -1074,4 +1074,5 @@ formLog($logArray);
 
 	}
 	 // end of processing
+	 echo "<br><hr>"
 ?>
