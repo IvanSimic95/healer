@@ -30,7 +30,7 @@ $name = $fname." ".$lname;
     $orderStatus = $row['order_status'];
     $userID = $row['user_id'];
 
-        if($orderStatus=="pending" OR $orderStatus=="paid" OR $orderStatus=="processing"){
+        if($orderStatus=="pending" OR $orderStatus=="paid"){
             $sql = "UPDATE `orders` SET `order_email`='$order_email', `buygoods_order_id`='$DigiOrderID', `order_status`='paid', `zip`='$zip', `country`='$country' WHERE order_id='$orderID'";
             $result = $conn->query($sql);
 
