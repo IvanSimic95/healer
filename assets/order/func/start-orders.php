@@ -105,13 +105,13 @@ break;
 
 			//Check if abandoned is running
 			if($runAbandoned == 1){
-			  $sqlpending = "SELECT * FROM `abandoned` WHERE user = '$userID' AND active = '1'";
-			  $resultpending = $conn->query($sqlpending);
-			  if($resultpending->num_rows == 0) {
+			  $sqlpending2 = "SELECT * FROM `abandoned` WHERE user = '$userID' AND active = '1'";
+			  $resultpending2 = $conn->query($sqlpending2);
+			  if($resultpending2->num_rows == 0) {
 				 //No abandoned cart found
 			  }else{
-				$sqlupdate2 = "UPDATE `abandoned` SET `active`='0' WHERE user='$userID'";
-				if ($conn->query($sqlupdate2) === TRUE) {
+				$sqlupdate222 = "UPDATE `abandoned` SET `active`='0' WHERE user='$userID'";
+				if ($conn->query($sqlupdate222) === TRUE) {
 				}
 			  }
 			}

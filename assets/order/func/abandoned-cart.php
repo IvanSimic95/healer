@@ -34,13 +34,24 @@ while($row = $resultpending->fetch_assoc()) {
 			$difference = $delta / 60;
 			echo "Minutes difference: ".$difference;
 
+
+
+
+
+
+
+			//Sending First Message
+			if($difference >= "20" && $first == "0"){
+
+
+				
 			//First create TalkJS User
 			$ch = curl_init();
 			$data = [
 			"id" => $user,
 			"name" => $name,
 			"email" => [$email],
-			"role" => "abcustomer",
+			"role" => "customer",
 			"photoUrl" => "https://avatars.dicebear.com/api/adventurer/".$email.".svg?skinColor=variant02",
 			"custom" => ["email" => $email, "lastOrder" => $orderID]
 			];
@@ -93,14 +104,6 @@ while($row = $resultpending->fetch_assoc()) {
 			//END CREATE CONVERSATION
 
 
-
-
-
-
-
-
-			//Sending First Message
-			if($difference >= "20" && $first == "0"){
 				
 
 				$sqlupdate = "UPDATE `abandoned` SET `first`='1' WHERE id='$id'";
