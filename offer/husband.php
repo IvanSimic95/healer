@@ -78,7 +78,7 @@ $_SESSION['fbproduct'] = $row['order_product'];
   }
 }
 $FirePixel = $_SESSION['fbfirepixel'];
-echo $FirePixel;
+
 ?>
 
 <script src="https://www.digistore24.com/service/digistore.js"></script><script>digistoreUpsell()</script>
@@ -418,6 +418,7 @@ if(isset($_SESSION['shortproduct'])){
         </div>  
     </header> 
     if($FirePixel == 1){
+        echo "firepixel";
   $orderID = $_SESSION['fborderID'];
   $orderPrice = $_SESSION['fborderPrice'];
   $product = $_SESSION['fbproduct'];
