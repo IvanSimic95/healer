@@ -10,6 +10,9 @@ $sql = "SELECT * FROM orders WHERE order_status = 'processing' OR order_status =
                                 case "Husband":
                                  $product = "Meeting Husband";
                                   break;
+                                  case "futurespouse":
+                                    $product = "Future Spouse Drawing";
+                                     break;
                               case "Pastlife":
                                   $product = "Past Life Drawing";
                                   break;
