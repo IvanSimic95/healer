@@ -8,7 +8,7 @@ $sql = "SELECT * FROM orders WHERE order_status = 'processing' OR order_status =
                         $product = ucwords($row["order_product"]);
                         switch ($product) {
                                 case "Husband":
-                                 $product = "Future Husband Drawing";
+                                 $product = "Meeting Husband";
                                   break;
                               case "Pastlife":
                                   $product = "Past Life Drawing";
