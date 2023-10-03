@@ -288,28 +288,37 @@ if(isset($_SESSION['shortproduct'])){
 				
 				<div class="col-lg-12 col-xl-12">
 				
-				<h2 style="margin-bottom: 24px;text-align:left;color:#8e44ad;" class="h2-heading">A GLIMPSE INTO YOUR DESTINED PARTNERSHIP</h2>
-		
+				<h2 style="margin-bottom: 24px;text-align:left;color:#ff0000;" class="h2-heading">One more step…</h2>
+	<br><center>  <p><strong>	🚀 The Face of Your Future Awaits... <br>Uncover it Now! 🚀</strong></p> </center>
 				<p style="margin-top: 5px;margin-bottom: 25px;text-align:left;color: #000;font-size: 18px;line-height: 1.4em;" class="card-title-prod">
-                <br> <p>Step into the realm of the unknown and unveil the face of your future life partner with the <strong>Future Spouse Psychic Drawing.</strong> While fate writes a captivating story, I offer you the chance to peek into its pages, introducing you to the one destined to stand by your side.</p>
-<br> <p>Every sketch I craft is a harmonious blend of intuitive insights, psychic vibrations, and artistry. Using a mix of clairvoyance and deep spiritual connection, I embark on a journey through time, capturing the essence of the person with whom you&apos;ll share life&apos;s most intimate moments.</p>
-<br> <p>To initiate this sacred process, I&apos;ll need your name and birthdate. Guided by the stars and the universe&apos;s whispers, I&apos;ll channel your future spouse&apos;s energy. The resulting portrait transcends mere lines and shades; it echoes with the laughter, dreams, and shared moments awaiting you.</p>
-<br> <p>Unveiling your future spouse isn&apos;t just about knowing their face. It&apos;s about preparing your heart for the love, lessons, and shared experiences that will define your journey together.</p>
-<br> <p><strong>EXCLUSIVE PERSPECTIVE: Deciphering the Astral Blueprint of Your Romantic Destiny</strong></p>
-<p>With each intricately crafted portrait, I journey deeper into the celestial tapestry, unveiling the intricate weave of fates that connect you to your future spouse. Discover the preordained encounters that will seamlessly merge your paths, the trials destined to solidify your union, and the pivotal moments that will shape the core of your shared experiences. By interpreting this astral blueprint, I illuminate the profound nuances, commitments, and ethereal pledges sculpted by the universe for your shared journey.</p>
-<br> <p>From individuals seeking clarity to celebrated personalities wanting a glance into their love future, my drawings have illuminated the path for many. Choosing the &quot;Future Spouse Psychic Drawing&quot; is more than a purchase; it&apos;s an invitation to a transformative experience of love and self-discovery.</p>
-<br> <p><strong>OUR VOW OF TRUST: A Bond That Respects Your Faith</strong></p>
-<p>If my vision doesn&apos;t unfold as perceived within the provided timeframe, a full refund will be honored, a testament to our shared trust and spiritual commitment.</p>
-<br> <p><strong>UTMOST CONFIDENTIALITY: Digital Delivery Ensuring Privacy</strong></p>
-<p>Your uniquely crafted drawing and accompanying insights will be discreetly delivered to your provided email, safeguarding your privacy. While the universe may know your story, our journey together remains confidential.</p>
-                    
-				</p>
-				   
+
+
+<br> <p style="color:#FF0000";> <b>Hey Beautiful Seeker,</b> </strong></p>
+
+<br> <p>The energy you've shared with me during your "When and Where" reading is vibrating with untold secrets and divine connection... and I, your Soulmate Healer, am simply mesmerized by the revelations awaiting you! </strong></p>
+
+<br> <p style="color:#FF0000";> <b>**Imagine His Eyes Gazing into Yours...** </b></p>
+
+<br> <p>Hold your breath, because what if I told you the man you’re destined to meet could be brought to life in front of your eyes? Yes, the very eyes that will gaze at you with unparalleled love, the smile that will melt your worries away... all of it, captured in a drawing that speaks the language of the stars. </strong></p>
+
+<br> <p style="color:#FF0000";> <b>**Your Love Tale Deserves to be Seen!** </b></p>
+
+<br> <p>Darling, your journey deserves to be more than whispers of the universe; it deserves to be a visual anthem, sung by every stroke of my pencil, revealing the face that will one day look into yours with endless love and affection. </strong></p>
+
+<br> <p style="color:#FF0000";> <b>**Draw Him Near, Before Destiny Does...** </b></p>
+
+<br> <p>Your story, embedded in the cosmos, is ready to cascade down into a visual masterpiece, a drawing that holds the mirror up to your future, reflecting the face of your impending love and joy. </strong></p>
+
+<br> <p style="color:#FF0000";> <b>**🌹 Dive into His Eyes Today! 🌹** </b></p>
+
+<br> <p>Why wait to lock eyes with destiny? Let the image of your future love companion your present moments, let his face be the gentle reminder that love is not just on its way... it’s already here, waiting to be unveiled. </strong></p>
+
+	   
 					    <div style="margin-bottom: 20px;background-color:#f8f1fd;" class="card-image">
                         <img class="img-fluid" src="/images/products/personal.png" style="width:450px;display:none;">
 							<div style="padding:5px;margin-bottom:0px;">
 
-						<h2 style="font-size: 40px;background:none;color:#000;font-weight:800;margin-top:15px;line-height:30px;">$17<br/><span style="opacity: 0.25;font-weight:500;font-size:20px;">$46</span></h2> 
+						<h2 style="font-size: 40px;background:none;color:#FF0000;font-weight:800;margin-top:15px;line-height:30px;">$17 <br/><span style="opacity: 0.25;font-weight:500;font-size:20px;">$34</span></h2> 
 						<p style="margin-top: -10px;">50% discount applied</p>
 
 				<div style="margin-bottom: -8px;margin-top: -17px;font-size: 12px;;">
@@ -317,7 +326,7 @@ if(isset($_SESSION['shortproduct'])){
 					<span style="font-size:11px;font-weight:600;"><?php echo $count; ?> reviews</span>
 				</div>
 				<br clear="all">
-								<a href="https://www.digistore24.com/answer/yes?template=light" style="color: #fff;" class="blob purple">🔮 Yes, I Want My Personal Psychic Reading</a>
+								<a href="https://www.digistore24.com/answer/yes?template=light" style="color: #fff;" class="blob purple">🔮 Unlock His Face Now! </a>
 								<p></p>
 							<br>	<a href="https://www.digistore24.com/answer/no" style="font-size: 18px;color:blue;" href="">No Thanks, I'll remain in the shadows of uncertainty</a>
 								<p style="letter-spacing: -0.25px;font-size: 13px;line-height: 1.2;margin-top: 20px;">This special offer is only here and now. <span style="font-weight:600;">If you leave this page, you'll lose out on the chance to get the discount</span>. So, <span style="color:#8e44ad;font-weight:600;text-decoration:underline;">click the magic button now</span>!</p>
@@ -327,6 +336,7 @@ if(isset($_SESSION['shortproduct'])){
 								</p>
 							</div>
 						</div>
+						<br> <p> Your love story is my inspiration, and I’m here, ready to breathe life into the visual echo of your future husband. </strong></p>
                 </div>
             </div>
          </div>
