@@ -417,8 +417,8 @@ if(isset($_SESSION['shortproduct'])){
             </div>  
         </div>  
     </header> 
+    <?php
     if($FirePixel == 1){
-        echo "firepixel";
   $orderID = $_SESSION['fborderID'];
   $orderPrice = $_SESSION['fborderPrice'];
   $product = $_SESSION['fbproduct'];
