@@ -59,7 +59,7 @@ $name = $fname." ".$lname;
     $cbprice = "17";
     $userGender = $row22['gender'];
     $userGenderAcc =$row22['genderAcc'];
-    $partnerGender = $row22['partner_gender'];
+    $partnerGender = "male";
 
     //Create new order
     $sql33 = "INSERT INTO orders (user_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, gender, genderAcc, partner_gender) 
