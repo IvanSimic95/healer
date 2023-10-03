@@ -6,7 +6,7 @@ header("Pragma: no-cache");
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/order/func/start-orders.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/order/func/complete-orders.php';
-include_once $_SERVER['DOCUMENT_ROOT'].'/assets/order/func/abandoned-cart.php';
+
 
 /*
 $ch = curl_init();

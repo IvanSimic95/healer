@@ -10,7 +10,7 @@ $startpixel  = 1; //Facebook pixel pageviews
 
 $push = 1; //Send push notifications for phone on sales
 
-$FBPixel  = "692217912347910";
+$FBPixel  = "163033846859083";
 
 $FBPurchasePixel = "";
 $FBViewContent = "";
@@ -18,8 +18,8 @@ $productMETA = "";
 
 
 //Data for FB Conversions API
-$accessToken1 = "EAAJw55TSSlwBOxWZCaV1ZBBmGhRJHxZAllxvgkVNmnkmYPPlLa3zPmrWHiHZAi3hSF3pZA9YWy2Rl5pBjq";
-$accessToken2 = "pAGHM4NzRaaZAne20q4JZCDZAKDZCDHJUarijbzRLeyFdKSpMvZBgmpWZBO2hKTJMWNAgpDxrMWZCrJa8FpdZBHCZAJKHLhbhEyyXT34frOqefIPsCBw5wZDZD";
+$accessToken1 = "EAAxkvwzdc3kBOyptJvqbPM9PDyN5aD18NrHH4qV5xABNgPosmS4LNE9pXtuf3";
+$accessToken2 = "6ZBxBFTucuUyu4CNysn005Btf2hAUq8ADBmP3La5r23C0NFR5ke9ZC2bZC1LdT44X6ZBa7p5GZB8BpZBaJp2goi4KgEOdQAscMDEkgGJBxnfXhZALrsTufZAcWSgaKpzw76UgZDZD";
 $fbAccessToken = $accessToken1 . $accessToken2;
 
 $sendFBAPI = 1; #Set to 1 to send data via api
