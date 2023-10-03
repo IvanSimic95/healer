@@ -247,9 +247,9 @@ $order_product_test = ucwords($order_product);
 switch ($order_product_test) {
   case "Husband":
     if($partnerGender=="male"){
-      $order_product_nice  = "Future Husband Drawing";
+      $order_product_nice  = "When and Where You'll Meet Your Future Husband";
     }else{
-        $order_product_nice  = "Future Wife Drawing";
+        $order_product_nice  = "When and Where You'll Meet Your Future Husband";
     }
     break;
     case "Futurespouse":
