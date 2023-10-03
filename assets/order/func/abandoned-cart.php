@@ -4,6 +4,8 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 echo "Starting abbandoned-carts.php...<br><br>";
 
 
+if($runAbandoned == 1){
+
 // 1. Check and select abanconed orders.
 
 	$sqlpending = "SELECT * FROM `abandoned` WHERE active = '1'";
@@ -217,6 +219,6 @@ while($row = $resultpending->fetch_assoc()) {
            
 }
 
-
+}
     echo "<br><hr>"
  ?>

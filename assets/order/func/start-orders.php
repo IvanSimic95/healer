@@ -104,6 +104,7 @@ break;
 
 
 			//Check if abandoned is running
+			if($runAbandoned == 1){
 			  $sqlpending = "SELECT * FROM `abandoned` WHERE user = '$userID' AND active = '1'";
 			  $resultpending = $conn->query($sqlpending);
 			  if($resultpending->num_rows == 0) {
@@ -113,6 +114,7 @@ break;
 				if ($conn->query($sqlupdate2) === TRUE) {
 				}
 			  }
+			}
 
 //First create TalkJS User with same ID as conversation
 $ch = curl_init();
@@ -174,62 +176,62 @@ echo $result2;
 
 
 if($orderProduct == "ask"){
-	$logArray[] = "ask product";
+					$logArray[] = "ask product";
 
-	$sql_text = "SELECT * FROM ask WHERE order_id = '$orderId'";
-					$sql_text_res = $conn->query($sql_text);
-					if($sql_text_res->num_rows == 0) {
-					} else {
-						while($rowText = $sql_text_res->fetch_assoc()) {
-							$UserMSG = $rowText["text"] . "\n\n";
-							$logArray[] = $UserMSG ;
-						}
-					}
+					$sql_text = "SELECT * FROM ask WHERE order_id = '$orderId'";
+									$sql_text_res = $conn->query($sql_text);
+									if($sql_text_res->num_rows == 0) {
+									} else {
+										while($rowText = $sql_text_res->fetch_assoc()) {
+											$UserMSG = $rowText["text"] . "\n\n";
+											$logArray[] = $UserMSG ;
+										}
+									}
 
 
-					//Now create new conversation
-$ch2 = curl_init();
+									//Now create new conversation
+				$ch2 = curl_init();
 
-$data2 = [
-"subject" => "Order #".$orderId." | ".$order_product_nice,
-"participants" => ["administrator", $userID],
-"custom" => ["product" => "ask"]
-];
+				$data2 = [
+				"subject" => "Order #".$orderId." | ".$order_product_nice,
+				"participants" => ["administrator", $userID],
+				"custom" => ["product" => "ask"]
+				];
 
-$data22 = json_encode($data2);
-curl_setopt($ch2, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/conversations/'.$orderId);
-curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch2, CURLOPT_CUSTOMREQUEST, 'PUT');
+				$data22 = json_encode($data2);
+				curl_setopt($ch2, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/conversations/'.$orderId);
+				curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
+				curl_setopt($ch2, CURLOPT_CUSTOMREQUEST, 'PUT');
 
-curl_setopt($ch2, CURLOPT_POSTFIELDS, $data22);
+				curl_setopt($ch2, CURLOPT_POSTFIELDS, $data22);
 
-$headers = array();
-$headers[] = 'Content-Type: application/json';
-$headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
-curl_setopt($ch2, CURLOPT_HTTPHEADER, $headers);
+				$headers = array();
+				$headers[] = 'Content-Type: application/json';
+				$headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
+				curl_setopt($ch2, CURLOPT_HTTPHEADER, $headers);
 
-$result2 = curl_exec($ch2);
-if (curl_errno($ch2)) {
-    echo 'Error:' . curl_error($ch2);
-}
-curl_close($ch2);
+				$result2 = curl_exec($ch2);
+				if (curl_errno($ch2)) {
+					echo 'Error:' . curl_error($ch2);
+				}
+				curl_close($ch2);
 
- //Send CURL for message -> TalkJS
- $ch = curl_init();
- $data = [[
-	 "text" => $OrderProcessingMessage,
-	 "type" => "SystemMessage"
- ],
- [
-	 "sender"  => "administrator",
-	 "text" => $message,
-	 "type" => "UserMessage"
- ], 
- [
-	"sender"  => $userID,
-	"text" => $UserMSG,
-	"type" => "UserMessage"
-]];
+				//Send CURL for message -> TalkJS
+				$ch = curl_init();
+				$data = [[
+					"text" => $OrderProcessingMessage,
+					"type" => "SystemMessage"
+				],
+				[
+					"sender"  => "administrator",
+					"text" => $message,
+					"type" => "UserMessage"
+				], 
+				[
+					"sender"  => $userID,
+					"text" => $UserMSG,
+					"type" => "UserMessage"
+				]];
 }else{
 
   //Send CURL for message -> TalkJS
@@ -340,8 +342,10 @@ curl_setopt_array($ch = curl_init(), array(
   curl_exec($ch);
   curl_close($ch);
 }
+
+
 //Facebook API conversion
-if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProduct == "twinflame"){
+if($orderProduct == "soulmate" OR $orderProduct == "futurespouse" OR $orderProduct == "twinflame" OR $orderProduct == "husband"){
 	if($sendFBAPI == 1){
 	 $fixedBirthday = date("Ymd", strtotime($birthday));
  

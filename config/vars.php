@@ -7,7 +7,7 @@ ini_set('display_errors', '1');
 
 $debounce = 0; //Debounce for email Verification
 $startpixel  = 1; //Facebook pixel pageviews
-
+$runAbandoned = 0; //Send abandoned messages
 $push = 1; //Send push notifications for phone on sales
 
 $FBPixel  = "163033846859083";
