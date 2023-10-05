@@ -16,7 +16,9 @@ if($runAbandoned == 1){
         echo "Pending Orders: ".$resultpending->num_rows."<br><br>";
 
 while($row = $resultpending->fetch_assoc()) {
-   
+			$logArray = "";
+			$logArray = array();
+
 			$id = $row["id"];
 			$user = $row["user"];
 			$email = $row["email"];
@@ -43,8 +45,8 @@ while($row = $resultpending->fetch_assoc()) {
 			//Sending First Message
 			if($difference >= "20" && $first == "0"){
 
-
-				
+			$logArray[] = $user." | ".$orderID." | ". $email." | ".$product." | ".$time." | ";
+			
 			//First create TalkJS User
 			$ch = curl_init();
 			$data = [
@@ -109,6 +111,7 @@ while($row = $resultpending->fetch_assoc()) {
 				$sqlupdate = "UPDATE `abandoned` SET `first`='1' WHERE id='$id'";
 				if ($conn->query($sqlupdate) === TRUE) {
 					echo "sending first message";
+					$logArray[] = "Sending First Message";
 					$message = $firstAbandon;
 					$message = str_replace("%FIRSTNAME%", $name, $message);
 					$message = str_replace("%PRODUCT%", $product, $message);
@@ -141,10 +144,11 @@ while($row = $resultpending->fetch_assoc()) {
 
 			//Sending Second Message
 			}elseif($difference >= "1440" && $first == "1" && $second == "0"){
-
+				$logArray[] = $user." | ".$orderID." | ". $email." | ".$product." | ".$time." | ";
 				$sqlupdate = "UPDATE `abandoned` SET `second`='1' WHERE id='$id'";
 				if ($conn->query($sqlupdate) === TRUE) {
 					echo "sending second message";
+					$logArray[] = "Sending Second Message";
 					$link = $link."&voucher=cartrecover";
 					$message = $secondAbandon;
 					$message = str_replace("%FIRSTNAME%", $name, $message);
@@ -216,7 +220,7 @@ while($row = $resultpending->fetch_assoc()) {
 		
 
  
-            
+			abandonLog($logArray);     
 }
 
            

@@ -72,6 +72,19 @@ function startLog($array)
 }
 
 //Save to order log function
+function abandonLog($array)
+{
+  $dataToLog = $array;
+  $data = implode(" | ", $dataToLog);
+  $data .= PHP_EOL;
+  $pathToFile = $_SERVER['DOCUMENT_ROOT'] . "/logs/abandon.log";
+  $success = file_put_contents($pathToFile, $data, FILE_APPEND);
+  if ($success === TRUE) {
+    echo "log saved";
+  }
+}
+
+//Save to order log function
 function missingLog($array)
 {
   $dataToLog = $array;
