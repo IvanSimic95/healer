@@ -338,6 +338,7 @@ $sql5 = "SELECT * FROM users WHERE email = '".$user_email."'";
         
 
     }
+    $fbSource = $_POST['fbSource'];
     $fbCampaign = $_POST['fbCampaign'];
     $fbAdset = $_POST['fbAdset'];
     $fbAd = $_POST['fbAd'];   
