@@ -352,7 +352,7 @@ if(mysqli_query($conn,$sql)){
 $lastRowInsert = mysqli_insert_id($conn);
 $submitStatus = "Success";
 $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
-$redirectPayment = "https://www.digistore24.com/product/".$cbproduct."?custom=".$lastRowInsert."&email=".$user_email."&first_name=".$fName."&last_name=".$lName;
+$redirectPayment = "https://www.digistore24.com/product/".$cbproduct."?custom=".$fbSource."&email=".$user_email."&first_name=".$fName."&last_name=".$lName;
 
 if($order_product == "ask"){
   $sql2 = "INSERT INTO ask (order_id, text) VALUES ('$lastRowInsert', '$text')";
