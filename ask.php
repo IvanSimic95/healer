@@ -78,6 +78,8 @@ $count = $row['reviews'];
                            
                                 <input class="product" type="hidden" name="priority" value="24">
                             <input class="product" type="hidden" name="product" value="ask">
+
+                            <input class="fbproduct" type="hidden" name="fbSource" value="<?php echo $_SESSION['fbSource']; ?>">
                             <input class="fbproduct" type="hidden" name="fbCampaign" value="<?php echo $_SESSION['fbCampaign']; ?>">
                             <input class="fbproduct" type="hidden" name="fbAdset" value="<?php echo $_SESSION['fbAdset']; ?>">
                             <input class="fbproduct" type="hidden" name="fbAd" value="<?php echo $_SESSION['fbAd']; ?>">
