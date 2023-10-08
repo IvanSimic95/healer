@@ -15,6 +15,51 @@ $count = $row['reviews'];
 <?php
 
 
+if(isset($_GET['c'])){
+  $ord = $_GET['c'];
+  $order_ID = $ord;
+  $sql = "SELECT * FROM `orders` WHERE `order_id` = '$ord' ORDER BY `order_id` DESC LIMIT 1";
+  $result = $conn->query($sql);
+  $count = $result->num_rows;
+  $row = $result->fetch_assoc();
+  
+  //If order is found input data from BG and update status to paid
+  if($result->num_rows != 0) {
+  
+  $_SESSION['lastorder'] = $_GET['c'];
+  $_SESSION['orderFName'] = $row['first_name'];
+  $_SESSION['orderLName'] = $row['last_name'];
+  $_SESSION['orderBirthday'] = $row['birthday'];
+  $_SESSION['orderAge'] = $row['user_age'];
+  $_SESSION['orderGender'] = $row['gender'];
+  $_SESSION['orderPartnerGender'] = $row['partner_gender'];
+  $_SESSION['BGEmail'] = $row['order_email'];
+  
+  $_SESSION['fbfirepixel'] = 1;
+  $_SESSION['fborderID'] = $_GET['c'];
+  $_SESSION['fborderPrice'] = $row['order_price'];
+  $_SESSION['fbproduct'] = $row['order_product'];
+
+  $_SESSION['fbSource'] = $row['fbSource'];
+
+  if (isset($_SESSION['fbSource'])) {
+
+    if($_SESSION['fbSource'] == "R"){
+      $FBPixel = $FBPixel1;
+    }elseif($_SESSION['fbSource'] == "G"){
+      $FBPixel = $FBPixel2;
+    }
+  }else{
+    $FBPixel = $FBPixel1;
+  }
+  
+  
+  }
+  
+  
+  
+  
+}else{
 
 if(isset($_SESSION['lastorder'])){
 $lastOrderID = $_SESSION['lastorder'];
@@ -41,41 +86,20 @@ $_SESSION['fborderID'] = $lastOrderID;
 $_SESSION['fborderPrice'] = $row['order_price'];
 $_SESSION['fbproduct'] = $row['order_product'];
 
+if (isset($_SESSION['fbSource'])) {
 
-}
-}else{
-  if(isset($_GET['c'])){
-$ord = $_GET['c'];
-$order_ID = $ord;
-$sql = "SELECT * FROM `orders` WHERE `order_id` = '$ord' ORDER BY `order_id` DESC LIMIT 1";
-$result = $conn->query($sql);
-$count = $result->num_rows;
-$row = $result->fetch_assoc();
-
-//If order is found input data from BG and update status to paid
-if($result->num_rows != 0) {
-
-$_SESSION['lastorder'] = $_GET['c'];
-$_SESSION['orderFName'] = $row['first_name'];
-$_SESSION['orderLName'] = $row['last_name'];
-$_SESSION['orderBirthday'] = $row['birthday'];
-$_SESSION['orderAge'] = $row['user_age'];
-$_SESSION['orderGender'] = $row['gender'];
-$_SESSION['orderPartnerGender'] = $row['partner_gender'];
-$_SESSION['BGEmail'] = $row['order_email'];
-
-$_SESSION['fbfirepixel'] = 1;
-$_SESSION['fborderID'] = $_GET['c'];
-$_SESSION['fborderPrice'] = $row['order_price'];
-$_SESSION['fbproduct'] = $row['order_product'];
-
-
-}
-
-
-
-
+  if($_SESSION['fbSource'] == "R"){
+    $FBPixel = $FBPixel1;
+  }elseif($_SESSION['fbSource'] == "G"){
+    $FBPixel = $FBPixel2;
   }
+}else{
+  $FBPixel = $FBPixel1;
+}
+
+}
+}
+ 
 }
 $FirePixel = $_SESSION['fbfirepixel'];
 ?>

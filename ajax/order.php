@@ -411,6 +411,7 @@ $_SESSION['Pixelgender']= $userGender;
 $_SESSION['Pixeldob']   = date("Ymd", strtotime($user_birthday));
 $_SESSION['PixelID']    = $lastRowInsert;
 
+
 echo json_encode($returnData);
 } else {
 $lastRowInsert = "";
