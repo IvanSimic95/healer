@@ -248,6 +248,25 @@ if (isset($_GET['utm_campaign'])) {
 }
 
 
+if (isset($_GET['utm_source'])) {
+  $_SESSION['fbSource'] = $_GET['utm_source'];
+} else {
+  $fbSource = "R";
+  if (!isset($_SESSION['fbSource'])) {
+    $_SESSION['fbSource'] = $fbSource;
+  }
+}
+
+if (isset($_SESSION['fbSource'])) {
+
+  if($_SESSION['fbSource'] == "R"){
+    $FBPixel = $FBPixel1;
+  }elseif($_SESSION['fbSource'] == "G"){
+    $FBPixel = $FBPixel2;
+  }
+}else{
+  $FBPixel = $FBPixel1;
+}
 
 function autologin($userID)
 {

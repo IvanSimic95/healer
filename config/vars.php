@@ -10,20 +10,28 @@ $startpixel  = 1; //Facebook pixel pageviews
 $runAbandoned = 1; //Send abandoned messages
 $push = 1; //Send push notifications for phone on sales
 
-$FBPixel  = "163033846859083";
+$FBPixel1 = "163033846859083"; //Rodica
+$FBPixel2  = "692217912347910"; //Gabe
 
-$FBPurchasePixel = "";
-$FBViewContent = "";
-$productMETA = "";
+
+
 
 
 //Data for FB Conversions API
 $accessToken1 = "EAAxkvwzdc3kBOyptJvqbPM9PDyN5aD18NrHH4qV5xABNgPosmS4LNE9pXtuf3";
 $accessToken2 = "6ZBxBFTucuUyu4CNysn005Btf2hAUq8ADBmP3La5r23C0NFR5ke9ZC2bZC1LdT44X6ZBa7p5GZB8BpZBaJp2goi4KgEOdQAscMDEkgGJBxnfXhZALrsTufZAcWSgaKpzw76UgZDZD";
-$fbAccessToken = $accessToken1 . $accessToken2;
+$fbAccessToken1 = $accessToken1 . $accessToken2; //Rodica
+
+$accessToken11 = "EAAJw55TSSlwBO8gbnFIRHkllZAvEZAaNXsfFVog3m4Yjg9MarZBo4V4on";
+$accessToken22 = "vGMXaEuLZAIx5GmCcPrm72KHecMI7co54kJDBoaDRVYDJn8qhkJiYJpEC4Iovno59ZBMJZBeswtU2NCLNbGS2Jt69ZAyjcl2ANeh60mVfSiCvptvrZBtWC1gcEB1XgKUIsAI4LfsQZDZD";
+$fbAccessToken2 = $accessToken11 . $accessToken22; //Gabe
 
 $sendFBAPI = 1; #Set to 1 to send data via api
 
+
+$FBPurchasePixel = "";
+$FBViewContent = "";
+$productMETA = "";
 
 #error_reporting(0);
 #ini_set('display_errors', 0);
