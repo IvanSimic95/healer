@@ -261,7 +261,7 @@ if (isset($_SESSION['fbSource'])) {
 
   if($_SESSION['fbSource'] == "R"){
     $FBPixel = $FBPixel1;
-  }elseif($_SESSION['fbSource'] == "G"){
+  }elseif($_SESSION['fbSource'] == "Facebook"){
     $FBPixel = $FBPixel2;
   }
 }else{

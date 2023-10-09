@@ -34,7 +34,7 @@ echo "Starting start-orders.php...<br><br>";
 			$fbp = $row["fbp"];
 
 			$fbSource = $row["fbSource"];
-			if($fbSource == "G"){
+			if($fbSource == "Facebook"){
 				$fbAccessToken = $fbAccessToken2;
 			}else{
 				$fbAccessToken = $fbAccessToken1;
