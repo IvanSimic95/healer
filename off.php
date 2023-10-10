@@ -11,15 +11,7 @@ if ($v > 3) {
     $v = 1;
 }
 
-if (isset($_GET['c'])) {
-    $c = $_GET['c'];
-} else {
-    $c = 1;
-}
 
-if ($c > 3) {
-    $c = 1;
-}
 
 ?>
 <!DOCTYPE html>
@@ -531,82 +523,7 @@ h5 {
     padding-left: 8px;
 }
 </style>
-<?php if($c == 1){ ?>
-        <?php if ($v == 1) { ?>
 
-            <div style="" class="main-body-section wf-section">
-                <div class="container w-container">
-                    <p class="sub-paragraph pcenter">✨ THE ART OF LOVE ✨<br/><strong>DISCOVER 🔮 YOUR SOULMATE</strong></p>
-                    <p style="" class="sub-paragraph pcenter bgtitle"><strong>YOUR DESTINY ILLUSTRATED</strong></p>
-                    <p class="sub-paragraph notcenter">👋 Warm greetings from the <span style="background-color:#e9c023;color:#302a4e;padding:0px 6px;font-weight:700;">Soulmate Healer.</span> In a world where true connection feels like a rarity, I offer a beacon of hope.<br/><br/>• My unique gift doesn't just anticipate the future; it paints a vivid image of your heart's deepest yearning a love 💜 that promises warmth, understanding, and unwavering commitment.</p>
-                    <p style="background-color:#201b39;padding:20px;border-radius:8px;" class="sub-paragraph notcenter">
-					<img style="margin-bottom: 25px;border-radius: 4px;" class="imgcontentdesk" src="https://soulmatehealer.com/images/yey3.jpg">	
-					My <span style="background-color:#e9c023;color:#302a4e;padding:0px 1px;font-weight:200;"> Soulmate Portraits</span> are no mere drawings; they're a magical blend of deep psychic connection and artistic talent. I channel a synergy of empathic projection, clairsentience, and clairvoyance, enhanced by my rich knowledge in spiritual healing and psychic artistry. I hold the power to see the unseen - to discern that perfect moment when you're ready to embrace true love and the ways to dismantle any walls that stand in your way.
-					<br/><br/>
-					<i class="far fa-check-circle" style="color: #3ad02f;font-size: 14px;"></i> 99% Drawing Accuracy <br/>
-					<i class="far fa-check-circle" style="color: #3ad02f;font-size: 14px;"></i> 100% Satisfaction guarantee <br/>
-					<i class="far fa-check-circle" style="color: #3ad02f;font-size: 14px;"></i> Order now, receive within 1 hour <br/>
-					
-					</p>
-                    <p class="sub-paragraph notcenter"><span style="background-color:#6932b1;padding:0px 6px;">Many women, just like you,</span> find themselves at life's crossroads - yearning for genuine love, a partner to share dreams with, someone to erase past hurts and promise a future filled with passion. This isn’t a mere illustration. It's a door to a future 🔮 filled with shared laughter, endless conversations, and moments where you feel seen and cherished.</p>
-                    <p style="background-color:#201b39;padding:20px;border-radius:8px;" class="sub-paragraph notcenter">
-					<img style="margin-bottom: 25px;border-radius: 4px;" class="imgcontentdesk" src="https://soulmatehealer.com/images/yey1.jpg">	
-					• Simply entrust 👼 me with your name and date of birth, and I'll embark on a journey, delving into the universe's grand design.<br/><br/>• Within this vast expanse, I find your soul's counterpart the one person who will hold your hand through life's highs and lows, who will listen, truly listen, to every whispered hope and silent tear.<br/><br/><span style="background-color:#6932b1;padding:0px 6px;">As I sketch</span> 🖌️ every line captures a story, every shade encapsulates a promise, and every detail whispers of a love that’s waiting to be found.</p>
-                    <p class="sub-paragraph notcenter">⚡ Meeting your soulmate isn't just another chapter; it's a whole new book, a fresh start. It's about waking up to mornings filled with hope, spending days wrapped in shared dreams, and nights basking in mutual affection.</p>
-                    <p style="" class="sub-paragraph pcenter bgtitle"><strong>SPECIAL REVEAL</strong><br/>The Moment of Serendipity</p>
-                    <p class="sub-paragraph notcenter"><span style="background-color:#e9c023;color:#302a4e;padding:0px 6px;font-weight:700;">Your soulmate</span> is more than just a partner; <span style="background-color:#6932b1;padding:0px 6px;">he's the missing puzzle piece,</span> fitting seamlessly into the recesses of your heart.<br/><br/>❤️ When you meet it will feel like coming home. The universe has a destined moment for this magical meeting, and I'll provide a glimpse into when this heart - fluttering encounter will happen.</p>
-                    <p class="sub-paragraph notcenter">🌠 Over the years, from silver screens to ordinary streets, countless women have sought the revelations I provide.<<br/><br/>🧙‍♀️ It's a universal quest, this search for <span style="background-color:#6932b1;padding:0px 6px;">true love,</span> and every woman, no matter her journey, deserves her fairy - tale ending.<br/><br/>✨ By choosing this path, you're not just seeking a face. You're seeking a future, and I am honored to guide you towards it.</p>
-                    <p style="" class="sub-paragraph pcenter bgtitle"><strong>YOUR PRIVACY, OUR PRIORITY</strong><br/>Exclusively Digital, Unquestionably Confidential</p>
-                    <p class="sub-paragraph notcenter">💌 All revelations will be sent directly to your chosen email ensuring your personal details remain private.<br/><br/>👉 With round-the-clock access from your user portal, know that your journey towards love is both safe and sacred.</p>
-                    <div class="button-wrapper">
-
-<a href="#" id="submitbtn" style="font-weight:400;font-size:25px;text-decoration:none;" value="Place an order">ORDER NOW</b>
-    <br>
-        <span style="font-weight:400" class="btn-sub-text">👉 And Watch Your Life Magically Change</span>
-</a>	
-</div>
-                </div>
-            </div>
-			<br>
-
-        <?php } elseif ($v == 2) { ?>
-
-            <div class="main-body-section wf-section">
-                <div class="container w-container">
-                <p class="sub-paragraph pcenter">🔮✨ <strong>THE LEGEND OF THE SOULMATE HEALER: YOUR GUIDE IN LOVE'S MAZE</strong> ✨🔮</p>
-                    <p class="sub-paragraph notcenter">In a world teeming with voices claiming to have the answers, one name stands out as a beacon of authenticity, clarity, and unparalleled intuition—The Soulmate Healer. For those navigating the turbulent waters of love, his name isn't just recognized it's revered.</p>
-                    <p class="sub-paragraph notcenter">Soulmate Healer's story is no ordinary one. Born into a lineage of esteemed seers, he exhibited uncanny psychic abilities from a tender age. While his peers were engrossed in childish whims, he was deciphering the cosmic tales whispered by the winds and the stars. His early years were spent under the tutelage of spiritual mentors across the globe, from the mystic valleys of Tibet to the hidden chambers of Egyptian pyramids.</p>
-                    <p class="sub-paragraph notcenter">With each passing year, his skills grew, not just in strength but in precision. The world began to notice. Celebrities, royals, and influential figures discreetly sought his guidance. They found solace in his visions, reassurance in his words, and most importantly, clarity in the intricate labyrinth of their emotions. His astounding ability to sketch one's soulmate became a legend; tales whispered in elite circles about a man who could, with just a name and birthdate, reveal your heart's ultimate desire.</p>
-                    <p class="sub-paragraph notcenter">But what truly sets Soulmate Healer apart isn't just his illustrious clientele or his uncanny abilities. It's his unwavering dedication to his purpose: guiding souls to their destined partner. While many in his industry chase fame or fortune, his motivations are pure, rooted in the belief that every soul, regardless of their past or present, is deserving of a love that's profound and genuine.</p>
-                    <p class="sub-paragraph notcenter">Choosing Soulmate Healer isn't just opting for another psychic reading. It's choosing authenticity over pretense. It's choosing a legacy of psychic lineage over novices. It's about trusting a guide who understands that your quest isn't just for love—it's for a connection that transcends lifetimes.</p>
-                    <p class="sub-paragraph notcenter">In a market filled with imitations, why settle for less? Soulmate Healer isn't just another name. He's an experience, a legend, and for many, the key to unlocking a love story written in the stars.</p>
-          
-                </div>
-            </div>
-
-
-
-        <?php } elseif ($v == 3) { ?>
-
-            <div class="main-body-section wf-section">
-                <div class="container w-container">
-                <p class="sub-paragraph pcenter">🔮✨ <strong>THE LEGEND OF THE SOULMATE HEALER: SECRETS OF THE STARS UNVEILED</strong> ✨🔮</p>
-                    <p class="sub-paragraph notcenter">In the grand tapestry of love, few threads shine as luminously as those woven by the Soulmate Healer. Draped in tales of love found and destinies fulfilled, this modern-day sage has created an aura of mystique around him, made all the more enchanting by the stories of the stars who've sought his guidance.</p>
-                    <p class="sub-paragraph notcenter">Imagine a service that doesn’t just predict your soulmate but brings their essence to life on paper. This is precisely the magic of the "Soulmate Psychic Drawing." The process isn't just about art; it's a communion of the senses, intuition, and psychic mastery. The Soulmate Healer begins by harmonizing his energies with the cosmic rhythms, drawing from ancestral practices and deep-seated clairvoyance. With your name and the melodies of your birth date, he traverses the psychic realms, seeking the face and spirit of your destined love. The result is an intricate, lifelike representation of your soulmate, capturing not just their physical attributes but also their spirit, energy, and essence.</p>
-                    <p class="sub-paragraph notcenter">The journey of this unparalleled service took a serendipitous turn during a star-studded evening in Beverly Hills. As the story goes, an A-list actress, her heart marred by the trials of love, approached the Soulmate Healer. Skepticism clouded her eyes, but desperation urged her on. When presented with her soulmate's drawing, she was left in awe – and later that night, fate orchestrated a meeting with the very man from the portrait. Their love story, now the stuff of whispered legends, became a testament to the power of the Soulmate Healer's craft.</p>
-                    <p class="sub-paragraph notcenter">Word spread, and soon, icons from silver screens to musical stages sought the Soulmate Healer's expertise. Each star came with their own tale of love's woes, and each left with renewed hope, clutching a portrait that would change their lives. These were not mere drawings but keys to a future brimming with love and connection.</p>
-                    <p class="sub-paragraph notcenter">But even amidst the accolades and whispered testimonials, the Soulmate Healer's passion remains unchanged: guiding every heart towards its destined half. It isn't just the stars that shine in his universe. Each client, each drawing, each love story unveiled is a testament to a legacy that transcends fame.</p>
-                    <p class="sub-paragraph notcenter">In a world filled with fleeting moments and fleeting loves, the Soulmate Psychic Drawing offers something eternal: a glimpse into a future where love is not just felt but seen, touched, and cherished. Entrust your heart's desires to the man whom the stars trust. After all, why wander aimlessly in search of love when you can have the universe's chosen guide unveil it for you?</p>
-          
-                </div>
-            </div>
-
-        <?php } ?>
-
-      
-        </div>
-<?php } ?>
-<hr>
 
         <div style="
 
