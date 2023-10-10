@@ -1,6 +1,6 @@
 <?php
-$t_product_name = "meetsoulmate";
-$t_product_form_name = "meetsoulmate";
+$t_product_name = "msoulmate";
+$t_product_form_name = "msoulmate";
 $title = "When and Where You'll Meet Your Soulmate";
 $description = "The divine timeline of destined love | Soulmate Healer";
 
