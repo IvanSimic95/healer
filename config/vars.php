@@ -10,9 +10,9 @@ $startpixel  = 1; //Facebook pixel pageviews
 $runAbandoned = 1; //Send abandoned messages
 $push = 1; //Send push notifications for phone on sales
 
-$FBPixel1 = "163033846859083"; //Rodica
-$FBPixel2  = "692217912347910"; //Gabe
-
+$FBPixel1 = "163033846859083"; //Rodica - R
+$FBPixel2  = "692217912347910"; //Gabe - Facebook
+$FBPixel3  = ""; //ROI - F
 
 
 
@@ -25,6 +25,10 @@ $fbAccessToken1 = $accessToken1 . $accessToken2; //Rodica
 $accessToken11 = "EAAJw55TSSlwBO8gbnFIRHkllZAvEZAaNXsfFVog3m4Yjg9MarZBo4V4on";
 $accessToken22 = "vGMXaEuLZAIx5GmCcPrm72KHecMI7co54kJDBoaDRVYDJn8qhkJiYJpEC4Iovno59ZBMJZBeswtU2NCLNbGS2Jt69ZAyjcl2ANeh60mVfSiCvptvrZBtWC1gcEB1XgKUIsAI4LfsQZDZD";
 $fbAccessToken2 = $accessToken11 . $accessToken22; //Gabe
+
+$accessToken111 = "";
+$accessToken222 = "";
+$fbAccessToken3 = $accessToken111 . $accessToken222; //ROI
 
 $sendFBAPI = 1; #Set to 1 to send data via api
 

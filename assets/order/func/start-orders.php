@@ -36,8 +36,13 @@ echo "Starting start-orders.php...<br><br>";
 			$fbSource = $row["fbSource"];
 			if($fbSource == "Facebook"){
 				$fbAccessToken = $fbAccessToken2;
+				$FBPixel = $FBPixel2;
+			}elseif($fbSource == "F"){
+				$fbAccessToken = $fbAccessToken3;
+				$FBPixel = $FBPixel3;
 			}else{
 				$fbAccessToken = $fbAccessToken1;
+				$FBPixel = $FBPixel1;
 			}
 	
 		

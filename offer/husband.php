@@ -47,6 +47,8 @@ if(isset($_GET['c'])){
       $FBPixel = $FBPixel1;
     }elseif($_SESSION['fbSource'] == "Facebook"){
       $FBPixel = $FBPixel2;
+    }elseif($_SESSION['fbSource'] == "F"){
+      $FBPixel = $FBPixel3;
     }
   }else{
     $FBPixel = $FBPixel1;
@@ -91,6 +93,8 @@ if (isset($_SESSION['fbSource'])) {
     $FBPixel = $FBPixel1;
   }elseif($_SESSION['fbSource'] == "Facebook"){
     $FBPixel = $FBPixel2;
+  }elseif($_SESSION['fbSource'] == "F"){
+    $FBPixel = $FBPixel3;
   }
 }else{
   $FBPixel = $FBPixel1;

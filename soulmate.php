@@ -11,6 +11,16 @@ if ($v > 3) {
     $v = 1;
 }
 
+if (isset($_GET['c'])) {
+    $c = $_GET['c'];
+} else {
+    $c = 1;
+}
+
+if ($c > 3) {
+    $c = 1;
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,14 +34,14 @@ if ($v > 3) {
     <meta name="title" content="Soulmate Healer" />
     <meta name="description" content="Get your soulmate Drawing" />
     <meta name="author" content="Soulmate Healer" />
-    <link href="https://soulmate-psychic.com/assets/img/good-logo.jpg" rel="alternate" media="only screen and (max-width: 640px)" />
+    <link href="https://soulmatehealer.com/images/yey.jpg" rel="alternate" media="only screen and (max-width: 640px)" />
     <meta property="twitter:title" content="Soulmate Healer" />
     <meta property="twitter:description" content="Get your soulmate Drawing" />
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:image" content="https://soulmate-psychic.com/assets/img/good-logo.jpg" />
+    <meta property="twitter:image" content="https://soulmatehealer.com/images/yey.jpg" />
     <meta property="og:title" content="Soulmate Healer" />
     <meta property="og:description" content="Get your soulmate Drawing" />
-    <meta property="og:image" content="https://soulmate-psychic.com/assets/img/good-logo.jpg" />
+    <meta property="og:image" content="https://soulmatehealer.com/images/yey.jpg" />
     <!-- CSS only -->
 	
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,7 +96,7 @@ $(function() {
                 <h1 class="headline"><span class="bolded-headline">PSYCHIC PORTRAIT OF<br/><img style="width: 100%;max-width: 40px;" src="https://clipart-library.com/img/2059621.gif"> YOUR SOULMATE</span></h1>
                 <div class="video w-embed w-script">
 					
-							<img style="border-radius:4px;max-width: 350px;" src="https://soulmatehealer.com/images/yey.jpg">		
+                <script src="https://fast.wistia.com/embed/medias/ozk6r3bppb.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ozk6r3bppb seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/ozk6r3bppb/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
 							
                     <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post">
 							<h2 class="headline dark-subheader inverted">Begin your journey to love's true visage!️<br>❤️ Fill in your details below ❤️</h2>
@@ -521,7 +531,7 @@ h5 {
     padding-left: 8px;
 }
 </style>
-
+<?php if($c == 1){ ?>
         <?php if ($v == 1) { ?>
 
             <div style="" class="main-body-section wf-section">
@@ -595,7 +605,7 @@ h5 {
 
       
         </div>
-
+<?php } ?>
 <hr>
 
         <div style="
