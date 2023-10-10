@@ -598,6 +598,33 @@ $logArray[] = "
 				   $logError[] = $orderEmail;
 				   missingLog($logError);
 				}
+
+
+			}elseif ($orderProduct == "msoulmate") {
+
+				$image_send = 0;
+				$email_text = "";
+				$text_send = "1";
+				$theader = "";
+				$tfooter = "";
+				$finishOrder = 1;
+
+				 //Find new message text to send
+				 $sql_pick = "SELECT * FROM orders_text WHERE product = 'msoulmate' order by RAND() limit 1";
+				 $sql_pick_res = $conn->query($sql_pick);
+				 if($sql_pick_res->num_rows > 0) {
+				   while($rowImages = $sql_pick_res->fetch_assoc()) {
+					   $email_text = $rowImages["text"];
+					   $message = $theader.$email_text.$tfooter;
+					  
+				   }
+				 }else{ //If not found stop the process and record to error log
+				   $message = "";
+				   $logError[] = "Missing Text";
+				   $logError[] = $orderID;
+				   $logError[] = $orderEmail;
+				   missingLog($logError);
+				}
 				
 
 				}elseif ($orderProduct == "personal") {
