@@ -82,7 +82,7 @@ $count = $row['reviews'];
                                 <label for="prio48"> <span><i class="fas fa-clock" aria-hidden="true"></i>48h</span></label>
                             </div>
 
-                            <input class="product" type="hidden" name="product" value="meetsoulmate">
+                            <input class="product" type="hidden" name="product" value="msoulmate">
 
                             <input class="fbproduct" type="hidden" name="fbSource" value="<?php echo $_SESSION['fbSource']; ?>">
                             <input class="fbproduct" type="hidden" name="fbCampaign" value="<?php echo $_SESSION['fbCampaign']; ?>">
