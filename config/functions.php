@@ -199,15 +199,16 @@ if ($domain == "healer.test") {
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
+/*
 $conn->query('set character_set_client=utf8');
 $conn->query('set character_set_connection=utf8');
 $conn->query('set character_set_results=utf8');
 $conn->query('set character_set_server=utf8');
 $conn->set_charset('utf8mb4');
-
+*/
 // Check connection
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+  die("Website is currently unavailable, we are aware of the issue and are working on it. Please come back later.");
 }
 //END Database Configuration
 
