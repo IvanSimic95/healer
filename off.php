@@ -504,10 +504,10 @@ h5 {
                             </div>
 							<p><b>
                                         <center>
-                                            <p style="color:#d9480d;"><b> Love it or Your Money Back! 💖</b></p>
+                                            <p style="color:white;font-size:16px;"><b> Love it or Your Money Back! 💖</b></p>
                                     </b> </center>
                                 </p>
-                                <p style="color:#d9480d;"><b>Not satisfied? Get a full refund within 30 days. No questions asked. Your happiness, guaranteed!</b></p>
+                                <p style="color:white;font-size:16px;"><b>Not satisfied? Get a full refund within 30 days. No questions asked. Your happiness, guaranteed!</b></p>
                             <input class="fbproduct" type="hidden" name="fbSource" value="<?php echo $_SESSION['fbSource']; ?>">
                             <input class="fbproduct" type="hidden" name="fbCampaign" value="<?php echo $_SESSION['fbCampaign']; ?>">
                             <input class="fbproduct" type="hidden" name="fbAdset" value="<?php echo $_SESSION['fbAdset']; ?>">
