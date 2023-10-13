@@ -12,7 +12,7 @@ $push = 1; //Send push notifications for phone on sales
 
 $FBPixel1 = "163033846859083"; //Rodica - R
 $FBPixel2  = "692217912347910"; //Gabe - Facebook
-$FBPixel3  = ""; //ROI - F
+$FBPixel3  = "792407324843664"; //ROI - F
 
 
 
@@ -26,8 +26,8 @@ $accessToken11 = "EAAJw55TSSlwBO8gbnFIRHkllZAvEZAaNXsfFVog3m4Yjg9MarZBo4V4on";
 $accessToken22 = "vGMXaEuLZAIx5GmCcPrm72KHecMI7co54kJDBoaDRVYDJn8qhkJiYJpEC4Iovno59ZBMJZBeswtU2NCLNbGS2Jt69ZAyjcl2ANeh60mVfSiCvptvrZBtWC1gcEB1XgKUIsAI4LfsQZDZD";
 $fbAccessToken2 = $accessToken11 . $accessToken22; //Gabe
 
-$accessToken111 = "";
-$accessToken222 = "";
+$accessToken111 = "EAAxkvwzdc3kBOZBBGdpWyzu1N1Ll8pgVv3OcKZCgJcZA6nbY";
+$accessToken222 = "eJpPKmK9gl4ZA5kQ4clP26DmvvB5xzfrTKnJZAxZBENgkZC3mSnV2sCYiXIf8ttt5asDiMTU7mvyAI52vZB6Q5Bs9aILA4ZAjZBgu7fWQkA84nXntW441EBNuYeMp6u9iEKN8k2fvGzXgtufMRXgZDZD";
 $fbAccessToken3 = $accessToken111 . $accessToken222; //ROI
 
 $sendFBAPI = 1; #Set to 1 to send data via api
