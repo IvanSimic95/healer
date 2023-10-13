@@ -136,6 +136,13 @@ $count = $row['reviews'];
                                 </p>
                                 <p> Meeting your future husband isn't just a moment; it's an epochal shift, a new chapter where dreams merge with destiny. Through this product, you will be prepared, not just in heart but in spirit, to welcome this beautiful juncture of love, companionship, and shared aspirations. </p>
                                 <br>
+								<p><b>
+                                        <center>
+                                            <p style="color:#d9480d;"><b> Love it or Your Money Back! 💖</b></p>
+                                    </b> </center>
+                                </p>
+                                <p> <b>Not satisfied? Get a full refund within 30 days. No questions asked. Your happiness, guaranteed!</b></p>
+
                                 <p><b>
                                         <center>
                                             <p style="color:#d9480d;"> A COMMITMENT TO PRIVACY: Digital Delivery Only</p>
@@ -151,13 +158,13 @@ $count = $row['reviews'];
                         <!--IMAGE ON THE RIGHT FOR PC DISPLAY -->
                         <div class="col-lg-6 d-none d-lg-block">
                             <div class="image-container" style="margin-top:15px;">
-                                <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                                <img class="img-fluid" src="/images/111.jpeg" alt="alternative" style="border-radius: 0.5rem;">
                             </div>
                             <div class="image-container" style="margin-top:15px;">
-                                <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                                <img class="img-fluid" src="/images/12.png" alt="alternative" style="border-radius: 0.5rem;">
                             </div>
                             <div class="image-container" style="margin-top:15px;">
-                                <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                                <img class="img-fluid" src="/images/6.png" alt="alternative" style="border-radius: 0.5rem;">
                             </div>
                         </div>
 
@@ -166,15 +173,15 @@ $count = $row['reviews'];
 
                             <div class="col-12">
                                 <div class="image-container" style="display:inline-block;width:49%;">
-                                    <img class="img-fluid" src="/images/yey3.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                                    <img class="img-fluid" src="/images/111.jpeg" alt="alternative" style="border-radius: 0.5rem;">
                                 </div>
                                 <div class="image-container" style="display:inline-block;width:49%;">
-                                    <img class="img-fluid" src="/images/yey1.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                                    <img class="img-fluid" src="/images/12.png" alt="alternative" style="border-radius: 0.5rem;">
                                 </div>
                             </div>
                             <div class="col-12" style="margin-top:15px;">
                                 <div class="image-container">
-                                    <img class="img-fluid" src="/images/yey.jpg" alt="alternative" style="border-radius: 0.5rem;">
+                                    <img class="img-fluid" src="/images/6.png" alt="alternative" style="border-radius: 0.5rem;">
                                 </div>
                             </div>
                         </div>
