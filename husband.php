@@ -4,6 +4,27 @@ $t_product_form_name = "husband";
 $title = "When and Where You'll Meet Your Future Husband";
 $description = "The divine timeline of destined love | Soulmate Healer";
 
+$PRurl = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]".strtok($_SERVER["REQUEST_URI"],'?');
+
+$productMETA = <<<EOT
+    <!-- Meta Catalog Tags --> 
+    <meta property="og:url" content="$PRurl" />
+    <meta property="og:type" content="website" />
+
+    <meta property="product:brand" content="Soulmate Healer">
+    <meta property="product:availability" content="in stock">
+    <meta property="product:condition" content="new">
+    <meta property="product:price:amount" content="29">
+    <meta property="product:price:currency" content="USD">
+    <meta property="product:retailer_item_id" content="$t_product_form_name">
+
+    <script src="https://www.digistore24-scripts.com/service/digistore.js"></script>
+    <script type="text/javascript">
+    digistorePromocode( { "product_id": 516045, "adjust_all_urls": true, "adjust_domain": true } );
+    </script>
+
+EOT;
+
 include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; ?>
 <?php
 
