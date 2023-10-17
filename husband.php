@@ -1,4 +1,5 @@
 <?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 $t_product_name = "husband";
 $t_product_form_name = "husband";
 $title = "When and Where You'll Meet Your Future Husband";
