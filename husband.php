@@ -19,10 +19,6 @@ $productMETA = <<<EOT
     <meta property="product:price:currency" content="USD">
     <meta property="product:retailer_item_id" content="$t_product_form_name">
 
-    <script src="https://www.digistore24-scripts.com/service/digistore.js"></script>
-    <script type="text/javascript">
-    digistorePromocode( { "product_id": 516045, "adjust_all_urls": true, "adjust_domain": true } );
-    </script>
 
 EOT;
 
