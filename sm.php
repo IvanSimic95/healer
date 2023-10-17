@@ -58,6 +58,8 @@ if ($v > 3) {
     <link href="/images/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="/images/webclip.png" rel="apple-touch-icon">
 
+    
+
 <script>
 
 
@@ -75,7 +77,10 @@ $(function() {
 
 </script>
 
-  
+<script src="https://www.digistore24-scripts.com/service/digistore.js"></script>
+<script type="text/javascript">
+digistorePromocode( { "product_id": 513356, "adjust_all_urls": true, "adjust_domain": true } );
+</script>
 </head>
 
     <body class="body">
