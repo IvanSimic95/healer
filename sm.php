@@ -501,14 +501,14 @@ h5 {
 						</div>
 						
                             <div style="font-size: 14px;" class="secure-badge">
-                                🔒 <div class="secure-checkout-text">Safe &amp; Secure • 365 Money Back Guarantee</div>
+                                🔒 <div class="secure-checkout-text">Safe &amp; Secure • 60 Money Back Guarantee</div>
                             </div>
 								<p><b>
                                         <center>
                                             <p style="color:white;font-size:19px;"><b> Love it or Your Money Back! 💖</b></p>
                                     </b> </center>
                                 </p>
-                                <p style="color:white;font-size:19px;"><b>Not satisfied? Get a full refund within 30 days. No questions asked. Your happiness, guaranteed!</b></p>
+                                <p style="color:white;font-size:19px;"><b>Not satisfied? Get a full refund within 60 days. No questions asked. Your happiness, guaranteed!</b></p>
                             <input class="fbproduct" type="hidden" name="fbSource" value="<?php echo $_SESSION['fbSource']; ?>">
                             <input class="fbproduct" type="hidden" name="fbCampaign" value="<?php echo $_SESSION['fbCampaign']; ?>">
                             <input class="fbproduct" type="hidden" name="fbAdset" value="<?php echo $_SESSION['fbAdset']; ?>">
