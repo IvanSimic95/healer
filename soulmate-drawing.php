@@ -73,7 +73,7 @@ $count = $row['reviews'];
 						<p style="text-align:center;margin-top: -20px;font-size: 15px;">Ready for clarity? Start your experience by filling out the form below:</p>
                         <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post">
 								<div class="form-group">
-									<input type="text" class="form-control-input" id="sname" name="form_name" required>
+									<input type="text" class="form-control-input" id="sname" name="form_name" oninvalid="setCustomValidity('Please enter Full Name without numbers or symbols!')" title="Please enter Full Name without numbers or symbols!" pattern="[a-zA-Z][a-zA-Z\s]*" required>
 									<label class="label-control" for="sname">Full Name</label>
 									<div class="help-block with-errors"></div>
 								</div>
