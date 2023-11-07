@@ -92,7 +92,7 @@ $(function() {
                     <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post">
 							<h2 class="headline dark-subheader inverted">Begin your journey to love's true visage!️<br>❤️ Fill in your details below ❤️</h2>
                         <div class="form-floating form-floating-icon mb-2">
-                            <input style="border: 1px solid #333;" class="form-control" id="fullname" type="text" pattern="[a-zA-Z][a-zA-Z\s]*" name="form_name" placeholder="First & Last Name" required="">
+                            <input style="border: 1px solid #333;" class="form-control" id="fullname" type="text" title="Please enter Full Name without numbers or symbols!" pattern="[a-zA-Z][a-zA-Z\s]*" name="form_name" placeholder="First & Last Name" required="">
                             <span class="icon-inside"><i class="far fa-user"></i></span>
                             <label for="fullname">Your Full Name</label>
                         </div>
