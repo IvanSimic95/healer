@@ -380,6 +380,8 @@ if($order_product == "ask"){
 }
 
 }
+
+if($runAbandoned == 1){
 $active = 1;
 $abandon_link = $redirectPayment;
 //Abandoned email
@@ -399,7 +401,7 @@ $sql15 = "SELECT * FROM abandoned WHERE active = '1' AND user = '".$userID."'";
               
             }
     }
-
+  }
 
 
 

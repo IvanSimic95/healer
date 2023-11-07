@@ -7,7 +7,7 @@ ini_set('display_errors', '0');
 
 $debounce = 0; //Debounce for email Verification
 $startpixel  = 1; //Facebook pixel pageviews
-$runAbandoned = 1; //Send abandoned messages
+$runAbandoned = 0; //Send abandoned messages
 $push = 1; //Send push notifications for phone on sales
 
 $FBPixel1 = "163033846859083"; //Rodica - R
