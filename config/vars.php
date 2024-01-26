@@ -10,7 +10,8 @@ $startpixel  = 1; //Facebook pixel pageviews
 $runAbandoned = 0; //Send abandoned messages
 $push = 1; //Send push notifications for phone on sales
 
-$FBPixel1 = "163033846859083"; //Rodica - R
+$FBPixel1 = "478846387559798"; //NEW Rodica
+#$FBPixel1 = "163033846859083"; // OLD Rodica - R
 $FBPixel2  = "692217912347910"; //Gabe - Facebook
 $FBPixel3  = "792407324843664"; //ROI - F
 

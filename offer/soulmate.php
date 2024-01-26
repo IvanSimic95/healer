@@ -41,18 +41,8 @@ if(isset($_GET['c'])){
 
   $_SESSION['fbSource'] = $row['fbSource'];
 
-  if (isset($_SESSION['fbSource'])) {
 
-    if($_SESSION['fbSource'] == "R"){
-      $FBPixel = $FBPixel1;
-    }elseif($_SESSION['fbSource'] == "Facebook"){
-      $FBPixel = $FBPixel2;
-    }elseif($_SESSION['fbSource'] == "F"){
-      $FBPixel = $FBPixel3;
-    }
-  }else{
     $FBPixel = $FBPixel1;
-  }
   
   
   }

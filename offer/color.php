@@ -42,18 +42,8 @@ if(isset($_GET['c'])){
 
   $_SESSION['fbSource'] = $row['fbSource'];
 
-  if (isset($_SESSION['fbSource'])) {
 
-    if($_SESSION['fbSource'] == "R"){
-      $FBPixel = $FBPixel1;
-    }elseif($_SESSION['fbSource'] == "Facebook"){
-      $FBPixel = $FBPixel2;
-    }elseif($_SESSION['fbSource'] == "F"){
-      $FBPixel = $FBPixel3;
-    }
-  }else{
     $FBPixel = $FBPixel1;
-  }
   
   
   }
@@ -88,18 +78,8 @@ $_SESSION['fborderID'] = $lastOrderID;
 $_SESSION['fborderPrice'] = $row['order_price'];
 $_SESSION['fbproduct'] = $row['order_product'];
 
-if (isset($_SESSION['fbSource'])) {
 
-  if($_SESSION['fbSource'] == "R"){
-    $FBPixel = $FBPixel1;
-  }elseif($_SESSION['fbSource'] == "Facebook"){
-    $FBPixel = $FBPixel2;
-  }elseif($_SESSION['fbSource'] == "F"){
-    $FBPixel = $FBPixel3;
-  }
-}else{
   $FBPixel = $FBPixel1;
-}
 
 }
 }

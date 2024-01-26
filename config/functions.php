@@ -258,18 +258,8 @@ if (isset($_GET['utm_source'])) {
   }
 }
 
-if (isset($_SESSION['fbSource'])) {
 
-  if($_SESSION['fbSource'] == "R"){
-    $FBPixel = $FBPixel1;
-  }elseif($_SESSION['fbSource'] == "Facebook"){
-    $FBPixel = $FBPixel2;
-  }elseif($_SESSION['fbSource'] == "F"){
-    $FBPixel = $FBPixel3;
-  }
-}else{
   $FBPixel = $FBPixel1;
-}
 
 function autologin($userID)
 {
