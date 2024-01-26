@@ -19,9 +19,12 @@ $FBPixel3  = "792407324843664"; //ROI - F
 
 
 //Data for FB Conversions API
-$accessToken1 = "EAAxkvwzdc3kBOyptJvqbPM9PDyN5aD18NrHH4qV5xABNgPosmS4LNE9pXtuf3";
-$accessToken2 = "6ZBxBFTucuUyu4CNysn005Btf2hAUq8ADBmP3La5r23C0NFR5ke9ZC2bZC1LdT44X6ZBa7p5GZB8BpZBaJp2goi4KgEOdQAscMDEkgGJBxnfXhZALrsTufZAcWSgaKpzw76UgZDZD";
-$fbAccessToken1 = $accessToken1 . $accessToken2; //Rodica
+$accessToken1 = "EAAxkvwzdc3kBOZCtyUl9uuYLLlOZC9dZBmPXI5km4IQFCS4i47ZAV2OWZAtDUyTuyOgM4wpPwmJbwYmUA6eojV82erYbSnndE9Qa";
+$accessToken2 = "an2jyNX3nE3P8ZAcQh21w3exFt8UkOPw1FRHsaB7FmdZCOZAu6h2Bs9py8slHsIVfpSfLktpAb0jO3lpi34JoBa9aPIW8AZDZD";
+$fbAccessToken1 = $accessToken1 . $accessToken2;
+#$accessToken1 = "EAAxkvwzdc3kBOyptJvqbPM9PDyN5aD18NrHH4qV5xABNgPosmS4LNE9pXtuf3";
+#$accessToken2 = "6ZBxBFTucuUyu4CNysn005Btf2hAUq8ADBmP3La5r23C0NFR5ke9ZC2bZC1LdT44X6ZBa7p5GZB8BpZBaJp2goi4KgEOdQAscMDEkgGJBxnfXhZALrsTufZAcWSgaKpzw76UgZDZD";
+#$fbAccessToken1 = $accessToken1 . $accessToken2; //Rodica
 
 $accessToken11 = "EAAJw55TSSlwBO8gbnFIRHkllZAvEZAaNXsfFVog3m4Yjg9MarZBo4V4on";
 $accessToken22 = "vGMXaEuLZAIx5GmCcPrm72KHecMI7co54kJDBoaDRVYDJn8qhkJiYJpEC4Iovno59ZBMJZBeswtU2NCLNbGS2Jt69ZAyjcl2ANeh60mVfSiCvptvrZBtWC1gcEB1XgKUIsAI4LfsQZDZD";
