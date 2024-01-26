@@ -454,6 +454,17 @@ fbq('track', 'Purchase', {
 </script>
 
 
+<!-- Twitter conversion tracking event code -->
+<script type="text/javascript">
+  // Insert Twitter Event ID
+  twq('event', 'tw-ojcyv-ojcyw', {
+    value: $orderPrice, // use this to pass the value of the conversion (e.g. 5.00)
+    conversion_id: '$orderID' // use this to pass a unique ID for the conversion event for deduplication (e.g. order id '1a2b3c')
+  });
+</script>
+<!-- End Twitter conversion tracking event code -->
+
+
 EOT;
 
 $_SESSION['fbfirepixel'] = 0;
