@@ -30,7 +30,7 @@ $count = $row['reviews'];
 
                    <div id="order" class="col-lg-6 col-xl-5">
 						<div class="header-box">
-                        <h1 style="margin-top: 10px;">Future Spouse Drawing</h1>
+                        <h1 style="margin-top: 10px;">FUTURE HUSBAND PSYCHIC DRAWING</h1>
 						<h4 style="text-align: center;font-size: 15px;font-weight: 500;margin-top:-10px;">
 						<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><br>
 						<span style="font-size:13px;"><?php echo $count; ?> reviews</span>
