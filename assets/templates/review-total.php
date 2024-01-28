@@ -40,8 +40,8 @@ if($cb > $fourmulti){
 $countfive = round($count * $fmulti);
 $countfour = round($count * $fourmulti);
 $countthree = round($count * $newcb);
-$counttwo = round($count * 0.02);
-$countone = round($count * 0.001);
+$counttwo = round($count * 0.002);
+$countone = round($count * 0.0001);
 
 
 
