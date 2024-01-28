@@ -108,20 +108,24 @@ $count = $row['reviews'];
             <div style="margin-top: 15px;margin-bottom:15px;" class="row">
                 <div class="col-lg-6">
                 <div class="text-container">
-                        <h2>FUTURE SPOUSE PSYCHIC DRAWING</h2>
-						<p><b> <center> <FONT COLOR="#d9480d"> A GLIMPSE INTO YOUR DESTINED PARTNERSHIP </FONT> </b> </center> </p>						
-<br> <p>Step into the realm of the unknown and unveil the face of your future life partner with the <strong>Future Spouse Psychic Drawing.</strong> While fate writes a captivating story, I offer you the chance to peek into its pages, introducing you to the one destined to stand by your side.</p>
-<br> <p>Every sketch I craft is a harmonious blend of intuitive insights, psychic vibrations, and artistry. Using a mix of clairvoyance and deep spiritual connection, I embark on a journey through time, capturing the essence of the person with whom you&apos;ll share life&apos;s most intimate moments.</p>
-<br> <p>To initiate this sacred process, I&apos;ll need your name and birthdate. Guided by the stars and the universe&apos;s whispers, I&apos;ll channel your future spouse&apos;s energy. The resulting portrait transcends mere lines and shades; it echoes with the laughter, dreams, and shared moments awaiting you.</p>
-<br> <p>Unveiling your future spouse isn&apos;t just about knowing their face. It&apos;s about preparing your heart for the love, lessons, and shared experiences that will define your journey together.</p>
-<br> <p><strong>EXCLUSIVE PERSPECTIVE: Deciphering the Astral Blueprint of Your Romantic Destiny</strong></p>
-<p>With each intricately crafted portrait, I journey deeper into the celestial tapestry, unveiling the intricate weave of fates that connect you to your future spouse. Discover the preordained encounters that will seamlessly merge your paths, the trials destined to solidify your union, and the pivotal moments that will shape the core of your shared experiences. By interpreting this astral blueprint, I illuminate the profound nuances, commitments, and ethereal pledges sculpted by the universe for your shared journey.</p>
-<br> <p>From individuals seeking clarity to celebrated personalities wanting a glance into their love future, my drawings have illuminated the path for many. Choosing the &quot;Future Spouse Psychic Drawing&quot; is more than a purchase; it&apos;s an invitation to a transformative experience of love and self-discovery.</p>
-<br> <p><strong>OUR VOW OF TRUST: A Bond That Respects Your Faith</strong></p>
-<p>If my vision doesn&apos;t unfold as perceived within the provided timeframe, a full refund will be honored, a testament to our shared trust and spiritual commitment.</p>
-<br> <p><strong>UTMOST CONFIDENTIALITY: Digital Delivery Ensuring Privacy</strong></p>
-<p>Your uniquely crafted drawing and accompanying insights will be discreetly delivered to your provided email, safeguarding your privacy. While the universe may know your story, our journey together remains confidential.</p>
-                     
+                        <h2>FUTURE HUSBAND PSYCHIC DRAWING</h2>
+                        <br> <p style="color:#d9480d;text-align:center;"><b>💕 Dear Beautiful Soul, 💕</b></p>
+ <p>Are you weary of the relentless pursuit of love? Longing for a connection that speaks to your soul and a companion that’s truly destined for you?    </p> 
+ <p>  I am The Soulmate Healer, and I’m here to unveil the mysteries of your heart, to guide you to a love that’s beyond imagination, a love that’s exclusively yours. </p> 
+<br><p style="color:#d9480d;text-align:center;"><b> 🌟 What is a Future Husband Drawing? 🌟 </b> </p>
+ <p> A Future Husband Drawing is your personal gateway to the future. It’s not just a portrait; it’s the revelation of your destined companion, combined with my psychic insights and artistic talents to bring you closer to your destined love. It's a mirror reflecting the true essence of your heart and the person who’s bound to complete you.  </p> 
+ <br><p style="color:#d9480d;text-align:center;"> 🌷 Feel Seen, Feel Understood… 🌷 </b></p>
+<p>  Ever feel alone in a crowd, like no one really gets you? You laugh, you talk, but inside, you're asking, “Where’s the one who really sees me? Who gets the real me?” We all want someone who knows our story, who understands our silence, who makes us feel we belong.</p> 
+<p>Imagine finally meeting someone who gets your jokes, who knows your favorite songs, who can make you smile just by being there. Imagine having a buddy, a pal, someone to share your dreams and your worries with. Someone who knows you, the real you, and loves you because of it, not in spite of it.  </p> 
+<p>  This isn’t just about finding love. It’s about finding your other half, your true buddy, who makes you feel whole, understood, and truly at home. It’s about feeling seen, feeling loved, for who you really are.</p> 
+<p> I’m here to help you find this friend, this <b> future husband</b>. I’ll draw him for you, and I’ll tell you how you’ll meet them. Your future husband isn’t just someone to love; they’re your best friend, your partner in crime, your shoulder to lean on. So, are you ready to meet the one who’ll dance through life with you, laughing all the way? </p> 
+
+ <br><p style="color:#d9480d;text-align:center;"><b> 💖 Your Journey to Self-Discovery… 💖 </b></p>
+ <p> Meet not just a partner, but a soul who will guide you towards profound self-discovery and deeper understanding. This transformative encounter is your opportunity to bloom and to experience emotional and spiritual growth like never before.  </p> 
+ <br><p style="color:#d9480d;text-align:center;"><b> 💖 Your Happiness, Guaranteed! 💖 </b>  </p>
+ <p>  Your happiness is my mission! If your future husband drawing doesn’t bring you the joy and clarity you hoped for, just reach out. I’ll refund every penny immediately, no questions, no hassle! It’s all about your peace of mind and heartfelt satisfaction! </p> 
+
+ <br><p> <b>💠 Please Note: </b> This is a digital delivery product sent straight to your email. No physical items will be sent to your home, allowing for a quick and seamless experience!  </p> 
                     </div>
                 </div>
 
