@@ -25,10 +25,10 @@ $cb = $base.$countchars;
 
 $count = $total;
 
-$fmulti = 0.88 - $cb;
+$fmulti = 0.94 - $cb;
 
 
-$fourmulti = 0.10;
+$fourmulti = 0.05;
 if($cb > $fourmulti){
     $newcb = $fourmulti;
     $fourmulti = $cb;
