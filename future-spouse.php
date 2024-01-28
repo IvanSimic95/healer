@@ -1,8 +1,8 @@
 <?php 
 $t_product_name = "FUTURE HUSBAND/WIFE";
 $t_product_form_name = "futurespouse";
-$title = "Future Spouse Drawing | Soulmate Healer";
-$description = "I will provide you with your future spouse drawing";
+$title = "FUTURE HUSBAND PSYCHIC DRAWING | Soulmate Healer";
+$description = "I will provide you with your future husband drawing";
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 <?php
