@@ -53,7 +53,7 @@ $processingWelcome = "We are now processing your *Order #%ORDERID%*\n\nYour orde
 
 //Complete Soulmate, Twin Flame & Future Spouse Text added Before and After Order Text
 $generalOrderHeader = "Dear %FIRSTNAME%\n\nFirst of all, thank you so much for giving me the opportunity to create a meaningful connection with you! As we continue, please make yourself comfortable and feel wholeheartedly everything I've seen while connecting with your aura and energy. I hope that sharing this with you will kindle a light of joy in your heart, and let you know that beautiful things are on the way.\n\n";
-$generalOrderFooter = "\nIt was such a pleasure doing your reading, my dear. I hope that you enjoy it as much as I enjoyed connecting with your beautiful soul energy!\n\nWith Love,\n*Soulmate Healer* ";
+$generalOrderFooter = "\nIt was such a pleasure doing your reading, my dear. I hope that you enjoy it as much as I enjoyed connecting with your beautiful soul energy!\n\nThere's a matter I'd like to discuss with you privately,  I suggest we connect on WhatsApp. Please reach out to me at your earliest convenience, and we can delve into this matter together.  WhatsApp <tel:+447341811168|+447341811168>\n\nWith Love,\n*Soulmate Healer* ";
 
 //Complete text used when user purchased premium but no reading
 $generalOrderHeaderNoReading = "Dear %FIRSTNAME%\n\nFirst of all, thank you so much for giving me the opportunity to create a meaningful connection with you! Your drawing is complete and I hope you will enjoy it!";
