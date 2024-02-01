@@ -76,16 +76,23 @@ $count = $row['reviews'];
 	background: rgba(142, 68, 173, 1);
 	box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
 	animation: pulse-purple 2s infinite;
-	text-decoration:none;
-	border-radius: 0.25rem;
-	height: 2rem;
-	font-weight: 600;
-	font-size: 18px;
-    padding: 10px 10px;	
-	
-	max-width: 350px;
+    line-height: 16px;
+    border-radius: 0.25rem;
+    height: 4rem;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 12px 8px;
+    text-decoration: none;
+    max-width: 350px;
     margin: auto;
 	
+}
+
+@media only screen and (max-width: 500px) {
+    .blob.purple {
+        font-size: 14px;
+        padding: 5px 5px;
+  }
 }
 
 @keyframes pulse-purple {
@@ -321,7 +328,7 @@ This isn’t just a service; it’s a partnership. It's my hand extended to you 
                         <img class="img-fluid" src="/images/products/personal.png" style="width:450px;display:none;">
 							<div style="padding:5px;margin-bottom:0px;">
 
-						<h2 style="font-size: 40px;background:none;color:#000;font-weight:800;margin-top:15px;line-height:30px;">$23<br/><span style="opacity: 0.25;font-weight:500;font-size:20px;">$46</span></h2> 
+						<h2 style="font-size: 40px;background:none;color:#000;font-weight:800;margin-top:15px;line-height:30px;">$23<br/></h2> 
 						<p style="margin-top: -10px;">50% discount applied</p>
 
 				<div style="margin-bottom: -8px;margin-top: -17px;font-size: 12px;;">
@@ -329,7 +336,14 @@ This isn’t just a service; it’s a partnership. It's my hand extended to you 
 					<span style="font-size:11px;font-weight:600;"><?php echo $count; ?> reviews</span>
 				</div>
 				<br clear="all">
-								<a href="https://www.digistore24.com/answer/yes?template=light" style="color: #fff;" class="blob purple">🔮 Yes, I Want My Personal Psychic Reading</a>
+							
+                                <div class="blob purple">
+                                <a href="https://www.digistore24.com/answer/yes?template=light" style="text-decoration:none;color: #fff;text-transform:uppercase;" class="">
+                                ✨ YES!<br>
+                                <span style="font-size:13px;font-weight:400;">I Want My Personal Psychic Reading</span>
+                                </a></div>
+
+
 								<p></p>
 							<br>	<a href="https://www.digistore24.com/answer/no" style="font-size: 18px;color:blue;" href="">No Thanks, I'll remain in the shadows of uncertainty</a>
 								<p style="letter-spacing: -0.25px;font-size: 13px;line-height: 1.2;margin-top: 20px;">This special offer is only here and now. <span style="font-weight:600;">If you leave this page, you'll lose out on the chance to get the discount</span>. So, <span style="color:#8e44ad;font-weight:600;text-decoration:underline;">click the magic button now</span>!</p>
