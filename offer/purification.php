@@ -354,7 +354,7 @@ The depth of our <b>Psychic Purification</b> is vast, demanding my utmost dedica
 					<span style="font-size:11px;font-weight:600;"><?php echo $count; ?> reviews</span>
 				</div>
 				<br clear="all">
-								<div class="blob blue"><a href="https://www.digistore24.com/answer/yes?template=light" style="text-decoration:none;color: #fff;text-transform:uppercase;" class="">✨ YES!<br/><span style="font-size:13px;font-weight:400;">I embrace transformation and healing!</span></a></div>
+				<a href="https://www.digistore24.com/answer/yes?template=light" style="text-decoration:none;color: #fff;text-transform:uppercase;" class=""><div class="blob blue">✨ YES!<br/><span style="font-size:13px;font-weight:400;">I embrace transformation and healing!</span></div></a>
 								<p></p>
 								<a href="https://www.digistore24.com/answer/no" style="font-size: 12px;color:blue;" href="">I'm not ready for this transformative journey yet</a>
 
