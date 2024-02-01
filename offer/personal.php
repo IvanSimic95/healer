@@ -88,12 +88,6 @@ $count = $row['reviews'];
 	
 }
 
-@media only screen and (max-width: 500px) {
-    .blob.purple {
-        font-size: 14px;
-        padding: 5px 5px;
-  }
-}
 
 @keyframes pulse-purple {
 	0% {
