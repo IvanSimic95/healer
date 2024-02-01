@@ -330,12 +330,12 @@ This isn’t just a service; it’s a partnership. It's my hand extended to you 
 					<span style="font-size:11px;font-weight:600;"><?php echo $count; ?> reviews</span>
 				</div>
 				<br clear="all">
-							
+                <a href="https://www.digistore24.com/answer/yes?template=light" style="text-decoration:none;color: #fff;text-transform:uppercase;" class="">
                                 <div class="blob purple">
-                                <a href="https://www.digistore24.com/answer/yes?template=light" style="text-decoration:none;color: #fff;text-transform:uppercase;" class="">
+                               
                                 ✨ YES!<br>
                                 <span style="font-size:13px;font-weight:400;">I Want My Personal Psychic Reading</span>
-                                </a></div>
+                                </div></a>
 
 
 								<p></p>
