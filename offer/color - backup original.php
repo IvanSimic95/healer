@@ -3,14 +3,91 @@ $title = "Special One-Time-Offer!";
 $description = "Almost Complete...";
 include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/header.php'; 
 
-
-$t_product_name = "personal";
+$t_product_name = "color";
 $lower = strtolower($t_product_name);
 $sql = "SELECT * FROM review_total WHERE product = '".$t_product_name."'";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 $count = $row['reviews'];
+
 ?>
+
+<?php
+
+
+if(isset($_GET['c'])){
+  $ord = $_GET['c'];
+  $order_ID = $ord;
+  $sql = "SELECT * FROM `orders` WHERE `order_id` = '$ord' ORDER BY `order_id` DESC LIMIT 1";
+  $result = $conn->query($sql);
+  $count = $result->num_rows;
+  $row = $result->fetch_assoc();
+  
+  //If order is found input data from BG and update status to paid
+  if($result->num_rows != 0) {
+  
+  $_SESSION['lastorder'] = $_GET['c'];
+  $_SESSION['orderFName'] = $row['first_name'];
+  $_SESSION['orderLName'] = $row['last_name'];
+  $_SESSION['orderBirthday'] = $row['birthday'];
+  $_SESSION['orderAge'] = $row['user_age'];
+  $_SESSION['orderGender'] = $row['gender'];
+  $_SESSION['orderPartnerGender'] = $row['partner_gender'];
+  $_SESSION['BGEmail'] = $row['order_email'];
+  
+  $_SESSION['fbfirepixel'] = 1;
+  $_SESSION['fborderID'] = $_GET['c'];
+  $_SESSION['fborderPrice'] = $row['order_price'];
+  $_SESSION['fbproduct'] = $row['order_product'];
+
+  $_SESSION['fbSource'] = $row['fbSource'];
+
+
+    $FBPixel = $FBPixel1;
+  
+  
+  }
+  
+  
+  
+  
+}else{
+
+if(isset($_SESSION['lastorder'])){
+$lastOrderID = $_SESSION['lastorder'];
+$sql = "SELECT * FROM `orders` WHERE `order_id` = '$lastOrderID' ORDER BY `order_id` DESC LIMIT 1";
+$result = $conn->query($sql);
+$count = $result->num_rows;
+$row = $result->fetch_assoc();
+
+//If order is found input data from BG and update status to paid
+if($result->num_rows != 0) {
+
+
+$_SESSION['lastorder'] = $_GET['c'];
+$_SESSION['orderFName'] = $row['first_name'];
+$_SESSION['orderLName'] = $row['last_name'];
+$_SESSION['orderBirthday'] = $row['birthday'];
+$_SESSION['orderAge'] = $row['user_age'];
+$_SESSION['orderGender'] = $row['gender'];
+$_SESSION['orderPartnerGender'] = $row['partner_gender'];
+$_SESSION['BGEmail'] = $row['order_email'];
+
+$_SESSION['fbfirepixel'] = 1;
+$_SESSION['fborderID'] = $lastOrderID;
+$_SESSION['fborderPrice'] = $row['order_price'];
+$_SESSION['fbproduct'] = $row['order_product'];
+
+
+  $FBPixel = $FBPixel1;
+
+}
+}
+ 
+}
+$FirePixel = $_SESSION['fbfirepixel'];
+?>
+
 <script src="https://www.digistore24.com/service/digistore.js"></script><script>digistoreUpsell()</script>
 
 <style>
@@ -33,10 +110,13 @@ $count = $row['reviews'];
 .ex-6-header h2 {
     font-size: 30px;
     line-height: 30px;
-    color: #333;
-    font-weight: 700;
+    margin-bottom: 5px;
+    background-color: #000;
+    color: #fff;
+    padding: 6px;
+    font-weight: 600;
+    border-radius: 0.35rem;
 }
-
 
 .blob.orange {
 	background: rgba(255, 121, 63, 1);
@@ -46,8 +126,8 @@ $count = $row['reviews'];
 	border-radius: 0.25rem;
 	height: 2rem;
 	font-weight: 600;
-	font-size: 17px;
-    padding: 8px 8px;
+	font-size: 18px;
+    padding: 10px 10px;
 	
 	max-width: 350px;
     margin: auto;
@@ -76,18 +156,17 @@ $count = $row['reviews'];
 	background: rgba(142, 68, 173, 1);
 	box-shadow: 0 0 0 0 rgba(142, 68, 173, 1);
 	animation: pulse-purple 2s infinite;
-    line-height: 16px;
-    border-radius: 0.25rem;
-    height: 4rem;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 12px 8px;
-    text-decoration: none;
-    max-width: 350px;
+	
+	border-radius: 0.25rem;
+	height: 2rem;
+	font-weight: 600;
+	font-size: 17px;
+    padding: 8px 8px;	
+	
+	max-width: 350px;
     margin: auto;
 	
 }
-
 
 @keyframes pulse-purple {
 	0% {
@@ -115,9 +194,9 @@ $count = $row['reviews'];
 	border-radius: 0.25rem;
 	height: 4rem;
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 17px;
     padding: 16px 8px;	
-	text-decoration:none;
+	
 	max-width: 350px;
     margin: auto;
 }
@@ -234,10 +313,7 @@ padding-top:1rem;
 }
 
 .ex-6-header p {
-    max-width: none;
-}
-.img-fluid{
-    border-radius:1rem;
+    max-width: 38rem;
 }
 .contentinside{
 		border: 2px solid orange;
@@ -247,7 +323,7 @@ padding-top:1rem;
 	margin-left: 0px;
 	border-radius:0.5rem;
 	}
-    @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
 		.ex-6-header p {
 			max-width: 24rem;
     margin-right: auto;
@@ -255,12 +331,11 @@ padding-top:1rem;
 }
 }
 </style>
-<?php
-if(isset($_SESSION['shortproduct'])){
-    $drawingtext = $_SESSION['shortproduct'];
-    $text = 'Capturing the portrait of your <span style="font-weight:600;color:#8e44ad;">'.$drawingtext.'</span> in art is only the beginning';
+ <?php
+if(isset($_SESSION['product'])){
+    $drawingtext = $_SESSION['product'];
 }else{
-    $text = 'Capturing the portrait in art is only the beginning';
+    $drawingtext = "drawing";
 }
 
 ?>
@@ -284,26 +359,23 @@ if(isset($_SESSION['shortproduct'])){
                         <div class="col-sm-4 col-4 m-auto" style="padding: 10px;font-weight:500;font-size: 12px;line-height: 15px;"><span style="font-weight:700;">STEP #3</span><br/>ORDER COMPLETED</div>
                     </div>
 					
-                    <progress value="50" max="100" style="--value: 50; --max: 100;margin-top:25px;margin-bottom:25px;"></progress>	
+                    <progress value="25" max="100" style="--value: 25; --max: 100;margin-top:25px;margin-bottom:25px;"></progress>	
                 </div>
 				
-				<div class="col-lg-12 col-xl-12">
-				
-				<h2 style="margin-bottom: 24px;text-align:left;color:#8e44ad;" class="h2-heading">Dear valued customer,</h2>
-		
-				<p style="margin-top: 5px;margin-bottom: 25px;text-align:left;color: #000;font-size: 18px;line-height: 1.4em;" class="card-title-prod">
+				<div class="col-lg-12">
+                    <h2 style="font-size:24px;" class="h2-heading">Wait! Your Portrait Isn't Complete Without This</h2>
+                </div>
 
-<?php echo $text; ?>. Your essence, your story, your journey - they're rich, multidimensional, and deserve intricate exploration. 
-<br/><br/>
-A few times a year, Soulmate Healer <b>himself<b> offers exclusive </b> <span style="font-weight:600;color:#ec5540;">Psychic Readings</span></b>.  
-<br/><br/>
-If you're curious to further explore aspects of your life such as <span style="font-weight:600;color:#ec5540;">Love, Health, Finances</span>, or <b>any other area</b>, I'm here to guide you. Let's unlock hidden insights and illuminate the path forward together. 
-<br/>
-
-<div style="margin-top:5px;margin-bottom:7px;background-color:#f5f5f5;padding:4px;" class="row">
+		<div class="col-lg-12 col-xl-12">
+			
+				<p style="margin-top:10px;margin-bottom: 20px;text-align:center;color: #000;font-size: 18px;line-height: 1.4em;" class="card-title-prod">
+					Imagine seeing not just a pencil sketch, but a radiant, full-color portrait that truly captures the vibrancy of your <span style="font-weight:600;color:#ec5540;"><?php echo $drawingtext; ?></span>. The depth of their eyes, the shade of their lips, the colors that capture their essence — all brought to life.
+				</p>
+			
+			<div style="margin-top:5px;margin-bottom:7px;background-color:#f5f5f5;padding:4px;" class="row">
                 <div class="col-sm-5 col-5">
 					    <div style="" class="card-image">
-                            <img class="img-fluid" style="border-radius:0.5rem;" src="/images/noclear.png" alt="alternative">
+                            <img class="img-fluid" style="border-radius:0.5rem;" src="/images/img01.png" alt="alternative">
 						</div>
                 </div>
                 <div style="padding:0px;" class="col-sm-2 col-2 m-auto">
@@ -313,42 +385,30 @@ If you're curious to further explore aspects of your life such as <span style="f
                 </div>
                 <div class="col-sm-5 col-5">
 					    <div style="" class="card-image">
-                            <img class="img-fluid" style="border-radius:0.5rem;" src="/images/clear.png" alt="alternative">
+                            <img class="img-fluid" style="border-radius:0.5rem;" src="/images/img02.png" alt="alternative">
 						</div>
                 </div>
 			</div>
-			
-			<br/>
-Soulmate Healer is known as the only Psychic with 100% accuracy, so be prepared for mind-blowing details that will guarantee to improve your life!
-<br/><br/>
-
-
-				
+ 
+                       
+				<p style="margin-top:20px;margin-bottom: 15px;text-align:center;color: #000;font-size: 18px;line-height: 1.4em;" class="card-title-prod">
+					You're this close to enhancing the magic. With just one small addition, you can transform your soulmate portrait from beautiful to absolutely breathtaking.
 				</p>
-				   
-					    <div style="margin-bottom: 20px;background-color:#f8f1fd;" class="card-image">
-                        <img class="img-fluid" src="/images/products/personal.png" style="width:450px;display:none;">
+                        
+					   
+					    <div style="margin-bottom: 20px;border-style: dashed; border-color: #3b75cc; border-width: 2px; background-color:#eef5fe;" class="card-image">
 							<div style="padding:5px;margin-bottom:0px;">
-
-						<p style="letter-spacing: -0.25px;font-size: 22px;line-height: 1.4em;margin-top: 10px;font-weight:600;">Get Your <u>Personalized Psychic Reading </u> For Just <b>$23</b> <br/></h2> 
-						<br>
+								<p style="letter-spacing: -0.25px;font-size: 22px;line-height: 1.4em;margin-top: 10px;font-weight:600;">Upgrade To A <u>Vivid Colored Portrait</u> For Just $9.67 <i style="font-size: 13px;" class="fas fa-angle-double-right"></i></p>
 
 				<div style="margin-bottom: -8px;margin-top: -17px;font-size: 12px;;">
 					<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
 					<span style="font-size:11px;font-weight:600;"><?php echo $count; ?> reviews</span>
 				</div>
 				<br clear="all">
-                <a href="https://www.digistore24.com/answer/yes?template=light" style="text-decoration:none;color: #fff;text-transform:uppercase;" class="">
-                                <div class="blob purple">
-                               
-                                ✨ YES!<br>
-                                <span style="font-size:13px;font-weight:400;">I Want My Personal Psychic Reading</span>
-                                </div></a>
-
-
+								<a href="https://www.digistore24.com/answer/yes?template=light" style="color: #fff;" class="blob orange"><i style="margin-right: 10px;" class="fa fa-shopping-cart" aria-hidden="true"></i>UPGRADE NOW</a>
 								<p></p>
-							<br>	<a href="https://www.digistore24.com/answer/no" style="font-size: 16px;color:blue;" href="">No Thanks, I'll remain in the shadows of uncertainty</a>
-								<p style="letter-spacing: -0.25px;font-size: 13px;line-height: 1.2;margin-top: 20px;">This special offer is only here and now. <span style="font-weight:600;">If you leave this page, you'll lose out on the chance to get the discount</span>. So, <span style="color:#8e44ad;font-weight:600;text-decoration:underline;">click the magic button now</span>!</p>
+<br>								<a href="https://www.digistore24.com/answer/no" style="font-size: 18px;color:blue;" href="">No Thanks, I'll Stick With Black & White</a>
+								<p style="letter-spacing: -0.25px;font-size: 13px;line-height: 1.2;margin-top: 20px;">This special offer is only here and now. <span style="font-weight:600;">If you leave this page, you'll lose out on the chance to get colored drawing</span>. So, <span style="color:#ff793f;font-weight:600;text-decoration:underline;">click the upgrade button now</span>!</p>
 								
 								<p style="letter-spacing: -0.25px;font-size: 12px;line-height: 1.2;margin-top: 20px;">
 									<span style="color: #09c100;font-weight:700;">$</span> Get a 60 day money back guarantee if you aren't satisfied.
@@ -366,4 +426,43 @@ Soulmate Healer is known as the only Psychic with 100% accuracy, so be prepared 
         </div>  
     </header> 
 
+    <?php
+
+if($FirePixel == 1){
+  $orderID = $_SESSION['fborderID'];
+  $orderPrice = $_SESSION['fborderPrice'];
+  $product = $_SESSION['fbproduct'];
+
+$FBPurchasePixel = <<<EOT
+
+<script>
+fbq('init', '$FBPixel');
+fbq('track', 'Purchase', {
+  value: $orderPrice , 
+  currency: 'USD',
+  content_type: 'product', 
+  content_ids: '$product'
+}, 
+{eventID: '$orderID'});
+</script>
+
+<!-- Twitter conversion tracking event code -->
+<script type="text/javascript">
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+  // Insert Twitter Event ID
+  twq('event', 'tw-ojcyv-ojcyw', {
+    value: $orderPrice, // use this to pass the value of the conversion (e.g. 5.00)
+    conversion_id: '$orderID' // use this to pass a unique ID for the conversion event for deduplication (e.g. order id '1a2b3c')
+  });
+</script>
+<!-- End Twitter conversion tracking event code -->
+
+EOT;
+
+$_SESSION['fbfirepixel'] = 0;
+}
+
+?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/footer.php'; ?>

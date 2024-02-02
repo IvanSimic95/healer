@@ -289,40 +289,32 @@ if(isset($_SESSION['shortproduct'])){
 				
 				<div class="col-lg-12 col-xl-12">
 				
-				<h2 style="margin-bottom: 24px;text-align:left;color:#8e44ad;" class="h2-heading">Dear valued customer,</h2>
+				<h2 style="margin-bottom: 24px;text-align:left;color:#8e44ad;" class="h2-heading">Discover the Chronicles of YOUR Life... Through My Eyes</h2>
 		
 				<p style="margin-top: 5px;margin-bottom: 25px;text-align:left;color: #000;font-size: 18px;line-height: 1.4em;" class="card-title-prod">
-
-<?php echo $text; ?>. Your essence, your story, your journey - they're rich, multidimensional, and deserve intricate exploration. 
+<span style="font-weight:600;color:#f04040;font-size: 22px;">Let's delve deeper into the core chapters of your life.</span>
 <br/><br/>
-A few times a year, Soulmate Healer <b>himself<b> offers exclusive </b> <span style="font-weight:600;color:#ec5540;">Psychic Readings</span></b>.  
+<?php echo $text; ?>. Your essence, your story, your journey - they're rich, multidimensional, and deserve intricate exploration.
 <br/><br/>
-If you're curious to further explore aspects of your life such as <span style="font-weight:600;color:#ec5540;">Love, Health, Finances</span>, or <b>any other area</b>, I'm here to guide you. Let's unlock hidden insights and illuminate the path forward together. 
-<br/>
-
-<div style="margin-top:5px;margin-bottom:7px;background-color:#f5f5f5;padding:4px;" class="row">
-                <div class="col-sm-5 col-5">
-					    <div style="" class="card-image">
-                            <img class="img-fluid" style="border-radius:0.5rem;" src="/images/noclear.png" alt="alternative">
-						</div>
-                </div>
-                <div style="padding:0px;" class="col-sm-2 col-2 m-auto">
-					    <div style="" class="card-image">
-                            <img class="img-fluid" style="" src="/images/arrow-color.gif" alt="alternative">
-						</div>
-                </div>
-                <div class="col-sm-5 col-5">
-					    <div style="" class="card-image">
-                            <img class="img-fluid" style="border-radius:0.5rem;" src="/images/clear.png" alt="alternative">
-						</div>
-                </div>
-			</div>
-			
-			<br/>
-Soulmate Healer is known as the only Psychic with 100% accuracy, so be prepared for mind-blowing details that will guarantee to improve your life!
+I invite you to go a level deeper with a multi-layered, profoundly intimate <span style="font-weight:600">Psychic Reading - delivered</span>, of course, in my unique, tested, and trusted style that countless clients (and celebrities!) have raved about.
 <br/><br/>
-
-
+<i class="fas fa-brain" style="color: #f5b832;"></i> <span style="font-weight:700;color:#8e44ad;">General Insight</span>: We all have questions. "<span style="font-weight:600"><em>Why did that opportunity slip away?</em></span>" "<span style="font-weight:600"><em>What's my purpose here?</em></span>" My in-depth analysis will tap into the synchronicities of your life.
+<br/><br/>
+While many are content with surface-level insights, our journey together will unearth the deep-seated rhythms, patterns, and energies guiding your every step.
+<br/><br/>
+It's not about vague predictions, but about understanding the intricate dance of circumstances that shape your life.
+<br/><br/>
+<i class="fas fa-heart" style="color: #ec4141;"></i> <span style="font-weight:700;color:#8e44ad;">Love Reading</span>: Love, in all its complexities, is a force that defines us. I’ll guide you through your romantic timeline, clarifying the choices you've made, the connections you've fostered, and the potential futures awaiting you.
+<br/><br/>
+Whether it’s understanding a past love, strengthening a current bond, or preparing for a future relationship, my insights will provide clarity, ensuring your heart is in the right place.
+<br/><br/>
+<i class="fas fa-heartbeat" style="color: #3679ec;"></i> <span style="font-weight:700;color:#8e44ad;">Health Guidance</span>: Health is more than just the absence of illness; it's a symphony of mind, body, and soul. Together, we'll decode the messages your body sends, recognizing the emotional and spiritual strains that might be manifesting physically.
+<br/><br/>
+Discover how to nurture yourself holistically, ensuring vitality in every facet of your being.
+<br/><br/>
+<span style="font-weight:600;font-size: 22px;color:#8e44ad;">Right now, I’m offering you this personalized reading at an exclusive <span style="font-weight:700;color:#f04040;">50% DISCOUNT</span>!</span>
+<br/><br/>
+This isn’t just a service; it’s a partnership. It's my hand extended to you in your journey of discovery.
 				
 				</p>
 				   
@@ -330,8 +322,8 @@ Soulmate Healer is known as the only Psychic with 100% accuracy, so be prepared 
                         <img class="img-fluid" src="/images/products/personal.png" style="width:450px;display:none;">
 							<div style="padding:5px;margin-bottom:0px;">
 
-						<p style="letter-spacing: -0.25px;font-size: 22px;line-height: 1.4em;margin-top: 10px;font-weight:600;">Get Your <u>Personalized Psychic Reading </u> For Just <b>$23</b> <br/></h2> 
-						<br>
+						<h2 style="font-size: 40px;background:none;color:#000;font-weight:800;margin-top:15px;line-height:30px;">$23<br/></h2> 
+						<p style="margin-top: -10px;">50% discount applied</p>
 
 				<div style="margin-bottom: -8px;margin-top: -17px;font-size: 12px;;">
 					<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
@@ -347,7 +339,7 @@ Soulmate Healer is known as the only Psychic with 100% accuracy, so be prepared 
 
 
 								<p></p>
-							<br>	<a href="https://www.digistore24.com/answer/no" style="font-size: 16px;color:blue;" href="">No Thanks, I'll remain in the shadows of uncertainty</a>
+							<br>	<a href="https://www.digistore24.com/answer/no" style="font-size: 18px;color:blue;" href="">No Thanks, I'll remain in the shadows of uncertainty</a>
 								<p style="letter-spacing: -0.25px;font-size: 13px;line-height: 1.2;margin-top: 20px;">This special offer is only here and now. <span style="font-weight:600;">If you leave this page, you'll lose out on the chance to get the discount</span>. So, <span style="color:#8e44ad;font-weight:600;text-decoration:underline;">click the magic button now</span>!</p>
 								
 								<p style="letter-spacing: -0.25px;font-size: 12px;line-height: 1.2;margin-top: 20px;">
