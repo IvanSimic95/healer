@@ -367,8 +367,7 @@ The depth of our <b>Psychic Purification</b> is vast, demanding my utmost dedica
 						</div>
                 </div>
             </div>
- <a href='http://www.freevisitorcounters.com'>Freevisitorcounters.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=0d36686a2ccf3c4277515608c3f9ddf7763a09e5'></script>
-<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1136361/t/3"></script>
+ 
          </div>
 	</div>
 
