@@ -346,7 +346,7 @@ Seize this unique opportunity or be prepared to wait another long year. <span st
 							<div style="padding:5px;margin-bottom:0px;">
 							
 								<p style="font-size: 20px;line-height: 1.3;margin-top: 20px;">
-The depth of our <b>Psychic Purification</b> is vast, demanding my utmost dedication and rare sacred materials. <b>Its value stands at $2000</b>, reflecting the energy and resources invested. However, understanding the need of wandering souls, <b>I've reduced this transformative service to just <u>$180</u> for a limited time</b>!
+The depth of our <b>Psychic Purification</b> is vast, demanding my utmost dedication and rare sacred materials. <b>Its value stands at $2000</b>, reflecting the energy and resources invested. However, understanding the need of wandering souls, <b>I've reduced this transformative service to just <u>$149</u> for a limited time</b>!
 								</p>
 								
 				<div style="margin-bottom: -8px;margin-top: -17px;font-size: 12px;;">
