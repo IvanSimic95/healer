@@ -57,7 +57,8 @@ $generalOrderFooter = "\nWhile I was drawing your psychic portrait, something am
 
 //Complete text used when user purchased premium but no reading
 $generalOrderHeaderNoReading = "Dear %FIRSTNAME%\n\nFirst of all, thank you so much for giving me the opportunity to create a meaningful connection with you! Your drawing is complete and I hope you will enjoy it!";
-$generalOrderFooterNoReading = "\nIt was such a pleasure doing your drawing, my dear. I hope that you enjoy it as much as I enjoyed connecting with your beautiful soul energy!\n\nWith Love,\n*Soulmate Healer* ";
+#$generalOrderFooterNoReading = "\nIt was such a pleasure doing your drawing, my dear. I hope that you enjoy it as much as I enjoyed connecting with your beautiful soul energy!\n\nWith Love,\n*Soulmate Healer* ";
+$generalOrderFooterNoReading = "\nWhile I was drawing your psychic portrait, something amazing happened - I felt this deep connection with your energy, and it was like *your story was unfolding right before me*. I picked up on so many details about you. If you're curious and want to dive deeper into your Love life, Health, Finances, or any other area, I'm here for you. Just hit this link to get your very own detailed Psychic Reading:  https://soulmatehealer.com/readings/ \n\nWith Love,\n*Soulmate Healer* "; 
 
 //Complete text when user purchased no reading and no premium
 $generalOrderNoReading = "Dear %FIRSTNAME%\n\nFirst of all, thank you so much for giving me the opportunity to create a meaningful connection with you! \nIt was such a pleasure doing your drawing, my dear. I hope that you enjoy it as much as I enjoyed connecting with your beautiful soul energy!\n\nWith Love,\n*Soulmate Healer*  ";
