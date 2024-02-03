@@ -359,7 +359,8 @@ Soulmate Healer is known as the only Psychic with 100% accuracy, so be prepared 
             </div>
          </div>
 	</div>
-
+ <a href='http://www.freevisitorcounters.com'>Freevisitorcounters.com</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=310a51459d5346c017705596d771e87eb8ba9593'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1136302/t/3"></script>
 <br clear="all">			
 				
             </div>  
