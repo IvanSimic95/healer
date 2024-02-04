@@ -22,7 +22,7 @@
                                         $name = $fetch2['name'];
                                         }
 
-                                        if($name == ""){
+                                        if($id == ""){
                                                 $name = "BLANK";
                                         }
 
