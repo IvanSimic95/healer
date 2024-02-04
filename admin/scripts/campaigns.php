@@ -22,9 +22,7 @@
                                         $name = $fetch2['name'];
                                         }
 
-                                        if($id == ""){
-                                                $name = "BLANK";
-                                        }
+                                       
 
                                         //Find campaign Sales Count from DB
                                         $sql4 = "SELECT * FROM orders WHERE (order_status = 'shipped'  AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate') 
@@ -47,6 +45,10 @@
                                         $sum = round($sum);
                                         }else{
                                         $sum = 0;
+                                        }
+
+                                        if($id == ""){
+                                                $id = "BLANK";
                                         }
 
                                         echo '<tr id="' . $id . '">
