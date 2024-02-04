@@ -9,7 +9,7 @@
                         while ($row = $result->fetch_assoc()) {
                         $id = $row["fbCampaign"];
                                 
-                                if($id == "domain_click" OR $id == "{{campaign.id}}" OR $id == "" OR $id == "0"){
+                                if($id == "domain_click" OR $id == "{{campaign.id}}"){
                                 }else{
 
                                         //Find campaign name from DB
@@ -33,6 +33,10 @@
                                                                         OR (order_status = 'processing' AND order_product = 'husband' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
                                                                         OR (order_status = 'shipped' AND order_product = 'personal' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
                                                                         OR (order_status = 'processing' AND order_product = 'personal' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                                        OR (order_status = 'shipped' AND order_product = 'purification' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                                        OR (order_status = 'processing' AND order_product = 'purification' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                                        OR (order_status = 'shipped' AND order_product = 'thoughts' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                                        OR (order_status = 'processing' AND order_product = 'thoughts' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
                                                                         ";
                                         $r4 = $conn->query($sql4);
                                         $countSales = $r4->num_rows;
@@ -49,6 +53,10 @@
                                         OR (order_status = 'processing' AND order_product = 'husband' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
                                         OR (order_status = 'shipped' AND order_product = 'personal' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
                                         OR (order_status = 'processing' AND order_product = 'personal' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                        OR (order_status = 'shipped' AND order_product = 'purification' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                        OR (order_status = 'processing' AND order_product = 'purification' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                        OR (order_status = 'shipped' AND order_product = 'thoughts' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                        OR (order_status = 'processing' AND order_product = 'thoughts' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
                                                 ";
                                         $r3 = $conn->query($sql3);
                                         $fetch3 = $r3->fetch_assoc();
