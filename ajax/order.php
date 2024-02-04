@@ -25,9 +25,7 @@ if ($request === 'POST') {
     $othername = "";
   }
 
-  if($othername != ""){
-  $text = "Other person name: ".$othername. " | ".$text;
-}
+
 
 $user_birthday = $_POST['form_day']."-".$_POST['form_month']."-".$_POST['form_year'];
 $birthday = new DateTime($user_birthday);
