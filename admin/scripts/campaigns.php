@@ -22,6 +22,10 @@
                                         $name = $fetch2['name'];
                                         }
 
+                                        if($name == ""){
+                                                $name = "BLANK";
+                                        }
+
                                         //Find campaign Sales Count from DB
                                         $sql4 = "SELECT * FROM orders WHERE (order_status = 'shipped'  AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate') 
                                                                         OR (order_status = 'processing'  AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
