@@ -19,6 +19,16 @@ if ($request === 'POST') {
     $text = "";
   }
 
+  if(isset($_POST['other_name'])){
+    $othername = htmlspecialchars(strip_tags($_POST['other_name']));
+  }else{
+    $othername = "";
+  }
+
+  if($othername != ""){
+  $text = "Other person name: ".$othername. " | ".$text;
+}
+
 $user_birthday = $_POST['form_day']."-".$_POST['form_month']."-".$_POST['form_year'];
 $birthday = new DateTime($user_birthday);
 $interval = $birthday->diff(new DateTime);
@@ -310,6 +320,9 @@ case "Twinflame":
               case "Higherself":
                 $order_product_nice = "Higher Self Drawing";
                     break;
+                    case "Thoughts":
+                      $order_product_nice = "Their Hidden Thoughts & Deepest Feelings";
+                          break;
 }
 
 
@@ -371,7 +384,7 @@ $submitStatus = "Success";
 $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
 $redirectPayment = "https://www.digistore24.com/product/".$cbproduct."?custom=".$lastRowInsert."&email=".$user_email."&first_name=".$fName."&last_name=".$lName;
 
-if($order_product == "ask"){
+if($order_product == "ask" OR $order_product == "thoughts"){
   $sql2 = "INSERT INTO ask (order_id, text) VALUES ('$lastRowInsert', '$text')";
  if ($conn->query($sql2) === TRUE) {
 
