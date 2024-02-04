@@ -23,13 +23,33 @@
                                         }
 
                                         //Find campaign Sales Count from DB
-                                        $sql4 = "SELECT * FROM orders WHERE (order_status = 'shipped' AND order_product = 'soulmate' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate') OR (order_status = 'processing' AND order_product = 'soulmate' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')";
+                                        $sql4 = "SELECT * FROM orders WHERE (order_status = 'shipped' AND order_product = 'soulmate' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate') 
+                                                                        OR (order_status = 'processing' AND order_product = 'soulmate' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                                        OR (order_status = 'shipped' AND order_product = 'futurespouse' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                                        OR (order_status = 'processing' AND order_product = 'futurespouse' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                                        OR (order_status = 'shipped' AND order_product = 'twinflame' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                                        OR (order_status = 'processing' AND order_product = 'twinflame' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                                        OR (order_status = 'shipped' AND order_product = 'husband' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                                        OR (order_status = 'processing' AND order_product = 'husband' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                                        OR (order_status = 'shipped' AND order_product = 'personal' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                                        OR (order_status = 'processing' AND order_product = 'personal' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                                        ";
                                         $r4 = $conn->query($sql4);
                                         $countSales = $r4->num_rows;
                                   
 
                                         //Find campaign Sales from DB
-                                        $sql3 = "SELECT SUM(order_price) AS sum_quantity FROM orders WHERE (order_status = 'shipped' AND order_product = 'soulmate' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate') OR (order_status = 'processing' AND order_product = 'soulmate' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')";
+                                        $sql3 = "SELECT SUM(order_price) AS sum_quantity FROM orders WHERE (order_status = 'shipped' AND order_product = 'soulmate' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate') 
+                                        OR (order_status = 'processing' AND order_product = 'soulmate' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                        OR (order_status = 'shipped' AND order_product = 'futurespouse' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                        OR (order_status = 'processing' AND order_product = 'futurespouse' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                        OR (order_status = 'shipped' AND order_product = 'twinflame' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                        OR (order_status = 'processing' AND order_product = 'twinflame' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                        OR (order_status = 'shipped' AND order_product = 'husband' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                        OR (order_status = 'processing' AND order_product = 'husband' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                        OR (order_status = 'shipped' AND order_product = 'personal' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                        OR (order_status = 'processing' AND order_product = 'personal' AND fbCampaign = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
+                                                ";
                                         $r3 = $conn->query($sql3);
                                         $fetch3 = $r3->fetch_assoc();
                                         $sum = $fetch3['sum_quantity'];
