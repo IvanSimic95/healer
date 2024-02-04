@@ -27,6 +27,7 @@ if ($request === 'POST') {
 
 
 
+
 $user_birthday = $_POST['form_day']."-".$_POST['form_month']."-".$_POST['form_year'];
 $birthday = new DateTime($user_birthday);
 $interval = $birthday->diff(new DateTime);
@@ -382,8 +383,18 @@ $submitStatus = "Success";
 $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
 $redirectPayment = "https://www.digistore24.com/product/".$cbproduct."?custom=".$lastRowInsert."&email=".$user_email."&first_name=".$fName."&last_name=".$lName;
 
-if($order_product == "ask" OR $order_product == "thoughts"){
+if($order_product == "ask"){
   $sql2 = "INSERT INTO ask (order_id, text) VALUES ('$lastRowInsert', '$text')";
+ if ($conn->query($sql2) === TRUE) {
+
+} else {
+  //Error
+}
+
+}
+
+if($order_product == "thoughts"){
+  $sql2 = "INSERT INTO ask (order_id, text, OtherName) VALUES ('$lastRowInsert', '$text', '$othername')";
  if ($conn->query($sql2) === TRUE) {
 
 } else {
