@@ -23,20 +23,18 @@
                                         }
 
                                         //Find campaign Sales Count from DB
-                                        $sql4 = "SELECT * FROM orders WHERE (order_status = 'shipped'  AND fbCampaign = '$campaign' AND fbAdset = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate') 
-                                        OR (order_status = 'processing' AND  AND fbCampaign = '$campaign' AND fbAdset = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')
-                                        ";
+                                        $sql4 = "SELECT * FROM orders WHERE (order_status = 'shipped' AND fbCampaign = '$campaign' AND fbAdset = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate') OR (order_status = 'processing' AND fbCampaign = '$campaign' AND fbAdset = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')";
                                         $r4 = $conn->query($sql4);
                                         $countSales = $r4->num_rows;
                                   
 
                                         //Find campaign Sales from DB
-                                        $sql3 = "SELECT SUM(order_price) AS sum_quantity FROM orders WHERE (order_status = 'shipped' AND fbCampaign = '$campaign' AND fbAdset = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate') 
-                                        OR (order_status = 'processing' AND fbCampaign = '$campaign' AND fbAdset = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')";
+                                        $sql3 = "SELECT SUM(order_price) AS sum_quantity FROM orders WHERE (order_status = 'shipped' AND fbCampaign = '$campaign' AND fbAdset = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate') OR (order_status = 'processing' AND fbCampaign = '$campaign' AND fbAdset = '$id' AND DATE(order_date) >= '$startDate' AND DATE(order_date) <= '$endDate')";
                                         $r3 = $conn->query($sql3);
                                         $fetch3 = $r3->fetch_assoc();
                                         $sum = $fetch3['sum_quantity'];
                                         if($sum > 0){
+                                        $sum = $sum * 0.84;
                                         $sum = round($sum);
                                         
                                         }else{
