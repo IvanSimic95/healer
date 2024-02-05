@@ -2,7 +2,7 @@
 require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 echo "Starting abbandoned-carts.php...<br><br>";
-
+use SendGrid\Mail\Mail;
 
 if($runAbandoned == 1){
 
@@ -43,107 +43,45 @@ while($row = $resultpending->fetch_assoc()) {
 
 
 			//Sending First Message
-			if($difference >= "20" && $first == "0"){
+			if($difference >= "60" && $first == "0"){
 
 			$logArray[] = $user." | ".$orderID." | ". $email." | ".$product." | ".$time." | ";
 			
-			//First create TalkJS User
-			$ch = curl_init();
-			$data = [
-			"id" => $user,
-			"name" => $name,
-			"email" => [$email],
-			"role" => "customer",
-			"photoUrl" => "https://avatars.dicebear.com/api/adventurer/".$email.".svg?skinColor=variant02",
-			"custom" => ["email" => $email, "lastOrder" => $orderID]
-			];
-			$data1 = json_encode($data);
-			curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/users/'.$orderID);
-			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
-				
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $data1);
-				
-			$headers = array();
-			$headers[] = 'Content-Type: application/json';
-			$headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
-			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-				
-			$result = curl_exec($ch);
-			if (curl_errno($ch)) {
-			echo 'Error:' . curl_error($ch);
-			}
-			curl_close($ch);
-			echo $result;
 
-			//Now create new conversation
-			$ch2 = curl_init();
-
-			$data2 = [
-			"subject" => "Order #".$orderID." | ".$product,
-			"participants" => ["administrator", $user],
-			"custom" => ["status" => "Not Paid"]
-			];
-
-			$data22 = json_encode($data2);
-			curl_setopt($ch2, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/conversations/'.$orderID);
-			curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
-			curl_setopt($ch2, CURLOPT_CUSTOMREQUEST, 'PUT');
-
-			curl_setopt($ch2, CURLOPT_POSTFIELDS, $data22);
-
-			$headers = array();
-			$headers[] = 'Content-Type: application/json';
-			$headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
-			curl_setopt($ch2, CURLOPT_HTTPHEADER, $headers);
-
-			$result2 = curl_exec($ch2);
-			if (curl_errno($ch2)) {
-				echo 'Error:' . curl_error($ch2);
-			}
-			curl_close($ch2);
-			echo $result2;
-			//END CREATE CONVERSATION
-
-
-				
 
 				$sqlupdate = "UPDATE `abandoned` SET `first`='1' WHERE id='$id'";
 				if ($conn->query($sqlupdate) === TRUE) {
 					echo "sending first message";
 					$logArray[] = "Sending First Message";
-					$message = $firstAbandon;
-					$message = str_replace("%FIRSTNAME%", $name, $message);
-					$message = str_replace("%PRODUCT%", $product, $message);
-					$message = str_replace("%LINK%", $link, $message);
-
-					//SEND MESSAGE TO TALKJS
-					$ch = curl_init();
-					$data = [
-					[
-						"sender"  => "administrator",
-						"text" => $message,
-						"type" => "UserMessage"
-					]];
-					$data1 = json_encode($data);
-					curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/zQQphoB0/conversations/' . $orderID . '/messages');
-					curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-					curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
-					curl_setopt($ch, CURLOPT_POSTFIELDS, $data1);
-					$headers = array();
-					$headers[] = 'Content-Type: application/json';
-					$headers[] = 'Authorization: Bearer sk_live_SMK73rLbx7kUaOJ2Pur99ZE6RVnygEVv';
-					curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-					$result = curl_exec($ch);
-					if (curl_errno($ch)) {
-						echo 'Error:' . curl_error($ch);
-					}
-					curl_close($ch);
-
+					
+								$semail = new Mail();
+								$semail->setFrom("info@soulmatehealer.com", "Soulmate Healer");
+								$semail->setSubject("Abandoned Order");
+								$semail->addTo(
+									$email,
+									"Gabe",
+									[
+										"first_name" => $name,
+										"email" => $email,
+										"buy_link" => $link,
+										"product" => $product
+									],
+									0
+								);
+								$semail->setTemplateId("d-34c82fc813d14f2aa72f6f69060b68f0");
+								$sendgrid = new \SendGrid($sg);
+								try {
+									$response = $sendgrid->send($semail);
+									print $response->statusCode() . "\n";
+									print_r($response->headers());
+									print $response->body() . "\n";
+								} catch (Exception $e) {
+									echo 'Caught exception: '.  $e->getMessage(). "\n";
+								}
 				}
 
 			//Sending Second Message
-			}elseif($difference >= "1440" && $first == "1" && $second == "0"){
+			}/*elseif($difference >= "1440" && $first == "1" && $second == "0"){
 				$logArray[] = $user." | ".$orderID." | ". $email." | ".$product." | ".$time." | ";
 				$sqlupdate = "UPDATE `abandoned` SET `second`='1' WHERE id='$id'";
 				if ($conn->query($sqlupdate) === TRUE) {
@@ -214,18 +152,20 @@ while($row = $resultpending->fetch_assoc()) {
 							curl_close($ch);
 						*/
 
-
+						abandonLog($logArray);   
 			}
 			
 		
 
  
-			abandonLog($logArray);     
+			  
 }
 
            
+}else{
+	echo "Run abandoned email is disabled";
 }
 
-}
+
     echo "<br><hr>"
  ?>
