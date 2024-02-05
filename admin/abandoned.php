@@ -17,7 +17,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/admin/partials/navbar.php';
             <div class="card mb-4">
                 <div class="card-header">
                     <i class="fas fa-table me-1"></i>
-                    Reviews
+                    Abandoned Email Log
                 </div>
                 <div class="card-body">
                 <?php
