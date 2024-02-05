@@ -7,6 +7,7 @@ ini_set('display_errors', '0');
 
 $debounce = 0; //Debounce for email Verification
 $startpixel  = 1; //Facebook pixel pageviews
+$saveAbandoned = 1; //Save abandoned orders to database
 $runAbandoned = 0; //Send abandoned messages
 $push = 1; //Send push notifications for phone on sales
 
@@ -15,7 +16,9 @@ $FBPixel1 = "478846387559798"; //NEW Rodica
 $FBPixel2  = "692217912347910"; //Gabe - Facebook
 $FBPixel3  = "792407324843664"; //ROI - F
 
-
+$s1 = "SG.pR31EiejTfiWyldp7LT9Sg.8er6aUy8n2";
+$s2 = "Bjf7tD49qnhWZzA_C39Y5tyjdydTMBFG4";
+$sg = $s1.$s2;
 
 
 //Data for FB Conversions API

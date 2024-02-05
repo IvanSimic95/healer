@@ -403,7 +403,7 @@ if($order_product == "thoughts"){
 
 }
 
-if($runAbandoned == 1){
+if($saveAbandoned == 1){
 $active = 1;
 $abandon_link = $redirectPayment;
 //Abandoned email
