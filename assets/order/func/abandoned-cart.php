@@ -30,7 +30,7 @@ while($row = $resultpending->fetch_assoc()) {
 			$first = $row["first"];
 			$second = $row["second"];
 			$third = $row["third"];
-			$currentTime = date('d-m-Y h:i:s', time());
+			$currentTime = date('d-m-Y H:i:s', time());
 			//Get the time difference
 			$delta = time() - strtotime($time);
 			$difference = $delta / 60;
@@ -52,7 +52,7 @@ while($row = $resultpending->fetch_assoc()) {
 				$sqlupdate = "UPDATE `abandoned` SET `first`='1' WHERE id='$id'";
 				if ($conn->query($sqlupdate) === TRUE) {
 					echo "First Message Sent";
-					$logArray[] = "[".$currentTime."] User: ".$user." | Order: #".$orderID." | ". $email." | ".$product." | ".$time. " | First Message Sent!";
+					$logArray[] = "<b>[".$currentTime."]</b> User: ".$user." | Order: #".$orderID." | ". $email." | ".$product." | ".$time. " | First Message Sent!";
 					
 								$semail = new Mail();
 								$semail->setFrom("info@soulmatehealer.com", "Soulmate Healer");
