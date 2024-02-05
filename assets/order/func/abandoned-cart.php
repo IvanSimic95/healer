@@ -45,15 +45,14 @@ while($row = $resultpending->fetch_assoc()) {
 			//Sending First Message
 			if($difference >= "60" && $first == "0"){
 
-			$logArray[] = "[".$currentTime."] ";
-			$logArray[] = $user." | ".$orderID." | ". $email." | ".$product." | ".$time;
+			
 			
 
 
 				$sqlupdate = "UPDATE `abandoned` SET `first`='1' WHERE id='$id'";
 				if ($conn->query($sqlupdate) === TRUE) {
 					echo "First Message Sent";
-					$logArray[] = "First Message Sent";
+					$logArray[] = "[".$currentTime."] ".$user." | ".$orderID." | ". $email." | ".$product." | ".$time. " | First Message Sent!";
 					
 								$semail = new Mail();
 								$semail->setFrom("info@soulmatehealer.com", "Soulmate Healer");
