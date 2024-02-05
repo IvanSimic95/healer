@@ -52,7 +52,7 @@ while($row = $resultpending->fetch_assoc()) {
 				$sqlupdate = "UPDATE `abandoned` SET `first`='1' WHERE id='$id'";
 				if ($conn->query($sqlupdate) === TRUE) {
 					echo "First Message Sent";
-					$logArray[] = "[".$currentTime."] ".$user." | ".$orderID." | ". $email." | ".$product." | ".$time. " | First Message Sent!";
+					$logArray[] = "[".$currentTime."] User: ".$user." | Order: #".$orderID." | ". $email." | ".$product." | ".$time. " | First Message Sent!";
 					
 								$semail = new Mail();
 								$semail->setFrom("info@soulmatehealer.com", "Soulmate Healer");
