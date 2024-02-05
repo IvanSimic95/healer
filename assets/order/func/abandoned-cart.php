@@ -30,7 +30,7 @@ while($row = $resultpending->fetch_assoc()) {
 			$first = $row["first"];
 			$second = $row["second"];
 			$third = $row["third"];
-		
+			$currentTime = date('d-m-Y h:i:s', time());
 			//Get the time difference
 			$delta = time() - strtotime($time);
 			$difference = $delta / 60;
@@ -45,14 +45,15 @@ while($row = $resultpending->fetch_assoc()) {
 			//Sending First Message
 			if($difference >= "60" && $first == "0"){
 
-			$logArray[] = $user." | ".$orderID." | ". $email." | ".$product." | ".$time." | ";
+			$logArray[] = "[".$currentTime."] ";
+			$logArray[] = $user." | ".$orderID." | ". $email." | ".$product." | ".$time;
 			
 
 
 				$sqlupdate = "UPDATE `abandoned` SET `first`='1' WHERE id='$id'";
 				if ($conn->query($sqlupdate) === TRUE) {
-					echo "sending first message";
-					$logArray[] = "Sending First Message";
+					echo "First Message Sent";
+					$logArray[] = "First Message Sent";
 					
 								$semail = new Mail();
 								$semail->setFrom("info@soulmatehealer.com", "Soulmate Healer");
@@ -79,7 +80,7 @@ while($row = $resultpending->fetch_assoc()) {
 									echo 'Caught exception: '.  $e->getMessage(). "\n";
 								}
 				}
-
+				abandonLog($logArray); 
 			//Sending Second Message
 			}/*elseif($difference >= "1440" && $first == "1" && $second == "0"){
 				$logArray[] = $user." | ".$orderID." | ". $email." | ".$product." | ".$time." | ";
@@ -152,7 +153,7 @@ while($row = $resultpending->fetch_assoc()) {
 							curl_close($ch);
 						*/
 
-						abandonLog($logArray);   
+				echo "<br>";		
 			}
 			
 		
