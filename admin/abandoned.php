@@ -23,7 +23,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/admin/partials/navbar.php';
                 <?php
                 $file = $_SERVER['DOCUMENT_ROOT'].'/logs/abandon.log';
                 $f = fopen($file, "r");
-                while ($line = fgets($f, 100) ) {
+                while ($line = fgets($f) ) {
                     print $line . "<br/>";
                 }
                 ?>
