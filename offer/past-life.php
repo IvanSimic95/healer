@@ -316,8 +316,8 @@ So, why leave this treasure untapped? Imagine the power of understanding the for
                         <img class="img-fluid" src="/images/products/personal.png" style="width:450px;display:none;">
 							<div style="padding:5px;margin-bottom:0px;">
 
-						<h2 style="font-size: 40px;background:none;color:#000;font-weight:800;margin-top:15px;line-height:30px;">$37.5<br/><span style="opacity: 0.25;font-weight:500;font-size:20px;">$49.99</span></h2> 
-						<p style="margin-top: -10px;">25% discount applied</p>
+						<h2 style="font-size: 40px;background:none;color:#000;font-weight:800;margin-top:15px;line-height:30px;">$19.99<br/><span style="opacity: 0.25;font-weight:500;font-size:20px;">$49.99</span></h2> 
+						<p style="margin-top: -10px;">60% discount applied</p>
 
 				<div style="margin-bottom: -8px;margin-top: -17px;font-size: 12px;;">
 					<span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
