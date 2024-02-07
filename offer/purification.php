@@ -329,7 +329,7 @@ Yet, today, you stand on the cusp of a unique revelation. An opportunity so rare
 <br/><br/>
 ◦ <b>In just 5 days</b>, after the completion of this ritual, you will receive a detailed revelation and guidance, tailored exclusively for you. It will be a beacon, illuminating the path ahead, ensuring that you step into the world with a rejuvenated spirit, ready to embrace the treasures of life with open arms.
 <br/><br/>
-🥰 However, remember, such transformative opportunities do not knock often. This exclusive ritual, reserved for those who truly seek profound change, <span style="font-weight:700;color:#f04040;">is available to you now for $180</span>!
+🥰 However, remember, such transformative opportunities do not knock often. This exclusive ritual, reserved for those who truly seek profound change, <span style="font-weight:700;color:#f04040;">is available to you now for $149</span>!
 				</p>
 <hr>
 <span style="font-weight:700;color:#f04040;font-size: 22px;">🫣 Wait Another Year or Act Today?  <span style="color:#6b3b7f;">The Choice is Yours!</span></span>
