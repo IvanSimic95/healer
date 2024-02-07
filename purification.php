@@ -86,7 +86,7 @@ $count = $row['reviews'];
                             </div>
 
                             <img style="width: 100%;" src="/images/payment-icons.webp">
-                            <p style="font-size:12px;margin-top:7px;margin-bottom: -10px;"><img style="width: 100%;max-width: 28px;padding: 3px;" src="/images/tarot-cards.png">Only accepting 4 more readings for today! <i class="fa-solid fa-fire-flame-curved"></i> 27 Sold</p>
+                            <p style="font-size:12px;margin-top:7px;margin-bottom: -10px;"><img style="width: 100%;max-width: 28px;padding: 3px;" src="/images/tarot-cards.png">Only accepting 4 more readings for today! <i class="fa-solid fa-fire-flame-curved"></i> 27 Sold</p> 
 
                         </form>
                     </div>
@@ -100,8 +100,46 @@ $count = $row['reviews'];
                         <div class="col-lg-6">
                             <div class="text-container">
   
-
+<p> <b> Got questions before your purification journey? Let's chat on WhatsApp for a personal 1:1 talk. Reach out anytime: +447341811168  </b> </p>
 <h2> Transform Your Essence with Elite Psychic Purification </h2>
+
+<script>
+                var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?11708';
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = url;
+                var options = {
+                "enabled":true,
+                "chatButtonSetting":{
+                    "backgroundColor":"#00e785",
+                    "ctaText":"Chat with us",
+                    "borderRadius":"25",
+                    "marginLeft": "0",
+                    "marginRight": "20",
+                    "marginBottom": "20",
+                    "ctaIconWATI":false,
+                    "position":"right"
+                },
+                "brandSetting":{
+                    "brandName":"Soulmate Healer",
+                    "brandSubTitle":"undefined",
+                    "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+                    "welcomeText":"Hi there!\nHow can I help you?",
+                    "messageText":"Hello, %0A I have a question about Purification",
+                    "backgroundColor":"#00e785",
+                    "ctaText":"Chat with us",
+                    "borderRadius":"25",
+                    "autoShow":false,
+                    "phoneNumber":"447341811168"
+                }
+                };
+                s.onload = function() {
+                    CreateWhatsappChatWidget(options);
+                };
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            </script>
 <p> <b> A Sacred Invitation to the Discerning Soul</b> </p>
 
 <p> In the labyrinth of existence, we often encounter invisible barriers that dim our inner light and impede our destined path. These barriers, born from past traumas and unseen forces, not only obscure our vision but tether us to cycles of stagnation and despair.</p>
