@@ -481,7 +481,7 @@ h5 {
                             <div id="show_message" class="alert alert-success" style="display: none">Loading..</div>
                             <div id="error" class="alert alert-danger" style="display: none"></div>
 									
-									<h5 style="font-size: 90px;padding-bottom:45px;padding-top:30px;" class="new_prce christmas">$29</h5>
+									<h5 style="font-size: 90px;padding-bottom:45px;padding-top:30px;" class="new_prce christmas">$120</h5>
 
                            
 						   <div class="form_box" style="width:100%;">
