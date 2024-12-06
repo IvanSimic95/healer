@@ -205,6 +205,7 @@ $logArray[] = "
 							 $logError[] = $orderID;
 							 $logError[] = $orderEmail;
 							 missingLog($logError);
+							 echo "No image found using this query: ".$sql_pick."<br>";
 
 					} else {
 						while($rowImages = $sql_pick_res->fetch_assoc()) {
