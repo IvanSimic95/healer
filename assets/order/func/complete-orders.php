@@ -209,6 +209,7 @@ $logArray[] = "
 					} else {
 						while($rowImages = $sql_pick_res->fetch_assoc()) {
 							$image_name = $rowImages["name"];
+							echo "Picked image: ".$image_name;
 						}
 					}
 
